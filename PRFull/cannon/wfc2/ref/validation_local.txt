@@ -1,0 +1,32 @@
+# Local validation log of the wfc2 kit (Mac M2 Pro, Apple clang 15, -O3 -march=native, nice 10, 2 cores), 2026-09-27
+# Full-length production replicates run with this kit's binaries through task.sh, compared with the ARCHIVED CANNON
+# production outputs (PartnersRivalsM2f/check/wfc_a333, wfc_f2; dumps from cannon/archive/*.tgz, ref/archived_rep1.sha256).
+# REP lines compared field by field except t_sim and t_class (fields 25, 26).
+F1 task 30 (ipt 29, PDW, wedge W: exact W-111 counter exercised) replicate 1, seed base 9000000, 1e7 generations:
+  wfc     (default build)   REP line IDENTICAL to a333 r_1o3_30_1.txt line 1; strategy dump replicate 1 IDENTICAL (sha256)
+                            (t_sim 476.0 s local vs 575.0 s on Cannon)
+  wfc_ts  (-DTSERIES)       REP line IDENTICAL; strategy dump IDENTICAL; 400 TB + 2000 TS lines, TSR 2000 10 400 1376 50.2
+                            (t_sim 517.7 s: +9 % for the instrumentation)
+F2 task 511 (ipt 510) replicate 1, seed base 9100000, 1e8 generations, N = 100, 4000 x 1 samples:
+  wfc2    (default F2)      REP line IDENTICAL to wfc_f2 r_1o3_511_1.txt line 1; strategy dump replicate 1 IDENTICAL
+                            (t_sim 298.4 s local vs 352.4 s on Cannon)
+Kernel draws, task 30, alpha 1/3, 20000 draws, seed 777000030 (production's default):
+  wfc neutral               NEU line IDENTICAL to wfc_a333 n_1o3_30.txt (timing aside: 145.3 s local vs 201.9 s)
+So the Mac build reproduces the Cannon production outputs bit for bit (same xoshiro stream, same doubles).
+Machine code: the default F1 and F2 builds of wfc.c have __TEXT,__text, __cstring, __const and __DATA,__data
+sections byte-identical to builds of ref/wfc_prod.c (otool), and compile.sh checks token identity of the preprocessed
+programs at F1, F2, -DEPSV=1e-4 and -DBETAV=100.0 before every build.
+# ---- Independent verifier re-run, 2026-09-27 (fresh copy of the kit, compile.sh, nice 10, <= 2 cores)
+F1 task 299 (ipt 298, non-W; fastest archived F1 replicate) replicate 1, base 9000000, 1e7 generations, through task.sh:
+  wfc     (default)         REP line IDENTICAL to the Cannon archive (cannon_2026-09-26.tgz out/r_1o3_299_1.txt = check/wfc_a333);
+                            replicate-1 dump records IDENTICAL (153 records)            t_sim 388.5 s local vs 392.1 s Cannon
+  wfc_ts  (-DTSERIES, TS_NT=2000 TS_NI=10 TS_NB=400)  REP line IDENTICAL; S dump byte-identical to the default build's;
+                            400 TB + 2000 TS lines, TSR ndist 732; second-half TB payoff = REP pay (1e-12); TS counts = TS_NI
+F2 task 511 replicate 1, base 9100000, 1e8 generations: wfc2 (default F2) REP line and replicate-1 dump IDENTICAL to Cannon.
+ref/archived_rep1.sha256: both hashes recomputed from the archive tarballs, identical.
+K0 kernel: newmutant_local() of wfc.c (-DLOCALMUT) run as a chain on 2 x 200 lineages x 2e4 steps: from an alpha-law
+  start P(0), P(1), P(free) = 0.3339, 0.3332, 0.3330, free values mean 0.4999, var 0.08335 (1/12 = 0.08333), deciles
+  0.099-0.101; from p = 0.5 everywhere the second half gives 0.3332, 0.3330, 0.3338 -- the alpha-law is invariant and
+  attracting; no-op fraction 0.444 = 4/9 as predicted.
+validate_local.sh at itend 1e5 (re-run; D1/T1 1 lane, the rest 2 lanes): 55 of 55 PASS, MUT lines and the 65319 K0VERIFY
+  verdicts at game 467 identical to validate_local_1e5.log.

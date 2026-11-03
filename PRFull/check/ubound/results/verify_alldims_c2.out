@@ -1,0 +1,2 @@
+verify: 7120833 triples: ok 7120833, centre-unresolved 0, corner-fail 0, exponent-fail 0, centre-contradiction 0 (384.4 s, 3 threads)
+verify: 7120834 triples: ok 7120834, centre-unresolved 0, corner-fail 0, exponent-fail 0, centre-contradiction 0 (391.3 s, 3 threads)

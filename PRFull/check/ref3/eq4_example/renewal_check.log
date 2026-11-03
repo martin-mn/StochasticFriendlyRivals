@@ -1,0 +1,8 @@
+52620 0011000110110011 hit prob of s* from each state: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   offer (focal C): co-player acts D; outcome CD; focal net (DC-CD) until next offer state = -1; expected rounds = 3
+   no offer (focal D): co-player acts D; outcome DD; focal net (DC-CD) until next offer state = 5/8; expected rounds = 25/4
+   renewal-reward margin: (13*x - 5)/(2*(13*x - 25))  equals exact limit: True
+40324 0010000110111001 hit prob of s* from each state: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   offer (focal C): co-player acts D; outcome CD; focal net (DC-CD) until next offer state = -1; expected rounds = 3
+   no offer (focal D): co-player acts D; outcome DD; focal net (DC-CD) until next offer state = 5/8; expected rounds = 25/4
+   renewal-reward margin: (13*x - 5)/(2*(13*x - 25))  equals exact limit: True

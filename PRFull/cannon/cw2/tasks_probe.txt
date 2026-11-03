@@ -1,0 +1,18 @@
+# PRFull cw2 PROBE (partition test): validates each switch on Cannon's compiler and measures the rates.
+# Rows 1-2 validate the default build and -DTSERIES against the archived production line (isl 3, rep 1);
+# rows 3-11 give the per-replicate cost of each arm (a full replicate at the slowest game + short runs);
+# rows 12-13 compute the kernel masses at eps 1e-3 and 1e-5 at the 71 games (M = 1e7, 2 s per game).
+# arm  exe  isl  ipt  irep0  irep1  seedbase  eps  itend  outdir     (task.sh; k = data line number)
+VAL cw.x 3 0 1 1 - 1e-4 10000000 out/probe/VAL     # default build, PRODUCTION seed: must equal ref/prod/3 line 1 and ref/prod/w3 line 3 bit for bit
+VALTS cw_ts1.x 3 0 1 1 - 1e-4 10000000 out/probe/VALTS     # -DTSERIES at itend 1e7, production seed: the same two lines; blocks asserted = atom counts
+PE3 cw.x 1400 466 1 1 - 1e-3 10000000 out/probe/E3     # E3 full replicate at the slowest production game (ipt 466, 3094 s per task)
+PE3s cwp.x 2 0 1 1 - 1e-3 1000000 out/probe/E3s     # E3 short, PD centre
+PE3s cwp.x 1442 480 1 1 - 1e-3 1000000 out/probe/E3s     # E3 short, deep SHS
+PE5 cw_e5.x 1399 466 1 1 - 1e-5 10000000 out/probe/E5     # E5 full replicate, ipt 466
+PE5s cwp_e5.x 1 0 1 1 - 1e-5 1000000 out/probe/E5s     # E5 short, PD centre
+PE5s cwp_e5.x 1441 480 1 1 - 1e-5 1000000 out/probe/E5s     # E5 short, deep SHS
+PTS cw_ts.x 1401 466 1 1 43000000 1e-4 40000000 out/probe/TS     # TS full task (4e7) at ipt 466 = the TS arm's task (466, rep 1)
+PTSs cwp_ts.x 3 0 1 1 43000000 1e-4 4000000 out/probe/TSs     # TS short (4e6), PD centre
+PTSs cwp_ts.x 555 184 1 1 43000000 1e-4 4000000 out/probe/TSs     # TS short, split SHS
+KA kappa.x 2 games71.txt 10000000 - - 1e-3 - out/probe/KA3     # kernel masses, eps 1e-3 (slot 2)
+KA kappa_e5.x 1 games71.txt 10000000 - - 1e-5 - out/probe/KA5     # kernel masses, eps 1e-5 (slot 1, -DEPS1)

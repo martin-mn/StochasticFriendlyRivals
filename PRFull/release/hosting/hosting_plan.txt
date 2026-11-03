@@ -1,0 +1,63 @@
+# PRFull 1.0.0 hosting plan, from the CONTENTS.tsv of the assembled tree: 27914 files, 3077916756 bytes (3077.9 MB); MANIFEST.sha256 and CONTENTS.tsv come on top
+
+## GitHub repository (the code archive): 7001 files, 191013279 bytes (191.0 MB); largest PartnersRivalsM2f/check/st_eff.txt (28.4 MB); files over 50 MB: 0, over 100 MB: 0
+
+## Zenodo record: README.md, LICENSE, MANIFEST.sha256, CONTENTS.tsv, and the archives (each prefixed PRFull-1.0.0/, so that unpacking all of them in one directory rebuilds the tree):
+  PRFull-1.0.0_code.tar.gz                        7001 files      191013279 bytes   191.0 MB   largest PartnersRivalsM2f/check/st_eff.txt (28.4 MB)
+  PRFull-1.0.0_binary-paper-dumps.tar.gz             6 files      723255296 bytes   723.3 MB   largest DiskM2WF/Data/dw1_e4.bin (253.5 MB)
+  PRFull-1.0.0_m2-archives-and-audit.tar.gz        522 files      275948428 bytes   275.9 MB   largest PartnersRivalsM2f/cannon/archive/cannon_out_f2_2026-09-26.tgz (169.1 MB)
+  PRFull-1.0.0_census.tar.gz                      1292 files      868152942 bytes   868.2 MB   largest PRFull/release/census_class/census_all_support_class.txt.gz (16.2 MB)
+  PRFull-1.0.0_evolution-runs.tar.gz             18914 files      897678642 bytes   897.7 MB   largest PRFull/cannon/wfc2/out/B0/S_1o3_184_1.bin (5.3 MB)
+  PRFull-1.0.0_certificates.tar.gz                 179 files      121868169 bytes   121.9 MB   largest PRFull/check/wsep/out/cover/sep.mask (21.1 MB)
+  sum: 27914 files, 3077916756 bytes (CONTENTS.tsv: 27914 files, 3077916756 bytes)
+
+## the quick verification from the GitHub repository alone
+  every step runs except: fig45 (needs PRFull-1.0.0_binary-paper-dumps.tar.gz), sitable4 (needs PRFull-1.0.0_binary-paper-dumps.tar.gz), evoaudit (needs PRFull-1.0.0_m2-archives-and-audit.tar.gz)
+  those steps skip and say so; bash PRFull/release/fetch_zenodo.sh fetches the two archives, unpacks them into the tree and checks every file against MANIFEST.sha256.
+
+## the full run from the GitHub repository alone
+  the full scripts also skip: table5 (needs PRFull-1.0.0_evolution-runs.tar.gz), separation (needs PRFull-1.0.0_certificates.tar.gz)
+  bash PRFull/release/fetch_zenodo.sh --all fetches all five data archives.
+
+## the 30 largest files
+     253493248  253.5 MB  binary-paper-dumps     DiskM2WF/Data/dw1_e4.bin
+     169108524  169.1 MB  m2-archives-and-audit  PartnersRivalsM2f/cannon/archive/cannon_out_f2_2026-09-26.tgz
+     134217728  134.2 MB  binary-paper-dumps     DiskM2WF/Data/dw2_e4.bin
+     134217728  134.2 MB  binary-paper-dumps     PartnersRivals1/Data/f1_e4.bin
+     134217728  134.2 MB  binary-paper-dumps     PartnersRivals1/Data/f2_e4.bin
+      74175160   74.2 MB  m2-archives-and-audit  PartnersRivalsM2f/cannon/archive/cannon_2026-09-26.tgz
+      33554432   33.6 MB  binary-paper-dumps     PartnersRivals/Cannon/atoms512.bin
+      33554432   33.6 MB  binary-paper-dumps     PartnersRivals1/Cannon/atoms512.bin
+      28371357   28.4 MB  code                   PartnersRivalsM2f/check/st_eff.txt
+      21145875   21.1 MB  certificates           PRFull/check/wsep/out/cover/sep.mask
+      21108384   21.1 MB  code                   PRFull/cannon/cw2/results/TS_series.npz
+      20932034   20.9 MB  certificates           PRFull/check/wsep/out/extra/x4.tsv
+      16185653   16.2 MB  census                 PRFull/release/census_class/census_all_support_class.txt.gz
+      16001900   16.0 MB  census                 PRFull/release/census_class/census_st_45751662.tgz
+      15626385   15.6 MB  certificates           PRFull/check/wsep/out/extra/x13.tsv
+      10406010   10.4 MB  code                   PRFull/check/wsep/out/c6.tsv
+       9285014    9.3 MB  certificates           PRFull/check/wsep/out/extra/x4.exact.tsv
+       8213856    8.2 MB  census                 PRFull/release/census_class/st_eff_support_class.txt.gz
+       7782816    7.8 MB  certificates           PartnersRivalsM1f/check/working/census.pkl
+       6961128    7.0 MB  certificates           PRFull/check/wsep/out/extra/x13.exact.tsv
+       6243868    6.2 MB  code                   PRFull/check/wsep/out/c68.tsv
+       6014912    6.0 MB  certificates           PRFull/cannon/stratcert/prep/census_pts_PA.txt
+       5726073    5.7 MB  code                   PRFull/cannon/stratcert/points.tsv
+       5317480    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0/S_1o3_184_1.bin
+       5313000    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0/S_1o3_38_1.bin
+       5310480    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0b/S_1o3_184_1.bin
+       5308100    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0b/S_1o3_262_1.bin
+       5306420    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0b/S_1o3_38_1.bin
+       5304180    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0b/S_1o3_47_1.bin
+       5303060    5.3 MB  evolution-runs         PRFull/cannon/wfc2/out/B0/S_1o3_172_1.bin
+
+## per top-level directory: files, size | on GitHub: files, size
+  (top level)               3     0.0 MB |      3     0.0 MB
+  DiskM1WF                  8     0.4 MB |      8     0.4 MB
+  DiskM2WF                 16   389.5 MB |     14     1.8 MB
+  Donation                  1     0.1 MB |      1     0.1 MB
+  PRFull                10917  1196.5 MB |   3698   136.0 MB
+  PartnersRivals            5    34.8 MB |      4     1.2 MB
+  PartnersRivals1          17   304.2 MB |     14     2.2 MB
+  PartnersRivalsM1f     12567    35.7 MB |    170     3.6 MB
+  PartnersRivalsM2f      4380  1116.7 MB |   3089    45.7 MB

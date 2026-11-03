@@ -1,0 +1,10 @@
+p9=1/4 co-player 64 q6=1: margin=0, w=[0, 0, 0, 1]
+p9=1/4 co-player 65 q6=1: margin=0, w=[0, 0, 0, 1]
+p9=1/4 co-player 0 q6=0: margin=0, w=[0, 0, 0, 1]
+p9=1/4 co-player 52620 q6=0: margin=7/174, w=[3/58, 1/3, 65/174, 7/29]
+p9=0 self-play w = [3/19, 5/19, 5/19, 6/19]
+   p9=0 vs 52620: margin 1/10
+   p9=0 vs 58764: margin 12/91
+p9=1 self-play w = [1, 0, 0, 0]
+   p9=1 vs 52620: margin -1/3
+   p9=1 vs 58764: margin -1/3

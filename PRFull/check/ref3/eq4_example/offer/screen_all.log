@@ -1,0 +1,9 @@
+x = 1/100: 65536 co-players, min margin 0 attained by 37996; negative: 0; zero: 37996; 22.1s
+  smallest positive margin: 2/1467 = 0.0013633265167007499  attained by [35910, 35918, 40006, 40014]
+x = 1/4: 65536 co-players, min margin 0 attained by 37996; negative: 0; zero: 37996; 21.8s
+  smallest positive margin: 28/3541 = 0.007907370799209263  attained by [37261, 37277]
+x = 2/5: 65536 co-players, min margin -1/198 attained by 8; negative: 400; zero: 38068; 22.5s
+  negative codes (first 20): [33152, 33153, 33154, 33156, 33157, 33158, 33160, 33161, 33162, 33164, 33165, 33166, 33168, 33169, 33170, 33172, 33173, 33174, 33176, 33177]
+  smallest positive margin: 2/14985 = 0.0001334668001334668  attained by [39306]
+x = 5/13: 65536 co-players, min margin 0 attained by 38396; negative: 0; zero: 38396; 22.2s
+  smallest positive margin: 10/9269 = 0.0010788650339842486  attained by [35209, 35225]

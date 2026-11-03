@@ -1,0 +1,6 @@
+solutions (generic p): []
+rank of the coefficient matrix: 5  rank of the augmented matrix (generic p): 6
+rank on E: 5 5
+solution on E: [{hCC: (pCC - pDD)/(-pCC + pDD + 1), hCD: -u, hDC: (pCC*v + pCC - pDD*v - pDD - v)/(-pCC + pDD + 1), hDD: 0, g: pDD/(-pCC + pDD + 1)}]
+p_CD = pCC*v + pCC - pDD*v - v   p_DC = pCC*u - pDD*u + pDD - u   g = -pDD/(pCC - pDD - 1)
+alpha = beta = 0 at all four states  <=>  p on the plane E (for 1 - p_CC + p_DD != 0): confirmed

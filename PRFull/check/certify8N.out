@@ -1,0 +1,6 @@
+self-play limit (exact):  W_CC=0  W_CD=1/2  W_DC=1/2  W_DD=0
+efficient ABOVE the switch line (W_CD = W_DC = 1/2): True
+min over all 65536 binary co-players of W_DC - W_CD  =  0   (attained first at genome 0)
+co-players attaining equality: 31024
+RIVAL for T > S: True
+FRIENDLY RIVAL in wedge N: True

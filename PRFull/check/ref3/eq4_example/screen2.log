@@ -1,0 +1,12 @@
+x=0.39 min=-0.001756146513 n_ties=8
+  pattern over ties (co-player's own view, s=0..15): 001*00011011*0*1
+  q6 (co-player at its <CD,DC>, focal offer state) values: {0}
+x=0.4 min=-0.005050505051 n_ties=8
+  pattern over ties (co-player's own view, s=0..15): 001*00011011*0*1
+  q6 (co-player at its <CD,DC>, focal offer state) values: {0}
+x=0.6 min=-0.081395348837 n_ties=8
+  pattern over ties (co-player's own view, s=0..15): 001*00011011*0*1
+  q6 (co-player at its <CD,DC>, focal offer state) values: {0}
+x=0.9 min=-0.252390057359 n_ties=16
+  pattern over ties (co-player's own view, s=0..15): 00*10001101**1*1
+  q6 (co-player at its <CD,DC>, focal offer state) values: {0}

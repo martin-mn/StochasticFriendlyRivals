@@ -1,0 +1,31 @@
+units 12748, lines 12748, duplicated 0, malformed 0, missing 0 []
+tasks without .done (of 64): 0 []
+audit of 12748 certified lines (exact self-play recomputed for 12748): no problem
+
+locus strata certified failed  routes                                   co-players by route (sum over strata): interval>0 / exact>0 / structural 0 / exact 0 / neg
+W        364       364      0  {'census': 362, 'random': 2}             8701399 / 0 / 8838815 / 6314890 / 0
+W00      126       126      0  {'census': 126}                          1381231 / 0 / 2062607 / 4813698 / 0
+W11      238       238      0  {'census': 236, 'random': 2}             7320168 / 0 / 6776208 / 1501192 / 0
+N       5022      5022      0  {'census': 5020, 'mirror': 2}            146828027 / 0 / 54690649 / 127603116 / 0
+E       5022      5022      0  {'census': 5022}                         146828027 / 0 / 54690649 / 127603116 / 0
+ray+    7726      7726      0  {'census': 7721, 'random': 3, 'mirror': 2} 191875928 / 0 / 104857629 / 209597579 / 0
+
+certified strata by dimension (certified / retained, 0..8) and verdict
+  W     8/8 36/36 71/71 93/93 87/87 51/51 16/16 2/2 0/0  364/364 ALL CERTIFIED
+  W00   8/8 32/32 46/46 30/30 9/9 1/1 0/0 0/0 0/0  126/126 ALL CERTIFIED
+  W11   0/0 4/4 25/25 63/63 78/78 50/50 16/16 2/2 0/0  238/238 ALL CERTIFIED
+  N     80/80 448/448 1064/1064 1416/1416 1165/1165 610/610 199/199 37/37 3/3  5022/5022 ALL CERTIFIED
+  E     80/80 448/448 1064/1064 1416/1416 1165/1165 610/610 199/199 37/37 3/3  5022/5022 ALL CERTIFIED
+  ray+  116/116 660/660 1594/1594 2166/2166 1824/1824 976/976 324/324 61/61 5/5  7726/7726 ALL CERTIFIED
+verdict: every retained stratum of W, N, E and ray+ has a certified exact friendly rival: True
+
+exact minimum margin over the 65536 co-players at the certified witnesses: {'0': 12748}
+witness = the first stored census point in 12743 of 12748 certified units
+
+seconds per unit (single core) by locus and dimension: mean [max]
+  W     d0 10.8 [14.2]  d1 9.7 [14.4]  d2 8.2 [14.9]  d3 5.6 [15.3]  d4 3.5 [15.7]  d5 2.3 [16.3]  d6 1.7 [3.2]  d7 1.6 [2.4]
+  N     d0 8.2 [14.7]  d1 8.0 [14.8]  d2 7.9 [29.7]  d3 7.9 [24.1]  d4 8.0 [17.6]  d5 8.1 [17.5]  d6 8.3 [17.3]  d7 8.4 [14.6]  d8 8.7 [9.6]
+  E     d0 8.2 [15.7]  d1 8.0 [18.6]  d2 7.9 [19.1]  d3 7.8 [16.8]  d4 7.9 [17.1]  d5 8.1 [17.0]  d6 8.3 [18.1]  d7 8.5 [14.4]  d8 8.7 [9.6]
+  ray+  d0 9.1 [14.7]  d1 8.8 [15.0]  d2 8.7 [29.7]  d3 8.5 [30.7]  d4 8.5 [32.1]  d5 8.4 [18.4]  d6 8.5 [19.9]  d7 8.6 [18.1]  d8 9.1 [10.7]
+total 105939 core-s = 29.43 core-h over 12748 units (8.31 s per unit)
+wrote out/stratcert_all.tsv

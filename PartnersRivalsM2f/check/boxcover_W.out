@@ -1,0 +1,251 @@
+wedge W: 214 strata
+prime boxes: 85
+minimum cover: 41 boxes
+
+  1>1*0<0101*1*010   (108 strata)
+        CC | 1  >  1  *
+        CD | 0  <  0  1
+        DC | 0  1  *  1
+        DD | *  0  1  0
+
+  11>*000101*10010   (18 strata)
+        CC | 1  1  >  *
+        CD | 0  0  0  1
+        DC | 0  1  *  1
+        DD | 0  0  1  0
+
+  11>b000101<1<010   (16 strata)
+        CC | 1  1  >  b
+        CD | 0  0  0  1
+        DC | 0  1  <  1
+        DD | <  0  1  0
+
+  11><00111i10<000   (8 strata)
+        CC | 1  1  >  <
+        CD | 0  0  1  1
+        DC | 1  i  1  0
+        DD | <  0  0  0
+
+  11>i000101b1<010   (8 strata)
+        CC | 1  1  >  i
+        CD | 0  0  0  1
+        DC | 0  1  b  1
+        DD | <  0  1  0
+
+  1>1b001i1i10<000   (8 strata)
+        CC | 1  >  1  b
+        CD | 0  0  1  i
+        DC | 1  i  1  0
+        DD | <  0  0  0
+
+  1>10001>1i10<000   (8 strata)
+        CC | 1  >  1  0
+        CD | 0  0  1  >
+        DC | 1  i  1  0
+        DD | <  0  0  0
+
+  11>*00111i10i000   (6 strata)
+        CC | 1  1  >  *
+        CD | 0  0  1  1
+        DC | 1  i  1  0
+        DD | i  0  0  0
+
+  11i<00101i1i<000   (4 strata)
+        CC | 1  1  i  <
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | <  0  0  0
+
+  1111001>1i10i0<0   (4 strata)
+        CC | 1  1  1  1
+        CD | 0  0  1  >
+        DC | 1  i  1  0
+        DD | i  0  <  0
+
+  1i1i001i1i1<<000   (4 strata)
+        CC | 1  i  1  i
+        CD | 0  0  1  i
+        DC | 1  i  1  <
+        DD | <  0  0  0
+
+  1>11001>1i1ii000   (4 strata)
+        CC | 1  >  1  1
+        CD | 0  0  1  >
+        DC | 1  i  1  i
+        DD | i  0  0  0
+
+  1i10001>1i1<0000   (4 strata)
+        CC | 1  i  1  0
+        CD | 0  0  1  >
+        DC | 1  i  1  <
+        DD | 0  0  0  0
+
+  111>001b1i1i0000   (4 strata)
+        CC | 1  1  1  >
+        CD | 0  0  1  b
+        DC | 1  i  1  i
+        DD | 0  0  0  0
+
+  1i1i001*1i1i00i0   (3 strata)
+        CC | 1  i  1  i
+        CD | 0  0  1  *
+        DC | 1  i  1  i
+        DD | 0  0  i  0
+
+  1>i>00101i1i1000   (4 strata)
+        CC | 1  >  i  >
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | 1  0  0  0
+
+  1i1>00101i1i00<0   (4 strata)
+        CC | 1  i  1  >
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | 0  0  <  0
+
+  111i001>1i1i<000   (4 strata)
+        CC | 1  1  1  i
+        CD | 0  0  1  >
+        DC | 1  i  1  i
+        DD | <  0  0  0
+
+  1i1<001>1i100000   (4 strata)
+        CC | 1  i  1  <
+        CD | 0  0  1  >
+        DC | 1  i  1  0
+        DD | 0  0  0  0
+
+  11>i00101i1ib000   (4 strata)
+        CC | 1  1  >  i
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | b  0  0  0
+
+  111000111i10<0<0   (4 strata)
+        CC | 1  1  1  0
+        CD | 0  0  1  1
+        DC | 1  i  1  0
+        DD | <  0  <  0
+
+  1i1>00101i1ib000   (4 strata)
+        CC | 1  i  1  >
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | b  0  0  0
+
+  11>0001>1i10i000   (4 strata)
+        CC | 1  1  >  0
+        CD | 0  0  1  >
+        DC | 1  i  1  0
+        DD | i  0  0  0
+
+  1i1i00101i1i<0<0   (4 strata)
+        CC | 1  i  1  i
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | <  0  <  0
+
+  11i0001*1i1i0000   (3 strata)
+        CC | 1  1  i  0
+        CD | 0  0  1  *
+        DC | 1  i  1  i
+        DD | 0  0  0  0
+
+  11ib00111i1i<000   (4 strata)
+        CC | 1  1  i  b
+        CD | 0  0  1  1
+        DC | 1  i  1  i
+        DD | <  0  0  0
+
+  111i001i1i10<0i0   (2 strata)
+        CC | 1  1  1  i
+        CD | 0  0  1  i
+        DC | 1  i  1  0
+        DD | <  0  i  0
+
+  111i00111i1010<0   (2 strata)
+        CC | 1  1  1  i
+        CD | 0  0  1  1
+        DC | 1  i  1  0
+        DD | 1  0  <  0
+
+  111<00111i1i1000   (2 strata)
+        CC | 1  1  1  <
+        CD | 0  0  1  1
+        DC | 1  i  1  i
+        DD | 1  0  0  0
+
+  111i001>1i101000   (2 strata)
+        CC | 1  1  1  i
+        CD | 0  0  1  >
+        DC | 1  i  1  0
+        DD | 1  0  0  0
+
+  1i1<00101i1ii000   (2 strata)
+        CC | 1  i  1  <
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | i  0  0  0
+
+  11ii00111i1000<0   (2 strata)
+        CC | 1  1  i  i
+        CD | 0  0  1  1
+        DC | 1  i  1  0
+        DD | 0  0  <  0
+
+  1<0100101i1i1000   (2 strata)
+        CC | 1  <  0  1
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | 1  0  0  0
+
+  11>i001i1i1ii000   (2 strata)
+        CC | 1  1  >  i
+        CD | 0  0  1  i
+        DC | 1  i  1  i
+        DD | i  0  0  0
+
+  111100101i1ii0<0   (2 strata)
+        CC | 1  1  1  1
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | i  0  <  0
+
+  11i>001i1i100000   (2 strata)
+        CC | 1  1  i  >
+        CD | 0  0  1  i
+        DC | 1  i  1  0
+        DD | 0  0  0  0
+
+  11i1001i1i10<0i0   (2 strata)
+        CC | 1  1  i  1
+        CD | 0  0  1  i
+        DC | 1  i  1  0
+        DD | <  0  i  0
+
+  11>i001i1i1i00i0   (2 strata)
+        CC | 1  1  >  i
+        CD | 0  0  1  i
+        DC | 1  i  1  i
+        DD | 0  0  i  0
+
+  111b001i1i1i1000   (2 strata)
+        CC | 1  1  1  b
+        CD | 0  0  1  i
+        DC | 1  i  1  i
+        DD | 1  0  0  0
+
+  100i00101i1i10i0   (1 strata)
+        CC | 1  0  0  i
+        CD | 0  0  1  0
+        DC | 1  i  1  i
+        DD | 1  0  i  0
+
+  1110001i1i1010i0   (1 strata)
+        CC | 1  1  1  0
+        CD | 0  0  1  i
+        DC | 1  i  1  0
+        DD | 1  0  i  0
+
+  legend: 0 : p = 0, 1 : p = 1, i : p in (0,1), < : p < 1, > : p > 0, b : p in {0,1}, * : p free

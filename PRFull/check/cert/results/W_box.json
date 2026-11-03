@@ -1,0 +1,189 @@
+{
+ "name": "W_box",
+ "wedge": "W",
+ "sign": 1,
+ "efficiency_required": "C",
+ "stratum": "1*1*001*1*1**0*0",
+ "d": 7,
+ "free_coordinates": [
+  1,
+  3,
+  7,
+  9,
+  11,
+  12,
+  14
+ ],
+ "centre": [
+  "1",
+  "1/2",
+  "1",
+  "1/2",
+  "0",
+  "0",
+  "1",
+  "1/2",
+  "1",
+  "1/4",
+  "1",
+  "1/4",
+  "1/4",
+  "0",
+  "1/4",
+  "0"
+ ],
+ "box": {
+  "p1": [
+   "7/16",
+   "9/16"
+  ],
+  "p3": [
+   "7/16",
+   "9/16"
+  ],
+  "p7": [
+   "7/16",
+   "9/16"
+  ],
+  "p9": [
+   "3/16",
+   "5/16"
+  ],
+  "p11": [
+   "3/16",
+   "5/16"
+  ],
+  "p12": [
+   "3/16",
+   "5/16"
+  ],
+  "p14": [
+   "3/16",
+   "5/16"
+  ]
+ },
+ "volume": "1/2097152",
+ "volume_float": 4.76837158203125e-07,
+ "n_vertices": 128,
+ "efficiency": {
+  "class_of_open_stratum": "C",
+  "required": "C",
+  "meets": true,
+  "selfplay_centre_exact": [
+   "1",
+   "0",
+   "0",
+   "0"
+  ],
+  "selfplay_centre_efficient": true,
+  "selfplay_all_vertices_exact_efficient": true
+ },
+ "centre_point": {
+  "certified": true,
+  "n_pos": 27540,
+  "n_struct_zero": 33260,
+  "n_exact_zero_nonstructural": 4736,
+  "n_neg": 0,
+  "min_margin": "0",
+  "n_attaining_min": 37996,
+  "n_unresolved_by_interval": 4736
+ },
+ "vertex_route": {
+  "E_constant_over_box_and_corners": true,
+  "support_constant_over_box": true,
+  "n_struct_zero": 33260,
+  "n_positive_by_interval": 27540,
+  "n_q_with_unresolved_vertex": 4736,
+  "n_unresolved_pairs": 606208,
+  "n_certified_negative_pairs": 0
+ },
+ "exact_resolution": {
+  "n_pairs": 606208,
+  "n_pairs_zero": 606208,
+  "n_pairs_positive": 0,
+  "n_pairs_negative": 0,
+  "n_q_resolved_exactly": 4736,
+  "n_q_resolved_exactly_all_zero": 4736,
+  "n_q_resolved_exactly_some_positive": 0,
+  "n_q_identity_by_corner_test_not_evaluated": 0,
+  "ms_per_pair_per_process": 0.33255847764037855,
+  "min_positive_exact_value": null,
+  "argmin": null,
+  "all_zero_q_equal_corner_identities": true,
+  "n_corner_identities_nonstructural": 4736
+ },
+ "min_vertex_margin": {
+  "min_over_all_pairs": "0",
+  "attained_by": "structural zeros and exact identities (margin identically 0 on the stratum)",
+  "min_positive_exact": "736/691793",
+  "min_positive_float": 0.0010639020631894223,
+  "argmin_q": 37261,
+  "argmin_vertex": [
+   "1",
+   "9/16",
+   "1",
+   "9/16",
+   "0",
+   "0",
+   "1",
+   "9/16",
+   "1",
+   "5/16",
+   "1",
+   "3/16",
+   "5/16",
+   "0",
+   "5/16",
+   "0"
+  ],
+  "n_candidates_evaluated_exactly": 2,
+  "interval_lower_bound": 0.0010639020629406024
+ },
+ "corner_route": {
+  "n_q_pos_ok": 50472,
+  "n_q_identity": 37996,
+  "n_q_identity_nonstructural": 4736,
+  "corner_counts_total": {
+   "pos": 936726,
+   "neg": 654124,
+   "zero_struct": 2004368,
+   "zero_integral": 1642312,
+   "E_c>E": 3151078,
+   "E_c<E": 0,
+   "unresolved": 0
+  },
+  "seconds": 6.593242168426514
+ },
+ "lemma_check": {
+  "n_q": 24,
+  "n_interior_points": 48,
+  "n_multilinear_exact_match": 48,
+  "E_constant": true,
+  "interior_nonneg": true,
+  "seconds": 0.6134970188140869
+ },
+ "float_sanity": {
+  "n_points": 200,
+  "min_margin_float": -1.1102230246251565e-16,
+  "seconds": 5.7968950271606445
+ },
+ "summary_counts": {
+  "struct_zero": 33260,
+  "positive_by_interval_all_vertices": 27540,
+  "resolved_exactly": 4736,
+  "identity_by_corner_test": 0,
+  "total": 65536
+ },
+ "certified": true,
+ "timing_seconds": {
+  "efficiency": 0.04357099533081055,
+  "centre_point": 1.518589973449707,
+  "corner_scan": 6.593242168426514,
+  "vertex_interval_scan": 7.431774139404297,
+  "exact_resolution": 67.19986987113953,
+  "min_margin": 0.011183738708496094,
+  "lemma_check": 0.6135039329528809,
+  "float_sanity": 5.796896934509277
+ },
+ "seconds_total": 89.3017578125
+}

@@ -1,0 +1,4 @@
+S witness ['1', '1/2', '1/2', '1/2', '1', '1/2', '1/2', '1/2', '1', '1/2', '1/2', '1', '0', '1/2', '1/2', '1/2'], stratum 1***1***1**10***: 6728 pointwise-zero co-players
+  one-coordinate moves by +-1/64: 6728 of them have an exact strictly negative margin at a moved point
+  example: q = 1142, p_2 - 1/64 -> exact margin -3/440 (-0.006818); the moved point is in the same stratum 1***1***1**10***, class C
+  not exhibited by these moves: 0 (the argument above still applies to them)   (18.5 s)

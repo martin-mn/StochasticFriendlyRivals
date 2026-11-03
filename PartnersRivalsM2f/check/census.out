@@ -1,0 +1,32 @@
+census lines read: 1524791
+
+locus                        strata  maxdim  dimension histogram
+wedge W  (u+v<1, T>S)           362       7  0:8 1:36 2:71 3:93 4:87 5:50 6:15 7:2
+wedge S  (u+v<1, T<S)       1318471      15  0:1519 1:11755 2:44453 3:109323 4:193339 5:256925 6:262455 7:209277 8:131319 9:64649 10:24605 11:7121 12:1500 13:212 14:18 15:1
+wedge N  (u+v>1, T>S)          5020       8  0:80 1:448 2:1064 3:1416 4:1165 5:610 6:198 7:36 8:3
+wedge E  (u+v>1, T<S)          5022       8  0:80 1:448 2:1064 3:1416 4:1165 5:610 6:199 7:37 8:3
+ray u+v=1, u<1 (T>S)           7721       8  0:116 1:660 2:1594 3:2166 4:1824 5:975 6:321 7:60 8:5
+ray u+v=1, u>1 (T<S)        1518116      15  0:2067 1:15869 2:58413 3:138134 4:234253 5:299559 6:296225 7:229900 8:141048 9:68112 10:25507 11:7279 12:1518 13:213 14:18 15:1
+
+--- exact check 1: the C/D mirror must map wedge N onto wedge E ---
+  |N| = 5020, |E| = 5022, equal: False
+  mirror(N) == E as SETS: False   (|mirror(N) \ E| = 0, |E \ mirror(N)| = 2)
+  union N u mirror(E), the tightened lower bound: 5022
+
+--- exact check 2: binary vertices are exactly the 0-dimensional strata ---
+  wedge W  (u+v<1, T>S)    0-dim strata     8   reference binary count     8   set-equal: True
+  wedge S  (u+v<1, T<S)    0-dim strata  1519   reference binary count  1519   set-equal: True
+  wedge N  (u+v>1, T>S)    0-dim strata    80   reference binary count    80   set-equal: True
+  wedge E  (u+v>1, T<S)    0-dim strata    80   reference binary count    80   set-equal: True
+
+--- binary-invisible components (closed cell contains no binary friendly rival) ---
+  wedge W  (u+v<1, T>S)    invisible    236 of    362   maxdim 7
+  wedge S  (u+v<1, T<S)    invisible  32868 of 1318471   maxdim 12
+  wedge N  (u+v>1, T>S)    invisible    216 of   5020   maxdim 6
+  wedge E  (u+v>1, T<S)    invisible    216 of   5022   maxdim 6
+
+--- maximal strata per wedge ---
+  wedge W  (u+v<1, T>S)    dim  7 : 11**001*1*1**0*0  1*1*001*1*1**0*0
+  wedge S  (u+v<1, T<S)    dim 15 : 1***************
+  wedge N  (u+v>1, T>S)    dim  8 : *10***0**1*1*010  *10***00*1***010  ****0*00*1**1010
+  wedge E  (u+v>1, T<S)    dim  8 : 1010**0*11*1****  101*0*0**1***10*  101***0*11***10*

@@ -1,0 +1,1 @@
+nice -n 10 python3 verify.py 3 extra/x4 extra/x13 extra/x5 >  2>&1  288.07s user 4.31s system 269% cpu 1:48.63 total

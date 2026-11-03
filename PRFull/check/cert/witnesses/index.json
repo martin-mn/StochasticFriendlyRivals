@@ -1,0 +1,712 @@
+{
+ "generated": "2026-09-27",
+ "n": 25,
+ "seconds": 298.0,
+ "regenerate": "cd /Users/martin/Documents/CL1/PRFull/check && nice -n 10 python3 cert/witnesses/make_witnesses.py",
+ "families": {
+  "p_t": "PRFull/check/families/cert_pt.py -> cert_pt.json",
+  "p_ab": "PRFull/check/families/cert_ab.py -> cert_ab.json"
+ },
+ "witnesses": [
+  {
+   "name": "W_SI2",
+   "file": "W_SI2.json",
+   "stratum": "1*1*001*1*1**0*0",
+   "dimension": 7,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 37996,
+   "counts": {
+    "structural_zero": 33260,
+    "identity": 4736,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 27540,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex eq:certW (main text, \"The Prisoner's Dilemma wedge\") and SI Table 2 row W; M2f check/certify7.py"
+  },
+  {
+   "name": "S_SI2",
+   "file": "S_SI2.json",
+   "stratum": "1***1***1**10***",
+   "dimension": 11,
+   "wedge": "S",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 30850,
+   "counts": {
+    "structural_zero": 24122,
+    "identity": 0,
+    "pointwise_zero": 6728,
+    "identity_undetermined": 0,
+    "positive": 34686,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI Table 2 row S; M2f check/certify11S.py"
+  },
+  {
+   "name": "N_SI2",
+   "file": "N_SI2.json",
+   "stratum": "*10***00*1***010",
+   "dimension": 8,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 31024,
+   "counts": {
+    "structural_zero": 13436,
+    "identity": 17588,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 34512,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI Table 2 row N; M2f check/certify8N.py (corrected copy PRFull/check/certify8N.py)"
+  },
+  {
+   "name": "E_SI2",
+   "file": "E_SI2.json",
+   "stratum": "101***0*11***10*",
+   "dimension": 8,
+   "wedge": "E",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 31024,
+   "counts": {
+    "structural_zero": 13436,
+    "identity": 17588,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 34512,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI Table 2 row E (the C/D mirror image of row N)"
+  },
+  {
+   "name": "pt_t1_10",
+   "file": "pt_t1_10.json",
+   "stratum": "000*000001011010",
+   "dimension": 1,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 27840,
+   "counts": {
+    "structural_zero": 7480,
+    "identity": 20360,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37696,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex main text \"binary-invisible\" p(t), Figure 3c, SI \"The other wedges\"; M2f check/certify_segment.py (the whole open segment is certified by PRFull/check/families/cert_pt.py)"
+  },
+  {
+   "name": "pt_t1_4",
+   "file": "pt_t1_4.json",
+   "stratum": "000*000001011010",
+   "dimension": 1,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 27840,
+   "counts": {
+    "structural_zero": 7480,
+    "identity": 20360,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37696,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex main text \"binary-invisible\" p(t), Figure 3c, SI \"The other wedges\"; M2f check/certify_segment.py (the whole open segment is certified by PRFull/check/families/cert_pt.py)"
+  },
+  {
+   "name": "pt_t1_2",
+   "file": "pt_t1_2.json",
+   "stratum": "000*000001011010",
+   "dimension": 1,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 27840,
+   "counts": {
+    "structural_zero": 7480,
+    "identity": 20360,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37696,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex main text \"binary-invisible\" p(t), Figure 3c, SI \"The other wedges\"; M2f check/certify_segment.py (the whole open segment is certified by PRFull/check/families/cert_pt.py)"
+  },
+  {
+   "name": "pt_t3_4",
+   "file": "pt_t3_4.json",
+   "stratum": "000*000001011010",
+   "dimension": 1,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 27840,
+   "counts": {
+    "structural_zero": 7480,
+    "identity": 20360,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37696,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex main text \"binary-invisible\" p(t), Figure 3c, SI \"The other wedges\"; M2f check/certify_segment.py (the whole open segment is certified by PRFull/check/families/cert_pt.py)"
+  },
+  {
+   "name": "pt_t9_10",
+   "file": "pt_t9_10.json",
+   "stratum": "000*000001011010",
+   "dimension": 1,
+   "wedge": "N",
+   "selfplay": [
+    "0",
+    "1/2",
+    "1/2",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 27840,
+   "counts": {
+    "structural_zero": 7480,
+    "identity": 20360,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37696,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex main text \"binary-invisible\" p(t), Figure 3c, SI \"The other wedges\"; M2f check/certify_segment.py (the whole open segment is certified by PRFull/check/families/cert_pt.py)"
+  },
+  {
+   "name": "pt_t0",
+   "file": "pt_t0.json",
+   "stratum": "0000000001011010",
+   "dimension": 0,
+   "wedge": "N",
+   "selfplay": [
+    "1/6",
+    "1/3",
+    "1/3",
+    "1/6"
+   ],
+   "efficient": false,
+   "min_margin": "0",
+   "n_at_min": 27888,
+   "counts": {
+    "structural_zero": 11232,
+    "identity": 16656,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 37648,
+    "negative": 0
+   },
+   "friendly_rival": false,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex p(t) at t = 0: \"not even efficient\" (Figure 3c)"
+  },
+  {
+   "name": "pt_t1",
+   "file": "pt_t1.json",
+   "stratum": "0001000001011010",
+   "dimension": 0,
+   "wedge": "N",
+   "selfplay": [
+    "2/9",
+    "1/3",
+    "1/3",
+    "1/9"
+   ],
+   "efficient": false,
+   "min_margin": "0",
+   "n_at_min": 31600,
+   "counts": {
+    "structural_zero": 9824,
+    "identity": 21776,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 33936,
+    "negative": 0
+   },
+   "friendly_rival": false,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex p(t) at t = 1: \"not even efficient\" (Figure 3c)"
+  },
+  {
+   "name": "fig3a_left_centre",
+   "file": "fig3a_left_centre.json",
+   "stratum": "1*1*0*0101*1*010",
+   "dimension": 5,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 65536,
+   "counts": {
+    "structural_zero": 17088,
+    "identity": 48448,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 0,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex Figure 3a left: the maximal stratum of the binary-anchored component (the 5-cube), its centre"
+  },
+  {
+   "name": "fig3a_right_centre",
+   "file": "fig3a_right_centre.json",
+   "stratum": "1*1*001*1*1**0*0",
+   "dimension": 7,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "-3/26",
+   "n_at_min": 144,
+   "counts": {
+    "structural_zero": 33260,
+    "identity": 4736,
+    "pointwise_zero": 1026,
+    "identity_undetermined": 0,
+    "positive": 15248,
+    "negative": 11266
+   },
+   "friendly_rival": false,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex Figure 3a right: the maximal 7-dimensional stratum of the binary-invisible component, its centre (the paper's witness in this stratum is W_SI2, not the centre)"
+  },
+  {
+   "name": "ab_a1_2_b1_2",
+   "file": "ab_a1_2_b1_2.json",
+   "stratum": "111000101*1*0000",
+   "dimension": 2,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 52432,
+   "counts": {
+    "structural_zero": 27360,
+    "identity": 8320,
+    "pointwise_zero": 16752,
+    "identity_undetermined": 0,
+    "positive": 13104,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the family p(a,b), extreme point a = b = 1/2 (the whole family is certified by PRFull/check/families/cert_ab.py)"
+  },
+  {
+   "name": "ab_a1_4_b1_4",
+   "file": "ab_a1_4_b1_4.json",
+   "stratum": "111000101*1*0000",
+   "dimension": 2,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 35680,
+   "counts": {
+    "structural_zero": 27360,
+    "identity": 8320,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 29856,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the family p(a,b) at a = b = 1/4"
+  },
+  {
+   "name": "ab_sliver",
+   "file": "ab_sliver.json",
+   "stratum": "111000101*1*0000",
+   "dimension": 2,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "-8/19241453486069",
+   "n_at_min": 64,
+   "counts": {
+    "structural_zero": 27360,
+    "identity": 8320,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 27360,
+    "negative": 2496
+   },
+   "friendly_rival": false,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "negative control: p(a,b) at a = 1/2 + 2^-40, b = 1/4, accepted by the float census rule (>= -1e-9) but not competitive (triage report 3)"
+  },
+  {
+   "name": "MB8_000",
+   "file": "MB8_000.json",
+   "stratum": "1110000101010010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 37298,
+   "counts": {
+    "structural_zero": 12770,
+    "identity": 24528,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 28238,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 0, 0, 0)"
+  },
+  {
+   "name": "MB8_001",
+   "file": "MB8_001.json",
+   "stratum": "1110000101011010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 36645,
+   "counts": {
+    "structural_zero": 12794,
+    "identity": 23851,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 28891,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 0, 0, 1)"
+  },
+  {
+   "name": "MB8_010",
+   "file": "MB8_010.json",
+   "stratum": "1110000101110010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 58616,
+   "counts": {
+    "structural_zero": 15844,
+    "identity": 42772,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 6920,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 0, 1, 0)"
+  },
+  {
+   "name": "MB8_011",
+   "file": "MB8_011.json",
+   "stratum": "1110000101111010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 58412,
+   "counts": {
+    "structural_zero": 15860,
+    "identity": 42552,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 7124,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 0, 1, 1)"
+  },
+  {
+   "name": "MB8_100",
+   "file": "MB8_100.json",
+   "stratum": "1111000101010010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 47634,
+   "counts": {
+    "structural_zero": 14968,
+    "identity": 32666,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 17902,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 1, 0, 0)"
+  },
+  {
+   "name": "MB8_101",
+   "file": "MB8_101.json",
+   "stratum": "1111000101011010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 47634,
+   "counts": {
+    "structural_zero": 14968,
+    "identity": 32666,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 17902,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 1, 0, 1)"
+  },
+  {
+   "name": "MB8_110",
+   "file": "MB8_110.json",
+   "stratum": "1111000101110010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 65536,
+   "counts": {
+    "structural_zero": 17312,
+    "identity": 48224,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 0,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 1, 1, 0)"
+  },
+  {
+   "name": "MB8_111",
+   "file": "MB8_111.json",
+   "stratum": "1111000101111010",
+   "dimension": 0,
+   "wedge": "W",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 65536,
+   "counts": {
+    "structural_zero": 17312,
+    "identity": 48224,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 0,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "PRFull/Text/ms.tex SI \"The wedge W\": the eight binary friendly rivals 111*000101*1*010 of Murase and Baek (p3, p10, p12 = 1, 1, 1)"
+  },
+  {
+   "name": "S15_box_centre",
+   "file": "S15_box_centre.json",
+   "stratum": "1***************",
+   "dimension": 15,
+   "wedge": "S",
+   "selfplay": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ],
+   "efficient": true,
+   "min_margin": "0",
+   "n_at_min": 25159,
+   "counts": {
+    "structural_zero": 25159,
+    "identity": 0,
+    "pointwise_zero": 0,
+    "identity_undetermined": 0,
+    "positive": 40377,
+    "negative": 0
+   },
+   "friendly_rival": true,
+   "matches_paper": true,
+   "interval_agrees": true,
+   "source": "NEW (not yet in the paper): centre of the certified 15-dimensional box of wedge-S friendly rivals (cert.certify.certify_ratio_box, half-width 1/1024; triage scratch cert/certS_ratio.py)"
+  }
+ ]
+}

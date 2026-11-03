@@ -1,0 +1,93 @@
+
+==============================================================================
+1. DIRECT 16-DEVIATOR TEST vs THE CLOSED FORMS, over a grid of games   [t = 0.0 s]
+==============================================================================
+   Eff_CC candidates 109, Eff_alt candidates 136 (68 on each sheet)
+   3819 games: the 1/2 grid on [-8,8]^2 plus on/just-off every claimed boundary
+   closed-form disagreements: BELOW/ON the line 0, ABOVE 0
+   eps 1e-9 vs 1e-7 classification disagreements: 0
+   partner found among the FIXED sample at 3792 of 3819 games (99.2930 %)
+   the 27 misses are all above the line with v < 0, where C2 forces p1 >= -2v/(u-v-1)
+   thinnest feasible p1 window among them: 0.00071
+   re-tested with the game-adapted candidate: 27 of 27 now partners
+   partner found at 3819 of 3819 games (100.0000 %)
+
+==============================================================================
+2. THE SIXTEEN BINARY STRATEGIES -- reproduce ../PartnersRivalsM1 panel b   [t = 0.3 s]
+==============================================================================
+   eps=1e-9
+      count 0 :  56.2363 % of the square
+      count 1 :   3.3192 % of the square
+      count 2 :  12.3038 % of the square
+      count 3 :  28.1406 % of the square
+      max count           : 3
+      {count=3} == {u<=1, v<=0} : True
+      any partner above the switch line : False
+      a partner somewhere : [('1001', 31.46), ('1110', 40.444), ('1111', 40.444)]
+      share with >=1 partner :  43.7637 %  (published 43.75 %)
+      share with count 3     :  28.1406 %  (exact 9x8/256 = 28.125 %)
+   eps=1e-7
+      count 0 :  56.2363 % of the square
+      count 1 :   3.3192 % of the square
+      count 2 :  12.3038 % of the square
+      count 3 :  28.1406 % of the square
+      max count           : 3
+      {count=3} == {u<=1, v<=0} : True
+      any partner above the switch line : False
+      a partner somewhere : [('1001', 31.46), ('1110', 40.444), ('1111', 40.444)]
+      share with >=1 partner :  43.7637 %  (published 43.75 %)
+      share with count 3     :  28.1406 %  (exact 9x8/256 = 28.125 %)
+   cell-centred grid convergence of the two shares:
+      NG       >=1 partner  count 3     
+      401      43.8592      28.2498     
+      801      43.8046      28.1875     
+      1601     43.7773      28.1562     
+      3201     43.7637      28.1406     
+      limits: 43.75 % and 28.125 % -- exactly the published values
+
+==============================================================================
+3. PARTNER EXISTENCE AT EVERY GAME -- the three witness rules   [t = 63.1 s]
+==============================================================================
+   witnesses inside the cube: 3819 of 3819
+   eps=1e-9 : failures 0/3819, worst Nash gap -4.050e-08, worst efficiency deficit -5.203e-08
+   eps=1e-7 : failures 0/3819, worst Nash gap -4.050e-06, worst efficiency deficit -5.203e-06
+
+==============================================================================
+4. EVERY WEDGE-S FRIENDLY RIVAL IS A PARTNER (Yi, Baek & Choi 2017)   [t = 63.2 s]
+==============================================================================
+   24000 friendly-rival x game tests in wedge S, failures to be a partner: 0
+   partners in wedge S that are NOT friendly rivals (20 games): 607 -- the containment is STRICT
+
+==============================================================================
+5. D1 ZD EQUALISERS AND D2 ALTERNATORS -- explicit O(eps) coefficients   [t = 63.2 s]
+==============================================================================
+   D1: (u,v)=(0.5,5), equaliser p=(1,0.1,0.09,0.18)
+       eps        nash gap         gap/eps       
+       1e-05      -9.251967806e-05 -9.251968     
+       1e-06      -9.258529554e-06 -9.258530     
+       1e-07      -9.259186283e-07 -9.259186     
+       1e-08      -9.259251976e-08 -9.259252     
+       1e-09      -9.259258804e-09 -9.259259     
+       claimed coefficient -9.2593 = -250/27 = -9.259259
+       deviator payoffs at eps=1e-9: min 0.999999994 max 1.000000004 (kappa = 1)
+   D2: alternators (p1,0,1,p4) at (u,v)=(0.5,5); joint optimum (1+u+v)/2 = 3.250
+       eps=1e-07  p=(0.42436,0,1,0.42436)  pi(p,p)=3.249998843  gap=-1.025e-11
+       eps=1e-07  p=(0.30000,0,1,0.80000)  pi(p,p)=3.249998545  gap=-8.147e-07
+       eps=1e-07  p=(0.70000,0,1,0.20000)  pi(p,p)=3.249998417  gap=-8.174e-07
+       eps=1e-07  p=(0.50000,0,1,0.50000)  pi(p,p)=3.249998900  gap=-1.750e-07
+       eps=1e-09  p=(0.42436,0,1,0.42436)  pi(p,p)=3.249999988  gap=-1.016e-13
+       eps=1e-09  p=(0.30000,0,1,0.80000)  pi(p,p)=3.249999985  gap=-8.147e-09
+       eps=1e-09  p=(0.70000,0,1,0.20000)  pi(p,p)=3.249999984  gap=-8.174e-09
+       eps=1e-09  p=(0.50000,0,1,0.50000)  pi(p,p)=3.249999989  gap=-1.750e-09
+   D4: ALLD limit-Nash iff u <= 0 --
+       exceptions on a 1/4 x 2 grid: 0 []
+
+==============================================================================
+6. SHARE OF THE SQUARE ADMITTING A PARTNER   [t = 63.2 s]
+==============================================================================
+   201 x 201 cell-centred grid on [-8,8]^2
+   continuum: a partner at 100.0000 % of the square (worst gap -3.98e-08, worst deficit -4.88e-08)
+   the 16 binary strategies: 43.75 % (see section 2)
+   saturation region {u<=1,v<=0} u {u+v>1, u>=0, v>=0} = 53.2734 % of the square
+
+total 63.5 s

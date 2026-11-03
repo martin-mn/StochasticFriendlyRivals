@@ -1,0 +1,1 @@
+task 58 of 64: pairs 33527808 zero 3947705 flagged 0 symmetry_violations 0 below_1/37 341869 below_1e-9 0 min_nonzero 1/2346 at p=45882 q=46745 max_Dstar 30720 at p=13114 q=13114 seconds 114.2 us_per_pair 3.406

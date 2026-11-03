@@ -1,0 +1,44 @@
+======================================================================================================================
+E3: eps = 1e-3, memory-one cube, F1 regime (N = 1000, beta = 100, u = 1e-2, 10 x 1e7 generations), 1 games  [LOCAL SMOKE TEST, NOT A RESULT]
+  kernel masses: production's kappa_e4 (eps 1e-4, M = 1e7) for the arm AND for production: the kernel's law does not depend on eps
+  E3 (eps = 1e-3)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W          1   0.0987   0.0987   0.0987 |    0    0    0    0    0    1    0 |    0    0    0    0    0    1    0 | 0 [0, 0] | 0.8934 [0.6977, 0.9913] | 0
+    all        1   0.0987   0.0987   0.0987 |    0    0    0    0    0    1    0 |    0    0    0    0    0    1    0 | 0 [0, 0] | 0.8934 [0.6977, 0.9913] | 0
+  production at the same games (eps = 1e-4)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W          1   0.9731   0.9731   0.9731 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01145 [0.011, 0.01187] | 1
+    all        1   0.9731   0.9731   0.9731 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01145 [0.011, 0.01188] | 1
+  comparison with production at the same 1 games
+    most abundant atom the same at 0 of 1 games (0.0 %): differs at 466 (110 -> 011); most enriched the same at 0
+    efficiency: median dE -8.74e-01, max |dE| 8.74e-01; |Welch t| > 2 at 1, > 3 at 1 of 1 games (5 % expected by chance: 0.1)
+    (1) most abundant unchanged at >= 95 % of games: FAIL
+    (2) efficiency within replicate spread: FAIL
+    (3) friendly rivals lead all 0 S games: PASS (0 of 0)
+    (4) W/N/E medians inside production's bootstrap intervals: FAIL -- W 111 0 in [0, 0]; W competitive 0.893 OUTSIDE [0.011, 0.0119]
+  per-game table: results_local/E3_games.tsv
+======================================================================================================================
+E5: eps = 1e-5, memory-one cube, F1 regime (N = 1000, beta = 100, u = 1e-2, 10 x 1e7 generations), 1 games  [LOCAL SMOKE TEST, NOT A RESULT]
+  kernel masses: production's kappa_e4 (eps 1e-4, M = 1e7) for the arm AND for production: the kernel's law does not depend on eps
+  E5 (eps = 1e-5)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W          1   0.9719   0.9719   0.9719 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01706 [0.01481, 0.01944] | 0
+    all        1   0.9719   0.9719   0.9719 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01706 [0.01482, 0.01949] | 0
+  production at the same games (eps = 1e-4)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W          1   0.9731   0.9731   0.9731 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01145 [0.01099, 0.01187] | 1
+    all        1   0.9731   0.9731   0.9731 |    0    0    0    0    1    0    0 |    0    0    0    0    1    0    0 | 0 [0, 0] | 0.01145 [0.01098, 0.01188] | 1
+  comparison with production at the same 1 games
+    most abundant atom the same at 1 of 1 games (100.0 %); most enriched the same at 1
+    efficiency: median dE -1.17e-03, max |dE| 1.17e-03; |Welch t| > 2 at 0, > 3 at 0 of 1 games (5 % expected by chance: 0.1)
+    (1) most abundant unchanged at >= 95 % of games: PASS
+    (2) efficiency within replicate spread: PASS
+    (3) friendly rivals lead all 0 S games: PASS (0 of 0)
+    (4) W/N/E medians inside production's bootstrap intervals: FAIL -- W 111 0 in [0, 0]; W competitive 0.0171 OUTSIDE [0.011, 0.0119]
+  per-game table: results_local/E5_games.tsv
+======================================================================================================================
+TS: time series, memory-one cube, F1 regime, eps = 1e-4, itend 4x production, games of games24.txt  [LOCAL SMOKE TEST, NOT A RESULT]
+  ipt  tag         prod  lead    P    L nrep   E_prod     E_P     E_L  t(PL)    ESS_P   ESS_L  IAT(gen)   z>2E  z>2L  111>1/2   verdict
+  466  V_p466_PDW  agree  110  110  110    2   0.9731  0.9648  0.9700   3.16       24      17       186      2     1   0/2     FAIL
+  games whose production replicates agree: 1; all three TS criteria met at 0 of them
+  per-game table: results_local/TS_games.tsv; the block series: results_local/TS_series.npz

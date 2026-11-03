@@ -1,0 +1,3 @@
+# E5 (eps 1e-5) vs production (eps 1e-4), memory-one cube F1; shares in ORDER; kappa: production's kappa_e4 (eps 1e-4, M = 1e7) for the arm AND for production: the kernel's law does not depend on eps
+ipt	tag	wedge	E_arm	E_prod	dE	welch_t	lead_arm	lead_prod	enr_arm	enr_prod	agree_arm	agree_prod	s111_arm	s111_prod	comp_arm	comp_prod	effsh_arm	effsh_prod	a000	a100	a010	a001	a110	a011	a111	p000	p100	p010	p001	p110	p011	p111
+466	V_p466_PDW	W	0.9719047924	0.9730793989	-0.00117460649	-0.7294675658	110	110	110	110	8	10	0	0	0.01705843	0.01145312414	0.96599729	0.9667677488	0.01692693	0.39182273	1.735e-05	0.01069768	0.57417456	0.00636075	0	0.02169022392	0.1905849579	8.890312e-05	0.00810548494	0.7761827909	0.0033476392	0

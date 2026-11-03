@@ -1,0 +1,21 @@
+self-play exact w(eps) = [1/4, 1/4, 1/4, 1/4]
+0101 vs p exact w(eps) = [(2*e**2 - 2*e + 1)/2, -e*(e - 1), -e*(e - 1), (2*e**2 - 2*e + 1)/2]
+0101: w_CC - (1/2 - e + e^2) = 0 ; w_CD - (e - e^2) = 0
+self-play uniform for every eps: True
+W(p,p) = [1/4, 1/4, 1/4, 1/4]  pi(p,p) = 5/16
+   0000 W = [0, 0, 1/2, 1/2]  gain = -1/16  (exact_partners: -1/16)
+   0001 W = [1/2, 0, 0, 1/2]  gain = 3/16  (exact_partners: 3/16)
+   0010 W = [0, 1/2, 1/2, 0]  gain = -3/16  (exact_partners: -3/16)
+   0011 W = [1/4, 1/4, 1/4, 1/4]  gain = 0  (exact_partners: 0)
+   0100 W = [0, 0, 1/2, 1/2]  gain = -1/16  (exact_partners: -1/16)
+   0101 W = [1/2, 0, 0, 1/2]  gain = 3/16  (exact_partners: 3/16)
+   0110 W = [1/4, 1/4, 1/4, 1/4]  gain = 0  (exact_partners: 0)
+   0111 W = [1/2, 0, 0, 1/2]  gain = 3/16  (exact_partners: 3/16)
+   1000 W = [0, 0, 1/2, 1/2]  gain = -1/16  (exact_partners: -1/16)
+   1001 W = [1/4, 1/4, 1/4, 1/4]  gain = 0  (exact_partners: 0)
+   1010 W = [0, 1/2, 1/2, 0]  gain = -3/16  (exact_partners: -3/16)
+   1011 W = [0, 1/2, 1/2, 0]  gain = -3/16  (exact_partners: -3/16)
+   1100 W = [1/4, 1/4, 1/4, 1/4]  gain = 0  (exact_partners: 0)
+   1101 W = [1/2, 1/2, 0, 0]  gain = 1/16  (exact_partners: 1/16)
+   1110 W = [1/2, 1/2, 0, 0]  gain = 1/16  (exact_partners: 1/16)
+   1111 W = [1/2, 1/2, 0, 0]  gain = 1/16  (exact_partners: 1/16)

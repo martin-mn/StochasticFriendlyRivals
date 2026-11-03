@@ -1,0 +1,7 @@
+census lines 1524791 ; class mismatches with the exact classes here: 0
+W     census FR strata      362 | of them excluded by the cover: 0 | non-excluded      364 | census subset of non-excluded: True | non-excluded not in census: 2
+N     census FR strata     5020 | of them excluded by the cover: 0 | non-excluded     5022 | census subset of non-excluded: True | non-excluded not in census: 2
+E     census FR strata     5022 | of them excluded by the cover: 0 | non-excluded     5022 | census subset of non-excluded: True | non-excluded not in census: 0
+ray+  census FR strata     7721 | of them excluded by the cover: 0 | non-excluded     7726 | census subset of non-excluded: True | non-excluded not in census: 5
+S     census FR strata  1318471 | of them excluded by the cover: 0 | non-excluded  1451080 | census subset of non-excluded: True | non-excluded not in census: 132609
+ray-  census FR strata  1518116 | of them excluded by the cover: 0 | non-excluded  1657607 | census subset of non-excluded: True | non-excluded not in census: 139491

@@ -1,0 +1,80 @@
+zero at 5/13 but not at 1/4: 400 ; negative at 2/5: 400 ; same set: True
+zero at both 1/4 and 5/13: 37996 ; of these negative at 2/5: 0
+
+all 400 have numerator root exactly 5/13
+n=96  closed classes=2  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: None
+     e.g. [33153, 33157, 33161, 33165, 33169, 33173]  margin at 2/5: [Fraction(-8, 1659), Fraction(-8, 1683), Fraction(-8, 1713), Fraction(-128, 27749), Fraction(-8, 1737), Fraction(-128, 28133)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '26'), ('3/4', '-5/8', '197/8'))
+     e.g. [33152, 33156, 33160, 33164, 33168, 33172]  margin at 2/5: [Fraction(-1, 1007)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '27'), ('3/4', '-5/8', '205/8'))
+     e.g. [33154, 33158, 33162, 33166, 33170, 33174]  margin at 2/5: [Fraction(-1, 1047)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '25/3'))
+     e.g. [33920, 33924, 33928, 33932, 33936, 33940]  margin at 2/5: [Fraction(-1, 248)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '69/8'))
+     e.g. [33922, 33926, 33930, 33934, 33938, 33942]  margin at 2/5: [Fraction(-1, 255)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '213/32'))
+     e.g. [34176, 34180, 34184, 34188, 34192, 34196]  margin at 2/5: [Fraction(-4, 831)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '55/8'))
+     e.g. [34178, 34182, 34186, 34190, 34194, 34198]  margin at 2/5: [Fraction(-1, 213)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '75/8'))
+     e.g. [35716, 35724, 36740, 36748, 39812, 39820]  margin at 2/5: [Fraction(-1, 353)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '153/16'))
+     e.g. [35718, 35726, 36742, 36750, 39814, 39822]  margin at 2/5: [Fraction(-2, 715)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '22'), ('3/4', '-5/8', '171/8'))
+     e.g. [49536, 49540, 49544, 49548, 49552, 49556]  margin at 2/5: [Fraction(-1, 865)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '23'), ('3/4', '-5/8', '179/8'))
+     e.g. [49538, 49542, 49546, 49550, 49554, 49558]  margin at 2/5: [Fraction(-1, 905)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '95/12'))
+     e.g. [50304, 50308, 50312, 50316, 50320, 50324]  margin at 2/5: [Fraction(-1, 238)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '197/24'))
+     e.g. [50306, 50310, 50314, 50318, 50322, 50326]  margin at 2/5: [Fraction(-1, 245)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '209/32'))
+     e.g. [50560, 50564, 50568, 50572, 50576, 50580]  margin at 2/5: [Fraction(-4, 819)]
+n=16  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '27/4'))
+     e.g. [50562, 50566, 50570, 50574, 50578, 50582]  margin at 2/5: [Fraction(-1, 210)]
+n=8  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '89/8'))
+     e.g. [33668, 33676, 37764, 37772, 50054, 50062]  margin at 2/5: [Fraction(-1, 395)]
+n=8  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '25/4'))
+     e.g. [36228, 36236, 40324, 40332, 52612, 52620]  margin at 2/5: [Fraction(-1, 198)]
+n=8  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '103/16'))
+     e.g. [36230, 36238, 40326, 40334, 52614, 52622]  margin at 2/5: [Fraction(-2, 405)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '91/8'))
+     e.g. [33670, 33678, 37766, 37774]  margin at 2/5: [Fraction(-1, 401)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '159/16'))
+     e.g. [34692, 34700, 38788, 38796]  margin at 2/5: [Fraction(-2, 733)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '325/32'))
+     e.g. [34694, 34702, 38790, 38798]  margin at 2/5: [Fraction(-4, 1487)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '26'), ('3/4', '-5/8', '165/8'))
+     e.g. [35204, 35212, 39300, 39308]  margin at 2/5: [Fraction(-1, 911)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '27'), ('3/4', '-5/8', '343/16'))
+     e.g. [35206, 35214, 39302, 39310]  margin at 2/5: [Fraction(-2, 1893)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '49/6'))
+     e.g. [35972, 35980, 40068, 40076]  margin at 2/5: [Fraction(-1, 244)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '135/16'))
+     e.g. [35974, 35982, 40070, 40078]  margin at 2/5: [Fraction(-2, 501)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '87/8'))
+     e.g. [50052, 50060, 54148, 54156]  margin at 2/5: [Fraction(-1, 389)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '157/16'))
+     e.g. [51076, 51084, 55172, 55180]  margin at 2/5: [Fraction(-2, 727)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '8'), ('3/4', '-5/8', '321/32'))
+     e.g. [51078, 51086, 55174, 55182]  margin at 2/5: [Fraction(-4, 1475)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '22'), ('3/4', '-5/8', '145/8'))
+     e.g. [51588, 51596, 55684, 55692]  margin at 2/5: [Fraction(-1, 787)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '23'), ('3/4', '-5/8', '303/16'))
+     e.g. [51590, 51598, 55686, 55694]  margin at 2/5: [Fraction(-2, 1645)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '47/6'))
+     e.g. [52356, 52364, 56452, 56460]  margin at 2/5: [Fraction(-1, 236)]
+n=4  closed classes=1  q at offer=0  excursion (prob, co-player net, rounds) at x=1/4: (('1/4', '1', '3'), ('3/4', '-5/8', '389/48'))
+     e.g. [52358, 52366, 56454, 56462]  margin at 2/5: [Fraction(-2, 485)]
+x = 2/5: most negative margin -1/198 by [36228, 36236, 40324, 40332, 52612, 52620, 56708, 56716]
+x = 1/2: most negative margin -3/74 by [36228, 36236, 40324, 40332, 52612, 52620, 56708, 56716]
+x = 3/4: most negative margin -19/122 by [36228, 36236, 40324, 40332, 52612, 52620, 56708, 56716]
+x = 99/100: most negative margin -787/2426 by [36228, 36236, 40324, 40332, 52612, 52620, 56708, 56716]
+
+6 prime patterns of the 400:
+   *0***001*010*0*1 7
+   *0***00110*0*0*1 7
+   0****001*010*0*1 7
+   0****00110*0*0*1 7
+   0*1*00011****0*1 7
+   0*1*0001*01**0*1 6

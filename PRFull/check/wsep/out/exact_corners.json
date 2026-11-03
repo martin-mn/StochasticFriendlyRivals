@@ -1,0 +1,37 @@
+{
+ "c6": {
+  "sampled": 600,
+  "corners": 41412,
+  "failures": 0,
+  "examples": [],
+  "max_d": 9
+ },
+ "c8": {
+  "sampled": 600,
+  "corners": 31600,
+  "failures": 0,
+  "examples": [],
+  "max_d": 9
+ },
+ "c68": {
+  "sampled": 600,
+  "corners": 16835,
+  "failures": 0,
+  "examples": [],
+  "max_d": 8
+ },
+ "c9a": {
+  "sampled": 600,
+  "corners": 19168,
+  "failures": 0,
+  "examples": [],
+  "max_d": 9
+ },
+ "c9b": {
+  "sampled": 600,
+  "corners": 17196,
+  "failures": 0,
+  "examples": [],
+  "max_d": 9
+ }
+}

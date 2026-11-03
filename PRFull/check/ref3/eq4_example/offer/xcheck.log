@@ -1,0 +1,7 @@
+float: x = 0.383615  co-players with margin < -1e-9: 0   min -1.500e-12
+float: x = 0.385615  co-players with margin < -1e-9: 400   min -3.252e-04
+float: x = 0.400000  co-players with margin < -1e-9: 400   min -5.051e-03
+sympy exact: co-player 33153 margin(x) = -(13*x - 5)/(11*x + 201)  root: [5/13]
+sympy exact: co-player 33920 margin(x) = 3*(13*x - 5)/(8*(16*x - 25))  root: [5/13]
+sympy exact: co-player 49536 margin(x) = -(13*x - 5)/(5*x + 171)  root: [5/13]
+2.4s

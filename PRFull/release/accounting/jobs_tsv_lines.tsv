@@ -1,0 +1,52 @@
+2026-09-09	PartnersRivalsM1f	riv1	45630088	4	probe: per-unit rate for the 4 rival-verification segments
+2026-09-09	PartnersRivalsM1f	riv1	45636422	512	rival closed form: 1/500 grid + 1e10 random + 65536 m2 co-players; 72 core-h from probe 45630088
+2026-09-09	PartnersRivalsM1f	fr1	45658311	256	item 2: predicate-free friendly-rival search per wedge, 1/500 grid + 2e8 stratified; 98 core-h from probe 45656466
+2026-09-09	PartnersRivalsM1f	fr1	45658567	256	item 2 (resubmit, 45658311 cancelled as undersized): 1/500 grid + 1e11 stratified random; 56 core-h
+2026-09-09	PartnersRivalsM2f	ca1	45749304	4	probe: per-unit rate for the 3^16 stratum census, KEFF=64 KOTH=8
+2026-09-09	PartnersRivalsM2f	ca1	45751662	512	full 3^16 stratum census, KEFF=64 KOTH=8; 1330 core-h from probe 45749304
+2026-09-09	PartnersRivalsM2f	ca1sw	45751663	256	predicate-free sweep, 1.024e9 random memory-two strategies fully classified
+2026-09-09	PartnersRivalsM2f	ca1dim	45752239	384	max-dimension probe: all strata with >=5 free coords, K=512, 6 (class,sign) combinations
+2026-09-09	PartnersRivalsM2f	task2-nprobe	45785043	4	ncensus probe, wedge-N exhaustive recensus sizing
+2026-09-09	PartnersRivalsM2f	task2-list	45785044	64	heavy per-stratum sampling, HT detection-loss correction
+2026-09-09	PartnersRivalsM2f	task2-seed	45785196	96	census RNG prefix test: 48000 seeds x 64 draws on stratum 10561381
+2026-09-09	PartnersRivalsM2f	task2-ncensusP	45785345	256	exhaustive wedge-N recensus, K=64+4000, candidates d15=0
+2026-09-09	PartnersRivalsM2f	task2-ncensusM	45785348	256	exhaustive wedge-E recensus, K=64+4000, candidates d0=2
+2026-09-09	PartnersRivalsM2f	task2-cprobe	45786256	6	wedge W/S exhaustive recensus sizing probe
+2026-09-10	PartnersRivalsM2f	task2-wcensus	45789243	128	exhaustive wedge-W recensus, K=64+4000, candidates d0=2 d15=0
+2026-09-10	PartnersRivalsM2f	alpha-probe	45830542	8	alpha grid sizing probe, n=1e5, alpha=0/.1/.2/.3/.333/.36/.4/.5
+2026-09-10	PartnersRivalsM2f	alpha333	45831015	512	Table 4 at alpha=1/3 (WF.pdf value), 1.633e9 stratified draws, predicate-free
+2026-09-24	PartnersRivalsM2f	wfc-probe	48329275	88	continuum M2 Wright-Fisher probe: alpha=1/2 x8 games x10 reps (validation vs f1), alpha=1/3 x8 (cost+neutral)
+2026-09-24	PartnersRivalsM1f	cw	48340155	5	[probe] continuous-M1 WF rate probe: sf1 F1 process (N=1000 beta=100 u=1e-2 eps=1e-4) at itend=1e6 (1/10), 5 cells = mw probe1's
+2026-09-24	PartnersRivalsM1f	cw	48340156	1	[kappa] kernel atom/stratum masses, M=1e7 per cell, 512 cells in one task -- Fig4c enrichment reference
+2026-09-24	PartnersRivalsM2f	wfc-probe2	48343431	28	re-probe after review fixes: exact-111 check at alpha=1/2 (W games 30,38 x10), cost at exact alpha=1/3 x8 + neutral
+2026-09-24	PartnersRivalsM2f	wfc-a333	48366947	512	continuum M2 Wright-Fisher, 512 sunflower games x 10 reps x 1e7 gens at alpha = 1/3 exactly, N=1000 beta=100 mu=1e-2 eps=1e-4, exact 111 in W, neutral 20000/game
+2026-09-24	PartnersRivalsM1f	cw	48366968	512	[prod] continuous-M1 WF (exact-alpha kernel, exact eps->0 atoms): sf1 F1 process N=1000 beta=100 u=1e-2 itend=1e7 eps=1e-4, 512 cells x 10 reps -- Fig4c/5c
+2026-09-25	PartnersRivalsM1f	cw	48373158	5	[probe2] continuous-M1 WF run F2 rate probe: sf2 F2 process (N=100 beta=3 u=1e-4 itend=1e8 eps=1e-4) at itend=1e7 (1/10), 5 cells = mw probe2's, seeds 42000000+
+2026-09-25	PartnersRivalsM2f	wfc-neu	48391602	84	neutral refinement: 1e6 alpha=1/3 draws at the 21 games whose most-enriched atom was undetermined at 95%
+2026-09-25	PartnersRivalsM1f	cw	48408751	512	[prod2] continuous-M1 WF run F2 (exact-alpha kernel, exact eps->0 atoms): sf2 F2 process N=100 beta=3 u=1e-4 itend=1e8 eps=1e-4, 512 cells x 10 reps, seeds 42000000+ -- SI Fig4c/5c (N=100)
+2026-09-26	PartnersRivalsM2f	wfc2-probe	48723624	48	F2 (N=100 beta=3 mu=1e-4, 1e8 gens) probe: alpha=1/2 x 4 games x 10 reps vs binary F2, cost at alpha=1/3 x 8
+2026-09-26	PartnersRivalsM2f	wfc2-f2	48724650	512	N=100 beta=3 mu=1e-4 continuum M2 WF, alpha=1/3, 10x1e8 gens
+2026-09-27	PRFull	bingap	48916871	4	probe, binary-pair margin census (min nonzero |w_DC-w_CD|)
+2026-09-27	PRFull	bingap	48917106	64	full binary-pair margin census, 2.1e9 pairs
+2026-09-27	PRFull	wfc2.probe	48924090	60	Ref1 6-8: probe on test: bit-identical checks + per-arm cost
+2026-09-27	PRFull	cw2	48924175	13	[probe] probe: VAL/VALTS bit-identity vs production isl 3 rep 1; per-replicate rates E3/E5/TS; kappa at 1e-3,1e-5 (71 games)
+2026-09-27	PRFull	cw2	48925268	71	[E3] eps=1e-3 F1 N=1000 beta=100 u=1e-2 1e7 gen 10 reps x 71 games; cw.x unchanged, isl=3ipt+2, seeds 40000000+
+2026-09-27	PRFull	cw2	48925278	71	[E5] eps=1e-5 F1 10 reps x 71 games; cw_e5.x (-DEPS1=1.0d-5), isl=3ipt+1, seeds 40000000+
+2026-09-27	PRFull	cw2	48925327	240	[TS] time series F1 eps=1e-4 4e7 gen, 2000 blocks, 24 games x 10 reps, 1 rep/task, seeds 43000000+
+2026-09-27	PRFull	wfc2.A1	48926258	71	Ref1 6-8: alpha=1/10 F1 71 games
+2026-09-27	PRFull	wfc2.A2	48926312	71	Ref1 6-8: alpha=1/5 F1 71 games
+2026-09-27	PRFull	wfc2.A3	48926355	71	Ref1 6-8: alpha=2/5 F1 71 games
+2026-09-27	PRFull	wfc2.K0	48926378	71	Ref1 6-8: local kernel K0 F1 71 games
+2026-09-27	PRFull	wfc2.B0	48926421	16	Ref1 6-8: beta=0 neutral check, global+K0, 8 games
+2026-09-27	PRFull	wfc2.E3	48926482	71	Ref1 6-8: eps=1e-3 F1 71 games
+2026-09-27	PRFull	wfc2.E5	48926526	71	Ref1 6-8: eps=1e-5 F1 71 games
+2026-09-27	PRFull	wfc2.E3F2	48926548	24	Ref1 6-8: eps=1e-3 F2 24 games
+2026-09-27	PRFull	wfc2.E5F2	48926577	24	Ref1 6-8: eps=1e-5 F2 24 games
+2026-09-27	PRFull	wfc2.TS	48926597	240	Ref1 6-8: time series 4x length 24 games
+2026-09-27	PRFull	sweep13.probe	48928481	4	probe on test: repro of 45830542 task 4 + cost at alpha=1/3
+2026-09-27	PRFull	sweep13	48928780	512	rarity sweep at exactly alpha=1/3, 512x3.19e6 draws, seeds 3000000+i
+2026-09-27	PRFull	wfc2.B0b	48942211	16	Ref1 6-8: B0b
+2026-09-27	PRFull	evoaudit	48975385	4	referee-2 P2 audit of memory-two atoms: probe, chunks 0-3 of 128
+2026-09-27	PRFull	stratcert	48975432	4	probe: one exact friendly rival per retained stratum W/N/E/ray+, tasks 0-3 of 64 (test)
+2026-09-27	PRFull	stratcert	48981870	60	full: one exact friendly rival per retained stratum, tasks 4-63 of 64 (sapphire)
+2026-09-27	PRFull	evoaudit	48981982	124	referee-2 P2 audit of memory-two atoms: full run, chunks 4-127 of 128

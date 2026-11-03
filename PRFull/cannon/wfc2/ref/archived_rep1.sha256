@@ -1,0 +1,4 @@
+# sha256 of the replicate-1 records (int32 irep==1, int32 count, int32 atom, double p[16]; 140 bytes each, file order)
+# of the archived production strategy dumps, extracted read-only from PartnersRivalsM2f/cannon/archive/
+4afee775961e09e0a21bebde037e65a7e70c52c06378f7bdb129cb1e05b65c0b  F1 task 30 rep 1 (333 records): cannon_2026-09-26.tgz PartnersRivalsM2f_wfc/out/S_1o3_30_1.bin = out_probe2/S_1o3_30_1.bin
+fece0ad1db1be32f1116355ea05fb3b37ae0dae56c7654a734794e89e5301f55  F2 task 511 rep 1 (8 records): cannon_out_f2_2026-09-26.tgz out_f2/S_1o3_511_1.bin

@@ -1,0 +1,1 @@
+verify: 300000 triples: ok 300000, centre-unresolved 0, corner-fail 0, exponent-fail 0, centre-contradiction 0 (15.4 s, 3 threads)

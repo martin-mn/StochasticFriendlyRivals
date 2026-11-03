@@ -1,0 +1,44 @@
+# PRFull cw2 OPTIONAL arm TSX: the TS build and design at the 4 memory-one split games of games_tsx.txt,
+# 10 replicates, one per task.  Seeds 43000000 + (isl-1)*10 + irep (isl = 3*ipt+3), disjoint from production and
+# from TS (no TSX game is a TS game).
+# arm  exe  isl  ipt  irep0  irep1  seedbase  eps  itend  outdir     (task.sh; k = data line number)
+TSX cw_ts.x 741 246 1 1 43000000 1e-4 40000000 out/TSX/p246_r01     # V_p246_PDW
+TSX cw_ts.x 741 246 2 2 43000000 1e-4 40000000 out/TSX/p246_r02     # V_p246_PDW
+TSX cw_ts.x 741 246 3 3 43000000 1e-4 40000000 out/TSX/p246_r03     # V_p246_PDW
+TSX cw_ts.x 741 246 4 4 43000000 1e-4 40000000 out/TSX/p246_r04     # V_p246_PDW
+TSX cw_ts.x 741 246 5 5 43000000 1e-4 40000000 out/TSX/p246_r05     # V_p246_PDW
+TSX cw_ts.x 741 246 6 6 43000000 1e-4 40000000 out/TSX/p246_r06     # V_p246_PDW
+TSX cw_ts.x 741 246 7 7 43000000 1e-4 40000000 out/TSX/p246_r07     # V_p246_PDW
+TSX cw_ts.x 741 246 8 8 43000000 1e-4 40000000 out/TSX/p246_r08     # V_p246_PDW
+TSX cw_ts.x 741 246 9 9 43000000 1e-4 40000000 out/TSX/p246_r09     # V_p246_PDW
+TSX cw_ts.x 741 246 10 10 43000000 1e-4 40000000 out/TSX/p246_r10     # V_p246_PDW
+TSX cw_ts.x 228 75 1 1 43000000 1e-4 40000000 out/TSX/p075_r01     # V_p075_SDE
+TSX cw_ts.x 228 75 2 2 43000000 1e-4 40000000 out/TSX/p075_r02     # V_p075_SDE
+TSX cw_ts.x 228 75 3 3 43000000 1e-4 40000000 out/TSX/p075_r03     # V_p075_SDE
+TSX cw_ts.x 228 75 4 4 43000000 1e-4 40000000 out/TSX/p075_r04     # V_p075_SDE
+TSX cw_ts.x 228 75 5 5 43000000 1e-4 40000000 out/TSX/p075_r05     # V_p075_SDE
+TSX cw_ts.x 228 75 6 6 43000000 1e-4 40000000 out/TSX/p075_r06     # V_p075_SDE
+TSX cw_ts.x 228 75 7 7 43000000 1e-4 40000000 out/TSX/p075_r07     # V_p075_SDE
+TSX cw_ts.x 228 75 8 8 43000000 1e-4 40000000 out/TSX/p075_r08     # V_p075_SDE
+TSX cw_ts.x 228 75 9 9 43000000 1e-4 40000000 out/TSX/p075_r09     # V_p075_SDE
+TSX cw_ts.x 228 75 10 10 43000000 1e-4 40000000 out/TSX/p075_r10     # V_p075_SDE
+TSX cw_ts.x 936 311 1 1 43000000 1e-4 40000000 out/TSX/p311_r01     # V_p311_SDN
+TSX cw_ts.x 936 311 2 2 43000000 1e-4 40000000 out/TSX/p311_r02     # V_p311_SDN
+TSX cw_ts.x 936 311 3 3 43000000 1e-4 40000000 out/TSX/p311_r03     # V_p311_SDN
+TSX cw_ts.x 936 311 4 4 43000000 1e-4 40000000 out/TSX/p311_r04     # V_p311_SDN
+TSX cw_ts.x 936 311 5 5 43000000 1e-4 40000000 out/TSX/p311_r05     # V_p311_SDN
+TSX cw_ts.x 936 311 6 6 43000000 1e-4 40000000 out/TSX/p311_r06     # V_p311_SDN
+TSX cw_ts.x 936 311 7 7 43000000 1e-4 40000000 out/TSX/p311_r07     # V_p311_SDN
+TSX cw_ts.x 936 311 8 8 43000000 1e-4 40000000 out/TSX/p311_r08     # V_p311_SDN
+TSX cw_ts.x 936 311 9 9 43000000 1e-4 40000000 out/TSX/p311_r09     # V_p311_SDN
+TSX cw_ts.x 936 311 10 10 43000000 1e-4 40000000 out/TSX/p311_r10     # V_p311_SDN
+TSX cw_ts.x 558 185 1 1 43000000 1e-4 40000000 out/TSX/p185_r01     # V_p185_SDE
+TSX cw_ts.x 558 185 2 2 43000000 1e-4 40000000 out/TSX/p185_r02     # V_p185_SDE
+TSX cw_ts.x 558 185 3 3 43000000 1e-4 40000000 out/TSX/p185_r03     # V_p185_SDE
+TSX cw_ts.x 558 185 4 4 43000000 1e-4 40000000 out/TSX/p185_r04     # V_p185_SDE
+TSX cw_ts.x 558 185 5 5 43000000 1e-4 40000000 out/TSX/p185_r05     # V_p185_SDE
+TSX cw_ts.x 558 185 6 6 43000000 1e-4 40000000 out/TSX/p185_r06     # V_p185_SDE
+TSX cw_ts.x 558 185 7 7 43000000 1e-4 40000000 out/TSX/p185_r07     # V_p185_SDE
+TSX cw_ts.x 558 185 8 8 43000000 1e-4 40000000 out/TSX/p185_r08     # V_p185_SDE
+TSX cw_ts.x 558 185 9 9 43000000 1e-4 40000000 out/TSX/p185_r09     # V_p185_SDE
+TSX cw_ts.x 558 185 10 10 43000000 1e-4 40000000 out/TSX/p185_r10     # V_p185_SDE

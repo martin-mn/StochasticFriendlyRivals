@@ -1,0 +1,186 @@
+{
+ "name": "S_new15_box",
+ "centre": [
+  "1",
+  "3/4",
+  "3/4",
+  "1/2",
+  "7/8",
+  "3/4",
+  "3/4",
+  "1/2",
+  "7/8",
+  "3/4",
+  "3/4",
+  "7/8",
+  "1/8",
+  "1/2",
+  "1/2",
+  "1/2"
+ ],
+ "stratum": "1***************",
+ "d": 15,
+ "efficiency": {
+  "class_of_open_stratum": "C",
+  "selfplay_centre_exact": [
+   "1",
+   "0",
+   "0",
+   "0"
+  ]
+ },
+ "ratio_box_1_256": {
+  "pattern": "1***************",
+  "d": 15,
+  "sign": -1,
+  "efficiency_class": "C",
+  "efficient": true,
+  "U_over_L": "162327895541127094796875/96920887960535104102581",
+  "n_struct_zero": 25159,
+  "n_unfav_struct_zero": 3710,
+  "n_ratio_interval": 36667,
+  "n_ratio_exact": 0,
+  "n_identities": 0,
+  "n_fail": 0,
+  "failing_q": [],
+  "rho_min": "9/5",
+  "rho_argmin": 1398,
+  "volume": 2.465190328815662e-32,
+  "seconds": 0.22862911224365234,
+  "competitive_certified": true,
+  "certified": true
+ },
+ "hybrid_box_1_128": {
+  "name": "S_new15_h128",
+  "wedge": "S",
+  "stratum": "1***************",
+  "d": 15,
+  "centre": [
+   "1",
+   "3/4",
+   "3/4",
+   "1/2",
+   "7/8",
+   "3/4",
+   "3/4",
+   "1/2",
+   "7/8",
+   "3/4",
+   "3/4",
+   "7/8",
+   "1/8",
+   "1/2",
+   "1/2",
+   "1/2"
+  ],
+  "box": {
+   "p1": [
+    "95/128",
+    "97/128"
+   ],
+   "p2": [
+    "95/128",
+    "97/128"
+   ],
+   "p3": [
+    "63/128",
+    "65/128"
+   ],
+   "p4": [
+    "111/128",
+    "113/128"
+   ],
+   "p5": [
+    "95/128",
+    "97/128"
+   ],
+   "p6": [
+    "95/128",
+    "97/128"
+   ],
+   "p7": [
+    "63/128",
+    "65/128"
+   ],
+   "p8": [
+    "111/128",
+    "113/128"
+   ],
+   "p9": [
+    "95/128",
+    "97/128"
+   ],
+   "p10": [
+    "95/128",
+    "97/128"
+   ],
+   "p11": [
+    "111/128",
+    "113/128"
+   ],
+   "p12": [
+    "15/128",
+    "17/128"
+   ],
+   "p13": [
+    "63/128",
+    "65/128"
+   ],
+   "p14": [
+    "63/128",
+    "65/128"
+   ],
+   "p15": [
+    "63/128",
+    "65/128"
+   ]
+  },
+  "volume": "1/1237940039285380274899124224",
+  "volume_float": 8.077935669463161e-28,
+  "U_over_L": "274687288481556665/97865676119046087",
+  "efficiency": {
+   "class_of_open_stratum": "C",
+   "selfplay_centre_exact": [
+    "1",
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  "n_struct_zero": 25159,
+  "n_unfav_struct_zero": 3710,
+  "n_ratio_interval": 24070,
+  "n_vertex_route": 12597,
+  "estimated_vertex_seconds": 330.22279679999997,
+  "n_vertex_certified_negative_q": 0,
+  "n_vertex_pairs_exact": 0,
+  "n_vertex_pairs_exact_zero": 0,
+  "n_vertex_pairs_exact_negative": 0,
+  "vertex_min_lower_bound_all_positive_q": 0.10455786717715769,
+  "certified": true,
+  "timing_seconds": {
+   "ratio_screen": 0.058812856674194336,
+   "vertex_route": 361.78485679626465,
+   "exact": 2.9802322387695312e-05
+  },
+  "seconds_total": 361.84496426582336
+ },
+ "centre_point": {
+  "n_pos": 40377,
+  "n_struct_zero": 25159,
+  "n_exact_zero": 0,
+  "n_neg": 0,
+  "min_margin": "0",
+  "n_zero": 25159
+ },
+ "defensibility_float_lp": 0.0,
+ "timing_seconds": {
+  "ratio_1_256": 0.22871804237365723,
+  "centre_point": 0.06239581108093262,
+  "hybrid_1_128": 361.8451340198517,
+  "defensibility": 0.35741376876831055
+ },
+ "seconds_total": 362.4942421913147,
+ "certified_1_256": true,
+ "certified_1_128": true
+}

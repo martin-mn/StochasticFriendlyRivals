@@ -1,0 +1,3 @@
+(1) 20000 binary pairs (7 certificate co-players): row entry vs exact: 0 mismatches; flags seen {1: 15857, 0: 2480, 2: 1663}  [7 s]
+(2) 2000 target strata x 2 interior points (centre, random k/97): exact margin < 0 at all but 0; largest -77/4733 = -0.0163  [1 s]
+(3) 4000 strata (2000 targets, 2000 uniform): exact self-play class at a random k/89 point vs cls.bin: 0 mismatches; classes seen {2: 488, 1: 1877, 3: 166, 0: 1469}  [1 s]

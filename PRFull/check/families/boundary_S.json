@@ -1,0 +1,37 @@
+{
+ "witness": "S_SI2",
+ "n_pointwise_zero": 6728,
+ "delta": "1/64",
+ "n_negative_after_one_coordinate_move": 6728,
+ "n_negative_after_two_coordinate_move": 0,
+ "n_not_exhibited": 0,
+ "example": {
+  "coplayer": 1142,
+  "moved_coordinate": 2,
+  "direction": -1,
+  "delta": "1/64",
+  "point": [
+   "1",
+   "1/2",
+   "31/64",
+   "1/2",
+   "1",
+   "1/2",
+   "1/2",
+   "1/2",
+   "1",
+   "1/2",
+   "1/2",
+   "1",
+   "0",
+   "1/2",
+   "1/2",
+   "1/2"
+  ],
+  "exact_margin": "-3/440",
+  "stratum_of_point": "1***1***1**10***",
+  "efficiency_class": "C"
+ },
+ "conclusion": "the S witness of SI Table 2 is a boundary point of the friendly-rival set in its stratum",
+ "seconds": 18.5
+}

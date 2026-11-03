@@ -1,0 +1,3 @@
+96 per-branch (prob, co-player net): (('1/4', '1'), ('3/4', '-5/8'))  other class: (('<CC,CC>',),)
+total 96
+example 33153 W at x=1/4: (Fraction(48, 815), Fraction(249, 815), Fraction(256, 815), Fraction(262, 815))

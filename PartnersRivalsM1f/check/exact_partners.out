@@ -1,0 +1,277 @@
+Exact-rational verification of the PARTNER (= efficient Nash) closed forms over the
+FULL four-parameter memory-one cube.  No threshold, no tolerance, no float, anywhere.
+
+The item-3 counterpart of exact_rivals.py, and the continuum counterpart of panel b of
+../../PartnersRivalsM1/Figures/Fig2.pdf.
+
+CONVENTIONS are m1lib's and are not redefined here: p = (p1,p2,p3,p4) is the probability
+of C after CC, CD, DC, DD with the FOCAL player's action first, states CC=0 CD=1 DC=2
+DD=3; the error acts as p -> eps + (1-2eps) p on a FIXED p (convention A); w is the
+stationary distribution of the four-state pair chain and W its eps -> 0 limit;
+(R,S,T,P) = (1,u,1+v,0) so pi(s,p) = w_CC + w_CD u + w_DC (1+v).
+
+HOW A LIMIT IS TAKEN, EXACTLY.  Every entry of the pair transition matrix is a degree-one
+polynomial in eps with rational coefficients, so by the Markov-chain-tree theorem the
+unnormalised weights d_X(eps) = det(I-M) with row and column X deleted are polynomials in
+eps, and w_X(eps) = d_X(eps) / Dtot(eps) EXACTLY, as a rational function.  With ord(.) the
+order of vanishing at eps = 0 and lc(.) the coefficient of that power,
+
+    W_X = lim_{eps->0} w_X  =  lc(d_X)/lc(Dtot)  if  ord(d_X) = ord(Dtot),  else 0,
+
+and m_X := ord(d_X) - ord(Dtot) >= 0 is the LEADING EPS-EXPONENT of that state's
+occupancy.  Nothing is fitted; nothing is compared against a tolerance.  The grid sweep
+carries the polynomials in SCALED INTEGER arithmetic (every grid value has denominator
+dividing 60, and the common 60^6 cancels in d_X/Dtot); the bespoke families of sections 5
+and 6, whose coordinates are arbitrary rationals, carry Fraction coefficients instead.
+
+THE CLOSED FORMS UNDER TEST (item 2's efficiency predicates are imported from m1lib and
+used as given; only the Nash half is under test here).
+
+  MASTER NASH INEQUALITY.  With V = W(p,p) and d_X = W_X(s,p) - V_X, and using
+  sum_X W_X = 1 to kill the constant term,
+        pi(s,p) - pi(p,p) = d_CD (u-1) + d_DC v - d_DD,
+  so for FIXED p the limit-Nash set in the (u,v) plane is an intersection of 16
+  half-planes with game-free coefficients: a closed convex POLYGON.
+
+  BELOW AND ON THE SWITCH LINE, for p efficient (hence p1 = 1, V = (1,0,0,0) below):
+        (I)   p4 v <= 1 - p2                          [ALLD 0000, with 0100, 1000, 1100]
+        (II)  (1-p2)(u-1) + p3 v <= 0                 [0111, with 0110]
+  ABOVE THE SWITCH LINE, efficiency pins (p2,p3) to an alternating corner.  With
+  X := u-v-1 = S-T and Y := u+v-1,
+        sheet (p2,p3) = (0,1):  (C1) p4 X + Y + 2 >= 0    (C2) (p1-1) X + Y >= 0
+        sheet (p2,p3) = (1,0):  partner iff u - v = 1 (T = S), and then for the whole
+                                family, because the best deviation is max(u, 1+v).
+  ON the line the alternating sheets are governed by the same C1/C2 at Y = 0.
+
+THE QUANTIFIER is cited, not reproved: LaPorte, Hilbe, Glynatsi & Nowak (PNAS 2026) with
+Levinsky, Neyman & Zeleny (2020) -- against a memory-one resident the deviator faces a
+four-state unichain average-reward MDP over a box policy set, so the sup over ALL tau of
+any memory sits at one of the 16 deterministic vertices.  Limit-Nash is EXACTLY 16 limit
+inequalities.
+
+==============================================================================
+1.  THE EXACT LIMIT TABLE.  grid = denominators 1..6, 13 values per coordinate
+==============================================================================
+grid values: 0, 1/6, 1/5, 1/4, 1/3, 2/5, 1/2, 3/5, 2/3, 3/4, 4/5, 5/6, 1
+28561 strategies p, each against the 16 deterministic deviators plus itself = 485537 ordered pairs
+   swept in 10.4 s
+Akin's residual  sum_X d_X (p~_X - 1{X in CC,CD})  is exactly the zero polynomial: True
+the four limits sum to exactly 1 in every pair: True
+
+leading eps-exponent m_X of the state occupancies w_X(eps) = d_X/Dtot, over all 1827904
+(pair, state) combinations -- m_X = 0 means the state keeps positive mass in the limit:
+   eps^0                  1353556
+   eps^1                   457548
+   eps^2                    16800
+
+self-play symmetry W_CD(p,p) = W_DC(p,p) (relabelling the focal player is the state
+swap CD <-> DC and self-play is invariant under it): True, exactly, at all 28561 strategies
+
+==============================================================================
+2.  FINITE-eps CROSS-CHECK, eps = 10^-4, 10^-6, 10^-8, exact Fractions
+==============================================================================
+subgrid: 0, 1/4, 1/3, 1/2, 2/3, 3/4, 1  ->  2401 strategies x 16 deviators x 3 eps = 115248 exact 4x4 solves
+   Gaussian elimination reproduces d_X(eps)/Dtot(eps) exactly, all 4 states, all 3 eps:  38416 / 38416 pairs
+   Akin's residual exactly 0 in Fractions at all 3 eps:                                 38416 / 38416 pairs
+   |w_CC/(lc eps^m) - 1| -> 0 monotonically, a threshold-free confirmation of the
+   exponent m and the coefficient lc:                                          38416 / 38416 pairs
+   of those, 375 pairs have w_CC(eps) EXACTLY lc eps^m at every eps (the correction
+   vanishes identically, so there is nothing left to converge)
+   (6.6 s)
+
+==============================================================================
+3.  THE PARTNER SET AT REPRESENTATIVE GAMES.  The exact 16-inequality limit test
+    on all 28561 grid strategies, at each game, against the closed form.
+==============================================================================
+
+    eff  strategies that are efficient -- pi(p,p) = Emax read straight off the exact
+         self-play limit, with no predicate and no tolerance
+    par  of those, the ones for which all 16 master inequalities hold exactly: PARTNERS
+    mis  strategies where the closed form disagrees with that exact verdict
+    dim  dimension of the partner set, certified by the rational box printed below
+    sat  saturated: is EVERY efficient strategy a partner?  Above the line "sheet" asks
+         the same question of the live alternating sheet (p2,p3) = (0,1) alone, since the
+         other sheet is a partner only on the ray T = S.
+
+   game (u,v)     locus            eff    par   mis  dim   sat sheet
+   (-1, -1)       wedge W         2027   2027     0    3   yes     -
+   (-3, -2)       wedge W         2027   2027     0    3   yes     -
+   (1/2, -1/4)    wedge W         2027   2027     0    3   yes     -
+   (3/2, -2)      wedge S         2027   1811     0    3    no     -
+   (3, -5)        wedge S         2027   1655     0    3    no     -
+   (4, 2)         wedge E          286    143     0    2    no   yes
+   (5, 1/2)       wedge E          286    143     0    2    no   yes
+   (1/2, 5)       wedge N          286    143     0    2    no   yes
+   (-2, 8)        wedge N          286     84     0    2    no    no
+   (-1/2, 2)      wedge N          286     96     0    2    no    no
+   (1/2, 1/2)     on the line     2337   1130     0    3    no   yes
+   (2, -1)        on the line     2337   1103     0    3    no    no
+   (1, 0)         line cap T=S    2337   2337     0    3   yes   yes
+   (-1, -2)       W|S on T=S      2027   2027     0    3   yes     -
+   (3, 2)         N|E on T=S       286    286     0    2   yes   yes
+   (3/2, 1/2)     N|E on T=S       286    286     0    2   yes   yes
+   (1, -2)        wedge S         2027   2027     0    3   yes     -
+   (0, -3)        wedge S         2027   2027     0    3   yes     -
+   (-1, 0)        wedge W         2027   2027     0    3   yes     -
+   (-2, 1)        wedge W         2027    985     0    3    no     -
+   (0, 4)         wedge N          286    143     0    2    no   yes
+   (4, 0)         wedge E          286    143     0    2    no   yes
+
+   TOTAL closed-form mismatches over 628342 exact (game, strategy) tests: 0
+
+   BOX CERTIFICATES.  Each Nash inequality is AFFINE in p, so holding at every
+   corner of a closed box gives it on the whole box; the box has non-empty
+   interior, lies strictly inside the open cube, and every point of it is
+   efficient, so dim(partner set) >= the box dimension.  Re-verified below at
+   the corners AND midpoints by the full exact 16-deviator test:
+      (-1   ,-1   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (-3   ,-2   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (1/2  ,-1/4 ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (3/2  ,-2   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (3    ,-5   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/2,3/4], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (4    ,2    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (5    ,1/2  ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (1/2  ,5    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (-2   ,8    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (-1/2 ,2    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (1/2  ,1/2  ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (2    ,-1   ) dim 3 :  p1 = 1           p2 in [1/2,3/4], p3 in [1/2,3/4], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (1    ,0    ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (-1   ,-2   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (3    ,2    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (3/2  ,1/2  ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (1    ,-2   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (0    ,-3   ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (-1   ,0    ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (-2   ,1    ) dim 3 :  p1 = 1           p2 in [1/4,1/2], p3 in [1/4,1/2], p4 in [1/4,1/2]  [27 exact tests, 0 fail]
+      (0    ,4    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+      (4    ,0    ) dim 2 :  p2 = 0, p3 = 1   p1 in [1/4,1/2], p4 in [1/4,1/2]                [ 9 exact tests, 0 fail]
+
+   The partner set is CONTAINED in {p1 = 1} below and on the line, and in the
+   two 2-faces (p2,p3) in {(0,1),(1,0)} above it -- that is item 2's efficiency
+   closed form, used as given -- so these boxes pin the dimension at EXACTLY 3
+   below and on the line and EXACTLY 2 above it, at every game tested.
+
+   SATURATION.  Predicted: every efficient strategy is a partner exactly on
+   {u <= 1, v <= 0} below/on the line, and -- for the live (0,1) sheet -- on
+   {u >= 0, v >= 0} above it.  Per-game agreement:
+      22 of 22 games agree; disagreements: none
+      and saturation of the WHOLE efficient set above the line (both sheets)
+      needs T = S as well: 9 of 9 above-line games agree; disagreements: none
+
+==============================================================================
+4.  ZD EQUALISERS.  p = (1 - b(1-k), 1 - b(1+v-k), b(k-u), b k) enforces pi(q,p) = k
+==============================================================================
+   for every co-player q, so pi(p,p) = k too and the Nash gap is 0 in the limit.
+   Below: the 16 exact limits, then the exact leading term of the FINITE-eps gap.
+
+   (u,v,kappa,b)                  p                        all=k    gap order  exact leading coefficient
+   (1/2,5,1,9/50)                 (1,1/10,9/100,9/50)      True     eps^1      -250/27   (= -9.25926)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -9.18689933   -9.25852955   -9.25925196
+   (1/2,5,1,1/10)                 (1,1/2,1/20,1/10)        True     eps^1      -190/11   (= -17.2727)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -17.03557630   -17.27031873   -17.27270318
+   (-1,1/2,1,1/4)                 (1,7/8,1/2,1/4)          True     eps^1      -8/3   (= -2.66667)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -2.66525197   -2.66665252   -2.66666653
+   (-1,2,1,1/4)                   (1,1/2,1/2,1/4)          True     eps^1      -16/3   (= -5.33333)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -5.32769533   -5.33327689   -5.33333277
+   (1/2,1/2,1,1/5)                (1,9/10,1/10,1/5)        True     eps^1      -9/2   (= -4.5)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -4.48564946   -4.49985605   -4.49999856
+   (1/2,5,3/4,1/10)               (39/40,19/40,1/40,3/40)  True     eps^1      -127415/42328   (= -3.01018)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -3.00603811   -3.01014085   -3.01018197
+   (-2,3,1/2,1/8)                 (15/16,9/16,5/16,1/16)   True     eps^1      -84/19   (= -4.42105)
+        finite-eps gap/eps at 10^-4, 10^-6, 10^-8 (exact Fractions, converging to the coefficient):
+          -4.41958226   -4.42103793   -4.42105248
+
+   Every gap is exactly Theta(eps) and strictly NEGATIVE at every eps > 0:
+   these are LIMIT-partners, never eps-robust ones.  At the brief's point the
+   coefficient is the exact rational printed above.
+
+==============================================================================
+5.  ALTERNATORS (p1, 0, 1, p4) ABOVE THE SWITCH LINE
+==============================================================================
+   pi(p,p) = (1+u+v)/2 = Emax exactly in the limit, and all 16 master
+   inequalities hold, so each is a PARTNER where the 16 vertices have none.
+
+   16 members of the sheet, p1 in {0,1/4,1/2,3/4} and p4 in {1/4,1/2,3/4,1};
+   (p1,p4) = (0,1) is excluded by Eff_alt, leaving 15 eligible.
+
+   (u,v)            locus     eff partner  closed-form failures
+   (1/2, 5)         above   15/15  15/15  none
+   (-2, 8)          above   15/15   8/15  none
+   (4, 2)           above   15/15  15/15  none
+   (3, 2)           above   15/15  15/15  none
+   (0, 4)           above   15/15  15/15  none
+   (4, 0)           above   15/15  15/15  none
+   (-1/2, 2)        above   15/15   8/15  none
+   (1/2, 1/2)       line    15/15  15/15  none
+   120 exact (game, alternator) tests, closed form exact throughout.
+
+   The OTHER sheet (p1, 1, 0, p4): a partner only on the ray T = S (u-v = 1),
+   because the deviators (*,1,*,*) and (*,*,0,*) lock the pair into CD and DC:
+   (u,v)            max deviation  = max(u,1+v), partner iff T=S
+   (3, 2)           3              max(u,1+v) = 3         Emax = 3         partner True (T=S: True)
+   (1/2, 5)         6              max(u,1+v) = 6         Emax = 13/4      partner False (T=S: False)
+   (4, 2)           4              max(u,1+v) = 4         Emax = 7/2       partner False (T=S: False)
+   (1, 0)           1              max(u,1+v) = 1         Emax = 1         partner True (T=S: True)
+
+==============================================================================
+6.  THE VERTEX CENSUS -- panel b of ../../PartnersRivalsM1/Figures/Fig2.pdf
+==============================================================================
+   Recomputed from this project's own exact limits, on cell-centred RATIONAL
+   grids of games over [-8,8]^2, so every comparison is a Fraction comparison.
+   Centres are offset by 1/3 of a cell rather than 1/2 so that no centre lands
+   on u+v = 1, u = 1, v = 0 or v = (u-1)/3, the loci where the count is
+   degenerate; the published shares 56.25 / 43.75 % are exact areas, and the
+   cell counts approach them as the grid refines.
+
+   64 x 64 = 4096 cell centres
+      0 partner(s) :    2288 cells =  55.8594 %
+      1 partner(s) :     138 cells =   3.3691 %
+      2 partner(s) :     518 cells =  12.6465 %
+      3 partner(s) :    1152 cells =  28.1250 %
+      NO partner    :    2288 cells =  55.8594 %   (published 56.25 %)
+      a partner     :    1808 cells =  44.1406 %   (published 43.75 %)
+      maximum count 3;  cells where {count = 3} != {u <= 1 and v <= 0}: 0
+      partners at any game ABOVE the switch line: 0   (published: none)
+      a partner somewhere: 1001/WSLS 31.49%, 1110 40.77%, 1111/ALLC 40.77%
+
+   128 x 128 = 16384 cell centres
+      0 partner(s) :    9184 cells =  56.0547 %
+      1 partner(s) :     548 cells =   3.3447 %
+      2 partner(s) :    2044 cells =  12.4756 %
+      3 partner(s) :    4608 cells =  28.1250 %
+      NO partner    :    9184 cells =  56.0547 %   (published 56.25 %)
+      a partner     :    7200 cells =  43.9453 %   (published 43.75 %)
+      maximum count 3;  cells where {count = 3} != {u <= 1 and v <= 0}: 0
+      partners at any game ABOVE the switch line: 0   (published: none)
+      a partner somewhere: 1001/WSLS 31.47%, 1110 40.60%, 1111/ALLC 40.60%
+
+   256 x 256 = 65536 cell centres
+      0 partner(s) :   36800 cells =  56.1523 %
+      1 partner(s) :    2184 cells =   3.3325 %
+      2 partner(s) :    8120 cells =  12.3901 %
+      3 partner(s) :   18432 cells =  28.1250 %
+      NO partner    :   36800 cells =  56.1523 %   (published 56.25 %)
+      a partner     :   28736 cells =  43.8477 %   (published 43.75 %)
+      maximum count 3;  cells where {count = 3} != {u <= 1 and v <= 0}: 0
+      partners at any game ABOVE the switch line: 0   (published: none)
+      a partner somewhere: 1001/WSLS 31.46%, 1110 40.52%, 1111/ALLC 40.52%
+
+   So panel b is reproduced exactly: the count is 3 on {u <= 1, v <= 0} and
+   nowhere else (28.1250 % of the square at EVERY resolution, the exact area of
+   that quadrant), 2 or 1 on part of the rest of the region below the switch
+   line, and 0 everywhere above it -- with the two headline shares converging
+   to the published 56.25 % / 43.75 % as the cells shrink.
+
+   CONTINUUM, for the contrast: sections 3-5 exhibit a partner at every one of
+   the 22 representative games -- including all of wedge N, where the 16 have no
+   efficient strategy at all -- with the partner set 3-dimensional below and on
+   the line and 2-dimensional above it, and never empty.
+
+total wall time 63.4 s

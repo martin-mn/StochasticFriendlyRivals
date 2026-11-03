@@ -1,0 +1,33 @@
+# PRFull cw2: the 24-game time-series (TS) subset, 6 per wedge, per triage report 6 (issues 7-8) -- THE SAME 24 AS
+# THE MEMORY-TWO KIT: ../wfc2/mk_tasks.py TS_IPT (adopted from it on 2026-09-27; if either list changes, change
+# both and rerun both mktasks).  Its rule: split = the ten replicates of memory-two production F1 (check/wfc_a333)
+# do not all name the pooled most abundant atom (35 games); typical = unsplit, of the 64, efficiency nearest its
+# wedge-and-quadrant median.  W: the 3 special W games + 3 typical PDW;  S: 3 of the 4 split SHS (184 417 451) +
+# 3 typical;  N: the 4 split PDN (500 special) + 337 (special split SDN) + a typical SDN;  E: the 3 special split HAE
+# + 3 split SDE.  At memory one only 256 is split (000:1/100:9); the optional arm TSX adds 4 memory-one splits.
+# 6 of the 24 (184 417 451 390 445 117) lie outside games71.txt; production at all 512 games is the comparator.
+# ipt  line  gid   tag          wedge  in71  why
+ 466   467  2466 V_p466_PDW   W      yes   special: 111 took 3/10 m2 replicates (0.85-0.96)
+ 411   412  2411 V_p411_PDW   W      yes   special: 111 leads 2/10 m2 replicates (0.86, 0.51, 0.14 in 3)
+ 301   302  2301 V_p301_PDW   W      yes   special: 111 at 0.1-6% in 6 of 10 m2 replicates
+ 186   187  2186 V_p186_PDW   W      yes   typical PDW
+ 377   378  2377 V_p377_PDW   W      yes   typical PDW
+  29    30  2029 V_p029_PDW   W      yes   typical PDW, validation game (line 30)
+ 184   185  2184 V_p184_SHS   S      no    m2 split SHS 110:1/111:9, 0.010 from T=S
+ 417   418  2417 V_p417_SHS   S      no    m2 split SHS 110:1/111:9
+ 451   452  2451 V_p451_SHS   S      no    m2 split SHS 110:1/111:9
+ 208   209  2208 V_p208_HAS   S      yes   typical HAS
+  17    18  2017 V_p017_HAS   S      yes   typical HAS
+ 171   172  2171 V_p171_SHS   S      yes   typical SHS, validation game (line 172)
+ 500   501  2500 V_p500_PDN   N      yes   special: m2 split PDN 110:4/111:6, 111 leads
+ 390   391  2390 V_p390_PDN   N      no    m2 split PDN 110:9/111:1
+ 445   446  2445 V_p445_PDN   N      no    m2 split PDN 110:9/111:1
+ 479   480  2479 V_p479_PDN   N      yes   m2 split PDN 110:9/111:1
+ 337   338  2337 V_p337_SDN   N      yes   special: m2 split SDN 100:5/110:5, above the switch line
+ 256   257  2256 V_p256_SDN   N      yes   typical SDN at m2; m1 split 000:1/100:9
+ 237   238  2237 V_p237_HAE   E      yes   special: m2 split HAE 110:4/111:6, 111 leads
+ 326   327  2326 V_p326_HAE   E      yes   special: m2 split HAE 110:1/111:9, 111 leads
+ 415   416  2415 V_p415_HAE   E      yes   special: m2 split HAE 110:3/111:7, 111 leads
+ 109   110  2109 V_p109_SDE   E      yes   m2 split SDE 000:1/110:9
+ 164   165  2164 V_p164_SDE   E      yes   m2 split SDE 000:1/110:9, validation game (line 165)
+ 117   118  2117 V_p117_SDE   E      no    m2 split SDE 100:3/110:7

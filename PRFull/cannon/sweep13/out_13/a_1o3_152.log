@@ -1,0 +1,4 @@
+task 152 alpha 1/3 n 3190000 seed 3000152 host holy8a30103.rc.fas.harvard.edu start 1790525871
+psweep alpha=1/3 n=3190000: effCC 458961 effALT 207126 effZ 183205 rivP 58556 rivM 57802 | FR_W 6 FR_S 42556 FR_N 280 FR_E 336 | rayP 452 rayM 50628 | meanpin 0.666608
+psweep exact alpha=1/3: 0 redraws
+end 1790533656

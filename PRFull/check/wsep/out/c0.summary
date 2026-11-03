@@ -1,0 +1,12 @@
+class c0 total 28697814 stride 1 processed 28697814
+efficient 0
+excluded_by_ALLD 0
+SI_alld_disagreements 0
+survivors 0
+excluded_pool 0
+excluded_full 0
+NOT_EXCLUDED 0
+lemma_violations 0
+seconds 9.93 (full-search 0.00 thread-s) threads 3
+by_d n/eff/surv: 0:32768/0/0 1:278528/0/0 2:1105920/0/0 3:2723840/0/0 4:4659200/0/0 5:5870592/0/0 6:5637632/0/0 7:4209920/0/0 8:2471040/0/0 9:1144000/0/0 10:416416/0/0 11:117936/0/0 12:25480/0/0 13:4060/0/0 14:450/0/0 15:31/0/0 16:1/0/0
+coplayers: 0 distinct

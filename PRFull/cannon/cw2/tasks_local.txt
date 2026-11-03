@@ -1,0 +1,7 @@
+# PRFull cw2 LOCAL smoke test of every arm (test builds at ITS = 20000: bash compile.sh test), a few seconds each.
+# arm  exe  isl  ipt  irep0  irep1  seedbase  eps  itend  outdir     (task.sh; k = data line number)
+E3 cw_t.x 1400 466 1 10 - 1e-3 20000 out/local/E3     # E3 at ipt 466
+E5 cw_te5.x 1399 466 1 10 - 1e-5 20000 out/local/E5     # E5 at ipt 466
+TS cw_tts.x 1401 466 1 1 43000000 1e-4 20000 out/local/TS/p466_r01     # TS at ipt 466
+TS cw_tts.x 1401 466 2 2 43000000 1e-4 20000 out/local/TS/p466_r02     # TS at ipt 466
+KA kappa_e5.x 1 games24.txt 100000 - - 1e-5 - out/local/KA5     # kernel masses, 1e5 draws

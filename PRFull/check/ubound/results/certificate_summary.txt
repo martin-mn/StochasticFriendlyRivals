@@ -1,0 +1,20 @@
+THE 12 CERTIFICATE CO-PLAYERS (genome; bits q_0..q_15, q_s = 1 means C at state s = 4x+y)
+      0  0000000000000000   certifies 1064824 (sign +1)       0 (sign -1)
+  65535  1111111111111111   certifies       0 (sign +1)  107525 (sign -1)
+  50954  0101000011100011   certifies   14532 (sign +1)       0 (sign -1)
+  15824  0000101110111100   certifies    1721 (sign +1)     163 (sign -1)
+  50076  0011100111000011   certifies     857 (sign +1)       0 (sign -1)
+  32902  0110000100000001   certifies     106 (sign +1)       0 (sign -1)
+  16128  0000000011111100   certifies      65 (sign +1)       1 (sign -1)
+  32932  0010010100000001   certifies      62 (sign +1)       0 (sign -1)
+  32768  0000000000000001   certifies      35 (sign +1)       0 (sign -1)
+  65534  0111111111111111   certifies       2 (sign +1)       4 (sign -1)
+  29952  0000000010101110   certifies       0 (sign +1)       1 (sign -1)
+  35754  0101010111010001   certifies       1 (sign +1)       0 (sign -1)
+
+TARGETS PER LOCUS AND DIMENSION (all excluded; the certificate co-player of each is in ub_certificate.tsv.gz)
+  W     sign +1, dim >=  8:  795531 strata  by dim {8: 491127, 9: 212767, 10: 70542, 11: 17526, 12: 3152, 13: 387, 14: 29, 15: 1}
+  N     sign +1, dim >=  9:  107694 strata  by dim {9: 79876, 10: 22580, 11: 4560, 12: 624, 13: 52, 14: 2}
+  E     sign -1, dim >=  9:  107694 strata  by dim {9: 79876, 10: 22580, 11: 4560, 12: 624, 13: 52, 14: 2}
+  ray+  sign +1, dim >=  9:  444722 strata  by dim {9: 319177, 10: 98446, 11: 22794, 12: 3832, 13: 441, 14: 31, 15: 1}
+  W68   sign +1, dim >=  6:  178760 strata  by dim {6: 93026, 7: 53330, 8: 23051, 9: 7379, 10: 1689, 11: 260, 12: 24, 13: 1}

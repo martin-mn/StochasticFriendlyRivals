@@ -1,0 +1,578 @@
+{
+ "seed": 20260927,
+ "BG": {
+  "W": 3000,
+  "S": 1000,
+  "N": 3000,
+  "E": 3000
+ },
+ "OVER": 150,
+ "BASE": 50,
+ "oversampled": [
+  "110",
+  "111",
+  "011",
+  "001"
+ ],
+ "samples_per_game": 40000,
+ "games_per_wedge": {
+  "W": 179,
+  "S": 126,
+  "N": 121,
+  "E": 86
+ },
+ "records": 4772732,
+ "records_by_regime": {
+  "F1": 1453629,
+  "F2": 3319103
+ },
+ "expected_size": 27237.174750615253,
+ "drawn": 27261,
+ "drawn_by_regime": {
+  "F1": 12023,
+  "F2": 15238
+ },
+ "strata": {
+  "0": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "000",
+   "N": 170307,
+   "C": 196370,
+   "expected": 180.13360472095164,
+   "drawn": 164,
+   "drawn_samples": 7785
+  },
+  "1": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "001",
+   "N": 4014,
+   "C": 6039,
+   "expected": 291.3986030418646,
+   "drawn": 289,
+   "drawn_samples": 1312
+  },
+  "2": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "010",
+   "N": 6153,
+   "C": 57162,
+   "expected": 92.47639951395593,
+   "drawn": 87,
+   "drawn_samples": 38407
+  },
+  "3": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "011",
+   "N": 1390,
+   "C": 4566,
+   "expected": 274.3641503226845,
+   "drawn": 252,
+   "drawn_samples": 1913
+  },
+  "4": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "100",
+   "N": 68603,
+   "C": 87640,
+   "expected": 136.54020407474462,
+   "drawn": 123,
+   "drawn_samples": 544
+  },
+  "6": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "110",
+   "N": 290909,
+   "C": 6788789,
+   "expected": 2947.161139344037,
+   "drawn": 2937,
+   "drawn_samples": 2492932
+  },
+  "7": {
+   "reg": "F1",
+   "wedge": "W",
+   "atom": "111",
+   "N": 50,
+   "C": 19434,
+   "expected": 50.0,
+   "drawn": 50,
+   "drawn_samples": 19434
+  },
+  "8": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "000",
+   "N": 130327,
+   "C": 132198,
+   "expected": 126.18976533411188,
+   "drawn": 129,
+   "drawn_samples": 137
+  },
+  "9": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "001",
+   "N": 9368,
+   "C": 11676,
+   "expected": 294.48049743151466,
+   "drawn": 292,
+   "drawn_samples": 1540
+  },
+  "10": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "010",
+   "N": 2479,
+   "C": 2482,
+   "expected": 99.46431247928007,
+   "drawn": 112,
+   "drawn_samples": 112
+  },
+  "12": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "100",
+   "N": 29852,
+   "C": 33980,
+   "expected": 106.57211540431435,
+   "drawn": 116,
+   "drawn_samples": 581
+  },
+  "14": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "110",
+   "N": 165481,
+   "C": 678131,
+   "expected": 431.2753181732455,
+   "drawn": 430,
+   "drawn_samples": 27745
+  },
+  "15": {
+   "reg": "F1",
+   "wedge": "S",
+   "atom": "111",
+   "N": 181618,
+   "C": 4181533,
+   "expected": 1124.1673684718285,
+   "drawn": 1158,
+   "drawn_samples": 154085
+  },
+  "16": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "000",
+   "N": 145537,
+   "C": 150878,
+   "expected": 192.94538357046528,
+   "drawn": 206,
+   "drawn_samples": 1724
+  },
+  "17": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "001",
+   "N": 5692,
+   "C": 5962,
+   "expected": 299.5375915546856,
+   "drawn": 285,
+   "drawn_samples": 307
+  },
+  "18": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "010",
+   "N": 120,
+   "C": 198,
+   "expected": 77.03833270723769,
+   "drawn": 79,
+   "drawn_samples": 153
+  },
+  "19": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "011",
+   "N": 128,
+   "C": 169,
+   "expected": 128.0,
+   "drawn": 128,
+   "drawn_samples": 169
+  },
+  "20": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "100",
+   "N": 29403,
+   "C": 53482,
+   "expected": 115.17973064960754,
+   "drawn": 124,
+   "drawn_samples": 17760
+  },
+  "22": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "110",
+   "N": 47481,
+   "C": 4576703,
+   "expected": 2112.1482482199754,
+   "drawn": 2108,
+   "drawn_samples": 3807451
+  },
+  "23": {
+   "reg": "F1",
+   "wedge": "N",
+   "atom": "111",
+   "N": 755,
+   "C": 52608,
+   "expected": 195.12520414013025,
+   "drawn": 206,
+   "drawn_samples": 48312
+  },
+  "24": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "000",
+   "N": 108609,
+   "C": 123794,
+   "expected": 202.60582993464908,
+   "drawn": 209,
+   "drawn_samples": 10207
+  },
+  "25": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "001",
+   "N": 4583,
+   "C": 7641,
+   "expected": 259.6434862395306,
+   "drawn": 284,
+   "drawn_samples": 2827
+  },
+  "26": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "010",
+   "N": 35,
+   "C": 50,
+   "expected": 35.0,
+   "drawn": 35,
+   "drawn_samples": 50
+  },
+  "27": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "011",
+   "N": 557,
+   "C": 814,
+   "expected": 259.92763558932825,
+   "drawn": 263,
+   "drawn_samples": 453
+  },
+  "28": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "100",
+   "N": 23888,
+   "C": 41058,
+   "expected": 123.70172886607295,
+   "drawn": 130,
+   "drawn_samples": 11234
+  },
+  "30": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "110",
+   "N": 25514,
+   "C": 3111089,
+   "expected": 1624.8376015298802,
+   "drawn": 1618,
+   "drawn_samples": 2798978
+  },
+  "31": {
+   "reg": "F1",
+   "wedge": "E",
+   "atom": "111",
+   "N": 776,
+   "C": 155554,
+   "expected": 237.61859510615693,
+   "drawn": 209,
+   "drawn_samples": 139365
+  },
+  "32": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "000",
+   "N": 602344,
+   "C": 881720,
+   "expected": 469.2282029070257,
+   "drawn": 470,
+   "drawn_samples": 3351
+  },
+  "33": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "001",
+   "N": 91160,
+   "C": 130028,
+   "expected": 353.99131467463826,
+   "drawn": 393,
+   "drawn_samples": 724
+  },
+  "34": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "010",
+   "N": 47382,
+   "C": 467076,
+   "expected": 293.6815456473003,
+   "drawn": 300,
+   "drawn_samples": 19222
+  },
+  "35": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "011",
+   "N": 126051,
+   "C": 266503,
+   "expected": 411.10786939470086,
+   "drawn": 360,
+   "drawn_samples": 1148
+  },
+  "36": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "100",
+   "N": 205969,
+   "C": 341941,
+   "expected": 243.13379831618215,
+   "drawn": 272,
+   "drawn_samples": 983
+  },
+  "38": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "110",
+   "N": 532450,
+   "C": 5071560,
+   "expected": 2422.8334364822626,
+   "drawn": 2397,
+   "drawn_samples": 54010
+  },
+  "39": {
+   "reg": "F2",
+   "wedge": "W",
+   "atom": "111",
+   "N": 86,
+   "C": 1172,
+   "expected": 86.0,
+   "drawn": 86,
+   "drawn_samples": 1172
+  },
+  "40": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "000",
+   "N": 63542,
+   "C": 148425,
+   "expected": 129.28492794768337,
+   "drawn": 135,
+   "drawn_samples": 874
+  },
+  "41": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "001",
+   "N": 7531,
+   "C": 42008,
+   "expected": 304.7023916774684,
+   "drawn": 318,
+   "drawn_samples": 3479
+  },
+  "42": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "010",
+   "N": 29,
+   "C": 42,
+   "expected": 29.0,
+   "drawn": 29,
+   "drawn_samples": 42
+  },
+  "44": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "100",
+   "N": 87130,
+   "C": 256221,
+   "expected": 150.6933655930373,
+   "drawn": 140,
+   "drawn_samples": 1002
+  },
+  "46": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "110",
+   "N": 339842,
+   "C": 3212394,
+   "expected": 936.4161590981657,
+   "drawn": 903,
+   "drawn_samples": 16936
+  },
+  "47": {
+   "reg": "F2",
+   "wedge": "S",
+   "atom": "111",
+   "N": 122568,
+   "C": 1380910,
+   "expected": 572.7859820895872,
+   "drawn": 561,
+   "drawn_samples": 11669
+  },
+  "48": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "000",
+   "N": 348546,
+   "C": 846289,
+   "expected": 615.4187309991231,
+   "drawn": 605,
+   "drawn_samples": 75498
+  },
+  "49": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "001",
+   "N": 52476,
+   "C": 82402,
+   "expected": 349.84814043175663,
+   "drawn": 360,
+   "drawn_samples": 1410
+  },
+  "50": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "010",
+   "N": 5652,
+   "C": 46232,
+   "expected": 124.08985663738102,
+   "drawn": 105,
+   "drawn_samples": 6873
+  },
+  "51": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "011",
+   "N": 27345,
+   "C": 42029,
+   "expected": 324.88038504747647,
+   "drawn": 333,
+   "drawn_samples": 618
+  },
+  "52": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "100",
+   "N": 69731,
+   "C": 274870,
+   "expected": 263.69305687192457,
+   "drawn": 240,
+   "drawn_samples": 18538
+  },
+  "54": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "110",
+   "N": 77952,
+   "C": 3494561,
+   "expected": 2438.01828654425,
+   "drawn": 2444,
+   "drawn_samples": 484852
+  },
+  "55": {
+   "reg": "F2",
+   "wedge": "N",
+   "atom": "111",
+   "N": 1511,
+   "C": 53617,
+   "expected": 309.0118104369188,
+   "drawn": 316,
+   "drawn_samples": 16170
+  },
+  "56": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "000",
+   "N": 293459,
+   "C": 779897,
+   "expected": 750.3498249044442,
+   "drawn": 779,
+   "drawn_samples": 88433
+  },
+  "57": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "001",
+   "N": 50307,
+   "C": 144758,
+   "expected": 423.6795023397323,
+   "drawn": 394,
+   "drawn_samples": 3555
+  },
+  "58": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "010",
+   "N": 2027,
+   "C": 13356,
+   "expected": 109.2665655431435,
+   "drawn": 123,
+   "drawn_samples": 1543
+  },
+  "59": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "011",
+   "N": 59953,
+   "C": 238561,
+   "expected": 506.0952490056484,
+   "drawn": 528,
+   "drawn_samples": 3930
+  },
+  "60": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "100",
+   "N": 55029,
+   "C": 235218,
+   "expected": 300.43194993682056,
+   "drawn": 314,
+   "drawn_samples": 19885
+  },
+  "62": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "110",
+   "N": 47814,
+   "C": 1981356,
+   "expected": 1993.6815411451012,
+   "drawn": 2018,
+   "drawn_samples": 349794
+  },
+  "63": {
+   "reg": "F2",
+   "wedge": "E",
+   "atom": "111",
+   "N": 1217,
+   "C": 46854,
+   "expected": 308.3180105232442,
+   "drawn": 315,
+   "drawn_samples": 17948
+  }
+ },
+ "doc": "sample.py -- the stratified Poisson sample of stored strategies for the audit (writes sample/sample.npy, sample/design.json).\n\nPopulation: every record of the production strategy dumps (one record = one distinct sampled strategy of one replicate\nat one game; 'count' = its samples in that replicate), both regimes: F1 (N = 1000) data/F1/S_1o3_<task>_1.bin and\nF2 (N = 100) data/F2/S_1o3_<task>_1.bin, task = games.dat line, 512 games each, 40 000 samples per game.\nStrata h = (regime, wedge, production atom).\n\nEach record i is included independently (Poisson sampling) with the exactly known probability\n    pi_i = 1 - (1 - piG_i)(1 - piA_h)(1 - piP_i),\nthe union of three components:\n    G  population share: piG_i = min(1, bG_w c_i / C_w),   C_w = all samples of the regime's games of wedge w\n       (40 000 x games of w) -- random individuals of the population of each wedge (probability proportional to the\n       samples of the strategy), bG_w = 3000 in W, N and E and 1000 in S;\n    A  per strategy:     piA_h = min(1, aH / N_h),          N_h = records of the stratum (equal probability);\n    P  per sample:       piP_i = min(1, bH c_i / C_h),      C_h = samples of the stratum,\nwith aH = bH = OVER for the production atoms 110, 111, 011, 001 (oversampled) and BASE otherwise.\nA strategy's share of its game's population is c_i / 40 000, so the Horvitz-Thompson estimate of the population share\nof records with property y (pooled over the games of a regime or a wedge, every game weighted equally) is\n    sum_{i in sample} y_i (c_i / C) / pi_i,   C = 40 000 x (number of games).\n"
+}

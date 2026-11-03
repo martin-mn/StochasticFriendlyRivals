@@ -1,0 +1,23 @@
+W     non-excluded efficient strata: 364 (census FR strata 362, all among them: True); top dimension 7: 2 strata
+      1*1*001*1*1**0*0  census FR: True  W witness, certified 7-dim box
+      11**001*1*1**0*0  census FR: True  
+N     non-excluded efficient strata: 5022 (census FR strata 5020, all among them: True); top dimension 8: 3 strata
+      ****0*00*1**1010  census FR: True  
+      *10***0**1*1*010  census FR: True  
+      *10***00*1***010  census FR: True  N witness, certified 8-dim box
+E     non-excluded efficient strata: 5022 (census FR strata 5022, all among them: True); top dimension 8: 3 strata
+      101***0*11***10*  census FR: True  
+      101*0*0**1***10*  census FR: True  
+      1010**0*11*1****  census FR: True  
+ray+  non-excluded efficient strata: 7726 (census FR strata 7721, all among them: True); top dimension 8: 5 strata
+      ****0*00*1**1010  census FR: True  
+      *10***0**1*1*010  census FR: True  
+      11****0**1*1*010  census FR: True  
+      *10***00*1***010  census FR: True  N witness, certified 8-dim box
+      11****00*1***010  census FR: True  
+W68   non-excluded efficient strata: 126 (census FR strata 126, all among them: True); top dimension 5: 1 strata
+      1*1*0*0101*1*010  census FR: True  certified whole open 5-cube
+
+wedge W, non-excluded class-C strata by (p6, p8) and dimension   [census FR strata in brackets]
+  p6=0 p8=0:  126 strata, by dim [8, 32, 46, 30, 9, 1, 0, 0]   [126: [8, 32, 46, 30, 9, 1, 0, 0]]
+  p6=1 p8=1:  238 strata, by dim [0, 4, 25, 63, 78, 50, 16, 2]   [236: [0, 4, 25, 63, 78, 49, 15, 2]]

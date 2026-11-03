@@ -1,0 +1,79 @@
+======================================================================================================================
+E3: eps = 1e-3, memory-one cube, F1 regime (N = 1000, beta = 100, u = 1e-2, 10 x 1e7 generations), 71 games
+  kernel masses: production's kappa_e4 (eps 1e-4, M = 1e7) for the arm AND for production: the kernel's law does not depend on eps; with the arm's own KA masses (out/probe/KA3, M = 10000000) the most enriched atom would differ at 0 of 71 games
+  E3 (eps = 1e-3)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W         19  -0.0127   0.9168   0.9886 |    1    0    0    0   13    5    0 |    0    0    1    0   16    2    0 | 0 [0, 0] | 0.01109 [0.01107, 0.01111] | 17
+    S         16   0.8954   0.9773   0.9990 |    0    0    0    0    0    0   16 |    0    0    0    0    0    0   16 | 0.98 [0.979, 0.98] | 0.987 [0.9869, 0.987] | 16
+    N         18   0.0119   0.7877   0.9860 |    4    7    0    0    5    2    0 |    0   11    0    0    5    2    0 | 0 [0, 0] | 0.03464 [0.03074, 0.03927] | 18
+    E         18   0.3881   0.8779   0.9832 |    3    5    0    1    7    2    0 |    0    5    0    4    9    0    0 | 0 [0, 0] | 0.05558 [0.05141, 0.06005] | 16
+    all       71  -0.0127   0.9434   0.9990 |    8   12    0    1   25    9   16 |    0   16    1    4   30    4   16 | 0 [0, 0] | 0.08224 [0.07837, 0.08364] | 67
+  production at the same games (eps = 1e-4)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W         19   0.9173   0.9699   0.9884 |    0    0    1    0   18    0    0 |    0    0    1    0   18    0    0 | 0 [0, 0] | 0.008646 [0.00853, 0.008785] | 18
+    S         16   0.9138   0.9806   0.9986 |    0    0    0    0    0    0   16 |    0    0    0    0    0    0   16 | 0.962 [0.962, 0.962] | 0.9756 [0.9755, 0.9756] | 16
+    N         18   0.5208   0.8943   0.9879 |    4    7    0    0    7    0    0 |    0   11    0    0    7    0    0 | 0 [0, 0] | 0.02468 [0.02292, 0.02545] | 16
+    E         18   0.3849   0.9157   0.9935 |    3    5    0    1    9    0    0 |    0    5    0    4    9    0    0 | 0 [0, 0] | 0.04536 [0.04078, 0.04759] | 13
+    all       71   0.3849   0.9731   0.9986 |    7   12    1    1   34    0   16 |    0   16    1    4   34    0   16 | 0 [0, 0] | 0.03345 [0.03223, 0.03566] | 63
+  comparison with production at the same 71 games
+    most abundant atom the same at 61 of 71 games (85.9 %): differs at 246 (010 -> 000), 262 (110 -> 011), 301 (110 -> 011), 326 (110 -> 011), 411 (110 -> 011), 415 (110 -> 011), 419 (110 -> 011), 466 (110 -> 011), 479 (110 -> 011), 500 (110 -> 011); most enriched the same at 67
+    efficiency: median dE -3.94e-03, max |dE| 9.73e-01; |Welch t| > 2 at 60, > 3 at 57 of 71 games (5 % expected by chance: 3.6)
+    (1) most abundant unchanged at >= 95 % of games: FAIL
+    (2) efficiency within replicate spread: FAIL
+    (3) friendly rivals lead all 16 S games: PASS (16 of 16)
+    (4) W/N/E medians inside production's bootstrap intervals: FAIL -- W 111 0 in [0, 0]; W competitive 0.0111 OUTSIDE [0.00853, 0.00877]; N 111 0 in [0, 0]; N competitive 0.0346 OUTSIDE [0.0229, 0.0255]; E 111 0 in [0, 0]; E competitive 0.0556 OUTSIDE [0.0409, 0.0476]
+  per-game table: results/E3_games.tsv
+======================================================================================================================
+E5: eps = 1e-5, memory-one cube, F1 regime (N = 1000, beta = 100, u = 1e-2, 10 x 1e7 generations), 71 games
+  kernel masses: production's kappa_e4 (eps 1e-4, M = 1e7) for the arm AND for production: the kernel's law does not depend on eps; with the arm's own KA masses (out/probe/KA5, M = 10000000) the most enriched atom would differ at 0 of 71 games
+  E5 (eps = 1e-5)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W         19   0.9254   0.9776   0.9883 |    0    0    0    0   19    0    0 |    0    0    0    0   19    0    0 | 0 [0, 0] | 0.007369 [0.007055, 0.007618] | 19
+    S         16   0.9182   0.9810   0.9985 |    0    0    0    0    0    0   16 |    0    0    0    0    0    0   16 | 0.945 [0.945, 0.945] | 0.9582 [0.958, 0.9583] | 16
+    N         18   0.5514   0.8920   0.9877 |    8    3    0    0    7    0    0 |    1   10    0    0    7    0    0 | 0 [0, 0] | 0.02044 [0.02039, 0.02137] | 13
+    E         18   0.3759   0.9225   0.9944 |    9    0    0    0    9    0    0 |    0    5    0    4    9    0    0 | 0 [0, 0] | 0.04349 [0.03846, 0.04423] | 11
+    all       71   0.3759   0.9761   0.9985 |   17    3    0    0   35    0   16 |    1   15    0    4   35    0   16 | 0 [0, 0] | 0.02913 [0.02668, 0.02939] | 59
+  production at the same games (eps = 1e-4)
+    wedge  games    E min    E med    E max | most abundant  000  100  010  001  110  011  111 | most enriched  000  100  010  001  110  011  111 | 111 share median [95%] | competitive median [95%] | all-10-agree
+    W         19   0.9173   0.9699   0.9884 |    0    0    1    0   18    0    0 |    0    0    1    0   18    0    0 | 0 [0, 0] | 0.008646 [0.008527, 0.008777] | 18
+    S         16   0.9138   0.9806   0.9986 |    0    0    0    0    0    0   16 |    0    0    0    0    0    0   16 | 0.962 [0.962, 0.962] | 0.9756 [0.9755, 0.9756] | 16
+    N         18   0.5208   0.8943   0.9879 |    4    7    0    0    7    0    0 |    0   11    0    0    7    0    0 | 0 [0, 0] | 0.02468 [0.02293, 0.0255] | 16
+    E         18   0.3849   0.9157   0.9935 |    3    5    0    1    9    0    0 |    0    5    0    4    9    0    0 | 0 [0, 0] | 0.04536 [0.04083, 0.04768] | 13
+    all       71   0.3849   0.9731   0.9986 |    7   12    1    1   34    0   16 |    0   16    1    4   34    0   16 | 0 [0, 0] | 0.03345 [0.03222, 0.03553] | 63
+  comparison with production at the same 71 games
+    most abundant atom the same at 60 of 71 games (84.5 %): differs at 125 (100 -> 000), 246 (010 -> 110), 256 (100 -> 000), 261 (100 -> 000), 290 (100 -> 000), 295 (100 -> 000), 324 (100 -> 000), 350 (100 -> 000), 405 (100 -> 000), 431 (001 -> 000), 460 (100 -> 000); most enriched the same at 69
+    efficiency: median dE +1.14e-03, max |dE| 5.18e-02; |Welch t| > 2 at 59, > 3 at 58 of 71 games (5 % expected by chance: 3.6)
+    (1) most abundant unchanged at >= 95 % of games: FAIL
+    (2) efficiency within replicate spread: FAIL
+    (3) friendly rivals lead all 16 S games: PASS (16 of 16)
+    (4) W/N/E medians inside production's bootstrap intervals: FAIL -- W 111 0 in [0, 0]; W competitive 0.00737 OUTSIDE [0.00853, 0.00879]; N 111 0 in [0, 0]; N competitive 0.0204 OUTSIDE [0.0229, 0.0255]; E 111 0 in [0, 0]; E competitive 0.0435 in [0.0409, 0.0476]
+  per-game table: results/E5_games.tsv
+======================================================================================================================
+TS: time series, memory-one cube, F1 regime, eps = 1e-4, itend 4x production, games of games24.txt
+  ipt  tag         prod  lead    P    L nrep   E_prod     E_P     E_L  t(PL)    ESS_P   ESS_L  IAT(gen)   z>2E  z>2L  111>1/2   verdict
+  466  V_p466_PDW  agree  110  110  110   10   0.9731  0.9728  0.9733   1.21       46      90  1.09e+05      7     7   0/10    FAIL
+  411  V_p411_PDW  agree  110  110  110   10   0.9641  0.9654  0.9639  -1.85       62     265  8.11e+04      3     3   0/10    FAIL
+  301  V_p301_PDW  agree  110  110  110   10   0.9371  0.9376  0.9374  -0.26      176     709  2.84e+04      0     1   0/10    PASS
+  186  V_p186_PDW  agree  110  110  110   10   0.9699  0.9696  0.9700   2.71      148     536  3.38e+04      1     2   0/10    FAIL
+  377  V_p377_PDW  agree  110  110  110   10   0.9732  0.9728  0.9732   1.80       87     175  5.83e+04      0     1   0/10    FAIL
+  29   V_p029_PDW  agree  110  110  110   10   0.9822  0.9822  0.9822   0.37      209     908  2.39e+04      1     0   0/10    PASS
+  184  V_p184_SHS  agree  111  111  111   10   0.9745  0.9745  0.9745   0.68      230     883  2.17e+04      1     2  10/10    PASS
+  417  V_p417_SHS  agree  111  111  111   10   0.9415  0.9415  0.9415   0.25      223     940  2.24e+04      1     1  10/10    PASS
+  451  V_p451_SHS  agree  111  111  111   10   0.9265  0.9265  0.9264  -0.78      238     970   2.1e+04      1     1  10/10    PASS
+  208  V_p208_HAS  agree  111  111  111   10   0.9877  0.9877  0.9877   0.90      250     937     2e+04      0     0  10/10    PASS
+  17   V_p017_HAS  agree  111  111  111   10   0.9882  0.9882  0.9882   1.69      229     906  2.19e+04      0     0  10/10    PASS
+  171  V_p171_SHS  agree  111  111  111   10   0.9763  0.9763  0.9763  -1.20      236     926  2.13e+04      0     0  10/10    PASS
+  500  V_p500_PDN  agree  110  110  110   10   0.9744  0.9745  0.9745   0.22      117     487  4.27e+04      1     1   0/10    PASS
+  390  V_p390_PDN  agree  110  110  110   10   0.9761  0.9761  0.9761  -0.00      171     684  2.93e+04      0     0   0/10    PASS
+  445  V_p445_PDN  agree  110  110  110   10   0.9760  0.9760  0.9760   0.30      151     591  3.31e+04      1     2   0/10    PASS
+  479  V_p479_PDN  agree  110  110  110   10   0.9735  0.9738  0.9737  -0.47      158     649  3.17e+04      1     0   0/10    PASS
+  337  V_p337_SDN  agree  100  100  100   10   0.9879  0.9879  0.9879   0.56      146     595  3.43e+04      1     0   0/10    PASS
+  256  V_p256_SDN  split  100  100  100   10   0.6529  0.6582  0.6481  -1.23        7      11   7.6e+05      6     8   0/10    split: report
+  237  V_p237_HAE  agree  110  110  110   10   0.9935  0.9935  0.9936   0.56      114     404  4.43e+04      3     1   0/10    FAIL
+  326  V_p326_HAE  agree  110  110  110   10   0.9885  0.9884  0.9884   0.19      138     549  3.63e+04      1     1   0/10    PASS
+  415  V_p415_HAE  agree  110  110  110   10   0.9858  0.9860  0.9859  -0.61      140     494  3.57e+04      1     1   0/10    PASS
+  109  V_p109_SDE  agree  000  000  000   10   0.7680  0.7681  0.7680  -1.23      237     932  2.11e+04      0     1   0/10    PASS
+  164  V_p164_SDE  agree  000  000  000   10   0.7124  0.7124  0.7124   0.19      234     895  2.13e+04      0     0   0/10    PASS
+  117  V_p117_SDE  agree  100  100  100   10   0.9880  0.9880  0.9880  -0.59      128     561   3.9e+04      3     0   0/10    FAIL
+  games whose production replicates agree: 23; all three TS criteria met at 17 of them
+  per-game table: results/TS_games.tsv; the block series: results/TS_series.npz

@@ -1,0 +1,11 @@
+(1) efficiency: L1 class of the open stratum = A (required A); exact self-play at 11 interior t all (0,1/2,1/2,0): True
+    t = 0: self-play ('1/6', '1/3', '1/3', '1/6'), class -, efficient: False
+    t = 1: self-play ('2/9', '1/3', '1/3', '1/9'), class -, efficient: False
+(2) corner test (L3+L4): certified=True  q checked 65536, failing 0, corners {'pos': 61896, 'neg': 0, 'zero_struct': 18452, 'zero_integral': 33308, 'E_c>E': 17416, 'E_c<E': 0, 'unresolved': 0}  (0.14 s)
+(3) exact affine interpolation over all 65536 co-players (41.0 s): E/support constant True, affine True, N_q(0), N_q(1) >= 0 for all q: True, L3 corner rule exact for all q: True
+    categories on the whole open interval: {'structural_zero': 7480, 'identity': 20360, 'positive': 37696}  (zero margin: 27840)
+    positive co-players whose N_q vanishes at t=0: 6744, at t=1: 6752 (their margin tends to 0 at that end)
+    smallest positive margin at t=1/2: 1/43 = 0.0232558 (co-player 37221)
+    t = 0: min margin 0, zero at 27888, negative at 0 co-players (competitive but not efficient)
+    t = 1: min margin 0, zero at 31600, negative at 0 co-players (competitive but not efficient)
+CERTIFIED: p(t) is a friendly rival of wedge N for every t in (0,1), and not efficient at t = 0, 1: True  (52.5 s)

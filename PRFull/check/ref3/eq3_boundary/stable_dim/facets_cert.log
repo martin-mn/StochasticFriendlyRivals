@@ -1,0 +1,49 @@
+F2 p=(a,b,c,0): self-play (0,0,0,1); every gain = l1 I* + l2 II* - mu, l1,l2,mu >= 0 certified: True
+   0000 ALLD  l1=0  l2=0  mu=0  True
+   0001       l1=0  l2=-1/(2*b - c - 2)  mu=0  True
+   0010       l1=0  l2=0  mu=0  True
+   0011       l1=-b/(2*(a*b - b*c - 1))  l2=-1/(2*(a*b - b*c - 1))  mu=0  True
+   0100       l1=0  l2=0  mu=0  True
+   0101       l1=-(b - 1)/(a*c - 2*b*c - b + 2*c + 1)  l2=a/(a*c - 2*b*c - b + 2*c + 1)  mu=0  True
+   0110       l1=0  l2=0  mu=0  True
+   0111       l1=-1/(a*b - 2*c - 1)  l2=-a/(a*b - 2*c - 1)  mu=0  True
+   1000 Grim  l1=0  l2=0  mu=0  True
+   1001 WSLS  l1=0  l2=-1/(2*b - c - 2)  mu=0  True
+   1010 TFT   l1=0  l2=0  mu=0  True
+   1011       l1=-b/(2*a - b*c - 2)  l2=(a - 1)/(2*a - b*c - 2)  mu=0  True
+   1100       l1=-1/(2*(a - c - 1))  l2=0  mu=0  True
+   1101       l1=-1/(a - c - 1)  l2=0  mu=0  True
+   1110       l1=-2/(3*a - 2*c - 3)  l2=0  mu=0  True
+   1111 ALLC  l1=-1/(a - c - 1)  l2=0  mu=0  True
+F3 p_CC=0 p=('0', 'a', 'b', 'c'): self-play limit positive on all four states: True; W(p,p) = [c*(2*a*b - a*c - b*c + c)/(2*a*b*c + 2*a*b - a*c**2 - a - b*c**2 - b - c**2 + 2*c + 1), -c*(c - 1)/(2*a*b*c + 2*a*b - a*c**2 - a - b*c**2 - b - c**2 + 2*c + 1), -c*(c - 1)/(2*a*b*c + 2*a*b - a*c**2 - a - b*c**2 - b - c**2 + 2*c + 1), (2*a*b - a - b + 1)/(2*a*b*c + 2*a*b - a*c**2 - a - b*c**2 - b - c**2 + 2*c + 1)]
+     games at which all 16 deviators tie identically on the open facet: []  (105 coefficient equations)
+F4 p_DD=1 p=('a', 'b', 'c', '1'): self-play limit positive on all four states: True; W(p,p) = [(2*b*c - b - c + 1)/(a**2*b + a**2*c - 3*a**2 - 2*a*b*c + 2*a + 4*b*c - 2*b - 2*c + 2), -a*(a - 1)/(a**2*b + a**2*c - 3*a**2 - 2*a*b*c + 2*a + 4*b*c - 2*b - 2*c + 2), -a*(a - 1)/(a**2*b + a**2*c - 3*a**2 - 2*a*b*c + 2*a + 4*b*c - 2*b - 2*c + 2), (a - 1)*(a*b + a*c - a - 2*b*c + b + c - 1)/(a**2*b + a**2*c - 3*a**2 - 2*a*b*c + 2*a + 4*b*c - 2*b - 2*c + 2)]
+     games at which all 16 deviators tie identically on the open facet: []  (87 coefficient equations)
+F5 p_CD=0 p=('a', '0', 'b', 'c'): self-play limit positive on all four states: True; W(p,p) = [-c**2*(b - 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), (a - 1)*(a + 1)*(b - 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1)]
+     games at which all 16 deviators tie identically on the open facet: []  (81 coefficient equations)
+F6 p_CD=1 p=('a', '1', 'b', 'c'): self-play limit positive on all four states: True; W(p,p) = [-b*c*(c - 2)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), b*(a - 1)**2/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c)]
+     games at which all 16 deviators tie identically on the open facet: []  (42 coefficient equations)
+F7 p_DC=0 p=('a', 'b', '0', 'c'): self-play limit positive on all four states: True; W(p,p) = [-c**2*(b - 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1), (a - 1)*(a + 1)*(b - 1)/(a**2*b - 2*a**2*c - a**2 + 2*a*c**2 - b*c**2 - b - c**2 + 2*c + 1)]
+     games at which all 16 deviators tie identically on the open facet: []  (76 coefficient equations)
+F8 p_DC=1 p=('a', 'b', '1', 'c'): self-play limit positive on all four states: True; W(p,p) = [-b*c*(c - 2)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), -c*(a - 1)*(a - c + 1)/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c), b*(a - 1)**2/(a**2*b - 2*a**2*c - 2*a*b + 2*a*c**2 - b*c**2 + 2*b*c + b - 2*c**2 + 2*c)]
+     games at which all 16 deviators tie identically on the open facet: []  (107 coefficient equations)
+A  alternators (x,0,1,y): self-play (0,1/2,1/2,0); every gain = l1 C1 + l2 C2 - mu, l1,l2,mu >= 0 certified: True
+   0000 ALLD  l1=1/(2*(b + 1))  l2=0  mu=0  True
+   0001       l1=1/(2*(a*b - b + 3))  l2=b/(2*(a*b - b + 3))  mu=0  True
+   0010       l1=0  l2=0  mu=0  True
+   0011       l1=0  l2=0  mu=0  True
+   0100       l1=1/(2*(b + 1))  l2=0  mu=0  True
+   0101       l1=1/(2*(a - b + 3))  l2=1/(2*(a - b + 3))  mu=0  True
+   0110       l1=(a - 1)/(2*(a - 3*b - 1))  l2=-b/(2*(a - 3*b - 1))  mu=0  True
+   0111       l1=-(a - 1)/(2*(a*b - b + 3))  l2=1/(2*(a*b - b + 3))  mu=0  True
+   1000 Grim  l1=1/(2*(b + 1))  l2=0  mu=0  True
+   1001 WSLS  l1=(a - 1)/(2*(3*a - b - 3))  l2=-b/(2*(3*a - b - 3))  mu=0  True
+   1010 TFT   l1=0  l2=0  mu=0  True
+   1011       l1=0  l2=0  mu=0  True
+   1100       l1=1/(4*(b + 1))  l2=-1/(4*(a - 2))  mu=0  True
+   1101       l1=0  l2=-1/(2*(a - 2))  mu=0  True
+   1110       l1=0  l2=-1/(2*(a - 2))  mu=0  True
+   1111 ALLC  l1=0  l2=-1/(2*(a - 2))  mu=0  True
+A  alternators (0,0,1,y): self-play (0,1/2,1/2,0); every gain = l1 C1 + l2 C2 - mu, l1,l2,mu >= 0 certified: True
+A  alternators (x,0,1,1): self-play (0,1/2,1/2,0); every gain = l1 C1 + l2 C2 - mu, l1,l2,mu >= 0 certified: True
+SUMMARY  F2 reduction: True;  F3-F8 all states recur and no game makes all deviators tie identically: [True, True, True, True, True, True];  alternator reduction: True   (15.7 s)

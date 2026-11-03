@@ -1,0 +1,276 @@
+
+==============================================================================
+CROSS-CHECK against m1lib's exact Fraction chain (no floats, no tolerance)
+==============================================================================
+   48 pair-chain margins (3 focal p x 16 vertex q) at eps = 1/10, exact rationals:
+   mismatches against m1lib.stationary_exact = 0
+   OK -- the symbolic chain and the harness chain are the same object.
+
+==============================================================================
+SANITY: tree-theorem weights agree with sympy nullspace (symbolic, p4=0, q=0001)
+==============================================================================
+  w_tree - w_nullspace = [0, 0, 0, 0]  (must be [0, 0, 0, 0])
+  OK -- the two independent symbolic routes to w agree identically in (eps, p1, p2, p3).
+
+==============================================================================
+AKIN'S IDENTITY, symbolic, ALL FOUR p_i free, all 16 vertex co-players
+==============================================================================
+  Claim (finite eps):  w . (p~1-1, p~2-1, p~3, p~4) = 0 exactly, p~ = eps+(1-2eps)p.
+  Claim (limit)     :  W . (p1-1, p2-1, p3, p4) = 0.
+
+   q = 0000 [ALLD]                finite-eps residual = 0   OK
+   q = 0001 [q* (C only after DD)] finite-eps residual = 0   OK
+   q = 0010                       finite-eps residual = 0   OK
+   q = 0011                       finite-eps residual = 0   OK
+   q = 0100                       finite-eps residual = 0   OK
+   q = 0101 [ATFT]                finite-eps residual = 0   OK
+   q = 0110 [AWSLS]               finite-eps residual = 0   OK
+   q = 0111 [m(q*)]               finite-eps residual = 0   OK
+   q = 1000 [Grim]                finite-eps residual = 0   OK
+   q = 1001 [WSLS]                finite-eps residual = 0   OK
+   q = 1010 [TFT]                 finite-eps residual = 0   OK
+   q = 1011                       finite-eps residual = 0   OK
+   q = 1100                       finite-eps residual = 0   OK
+   q = 1101                       finite-eps residual = 0   OK
+   q = 1110                       finite-eps residual = 0   OK
+   q = 1111 [ALLC]                finite-eps residual = 0   OK
+
+  All 16 residuals are the exact symbolic zero in (eps, p1, p2, p3, p4).
+  The limit form follows by continuity of the residual in eps (w is a probability
+  vector, so the O(eps) correction p~ - p contributes at most 2*eps in absolute value).
+
+==============================================================================
+STRATUM G -- all four p_i symbolic: the witness ALLD = 0000 kills the slab p4 > 0
+==============================================================================
+  finite eps, factored:
+     w_DC - w_CD = (2*epsilon - 1)*(epsilon**2*p1 - epsilon**2*p2 - epsilon**2*p3 + epsilon**2*p4 + epsilon*p2 + epsilon*p3 - 2*epsilon*p4 + p4)/(2*epsilon**2*p1 - 2*epsilon**2*p2 - 2*epsilon**2*p3 + 2*epsilon**2*p4 - epsilon*p1 + 3*epsilon*p2 + epsilon*p3 - 3*epsilon*p4 - p2 + p4 + 1)
+
+  exact identity check:  w_DC - w_CD = -(1-2eps) * sum_s w_s p_s ?
+     residual = 0  (must be 0)
+
+  limit:  W_DC - W_CD = p4/(p2 - p4 - 1)
+     = -p4/(1 - p2 + p4)?  residual = 0
+
+  Sign: for 0 <= p2 < 1 the denominator 1 - p2 + p4 > 0, so the margin is < 0
+  exactly when p4 > 0, and = 0 when p4 = 0.  Hence  p in Riv+  =>  p4 = 0.
+  (The formula is independent of p1 and p3.  It degenerates only at p2 = 1, p4 = 0,
+   which is stratum E below -- there the generic limit 0/0 is NOT the right answer.)
+
+  The same caveat as on the face applies: the formula above is the limit on the OPEN
+  cell.  So the slab p4 > 0 is also swept cell by cell -- p1,p2,p3 each in {0, free, 1}
+  and p4 either free in (0,1) or = 1, i.e. 54 cells -- with the substitution applied
+  BEFORE the limit, each refuted by ALLD alone:
+    p = (0, 0, 0, p4)              ALLD margin = -p4/(p4 + 1)   <=0: True, mid = -1/3
+    p = (0, 0, p3, p4)             ALLD margin = -p4/(p4 + 1)   <=0: True, mid = -1/3
+    p = (0, 0, 1, p4)              ALLD margin = -p4/(p4 + 1)   <=0: True, mid = -1/3
+    p = (0, p2, 0, p4)             ALLD margin = p4/(p2 - p4 - 1)   <=0: True, mid = -1/2
+    p = (0, p2, p3, p4)            ALLD margin = p4/(p2 - p4 - 1)   <=0: True, mid = -1/2
+    p = (0, p2, 1, p4)             ALLD margin = p4/(p2 - p4 - 1)   <=0: True, mid = -1/2
+  ALL 54 CELLS OF THE SLAB p4 > 0 REFUTED BY ALLD: True
+
+==============================================================================
+STRATUM A -- p4 = 0 exactly, p1 p2 p3 symbolic (p2 generic): all 16 co-players
+==============================================================================
+   q = 0000 [ALLD]                W_DC - W_CD = 0
+   q = 0001 [q* (C only after DD)] W_DC - W_CD = (-p2 - p3 + 1)/(-2*p2 + p3 + 2)
+   q = 0010                       W_DC - W_CD = 0
+   q = 0011                       W_DC - W_CD = (-p1*p2 - p3 + 1)/(2*(-p1*p2 + p2*p3 + 1))
+   q = 0100                       W_DC - W_CD = 0
+   q = 0101 [ATFT]                W_DC - W_CD = (-p1*p3 - p2 + 1)/(p1*p3 - 2*p2*p3 - p2 + 2*p3 + 1)
+   q = 0110 [AWSLS]               W_DC - W_CD = 0
+   q = 0111 [m(q*)]               W_DC - W_CD = (-p1*p2 - p1*p3 + 1)/(-p1*p2 + 2*p3 + 1)
+   q = 1000 [Grim]                W_DC - W_CD = 0
+   q = 1001 [WSLS]                W_DC - W_CD = (p2 + p3 - 1)/(2*p2 - p3 - 2)
+   q = 1010 [TFT]                 W_DC - W_CD = 0
+   q = 1011                       W_DC - W_CD = (p1*p3 - p1 - p3 + 1)/(-2*p1 + p2*p3 + 2)
+   q = 1100                       W_DC - W_CD = (p1 - 1)/(2*(p1 - p3 - 1))
+   q = 1101                       W_DC - W_CD = (p1 - 1)/(p1 - p3 - 1)
+   q = 1110                       W_DC - W_CD = 2*(1 - p1)/(-3*p1 + 2*p3 + 3)
+   q = 1111 [ALLC]                W_DC - W_CD = (1 - p1)/(-p1 + p3 + 1)
+
+==============================================================================
+WHY ONE GENERIC FORMULA IS NOT ENOUGH: the face p4 = 0 must be split into cells
+==============================================================================
+  sympy.limit treats p1,p2,p3 as GENERIC symbols, so the 16 rational functions above
+  are the limit only on the OPEN cell p1,p2,p3 in (0,1).  When a coordinate hits 0 or 1
+  the eps = 0 chain can gain or lose transient states and the limit genuinely changes.
+  Each p_i in {0, free in (0,1), 1} gives 3^3 = 27 cells, which partition the face.
+  Each cell is recomputed with the substitution applied BEFORE the limit.
+
+  cells on which the generic formula is WRONG for some q: 18 / 27
+    (0, 0, 0), (0, p2, 0), (0, 1, 0), (0, 1, p3), (0, 1, 1), (p1, 0, 0), (p1, p2, 0), (p1, 1, 0), (p1, 1, p3), (p1, 1, 1), (1, 0, 0), (1, 0, p3), (1, p2, 0), (1, p2, p3), (1, p2, 1), (1, 1, 0), (1, 1, p3), (1, 1, 1)
+  So the certificate below is done cell by cell.  (This is a substantive correction:
+  a single global Bernstein certificate on the generic formulas would have been
+  certifying the wrong functions on 18 of the 27 cells.)
+
+==============================================================================
+SUFFICIENCY, CELL BY CELL: all 16 margins >= 0 on cl(cell) cap {p2+p3 <= 1}, p2 < 1
+==============================================================================
+  Certificate: substitute the cell's parametrisation, then check that numerator and
+  denominator have all BERNSTEIN coefficients >= 0 on the unit box.  Bernstein
+  nonnegativity is exact and sufficient; there is no sampling anywhere.
+
+  cell (0, 0, 0)          : all 16 margins >= 0   CERTIFIED
+  cell (0, 0, p3)         : all 16 margins >= 0   CERTIFIED
+  cell (0, 0, 1)          : all 16 margins >= 0   CERTIFIED
+  cell (0, p2, 0)         : all 16 margins >= 0   CERTIFIED
+  cell (0, p2, p3)        : all 16 margins >= 0   CERTIFIED
+  cell (0, p2, 1)         : empty intersection with p2+p3 <= 1 -- skipped
+  cell (p1, 0, 0)         : all 16 margins >= 0   CERTIFIED
+  cell (p1, 0, p3)        : all 16 margins >= 0   CERTIFIED
+  cell (p1, 0, 1)         : all 16 margins >= 0   CERTIFIED
+  cell (p1, p2, 0)        : all 16 margins >= 0   CERTIFIED
+  cell (p1, p2, p3)       : all 16 margins >= 0   CERTIFIED
+  cell (p1, p2, 1)        : empty intersection with p2+p3 <= 1 -- skipped
+  cell (1, 0, 0)          : all 16 margins >= 0   CERTIFIED
+  cell (1, 0, p3)         : all 16 margins >= 0   CERTIFIED
+  cell (1, 0, 1)          : all 16 margins >= 0   CERTIFIED
+  cell (1, p2, 0)         : all 16 margins >= 0   CERTIFIED
+  cell (1, p2, p3)        : all 16 margins >= 0   CERTIFIED
+  cell (1, p2, 1)         : empty intersection with p2+p3 <= 1 -- skipped
+
+  SUFFICIENCY CERTIFIED ON EVERY CELL OF {p4=0, p2+p3<=1, p2<1}: True
+
+==============================================================================
+NECESSITY, CELL BY CELL: a witness with margin <= 0 on every piece with p2+p3 > 1
+==============================================================================
+  For each cell piece meeting {p2+p3 >= 1} we look for one co-player whose margin is
+  <= 0 there (Bernstein on -margin) and print its value at the box midpoint, which is
+  an interior point of the piece and hence strictly off the face p2+p3 = 1.
+
+  cell (0, p2, p3)        : witness 0001 [q* (C only after DD)] m = -t2*(1 - z)/(t2*(1 - z) + 3*z)
+        m at the box midpoint = -1/7
+  cell (0, p2, 1)         : witness 0001 [q* (C only after DD)] m = z/(2*z - 3)
+        m at the box midpoint = -1/4
+  cell (p1, p2, p3)       : witness 0001 [q* (C only after DD)] m = -t2*(1 - z)/(t2*(1 - z) + 3*z)
+        m at the box midpoint = -1/7
+  cell (p1, p2, 1)        : witness 0001 [q* (C only after DD)] m = z/(2*z - 3)
+        m at the box midpoint = -1/4
+  cell (1, p2, p3)        : witness 0001 [q* (C only after DD)] m = -t2*(1 - z)/(t2*(1 - z) + 3*z)
+        m at the box midpoint = -1/7
+  cell (1, p2, 1)         : witness 0001 [q* (C only after DD)] m = z/(2*z - 3)
+        m at the box midpoint = -1/4
+
+  NECESSITY WITNESSED ON EVERY CELL PIECE WITH p2+p3 > 1: True
+
+==============================================================================
+NECESSITY IN CLOSED FORM: the witness q* = 0001 on the interior cell
+==============================================================================
+  W_DC - W_CD against 0001 is (-p2 - p3 + 1)/(-2*p2 + p3 + 2)
+  claimed closed form (1-p2-p3)/(p3+2(1-p2)) : residual = 0
+  p1 does not appear: True
+  p3 + 2(1-p2) > 0 whenever p2 < 1, so sign(margin) = sign(1 - p2 - p3): < 0 iff
+  p2 + p3 > 1 and = 0 on p2+p3 = 1.  The constraint is tight, not slack.
+
+==============================================================================
+THE MINIMUM IS ATTAINED AT ZERO ON Riv+ (no slack anywhere in the region)
+==============================================================================
+   margin against 0000 (ALLD) at p4 = 0, interior cell : 0
+   margin against 0001 (q*)   on the face p2+p3 = 1     : 0
+  Both vanish identically, so min_q (W_DC - W_CD) = 0 on Riv+: the closed form is the
+  ZERO SET of the min, not a strict-inequality region.
+
+==============================================================================
+WHICH CO-PLAYERS ARE NEEDED (clause 5d)
+==============================================================================
+  ALLD alone, on p4 = 0, interior cell : 0 -> no constraint
+  0001 alone                           :  p2 + p3 <= 1
+  So {ALLD, 0001} give the whole answer: ALLD supplies p4 = 0 (stratum G) and p2 < 1
+  (stratum E), 0001 supplies p2 + p3 <= 1.  No single co-player suffices.
+
+==============================================================================
+STRATUM E -- p4 = 0 AND p2 = 1 (the excluded edge locus), p1 p3 symbolic
+==============================================================================
+  Here the eps = 0 chain has two recurrent classes, so the generic stratum-A formulas
+  are not valid; the verdict is decided by the order-eps leakage and must be computed
+  at finite eps.  Substituting p2 = 1, p4 = 0 BEFORE taking the limit:
+
+   against ALLD, finite eps : (2*epsilon - 1)*(epsilon*p1 - epsilon*p3 - epsilon + p3 + 1)/(2*epsilon*p1 - 2*epsilon*p3 - 2*epsilon - p1 + p3 + 3)
+   against ALLD, limit      : (p3 + 1)/(p1 - p3 - 3)
+   = -(1+p3)/(3+p3-p1)? residual = 0
+   On the edge E itself (p3 = 0): 1/(p1 - 3)  -> at p1=0: -1/3 , at p1=1: -1/2
+
+  3 + p3 - p1 >= 2 > 0 and 1 + p3 >= 1, so the margin is <= -1/3 < 0 everywhere on
+  the locus {p2 = 1, p4 = 0}.  Hence the whole of that locus -- E included -- is OUT.
+  Note this is a genuine discontinuity: the stratum-A limit at p2 -> 1 is 0, the
+  stratum-E limit is bounded away from 0.  The order of the two limits matters.
+
+  The two limits do NOT commute -- which is exactly why stratification is needed.
+  Against ALLD, at p4 = 0:
+   eps -> 0 first (stratum A), then p2 -> 1 : 0
+   p2 = 1 first, then eps -> 0 (stratum E)  : (p3 + 1)/(p1 - p3 - 3)
+  Against 0001 the two orders happen to agree (both -1 at p3 = 0):
+   eps -> 0 first, then p2 -> 1 : -1
+   p2 = 1 first, then eps -> 0  : -1
+
+  All NINE cells of the locus {p4 = 0, p2 = 1}, each with the substitution applied
+  before the limit, refuted by ALLD (margin must be < 0 on the whole closed cell):
+    (p1,p2,p3) = (0, 1, 0)     ALLD margin = -1/3   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (0, 1, p3)    ALLD margin = (-p3 - 1)/(p3 + 3)   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (0, 1, 1)     ALLD margin = -1/2   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (p1, 1, 0)    ALLD margin = 1/(p1 - 3)   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (p1, 1, p3)   ALLD margin = (p3 + 1)/(p1 - p3 - 3)   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (p1, 1, 1)    ALLD margin = 2/(p1 - 4)   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (1, 1, 0)     ALLD margin = -1/2   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (1, 1, p3)    ALLD margin = (-p3 - 1)/(p3 + 2)   <= 0: True, < 0 at midpoint: True
+    (p1,p2,p3) = (1, 1, 1)     ALLD margin = -2/3   <= 0: True, < 0 at midpoint: True
+  WHOLE LOCUS p2 = 1 REFUTED: True
+
+==============================================================================
+COMPARISON WITH THE CONJECTURED CLOSED FORM
+==============================================================================
+  Derived, from the three strata:
+     Riv+ = { p4 = 0 }  (stratum G, witness ALLD)
+          cap { p2 + p3 <= 1 }  (stratum A, witness 0001)
+          minus { p2 = 1 }  (stratum E, witness ALLD)
+  and on {p4 = 0, p2 < 1}, p2 = 1 is impossible, while p2 = 1 with p2+p3 <= 1 forces
+  p3 = 0, i.e. exactly the edge E = {(p1,1,0,0)}.  So
+     Riv+ = ({p4 = 0} cap {p2+p3 <= 1}) \ E = {p4 = 0, p3 <= 1-p2, p2 < 1}.
+  This is verbatim the conjecture.  p1 is free, and (u,v) never entered.
+
+  Vertex census of the derived set (evaluate the predicate at the 16 vertices):
+     Riv+ cap {0,1}^4 = ['0000 [ALLD]', '0010', '1000 [Grim]', '1010 [TFT]']
+     expected           = 0000 ALLD, 1000 Grim, 0010, 1010 TFT
+
+==============================================================================
+MIRROR: Riv- by the C/D relabelling m(p) = (1-p4, 1-p3, 1-p2, 1-p1)
+==============================================================================
+  Verified symbolically at finite eps on all 16 co-players: relabelling both players
+  maps state s to 3-s and negates w_DC - w_CD.
+
+   q = 0000 [ALLD]                margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0001 [q* (C only after DD)] margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0010                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0011                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0100                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0101 [ATFT]                margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0110 [AWSLS]               margin(p,q) + margin(m(p),m(q)) = 0
+   q = 0111 [m(q*)]               margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1000 [Grim]                margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1001 [WSLS]                margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1010 [TFT]                 margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1011                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1100                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1101                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1110                       margin(p,q) + margin(m(p),m(q)) = 0
+   q = 1111 [ALLC]                margin(p,q) + margin(m(p),m(q)) = 0
+
+  MIRROR IDENTITY HOLDS FOR ALL 16: True
+  Therefore Riv- = m(Riv+) = { p1 = 1, p2 + p3 >= 1, p3 > 0 }, and
+     Riv+ cap Riv- = { (1, s, 1-s, 0) : 0 <= s < 1 }.
+  On that segment p~ := (p1-1,p2-1,p3,p4) = (1-s)(0,-1,1,0), so Akin forces
+  W_DC = W_CD against every co-player:
+     q = 0000 [ALLD]                W_DC - W_CD = 0
+     q = 0001 [q* (C only after DD)] W_DC - W_CD = 0
+     q = 1111 [ALLC]                W_DC - W_CD = 0
+     q = 0101 [ATFT]                W_DC - W_CD = 0
+
+==============================================================================
+FIXED eps (clause 9a): Riv+(eps) = {ALLD} exactly
+==============================================================================
+  From the exact ALLD identity above, w_DC - w_CD = -(1-2eps) sum_s w_s p_s with w > 0
+  entrywise, so at any fixed eps in (0,1/2) it is >= 0 only for p = (0,0,0,0):
+    p = ALLD       : 0
+    p = generic p  : (2*epsilon - 1)*(epsilon**2*p1 - epsilon**2*p2 - epsilon**2*p3 + epsilon**2*p4 + epsilon*p2 + epsilon*p3 - 2*epsilon*p4 + p4)/(2*epsilon**2*p1 - 2*epsilon**2*p2 - 2*epsilon**2*p3 + 2*epsilon**2*p4 - epsilon*p1 + 3*epsilon*p2 + epsilon*p3 - 3*epsilon*p4 - p2 + p4 + 1)
+
+[done in 48.6 s]

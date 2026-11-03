@@ -1,0 +1,5 @@
+# alpha  n  seed  tag      -- sweep13 probe; never pooled with the full run (see probe.sbatch)
+333 100000 90004 p333_s90004
+333/1000 100000 90004 p333o1000_s90004
+1/3 20000 3900000 p1o3_s3900000
+1/3 20000 3900001 p1o3_s3900001

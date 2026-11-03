@@ -1,0 +1,355 @@
+--- ref/wfc_prod.c	2026-09-26 06:58:47
++++ wfc.c	2026-09-27 10:19:35
+@@ -63,6 +63,50 @@
+  *   where aXYZ counts samples with efficient=X, Nash=Y, competitive=Z (a101 must be 0);
+  *   and a binary file S<task>.bin holding every distinct sampled strategy of every replicate:
+  *   int32 irep, int32 count, int32 atom, double p[16]   -- for re-analysis without re-simulating.
++ *
++ * ==================================================================================================================
++ * PRFull/cannon/wfc2 -- the sensitivity kit for Referee 1, issues 6-8.  This file is PartnersRivalsM2f/cannon/wfc/
++ * wfc.c (sha256 06d09ef9...e6eb8f, kept verbatim as ref/wfc_prod.c) with four COMPILE-TIME switches.  With none of
++ * them defined the preprocessed program is token for token the production one (compile.sh checks that the default
++ * binary is byte-identical to one built from ref/wfc_prod.c), so the default build reproduces production bit for bit.
++ *
++ *   -DEPSV=<x>     the error rate of the pair chain (production: 1e-4).  Only the clamped vectors CLP/CLM used by
++ *                  the dynamics change; the atoms are the eps -> 0 limit and do not depend on it.
++ *   -DLOCALMUT     the local kernel K0: a mutant copies its parent and changes ONE coordinate j, chosen uniformly;
++ *                  with probability PREDRAW (default 1/2) p_j is redrawn from the alpha-law, otherwise a free p_j
++ *                  takes a Gaussian step of s.d. SIGMA (default 0.1) reflected into (0,1), and a pinned p_j stays
++ *                  (a no-op: the individual keeps its strategy, no new strategy is created).  A redraw that returns
++ *                  the same value is also a no-op.  Both moves leave the alpha-law invariant, so the production
++ *                  kernel masses remain the neutral baseline.  Optional -DNUGLOB=<nu>: with probability nu the
++ *                  mutant is a global alpha-law draw instead (default 0: no random number is spent on it).  The
++ *                  initial population is drawn from the alpha-law as in production.  Because K0 makes clouds of
++ *                  near-identical friendly rivals (and of near-rivals that pass the 157-co-player screen) possible in
++ *                  wedge W, the exact W-111 counter's rivalry tests are budgeted.  The test is production's verdict
++ *                  (no binary co-player gives W_DC - W_CD < -1e-9), with the co-players that refuted recent
++ *                  candidates tried first (a move-to-front list, as nash_scan's VW), which changes only its cost.
++ *                  Every pair evaluation (freqs call, ~1-2 us) is counted in frwork; a candidate with AB >= FRABIG
++ *                  (default 1e6) individual-generations is always tested, a smaller one only while frwork <
++ *                  FRWORKMAX (default 1e8, about 2-3 minutes); after that it is not tested and its AB goes to ex111u
++ *                  (unresolved).  So ex111 <= true <= ex111 + ex111u, and ex111u = 0 means ex111 is exact.  Where
++ *                  friendly rivals are rare the budget is not reached and the count is exact, as in production;
++ *                  where a cloud of them holds the population the sampled 111 share (a111 of REP) measures it.
++ *                  A line  MUT irep nredraw nstep noop nglob nfullscan frwork ex111u  follows each REP line.
++ *                  -DK0VERIFY (validation only) also runs production's test on every candidate and stops if the
++ *                  verdicts ever differ.
++ *   -DTSERIES      instrumented time series, observation only: mean payoff in TS_NB blocks over the WHOLE run, exact
++ *                  W friendly-rival individual-generations per block, and TS_NI individuals drawn at each of TS_NT
++ *                  evenly spaced times over the whole run by a SEPARATE xoshiro stream.  The main stream, and so the
++ *                  trajectory, the REP line and the S dump, are exactly those of the production build (the TS
++ *                  strategies are classified after the REP line with the classifier's state saved and restored).
++ *                  Environment: TS_NT (2000), TS_NI (10), TS_NB (400), TS_DUMP (T_<task>_<rep0>.bin).  Output lines
++ *                  TB irep b it_lo it_hi pay effi x111 nzN   (x111 = -1 outside W; nzN = N x generations of block)
++ *                  TS irep k it n a000 a001 a010 a011 a100 a101 a110 a111      (the TS_NI individuals at time it)
++ *                  TSR irep TS_NT TS_NI TS_NB ndist t_tsclass
++ *                  and the dump TS_DUMP: the distinct TS strategies in the S-dump format (irep, count, atom, p[16]),
++ *                  followed per replicate by nothing else; TS_DUMP.k holds int32 d per sampled individual in time
++ *                  order (index into that replicate's distinct list), TS_NT x TS_NI per replicate.
++ *   -DBETAV=0.0    (already a production macro) the neutral check B0: every imitation has probability 1/2.
++ * ==================================================================================================================
+  */
+ #include <stdio.h>
+ #include <stdlib.h>
+@@ -90,9 +134,12 @@
+ #ifndef MUV
+ #define MUV 1e-2
+ #endif
++#ifndef EPSV
++#define EPSV 1e-4
++#endif
+ #define N     NPOP
+ #define MPL   1
+-static const double BETA = BETAV, MU = MUV, EPS = 1e-4, THR = 25.0;
++static const double BETA = BETAV, MU = MUV, EPS = EPSV, THR = 25.0;
+ #define CHECK111 20
+ 
+ /* ------------------------------------------------------------------ RNG: xoshiro256** */
+@@ -109,6 +156,21 @@
+    (k + 0.5) 2^-53 rounds to exactly 1.0 at k = 2^53 - 1, which would let ridx(n) return n.) */
+ static inline double u01(void){ return ((double)(nxt()>>12)+0.5)*(1.0/4503599627370496.0); }
+ static inline int ridx(int n){ return (int)(u01()*n); }
++#if defined(TSERIES) && defined(LOCALMUT)
++#error "TSERIES with LOCALMUT is not a campaign arm (the unresolved W-111 mass is not tracked per block)"
++#endif
++#ifdef TSERIES
++/* the diagnostics' own xoshiro256** stream.  It never touches X0..X3, so the trajectory is the production one. */
++static uint64_t Y0,Y1,Y2,Y3;
++static inline uint64_t nxt2(void){
++  uint64_t r=rotl(Y1*5,7)*9, t=Y1<<17;
++  Y2^=Y0; Y3^=Y1; Y1^=Y2; Y0^=Y3; Y2^=t; Y3=rotl(Y3,45); return r; }
++static void seedrng2(uint64_t s){
++  uint64_t *d[4]={&Y0,&Y1,&Y2,&Y3}; s^=0x5453455249455332ull;   /* "TSERIES2": high bits no production seed has */
++  for(int k=0;k<4;k++){ s+=0x9E3779B97F4A7C15ull; uint64_t z=s;
++    z=(z^(z>>30))*0xBF58476D1CE4E5B9ull; z=(z^(z>>27))*0x94D049BB133111EBull; *d[k]=z^(z>>31); } }
++static inline int ridx2(int n){ return (int)((((double)(nxt2()>>12)+0.5)*(1.0/4503599627370496.0))*n); }
++#endif
+ 
+ /* ------------------------------------------------------------------ the game */
+ static double R_=1, S_, T_, EMAX, UU, VV;
+@@ -133,6 +195,29 @@
+ static int GAMEW;
+ static unsigned char C111[MAXS]; static long long AB[MAXS];
+ static long long ex111, ncand111, nfr111;
++#ifdef LOCALMUT
++#ifndef SIGMA
++#define SIGMA 0.1
++#endif
++#ifndef PREDRAW
++#define PREDRAW 0.5
++#endif
++#ifndef NUGLOB
++#define NUGLOB 0.0
++#endif
++#ifndef FRWORKMAX
++#define FRWORKMAX 100000000LL
++#endif
++#ifndef FRABIG
++#define FRABIG 1000000
++#endif
++static long long ex111u, nmv_redraw, nmv_step, nmv_noop, nmv_glob, frwork; static long nfrscan;
++#endif
++#ifdef TSERIES
++static int TS_NT=2000, TS_NI=10, TS_NB=400;
++static long long *ABB; static int *ABLO, *ABHI;   /* per strategy id: W-111 candidate individual-generations per block */
++static long long *TBX; static double *TBE; static long *TBZ;   /* per block: exact W-111, payoff sum, generations */
++#endif
+ 
+ static void table_reset(void){ nfree=0; for(int k=MAXS-1;k>=0;k--){ FREEL[nfree++]=k; REF[k]=0; } }
+ static void drawalpha(double*p){
+@@ -147,6 +232,33 @@
+   C111[id]=0; AB[id]=0;
+   if(GAMEW && RAW[id][0]==1.0 && RAW[id][15]==0.0){ double W[4]; freqs(RAW[id],RAW[id],W); C111[id]=(W[0]>1-1e-12); }
+   return id; }
++#ifdef LOCALMUT
++/* the local kernel K0 (see the header): copy the parent, change one uniformly chosen coordinate j.  With probability
++ * PREDRAW redraw p_j from the alpha-law (drawalpha's rule for one coordinate); otherwise, if p_j is free, a Gaussian
++ * step of s.d. SIGMA folded back into (0,1) (the reflection is symmetric, so it keeps U(0,1) invariant; a fold that
++ * lands exactly on 0 or 1 is redrawn, so a free coordinate never becomes pinned), and if p_j is pinned nothing
++ * happens.  A no-op returns the parent itself, so no strategy is created.  Every random number is the main stream's. */
++static int newmutant_local(int par){
++  if(NUGLOB>0.0 && u01()<NUGLOB){ nmv_glob++; return newmutant(); }
++  int j=ridx(NS), mv; double x=RAW[par][j], y;
++  if(u01()<PREDRAW){ double r=u01(); y = r<ALPHA ? 0.0 : (r<2.0*ALPHA ? 1.0 : u01()); mv=0; }
++  else if(x>0.0 && x<1.0){
++    do { double u1=u01(), u2=u01();
++         y=fabs(x+SIGMA*sqrt(-2.0*log(u1))*cos(6.283185307179586*u2));
++         y=fmod(y,2.0); if(y>1.0) y=2.0-y; } while(!(y>0.0 && y<1.0));
++    mv=1; }
++  else { nmv_noop++; return par; }
++  if(y==x){ nmv_noop++; return par; }
++  if(mv) nmv_step++; else nmv_redraw++;
++  if(nfree<=0){ fprintf(stderr,"strategy table full\n"); exit(3); }
++  int id=FREEL[--nfree]; SER[id]=nextser++; REF[id]=0;
++  memcpy(RAW[id],RAW[par],sizeof RAW[id]); RAW[id][j]=y;
++  for(int k=0;k<NS;k++) CLP[id][k]=EPS+(1.0-2.0*EPS)*RAW[id][k];
++  for(int k=0;k<NS;k++) CLM[id][k]=CLP[id][mirror_state(k)];
++  C111[id]=0; AB[id]=0;
++  if(GAMEW && RAW[id][0]==1.0 && RAW[id][15]==0.0){ double W[4]; freqs(RAW[id],RAW[id],W); C111[id]=(W[0]>1-1e-12); }
++  return id; }
++#endif
+ static void settle111(int id);
+ static inline void release(int id){ if(--REF[id]==0){ if(C111[id]) settle111(id); FREEL[nfree++]=id; } }
+ 
+@@ -201,10 +313,67 @@
+     if(payq(q,p)>pp+1e-9){ vw_push(g); return 0; } }
+   return 1; }
+ static long nnashscan, nrivscan, n111checked;
++#if defined(LOCALMUT) || defined(TSERIES)
++/* the W-111 rivalry test of production's settle111 (screen, then the full scan): 1 friendly rival, 0 not, 2 not
++ * decided (LOCALMUT only: the replicate's scan budget is spent and the candidate is small; see the header) */
++#ifdef LOCALMUT
++/* K0: production's verdict, rivscreen(p,+1) && rival_margin(p,+1,..,-1e-9) >= -1e-9, i.e. no binary co-player q with
++ * W_DC - W_CD < -1e-9, computed with recent refuters first and every freqs call counted (see the header) */
++#define NRF 64
++static unsigned RF[NRF]; static int nrf;
++static void rf_push(unsigned g){
++  for(int k=0;k<nrf;k++) if(RF[k]==g){ for(int m=k;m>0;m--) RF[m]=RF[m-1]; RF[0]=g; return; }
++  if(nrf<NRF) nrf++;
++  for(int m=nrf-1;m>0;m--) RF[m]=RF[m-1]; RF[0]=g; }
++static inline int refutes(const double*p,const double*q){ double W[4]; freqs(p,q,W); frwork++; return (W[2]-W[1]) < -1e-9; }
++static int test111_k0(const double*p){
++  double q[NS];
++  for(int k=0;k<nrf;k++){ unsigned g=RF[k]; for(int j=0;j<NS;j++) q[j]=(double)((g>>j)&1);
++    if(refutes(p,q)){ rf_push(g); return 0; } }
++  for(int k=0;k<NWIT;k++) if(refutes(p,WP[k])){ rf_push((unsigned)WITG[k]); return 0; }
++  nfrscan++;
++  for(unsigned g=0;g<65536u;g++){ for(int j=0;j<NS;j++) q[j]=(double)((g>>j)&1);
++    if(refutes(p,q)){ rf_push(g); return 0; } }
++  return 1; }
++#ifdef K0VERIFY
++static long long nverify;
++#endif
++static int test111(int id,long long wgt){
++  if(wgt<FRABIG && frwork>=FRWORKMAX) return 2;      /* budget spent and the candidate is small: no work at all */
++  int v=test111_k0(RAW[id]);
++#ifdef K0VERIFY
++  /* validation build only: the verdict must be production's, candidate by candidate */
++  { long a; int ref = rivscreen(RAW[id],+1) && rival_margin(RAW[id],+1,&a,-1e-9)>=-1e-9; nverify++;
++    if(ref!=v){ fprintf(stderr,"K0VERIFY: verdict %d, production's %d\n",v,ref); exit(6); } }
++#endif
++  return v; }
++#else
++static int test111(int id,long long wgt){ long a; (void)wgt;
++  if(!rivscreen(RAW[id],+1)) return 0;
++  return rival_margin(RAW[id],+1,&a,-1e-9)>=-1e-9; }
++#endif
+ static void settle111(int id){
++  int fr=-1;
++  if(AB[id]>0){ ncand111++;
++    fr=test111(id,AB[id]);
++    if(fr==1){ ex111+=AB[id]; nfr111++; }
++#ifdef LOCALMUT
++    else if(fr==2) ex111u+=AB[id];
++#endif
++  }
++#ifdef TSERIES
++  if(ABLO[id]>=0){                                     /* the whole-run blocks of this candidate */
++    if(fr<0){ long long w=0; for(int b=ABLO[id];b<=ABHI[id];b++) w+=ABB[(long)id*TS_NB+b]; fr=test111(id,w); }
++    for(int b=ABLO[id];b<=ABHI[id];b++){ long long*q=&ABB[(long)id*TS_NB+b]; if(fr==1) TBX[b]+=*q; *q=0; }
++    ABLO[id]=ABHI[id]=-1; }
++#endif
++  C111[id]=0; AB[id]=0; }
++#else
++static void settle111(int id){
+   if(AB[id]>0){ ncand111++; long a;
+     if(rivscreen(RAW[id],+1) && rival_margin(RAW[id],+1,&a,-1e-9)>=-1e-9){ ex111+=AB[id]; nfr111++; } }
+   C111[id]=0; AB[id]=0; }
++#endif
+ /* atom = 4*efficient + 2*Nash + competitive */
+ static int classify(const double*p){
+   double W[4]; freqs(p,p,W);
+@@ -233,6 +402,22 @@
+   if(SHK[k]==UINT32_MAX){ SHK[k]=SER[id]; memcpy(SHP[k],RAW[id],sizeof(SHP[k])); nsh++;
+     if(nsh>NSH/2){ fprintf(stderr,"sample table half full: lower NT*NI\n"); exit(5); } }
+   SHC[k]++; }
++#ifdef TSERIES
++/* the time-series samples: distinct strategies by serial (vector kept, since the table slot may be reused before the
++ * replicate ends) and, per sampled individual in time order, the index of its distinct strategy */
++#define LTS 16
++#define NTSH (1u<<LTS)
++static uint32_t TSK[NTSH]; static int TSD[NTSH]; static int ntsd;
++static double (*TSP)[NS]; static int *TSC, *TSA, *TSREC; static long ntsrec;
++static void ts_clear(void){ for(uint32_t k=0;k<NTSH;k++) TSK[k]=UINT32_MAX; ntsd=0; ntsrec=0; }
++static void ts_add(int id){
++  uint32_t k=(SER[id]*2654435761u)>>(32-LTS);
++  while(TSK[k]!=UINT32_MAX && TSK[k]!=SER[id]) k=(k+1)&(NTSH-1);
++  if(TSK[k]==UINT32_MAX){ TSK[k]=SER[id]; TSD[k]=ntsd; memcpy(TSP[ntsd],RAW[id],sizeof(TSP[0])); TSC[ntsd]=0;
++    if(++ntsd>(int)(NTSH/2)){ fprintf(stderr,"TS table half full: lower TS_NT*TS_NI\n"); exit(5); } }
++  TSC[TSD[k]]++; TSREC[ntsrec++]=TSD[k]; }
++static int envint(const char*name,int dflt){ const char*s=getenv(name); return (s&&*s)? atoi(s) : dflt; }
++#endif
+ 
+ /* ------------------------------------------------------------------ games.dat */
+ static int read_game(int task,int*gid,int*ipt){
+@@ -292,6 +477,27 @@
+ 
+   printf("# wfc N=%d beta=%g mu=%g eps=%g alpha=%.10f itend=%ld NT=%d NI=%d task=%d reps=%d..%d\n",
+          N,BETA,MU,EPS,ALPHA,itend,NT,NI,task,rep0,rep0+nrep-1);
++#ifdef LOCALMUT
++  printf("# wfc2 LOCALMUT (kernel K0) sigma=%g predraw=%g nuglob=%g frworkmax=%lld frabig=%lld\n",
++         (double)SIGMA,(double)PREDRAW,(double)NUGLOB,(long long)FRWORKMAX,(long long)FRABIG);
++#endif
++#ifdef TSERIES
++  TS_NT=envint("TS_NT",2000); TS_NI=envint("TS_NI",10); TS_NB=envint("TS_NB",400);
++  if(TS_NT<1||TS_NI<1||TS_NB<1||itend%TS_NT||itend%TS_NB){ fprintf(stderr,"TS_NT and TS_NB must divide itend\n"); return 1; }
++  const long tsdt=itend/TS_NT, tsbl=itend/TS_NB;
++  printf("# wfc2 TSERIES TS_NT=%d TS_NI=%d TS_NB=%d (every %ld generations; blocks of %ld) second stream seed^0x5453455249455332\n",
++         TS_NT,TS_NI,TS_NB,tsdt,tsbl);
++  ABB=calloc((size_t)MAXS*TS_NB,sizeof *ABB); ABLO=malloc(MAXS*sizeof *ABLO); ABHI=malloc(MAXS*sizeof *ABHI);
++  TBX=malloc(TS_NB*sizeof *TBX); TBE=malloc(TS_NB*sizeof *TBE); TBZ=malloc(TS_NB*sizeof *TBZ);
++  TSP=malloc((NTSH/2+1)*sizeof *TSP); TSC=malloc((NTSH/2+1)*sizeof *TSC); TSA=malloc((NTSH/2+1)*sizeof *TSA);
++  TSREC=malloc((size_t)TS_NT*TS_NI*sizeof *TSREC);
++  if(!ABB||!ABLO||!ABHI||!TBX||!TBE||!TBZ||!TSP||!TSC||!TSA||!TSREC){ fprintf(stderr,"TS allocation failed\n"); return 2; }
++  for(int k=0;k<MAXS;k++) ABLO[k]=ABHI[k]=-1;
++  char tn[512], tkn[520]; { const char*e=getenv("TS_DUMP");
++    if(e&&*e) snprintf(tn,sizeof tn,"%s",e); else snprintf(tn,sizeof tn,"T%d_%d.bin",task,rep0); }
++  snprintf(tkn,sizeof tkn,"%s.k",tn);
++  FILE*ft=fopen(tn,"wb"), *ftk=fopen(tkn,"wb"); if(!ft||!ftk){ perror(tn); return 2; }
++#endif
+   char bn[256]; if(spath) snprintf(bn,sizeof bn,"%s",spath); else snprintf(bn,sizeof bn,"S%d_%d.bin",task,rep0);
+   FILE*fb=fopen(bn,"wb"); if(!fb){ perror(bn); return 2; }
+   static int s[N], sn[N]; static double f[N];
+@@ -302,6 +508,13 @@
+     table_reset(); samp_clear(); nvw=0;
+     for(int k=0;k<MAXS;k++){ C111[k]=0; AB[k]=0; }
+     ex111=ncand111=nfr111=0;
++#ifdef LOCALMUT
++    ex111u=0; nfrscan=0; frwork=0; nrf=0; nmv_redraw=nmv_step=nmv_noop=nmv_glob=0;
++#endif
++#ifdef TSERIES
++    seedrng2(sbase+(uint64_t)(task-1)*10+irep); ts_clear();
++    for(int b=0;b<TS_NB;b++){ TBX[b]=0; TBE[b]=0.0; TBZ[b]=0; }
++#endif
+     long ns0=nnashscan, nr0=nrivscan;
+     for(int i=0;i<N;i++){ s[i]=newmutant(); REF[s[i]]++; }
+     double z=0, ef=0; double t0=now();
+@@ -326,6 +539,15 @@
+           CK[slot]=key; CVL[slot]=vl; CVH[slot]=vh; nmis++; }
+         if(!isw){ f[i]+=vl; f[j]+=vh; } else { f[i]+=vh; f[j]+=vl; }
+       }
++#ifdef TSERIES
++      { /* observation only: reads f[] and s[], writes TS state, draws from the second stream */
++        int b=(int)((it-1)/tsbl); double e=0.0;
++        for(int i=0;i<N;i++){ e+=f[i]; int si=s[i];
++          if(C111[si]){ ABB[(long)si*TS_NB+b]++; if(ABLO[si]<0) ABLO[si]=b; ABHI[si]=b; } }
++        TBE[b]+=e; TBZ[b]++;
++        if(it%tsdt==0) for(int m=0;m<TS_NI;m++) ts_add(s[ridx2(N)]);
++      }
++#endif
+       if(it>init){
+         z+=1.0; double efg=0; for(int i=0;i<N;i++){ efg+=f[i]; if(C111[s[i]]) AB[s[i]]++; } ef+=efg;
+         while(nexts<NT && it==tnext){
+@@ -334,7 +556,11 @@
+         }
+       }
+       for(int i=0;i<N;i++){
++#ifdef LOCALMUT
++        if(u01()<MU){ sn[i]=newmutant_local(s[i]); }
++#else
+         if(u01()<MU){ sn[i]=newmutant(); }
++#endif
+         else {
+           int j=ridx(N);
+           double xf=be*(f[j]-f[i]), prob;
+@@ -363,7 +589,40 @@
+            GAMEW,ex111,nfr111,ncand111,z*(double)N);
+     fflush(stdout);
+     if(cnt[5]){ fprintf(stderr,"atom 101 nonempty\n"); return 4; }
++#ifdef LOCALMUT
++    printf("MUT %d %lld %lld %lld %lld %ld %lld %lld\n",irep,nmv_redraw,nmv_step,nmv_noop,nmv_glob,nfrscan,frwork,ex111u);
++#ifdef K0VERIFY
++    fprintf(stderr,"K0VERIFY: %lld W-111 verdicts identical to production's test\n",nverify);
++#endif
++    fflush(stdout);
++#endif
++#ifdef TSERIES
++    { /* classify the TS strategies with the classifier's state saved and restored, so that nothing the production
++         build prints for a later replicate can change (n111checked decides which Nash scans are run and counted) */
++      long s_nn=nnashscan, s_nr=nrivscan, s_n1=n111checked; unsigned s_vw[NVW]; int s_nvw=nvw;
++      memcpy(s_vw,VW,sizeof VW);
++      double t2=now();
++      for(int d=0;d<ntsd;d++) TSA[d]=classify(TSP[d]);
++      double tts=now()-t2;
++      nnashscan=s_nn; nrivscan=s_nr; n111checked=s_n1; nvw=s_nvw; memcpy(VW,s_vw,sizeof VW);
++      for(int b=0;b<TS_NB;b++){
++        double pb=TBE[b]/(double)N*0.5/MPL/(double)TBZ[b];
++        printf("TB %d %d %ld %ld %.12g %.10f %lld %.0f\n",irep,b,(long)b*tsbl+1,(long)(b+1)*tsbl,pb,pb/EMAX,
++               GAMEW? TBX[b] : -1LL,(double)TBZ[b]*N); }
++      for(int k=0;k<TS_NT;k++){ long c[8]={0};
++        for(int m=0;m<TS_NI;m++) c[TSA[TSREC[(long)k*TS_NI+m]]]++;
++        printf("TS %d %d %ld %d",irep,k,(long)(k+1)*tsdt,TS_NI); for(int a=0;a<8;a++) printf(" %ld",c[a]); printf("\n"); }
++      printf("TSR %d %d %d %d %d %.1f\n",irep,TS_NT,TS_NI,TS_NB,ntsd,tts);
++      fflush(stdout);
++      for(int d=0;d<ntsd;d++){ int32_t hdr[3]={irep,TSC[d],TSA[d]}; fwrite(hdr,sizeof hdr,1,ft); fwrite(TSP[d],sizeof(double),NS,ft); }
++      for(long r=0;r<ntsrec;r++){ int32_t d=TSREC[r]; fwrite(&d,sizeof d,1,ftk); }
++      for(int d=0;d<ntsd;d++) if(TSA[d]==5){ fprintf(stderr,"atom 101 nonempty (TS)\n"); return 4; }
++    }
++#endif
+   }
+   fclose(fb);
++#ifdef TSERIES
++  fclose(ft); fclose(ftk);
++#endif
+   return 0;
+ }

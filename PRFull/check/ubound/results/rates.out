@@ -1,0 +1,5 @@
+W      795531 targets: excluded by ALLD alone 98.24%; co-players used 9: {0: 781520, 15824: 1485, 16128: 64, 32902: 78, 32932: 56, 35754: 1, 50076: 857, 50954: 11468, 65534: 2}
+N      107694 targets: excluded by ALLD alone 99.84%; co-players used 5: {0: 107525, 15824: 146, 32768: 18, 32932: 1, 50954: 4}
+E      107694 targets: excluded by ALLC alone 99.84%; co-players used 5: {15824: 163, 16128: 1, 29952: 1, 65534: 4, 65535: 107525}
+ray+   444722 targets: excluded by ALLD alone 99.28%; co-players used 8: {0: 441527, 15824: 468, 16128: 12, 32768: 23, 32902: 13, 32932: 12, 50076: 207, 50954: 2460}
+W68    178760 targets: excluded by ALLD alone 98.12%; co-players used 7: {0: 175392, 15824: 74, 16128: 1, 32768: 12, 32902: 29, 32932: 5, 50954: 3247}

@@ -1,0 +1,3 @@
+# TS diagnostics per game (memory one, F1, eps 1e-4, 4e7 generations): P = production window (itend/8, itend/4], L = (itend/2, itend]; lead share = the production pooled leader's share
+ipt	tag	wedge	prod_reps	nrep	lead_prod	lead_P	lead_L	E_prod	E_P	E_L	t_P_vs_L	t_P_vs_prod	ESSlead_P_med	ESSlead_P_min	ESSlead_L_med	ESSeff_P_med	IATlead_P_gen	zmax_eff	n_z2_eff	zmax_lead	n_z2_lead	reps_111_above_half	ci_lo	ci_hi	takeovers	rate_per1e7	lo	hi	escapes	rate_per1e7	lo	hi	ok_quarters	ok_ess	ok_windows
+466	V_p466_PDW	W	agree	2	110	110	110	0.973079	0.964796	0.969971	3.16057	-8.25668	24.0265	8.05753	17.0419	47.4825	186.388	4.32622	2	2.57682	1	0	0	0.841886	0	0	0	922.681	0	nan	nan	nan	True	False	False

@@ -1,0 +1,26 @@
+# S_box: CERTIFIED
+STATEMENT.  Every p with p0 = 1 and |p_s - c_s| <= 1/1024 for s = 1..15 (c below) is a friendly rival of
+wedge S in the eps -> 0 limit: self-play (1,0,0,0) and w_CD >= w_DC against every binary memory-two co-player
+(hence every memory-two co-player).  The box is 15-dimensional, the dimension of the facet p0 = 1.
+   Also certified: the larger proportional box |p_s - c_s| <= 21/2048 * min(c_s, 1-c_s) (volume 7.15e-36, 3.11e+05 x the symmetric one): True.
+
+stratum 1*************** (dimension 15)
+centre  (1, 27/32, 15/32, 25/32, 29/32, 7/8, 9/32, 3/16, 21/32, 7/16, 27/32, 15/32, 3/16, 3/8, 15/16, 11/16)
+box     c_s +- 1/1024, s = 1..15; volume (1/512)^15 = 2.3e-41
+
+EFFICIENCY (exact, L1): class C on the whole open stratum; exact self-play at c = (1, 0, 0, 0)
+
+COMPETITIVENESS (ratio route), all 65536 binary co-players:
+   U/L = 81547631641169781387147995875/69535022795245747828151816733 = 1.172756
+   (1) interval screen + exact:  both w_CD, w_DC structurally 0: 25159;  w_DC structurally 0 < w_CD: 3710;
+       rho(c) >= U/L by interval lower bound: 36667;  by exact rational: 0;  identities: 0;  failing: 0
+       rho_min = 419698/307347 = 1.365551 at co-player 2902
+   (2) fully exact mpq scan at c (no floating point): structural zeros 25159, w_DC = 0 < w_CD 3710,
+       rho < 1: 0, ties w_CD = w_DC > 0: 0, rho_min = 419698/307347 at 2902; rho_min >= U/L: True
+   (3) exact point certificate at c: positive 40377, structural zero 25159, exact non-structural zero 0, negative 0;
+       minimum margin 0 attained by 25159 co-players
+   Number of co-players certified positive by interval: 40377 (of which 3710 have w_DC = 0 structurally); resolved exactly: 0; structurally zero: 25159.
+   Smallest ratio margin: rho_min - U/L = 0.192795 (> 0).  No vertex enumeration (d = 15).
+   Exact spot check (not needed): 63/63 exact interior margins >= 0 (argmin co-player + 20 random, proportional box).
+
+TIMING (s, <= 3 threads/processes, nice 10): ratio_box 0.1, full_exact_scan 8.5, centre_point 0.1, ratio_box_proportional 0.1; total 8.8

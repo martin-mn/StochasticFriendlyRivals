@@ -1,0 +1,3 @@
+1o10 V [1, 0, 0, 0] binding constraints [(1 - x1, 1, x1 - 1)] Farkas failures [] witnesses [('0011', '1/2')] I constant sign -1
+11o0 V [1, 0, 0, 0] binding constraints [(0, x2, 0)] Farkas failures [] witnesses [('0001', '1/x2')] I constant sign 0
+1110 V [1, 0, 0, 0] binding constraints [(0, 1, 0)] Farkas failures [] witnesses [('0001', '1')] I constant sign 0

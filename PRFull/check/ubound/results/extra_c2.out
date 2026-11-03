@@ -1,0 +1,13 @@
+W non-excluded 364 census 362 census subset: True extra 2
+    1*1100111*1**0*0 dim 5 
+    1*1*00111*1**0*0 dim 6 
+N non-excluded 5022 census 5020 census subset: True extra 2
+    010***01*1*1*010 dim 6 mirror in census E: True
+    *10***01*1*1*010 dim 7 mirror in census E: True
+E non-excluded 5022 census 5022 census subset: True extra 0
+ray+ non-excluded 7726 census 7721 census subset: True extra 5
+    11****01*111*010 dim 6 
+    010***01*1*1*010 dim 6 
+    *10***01*1*1*010 dim 7 
+    1*1100111*1**0*0 dim 5 
+    1*1*00111*1**0*0 dim 6 

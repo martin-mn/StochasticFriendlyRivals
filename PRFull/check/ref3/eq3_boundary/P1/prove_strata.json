@@ -1,0 +1,6737 @@
+{
+ "strata": [
+  {
+   "stratum": "(1,0,0,*)",
+   "free": [
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "1000"
+    ],
+    "II": [
+     "0101",
+     "0110",
+     "0111",
+     "1101",
+     "1110",
+     "1111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "c/(c + 1)",
+      "1/(c + 1)"
+     ],
+     "k0": 0,
+     "lead": "c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(c + 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "c/(c + 2)",
+      "-(c - 1)/(c + 2)",
+      "c/(c + 2)",
+      "1/(c + 2)"
+     ],
+     "k0": 0,
+     "lead": "c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 2]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(c + 2)",
+     "l2": "-(c - 1)/(c + 2)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 2]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[c + 2]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "0",
+      "c/(2*c + 1)",
+      "c/(2*c + 1)",
+      "1/(2*c + 1)"
+     ],
+     "k0": 0,
+     "lead": "2*c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(2*c + 1)",
+     "l2": "c/(2*c + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "num[c]^1:manifest:c",
+       "den[2*c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "c/(2*(c + 1))",
+      "1/(2*(c + 1))",
+      "c/(2*(c + 1))",
+      "1/(2*(c + 1))"
+     ],
+     "k0": 0,
+     "lead": "2*(c + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(2*(c + 1))",
+     "l2": "1/(2*(c + 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "1/(2*c + 3)",
+      "2*c/(2*c + 3)",
+      "2/(2*c + 3)"
+     ],
+     "k0": 1,
+     "lead": "2*c + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*c + 3]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "2/(2*c + 3)",
+     "l2": "1/(2*c + 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*c + 3]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "den[2*c + 3]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c - 1]^1:manifest:-(1-c)"
+     ],
+     "l1": "0",
+     "l2": "1",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "1",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "c/(3*c + 2)",
+      "0",
+      "2*c/(3*c + 2)",
+      "2/(3*c + 2)"
+     ],
+     "k0": 1,
+     "lead": "3*c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*c + 2]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "2/(3*c + 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*c + 2]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "c/(3*c + 1)",
+      "c/(3*c + 1)",
+      "c/(3*c + 1)",
+      "1/(3*c + 1)"
+     ],
+     "k0": 1,
+     "lead": "2*(3*c + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(3*c + 1)",
+     "l2": "c/(3*c + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "num[c]^1:manifest:c",
+       "den[3*c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "(2*c + 1)/(6*(c + 1))",
+      "(c + 2)/(6*(c + 1))",
+      "c/(2*(c + 1))",
+      "1/(2*(c + 1))"
+     ],
+     "k0": 2,
+     "lead": "6*(c + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(2*(c + 1))",
+     "l2": "(c + 2)/(6*(c + 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "num[c + 2]^1:subst(2 coeffs>0)",
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "(c + 1)/3",
+      "-(c - 2)/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "-(c - 2)/3",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[c - 2]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1/3",
+      "2/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "2/3",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "(c + 1)/(c + 3)",
+      "2/(c + 3)",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "c + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 3]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "2/(c + 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[c + 3]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,0,0,1)",
+   "free": [],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0001",
+     "1000"
+    ],
+    "II": [
+     "0110",
+     "0111",
+     "1101",
+     "1110",
+     "1111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1/2",
+      "1/2"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "1/3",
+      "0",
+      "1/3",
+      "1/3"
+     ],
+     "k0": 0,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "0",
+      "1/3",
+      "1/3",
+      "1/3"
+     ],
+     "k0": 0,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/3",
+     "l2": "1/3",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "k0": 0,
+     "lead": "4",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/4",
+     "l2": "1/4",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "1/5",
+      "2/5",
+      "2/5"
+     ],
+     "k0": 1,
+     "lead": "5",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "2/5",
+     "l2": "1/5",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "k0": 1,
+     "lead": "8",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/4",
+     "l2": "1/4",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/5",
+      "0",
+      "2/5",
+      "2/5"
+     ],
+     "k0": 1,
+     "lead": "5",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "2/5",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "k0": 1,
+     "lead": "8",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/4",
+     "l2": "1/4",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "k0": 2,
+     "lead": "12",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/4",
+     "l2": "1/4",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "1/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1/3",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1/3",
+      "2/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "2/3",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1/2",
+      "1/2",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "4",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1/2",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,0,*,*)",
+   "free": [
+    "b",
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0100",
+     "1000",
+     "1100"
+    ],
+    "II": [
+     "0110",
+     "0111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "c/(c + 1)",
+      "1/(c + 1)"
+     ],
+     "k0": 0,
+     "lead": "c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "1/(c + 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "-c/(b*c - b - c - 2)",
+      "(c - 1)/(b*c - b - c - 2)",
+      "(b*c - b - c)/(b*c - b - c - 2)",
+      "-1/(b*c - b - c - 2)"
+     ],
+     "k0": 0,
+     "lead": "-b*c + b + c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b*c - b - c - 2]^1:subst(4 coeffs<0)"
+     ],
+     "l1": "-1/(b*c - b - c - 2)",
+     "l2": "(c - 1)/(b*c - b - c - 2)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[b*c - b - c - 2]^1:subst(4 coeffs<0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[b*c - b - c - 2]^1:subst(4 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "0",
+      "-c/(b - 2*c - 1)",
+      "-c/(b - 2*c - 1)",
+      "(b - 1)/(b - 2*c - 1)"
+     ],
+     "k0": 0,
+     "lead": "-b + 2*c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 2*c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(b - 2*c - 1)",
+     "l2": "-c/(b - 2*c - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b - 2*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "num[c]^1:manifest:c",
+       "den[b - 2*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "c*(b - 1)/(2*(b*c - c - 1))",
+      "-1/(2*(b*c - c - 1))",
+      "(b*c - b - c)/(2*(b*c - c - 1))",
+      "(b - 1)/(2*(b*c - c - 1))"
+     ],
+     "k0": 0,
+     "lead": "-2*(b*c - c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b*c - c - 1]^1:subst(4 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(2*(b*c - c - 1))",
+     "l2": "-1/(2*(b*c - c - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b*c - c - 1]^1:subst(4 coeffs<0)"
+      ],
+      "l2": [
+       "den[b*c - c - 1]^1:subst(4 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "c/(c + 1)",
+      "1/(c + 1)"
+     ],
+     "k0": 0,
+     "lead": "b*(c + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(c + 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "b/(3*b - c + 1)",
+      "-(c - 1)/(3*b - c + 1)",
+      "b/(3*b - c + 1)",
+      "b/(3*b - c + 1)"
+     ],
+     "k0": 0,
+     "lead": "3*b - c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*b - c + 1]^1:subst(3 coeffs>0)"
+     ],
+     "l1": "b/(3*b - c + 1)",
+     "l2": "-(c - 1)/(3*b - c + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b]^1:manifest:b",
+       "den[3*b - c + 1]^1:subst(3 coeffs>0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[3*b - c + 1]^1:subst(3 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "b/(2*b + 1)",
+      "1/(2*b + 1)",
+      "b/(2*b + 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c*(2*b + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[2*b + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "1/(2*b + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[2*b + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "b/(2*b + 1)",
+      "1/(2*b + 1)",
+      "b/(2*b + 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*b + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "1/(2*b + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[2*b + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "c/(3*c + 2)",
+      "0",
+      "2*c/(3*c + 2)",
+      "2/(3*c + 2)"
+     ],
+     "k0": 1,
+     "lead": "3*c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*c + 2]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "2/(3*c + 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*c + 2]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "-c/(b - 3*c - 1)",
+      "-c/(b - 3*c - 1)",
+      "-c/(b - 3*c - 1)",
+      "(b - 1)/(b - 3*c - 1)"
+     ],
+     "k0": 1,
+     "lead": "-2*(b - 3*c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 3*c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(b - 3*c - 1)",
+     "l2": "-c/(b - 3*c - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b - 3*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "num[c]^1:manifest:c",
+       "den[b - 3*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-c*(b - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b - 1]^1:manifest:-(1-b)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "c/(2*(c + 1))",
+      "1/(2*(c + 1))"
+     ],
+     "k0": 1,
+     "lead": "2*b*(c + 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 1]^1:subst(2 coeffs>0)",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(2*(c + 1))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[c + 1]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,0,*,1)",
+   "free": [
+    "b"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0001",
+     "0100",
+     "0101",
+     "1000",
+     "1100"
+    ],
+    "II": [
+     "0110",
+     "0111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1/2",
+      "1/2"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "1/3",
+      "0",
+      "1/3",
+      "1/3"
+     ],
+     "k0": 0,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "0",
+      "-1/(b - 3)",
+      "-1/(b - 3)",
+      "(b - 1)/(b - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(b - 3)",
+     "l2": "-1/(b - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[b - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "(b - 1)/(2*(b - 2))",
+      "-1/(2*(b - 2))",
+      "-1/(2*(b - 2))",
+      "(b - 1)/(2*(b - 2))"
+     ],
+     "k0": 0,
+     "lead": "-2*(b - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(2*(b - 2))",
+     "l2": "-1/(2*(b - 2))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[b - 2]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "1/2",
+      "1/2"
+     ],
+     "k0": 0,
+     "lead": "2*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "1/3",
+      "0",
+      "1/3",
+      "1/3"
+     ],
+     "k0": 0,
+     "lead": "3*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "b/(2*b + 1)",
+      "1/(2*b + 1)",
+      "b/(2*b + 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*b + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "1/(2*b + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[2*b + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "b/(2*b + 1)",
+      "1/(2*b + 1)",
+      "b/(2*b + 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*b + 1]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "1/(2*b + 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[2*b + 1]^1:subst(2 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/5",
+      "0",
+      "2/5",
+      "2/5"
+     ],
+     "k0": 1,
+     "lead": "5",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "2/5",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "-1/(b - 4)",
+      "-1/(b - 4)",
+      "-1/(b - 4)",
+      "(b - 1)/(b - 4)"
+     ],
+     "k0": 1,
+     "lead": "-2*(b - 4)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 4]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "(b - 1)/(b - 4)",
+     "l2": "-1/(b - 4)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[b - 4]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[b - 4]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b - 1]^1:manifest:-(1-b)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "1/4",
+      "1/4"
+     ],
+     "k0": 1,
+     "lead": "4*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/4",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,1,1,*)",
+   "free": [
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "v": [
+     "0000",
+     "0001",
+     "0010",
+     "0011",
+     "0100",
+     "0101",
+     "0110",
+     "0111",
+     "1000",
+     "1001",
+     "1100",
+     "1101"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/3",
+      "0",
+      "2/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "2/(3*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "(c + 1)/(c + 3)",
+      "0",
+      "2/(c + 3)",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "c + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c + 3]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "2/(c*(c + 3))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c",
+       "den[c + 3]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "2*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "0",
+      "1/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/(3*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,1,1,1)",
+   "free": [],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "v": [
+     "0000",
+     "0001",
+     "0010",
+     "0011",
+     "0100",
+     "0101",
+     "0110",
+     "0111",
+     "1000",
+     "1001",
+     "1100",
+     "1101"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/3",
+      "0",
+      "2/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "2/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "4",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "0",
+      "1/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,1,*,*)",
+   "free": [
+    "b",
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "v": [
+     "0000",
+     "0001",
+     "0010",
+     "0011",
+     "0100",
+     "0101",
+     "0110",
+     "0111",
+     "1000",
+     "1001",
+     "1100",
+     "1101"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-b*c + b + c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b*c - b - c]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-2*(b*c - b - c)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b*c - b - c]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/c",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/3",
+      "0",
+      "2/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "2/(3*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "(b*c - b - 2*c)/(2*b*c - 3*b - 3*c)",
+      "0",
+      "(b*c - 2*b - c)/(2*b*c - 3*b - 3*c)",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "-2*b*c + 3*b + 3*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*b*c - 3*b - 3*c]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "(b*c - 2*b - c)/(c*(2*b*c - 3*b - 3*c))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "num[b*c - 2*b - c]^1:subst(3 coeffs<0)",
+       "den[c]^1:manifest:c",
+       "den[2*b*c - 3*b - 3*c]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-b*c + b + c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b*c - b - c]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "2*b*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(2*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "0",
+      "1/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/(3*c)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "den[c]^1:manifest:c"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,1,*,1)",
+   "free": [
+    "b"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "v": [
+     "0000",
+     "0001",
+     "0010",
+     "0011",
+     "0100",
+     "0101",
+     "0110",
+     "0111",
+     "1000",
+     "1001",
+     "1100",
+     "1101"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "0",
+      "1",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "1/3",
+      "0",
+      "2/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "2/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "2/(b + 3)",
+      "0",
+      "(b + 1)/(b + 3)",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "b + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b + 3]^1:subst(2 coeffs>0)"
+     ],
+     "l1": "(b + 1)/(b + 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "num[b + 1]^1:subst(2 coeffs>0)",
+       "den[b + 3]^1:subst(2 coeffs>0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "1/2",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "2*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/2",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "0",
+      "1/3",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "1/3",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": true,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,*,0,*)",
+   "free": [
+    "a",
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "1000"
+    ],
+    "II": [
+     "0101",
+     "0110",
+     "0111",
+     "1101",
+     "1110",
+     "1111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "-c/(a - c - 1)",
+      "(a - 1)/(a - c - 1)"
+     ],
+     "k0": 0,
+     "lead": "-a + c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(a - c - 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "c*(a - 1)/(2*a - c - 2)",
+      "-(a - 1)*(c - 1)/(2*a - c - 2)",
+      "-c/(2*a - c - 2)",
+      "(a - 1)/(2*a - c - 2)"
+     ],
+     "k0": 0,
+     "lead": "-2*a + c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - c - 2]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - c - 2)",
+     "l2": "(c - 1)/(2*a - c - 2)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - c - 2]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[2*a - c - 2]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "-a*c/(a - 2*c - 1)",
+      "c*(a - 1)/(a - 2*c - 1)",
+      "-c/(a - 2*c - 1)",
+      "(a - 1)/(a - 2*c - 1)"
+     ],
+     "k0": 0,
+     "lead": "-a + 2*c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2*c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2*c - 1)",
+     "l2": "-c/(a - 2*c - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "num[c]^1:manifest:c",
+       "den[a - 2*c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "-c/(2*(a - c - 1))",
+      "(a - 1)/(2*(a - c - 1))",
+      "-c/(2*(a - c - 1))",
+      "(a - 1)/(2*(a - c - 1))"
+     ],
+     "k0": 0,
+     "lead": "-2*(a - c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - c - 1))",
+     "l2": "-1/(2*(a - c - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "(a - 1)/(3*a - 2*c - 3)",
+      "-2*c/(3*a - 2*c - 3)",
+      "2*(a - 1)/(3*a - 2*c - 3)"
+     ],
+     "k0": 1,
+     "lead": "-3*a + 2*c + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*a - 2*c - 3]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-2/(3*a - 2*c - 3)",
+     "l2": "-1/(3*a - 2*c - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*a - 2*c - 3]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "den[3*a - 2*c - 3]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "(a - 1)*(c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c - 1]^1:manifest:-(1-c)",
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-c*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "-c/(2*a - 3*c - 2)",
+      "0",
+      "-2*c/(2*a - 3*c - 2)",
+      "2*(a - 1)/(2*a - 3*c - 2)"
+     ],
+     "k0": 1,
+     "lead": "-2*a + 3*c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3*c - 2]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-2/(2*a - 3*c - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3*c - 2]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-c*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "(a - 2*c - 1)/(6*(a - c - 1))",
+      "(2*a - c - 2)/(6*(a - c - 1))",
+      "-c/(2*(a - c - 1))",
+      "(a - 1)/(2*(a - c - 1))"
+     ],
+     "k0": 2,
+     "lead": "-6*(a - c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - c - 1))",
+     "l2": "-(2*a - c - 2)/(6*(a - 1)*(a - c - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "num[2*a - c - 2]^1:subst(3 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)",
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "(c + 1)/3",
+      "-(c - 2)/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "-3*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "(c - 2)/(3*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[c - 2]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "(a + 1)/3",
+      "-(a - 2)/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "(a - 2)/(3*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[a - 2]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "-(c + 1)/(a - c - 3)",
+      "(a - 2)/(a - c - 3)",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "-a + c + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 3]^1:subst(4 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-(a - 2)/((a - 1)*(a - c - 3))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[a - 2]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)",
+       "den[a - c - 3]^1:subst(4 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,*,0,1)",
+   "free": [
+    "a"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0001",
+     "1000"
+    ],
+    "II": [
+     "0110",
+     "0111",
+     "1101",
+     "1110",
+     "1111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "-1/(a - 2)",
+      "(a - 1)/(a - 2)"
+     ],
+     "k0": 0,
+     "lead": "2 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "(a - 1)/(2*a - 3)",
+      "0",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "-a/(a - 3)",
+      "(a - 1)/(a - 3)",
+      "-1/(a - 3)",
+      "(a - 1)/(a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 3)",
+     "l2": "-1/(a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "-1/(2*(a - 2))",
+      "(a - 1)/(2*(a - 2))",
+      "-1/(2*(a - 2))",
+      "(a - 1)/(2*(a - 2))"
+     ],
+     "k0": 0,
+     "lead": "-2*(a - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - 2))",
+     "l2": "-1/(2*(a - 2))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "(a - 1)/(3*a - 5)",
+      "-2/(3*a - 5)",
+      "2*(a - 1)/(3*a - 5)"
+     ],
+     "k0": 1,
+     "lead": "5 - 3*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*a - 5]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-2/(3*a - 5)",
+     "l2": "-1/(3*a - 5)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*a - 5]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[3*a - 5]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "(a - 1)/(3*a - 4)",
+      "(a - 1)/(3*a - 4)",
+      "-1/(3*a - 4)",
+      "(a - 1)/(3*a - 4)"
+     ],
+     "k0": 1,
+     "lead": "-2*(3*a - 4)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[3*a - 4]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(3*a - 4)",
+     "l2": "-1/(3*a - 4)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[3*a - 4]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "den[3*a - 4]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "-1/(2*a - 5)",
+      "0",
+      "-2/(2*a - 5)",
+      "2*(a - 1)/(2*a - 5)"
+     ],
+     "k0": 1,
+     "lead": "5 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 5]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-2/(2*a - 5)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 5]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "(a - 3)/(6*(a - 2))",
+      "(2*a - 3)/(6*(a - 2))",
+      "-1/(2*(a - 2))",
+      "(a - 1)/(2*(a - 2))"
+     ],
+     "k0": 2,
+     "lead": "-6*(a - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - 2))",
+     "l2": "-(2*a - 3)/(6*(a - 2)*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "num[2*a - 3]^1:subst(2 coeffs<0)",
+       "den[a - 2]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "2/3",
+      "1/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "-3*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "-1/(3*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "(a + 1)/3",
+      "-(a - 2)/3",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "3",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "(a - 2)/(3*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[a - 2]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "-2/(a - 4)",
+      "(a - 2)/(a - 4)",
+      "0",
+      "0"
+     ],
+     "k0": 1,
+     "lead": "4 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 4]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-(a - 2)/((a - 4)*(a - 1))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "num[a - 2]^1:subst(2 coeffs<0)",
+       "den[a - 4]^1:subst(2 coeffs<0)",
+       "den[a - 1]^1:manifest:-(1-a)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,*,1,*)",
+   "free": [
+    "a",
+    "c"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0100",
+     "1000",
+     "1100"
+    ],
+    "II": [
+     "0010",
+     "0011",
+     "0110",
+     "0111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "-c/(a - c - 1)",
+      "(a - 1)/(a - c - 1)"
+     ],
+     "k0": 0,
+     "lead": "-a + c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(a - c - 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "c*(a - 1)/(2*a - 3)",
+      "-(a - 1)*(c - 1)/(2*a - 3)",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "(c - 1)/(2*a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "a/2",
+      "-(a - 1)/2",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "1/2",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "a/2",
+      "-(a - 1)/2",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1/2",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "-c/(a - c - 1)",
+      "(a - 1)/(a - c - 1)"
+     ],
+     "k0": 0,
+     "lead": "-a + c + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(a - c - 1)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "-(a - 1)/(a*c - 3*a - c + 4)",
+      "(a - 1)*(c - 1)/(a*c - 3*a - c + 4)",
+      "1/(a*c - 3*a - c + 4)",
+      "-(a - 1)/(a*c - 3*a - c + 4)"
+     ],
+     "k0": 0,
+     "lead": "a*c - 3*a - c + 4",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a*c - 3*a - c + 4]^1:subst(4 coeffs>0)"
+     ],
+     "l1": "1/(a*c - 3*a - c + 4)",
+     "l2": "-(c - 1)/(a*c - 3*a - c + 4)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a*c - 3*a - c + 4]^1:subst(4 coeffs>0)"
+      ],
+      "l2": [
+       "num[c - 1]^1:manifest:-(1-c)",
+       "den[a*c - 3*a - c + 4]^1:subst(4 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "-1/(a - 3)",
+      "(a - 1)/(a - 3)",
+      "-1/(a - 3)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-c*(a - 3)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "-1/(a - 3)",
+      "(a - 1)/(a - 3)",
+      "-1/(a - 3)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "3 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "-c/(2*a - 3*c - 2)",
+      "0",
+      "-2*c/(2*a - 3*c - 2)",
+      "2*(a - 1)/(2*a - 3*c - 2)"
+     ],
+     "k0": 1,
+     "lead": "-2*a + 3*c + 2",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3*c - 2]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-2/(2*a - 3*c - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3*c - 2]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-c*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a*c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c",
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "-c/(2*(a - c - 1))",
+      "(a - 1)/(2*(a - c - 1))"
+     ],
+     "k0": 1,
+     "lead": "-2*(a - c - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - c - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - c - 1))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - c - 1]^1:subst(3 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "c",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[c]^1:manifest:c"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,*,1,1)",
+   "free": [
+    "a"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0001",
+     "0100",
+     "0101",
+     "1000",
+     "1100"
+    ],
+    "II": [
+     "0010",
+     "0011",
+     "0110",
+     "0111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "-1/(a - 2)",
+      "(a - 1)/(a - 2)"
+     ],
+     "k0": 0,
+     "lead": "2 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "(a - 1)/(2*a - 3)",
+      "0",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "a/2",
+      "-(a - 1)/2",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1/2",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "a/2",
+      "-(a - 1)/2",
+      "1/2",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "2",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "1/2",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "-1/(a - 2)",
+      "(a - 1)/(a - 2)"
+     ],
+     "k0": 0,
+     "lead": "2 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "(a - 1)/(2*a - 3)",
+      "0",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "-1/(a - 3)",
+      "(a - 1)/(a - 3)",
+      "-1/(a - 3)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "3 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "-1/(a - 3)",
+      "(a - 1)/(a - 3)",
+      "-1/(a - 3)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "3 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "-1/(2*a - 5)",
+      "0",
+      "-2/(2*a - 5)",
+      "2*(a - 1)/(2*a - 5)"
+     ],
+     "k0": 1,
+     "lead": "5 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 5]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-2/(2*a - 5)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 5]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "-1/(2*(a - 2))",
+      "(a - 1)/(2*(a - 2))"
+     ],
+     "k0": 1,
+     "lead": "-2*(a - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - 2))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1",
+     "lead_ok": true,
+     "lead_certs": [],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  },
+  {
+   "stratum": "(1,*,*,1)",
+   "free": [
+    "a",
+    "b"
+   ],
+   "selfplay_cc": true,
+   "limit_valid": true,
+   "sufficiency": true,
+   "necessity": true,
+   "witnesses": {
+    "I": [
+     "0000",
+     "0001",
+     "0100",
+     "0101",
+     "1000",
+     "1100"
+    ],
+    "II": [
+     "0110",
+     "0111"
+    ]
+   },
+   "rows": {
+    "0000": {
+     "W": [
+      "0",
+      "0",
+      "-1/(a - 2)",
+      "(a - 1)/(a - 2)"
+     ],
+     "k0": 0,
+     "lead": "2 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0001": {
+     "W": [
+      "(a - 1)/(2*a - 3)",
+      "0",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "3 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0010": {
+     "W": [
+      "a/(a*b - a - b + 3)",
+      "-(a - 1)/(a*b - a - b + 3)",
+      "1/(a*b - a - b + 3)",
+      "(a - 1)*(b - 1)/(a*b - a - b + 3)"
+     ],
+     "k0": 0,
+     "lead": "a*b - a - b + 3",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a*b - a - b + 3]^1:subst(4 coeffs>0)"
+     ],
+     "l1": "-(b - 1)/(a*b - a - b + 3)",
+     "l2": "1/(a*b - a - b + 3)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[a*b - a - b + 3]^1:subst(4 coeffs>0)"
+      ],
+      "l2": [
+       "den[a*b - a - b + 3]^1:subst(4 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0011": {
+     "W": [
+      "(a*b - b + 1)/(2*(a*b - a - b + 2))",
+      "-(a - 1)/(2*(a*b - a - b + 2))",
+      "1/(2*(a*b - a - b + 2))",
+      "(a - 1)*(b - 1)/(2*(a*b - a - b + 2))"
+     ],
+     "k0": 0,
+     "lead": "2*(a*b - a - b + 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a*b - a - b + 2]^1:subst(4 coeffs>0)"
+     ],
+     "l1": "-(b - 1)/(2*(a*b - a - b + 2))",
+     "l2": "1/(2*(a*b - a - b + 2))",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "num[b - 1]^1:manifest:-(1-b)",
+       "den[a*b - a - b + 2]^1:subst(4 coeffs>0)"
+      ],
+      "l2": [
+       "den[a*b - a - b + 2]^1:subst(4 coeffs>0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0100": {
+     "W": [
+      "0",
+      "0",
+      "-1/(a - 2)",
+      "(a - 1)/(a - 2)"
+     ],
+     "k0": 0,
+     "lead": "-b*(a - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b",
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(a - 2)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0101": {
+     "W": [
+      "(a - 1)/(2*a - 3)",
+      "0",
+      "-1/(2*a - 3)",
+      "(a - 1)/(2*a - 3)"
+     ],
+     "k0": 0,
+     "lead": "-b*(2*a - 3)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b",
+      "num[2*a - 3]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*a - 3)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 3]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0110": {
+     "W": [
+      "-b/(a - 2*b - 1)",
+      "(a - 1)/(a - 2*b - 1)",
+      "-b/(a - 2*b - 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-a + 2*b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2*b - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 2*b - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 2*b - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "0111": {
+     "W": [
+      "-b/(a - 2*b - 1)",
+      "(a - 1)/(a - 2*b - 1)",
+      "-b/(a - 2*b - 1)",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-a + 2*b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 2*b - 1]^1:subst(3 coeffs<0)"
+     ],
+     "l1": "0",
+     "l2": "-1/(a - 2*b - 1)",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "den[a - 2*b - 1]^1:subst(3 coeffs<0)"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1000": {
+     "W": [
+      "-1/(2*a - 5)",
+      "0",
+      "-2/(2*a - 5)",
+      "2*(a - 1)/(2*a - 5)"
+     ],
+     "k0": 1,
+     "lead": "5 - 2*a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[2*a - 5]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-2/(2*a - 5)",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[2*a - 5]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1001": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "1 - a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1010": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a]^1:manifest:a"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1011": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "a*b - b + 1",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[a*b - b + 1]^1:subst(3 coeffs>0)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1100": {
+     "W": [
+      "1/2",
+      "0",
+      "-1/(2*(a - 2))",
+      "(a - 1)/(2*(a - 2))"
+     ],
+     "k0": 1,
+     "lead": "-2*b*(a - 2)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b",
+      "num[a - 2]^1:subst(2 coeffs<0)"
+     ],
+     "l1": "-1/(2*(a - 2))",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "den[a - 2]^1:subst(2 coeffs<0)"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1101": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "-b*(a - 1)",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b",
+      "num[a - 1]^1:manifest:-(1-a)"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1110": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    },
+    "1111": {
+     "W": [
+      "1",
+      "0",
+      "0",
+      "0"
+     ],
+     "k0": 0,
+     "lead": "b",
+     "lead_ok": true,
+     "lead_certs": [
+      "num[b]^1:manifest:b"
+     ],
+     "l1": "0",
+     "l2": "0",
+     "mu": "0",
+     "identity": true,
+     "W_CD_zero(a=1)": null,
+     "certs": {
+      "l1": [
+       "identically 0"
+      ],
+      "l2": [
+       "identically 0"
+      ],
+      "mu": [
+       "identically 0"
+      ]
+     },
+     "ok": true
+    }
+   }
+  }
+ ],
+ "open_facet_ok": true,
+ "open_facet_rows": {
+  "0000": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0001": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0010": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0011": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0100": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0101": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0110": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "0111": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1000": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1001": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1010": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1011": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1100": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1101": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1110": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  },
+  "1111": {
+   "match": true,
+   "den_pos": true,
+   "k1_nonneg": true,
+   "k2_nonneg": true,
+   "lead_ok": true
+  }
+ },
+ "overall": true
+}

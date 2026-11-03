@@ -1,0 +1,9 @@
+reachable states 9 absorbing d values [0]
+expected times A (the erring player) is exploited after the error: 8  B exploited (incl. the error): 7
+p_<DC,CD>=1/4      min margin -1.500e-08  argmin co-player 0111001100001000
+p_<DC,CD>=1/3      min margin -1.500e-08  argmin co-player 0111000100000000
+p_<DC,CD>=487/1300 min margin -1.500e-08  argmin co-player 0111000100001000
+p_<DC,CD>=513/1300 min margin -3.271e-03  argmin co-player 0011000110110011
+p_<DC,CD>=2/5      min margin -5.051e-03  argmin co-player 0011000110110011
+p_<DC,CD>=1/2      min margin -4.054e-02  argmin co-player 0011000110110011
+threshold in [0.3846157, 0.3846157]; 5/13 = 0.3846154

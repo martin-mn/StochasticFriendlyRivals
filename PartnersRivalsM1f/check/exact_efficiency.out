@@ -1,0 +1,153 @@
+Exact-rational verification of the closed forms for the EFFICIENT strategies and the
+FRIENDLY RIVALS over the FULL four-parameter memory-one cube.  No threshold, no
+tolerance, no float, anywhere.
+
+The efficiency counterpart of exact_rivals.py, whose polynomial engine it imports rather
+than rewriting, and the continuum counterpart of ../../PartnersRivalsM1's vertex census.
+
+CONVENTIONS are m1lib's and are not redefined here: p = (p1,p2,p3,p4) is the probability
+of C after CC, CD, DC, DD with the FOCAL player's action first, states CC=0 CD=1 DC=2
+DD=3; the error acts as p -> p~ = eps + (1-2eps) p on a FIXED p in the closed cube
+(convention A); w is the stationary distribution of the four-state pair chain in SELF
+PLAY (q = p) and W its eps -> 0 limit.  Base game (R,S,T,P) = (1,u,1+v,0), so
+Emax = max{R,(T+S)/2} = max{1,(1+u+v)/2} and
+
+    pi(p,p) - Emax = -W_DD - (W_CD+W_DC)(1-u-v)/2       below the switch line u+v = 1
+                   = -W_DD                               on   the switch line
+                   = W_CC(1-E) - W_DD E, E = (1+u+v)/2   above the switch line,
+
+whence: efficient iff W_CC = 1 / W_DD = 0 / W_CD = W_DC = 1/2 respectively.
+
+THE CLOSED FORMS UNDER TEST (m1lib.in_eff_cc / in_eff_alt / in_eff_line)
+    Eff_CC   (u+v < 1) = { p1 = 1, (p2,p3) not in {(0,1),(1,0)},
+                           and ( p4 > 0 or max(p2,p3) = 1 ) }
+    Eff_alt  (u+v > 1) = { (p2,p3) in {(0,1),(1,0)}, p1 < 1, p4 > 0, (p1,p4) != (0,1) }
+    Eff_line (u+v = 1) = { p1 = 1, ( p4 > 0 or (max(p2,p3) = 1 and min(p2,p3) > 0) ) }
+                         cup Eff_alt
+and, with Riv+ = {p4 = 0, p2+p3 <= 1, p2 < 1} and Riv- = {p1 = 1, p2+p3 >= 1, p3 > 0}
+taken as PROVED input from ../Text/rivals.md, the friendly rivals
+
+    FR_W = Eff_CC  cap Riv+ = EMPTY            FR_N = Eff_alt  cap Riv+ = EMPTY
+    FR_E = Eff_alt cap Riv- = EMPTY            FR_S = Eff_CC   cap Riv-
+         = { p1 = 1, p2 > 0, p3 > 0, p2+p3 >= 1, ( p4 > 0 or max(p2,p3) = 1 ) }
+plus the five boundary loci (two rays of u+v = 1, two halves of T = S, the point (1,0)).
+
+HOW "W_i = 1" AND "W_i = 1/2" AND "W_i = 0" ARE DECIDED, EXACTLY.  By the Markov-chain
+tree theorem the unnormalised stationary weights d_i(eps) = det(I-M) with row i and
+column i deleted are polynomials in eps with integer coefficients once p is carried
+scaled by their common denominator SCALE (the common factor SCALE^6 cancels in every
+ratio).  Writing ord(.) for the order of vanishing at eps = 0
+and lc(.) for the coefficient of that power, with Dtot = sum_i d_i,
+
+    W_i = lim_{eps->0} d_i/Dtot = lc(d_i)/lc(Dtot) if ord(d_i) = ord(Dtot), else exactly 0,
+
+since ord(d_i) >= ord(Dtot) always.  The LEADING EXPONENT ord(d_i) - ord(Dtot) is thus an
+INTEGER read off by integer polynomial arithmetic -- computed, not fitted -- and the limit
+is an exact Fraction.  "= 1", "= 1/2", "= 0" are decided by exact rational equality.
+
+The finite-eps route of m1lib (Fraction Gaussian elimination at eps = 10^-4, 10^-6,
+10^-8, 10^-10) is run on a subgrid and asserted to agree with the rational function
+EXACTLY, value by value, so the polynomial engine is not taken on trust; and the exact
+rival verdict against the 16 vertex co-players is recomputed on the FULL grid so that
+the friendly-rival statements do not rest on the closed form of Riv+/Riv- either.
+==============================================================================
+grid: 23 values per coordinate (denominators 1..8, common denominator SCALE = 840) ->
+279841 strategies p, each solved
+in self play as an exact rational function of eps
+grid values: 0, 1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8, 1
+
+STEP 1  role-swap symmetry.  d_CD and d_DC are the SAME polynomial in eps (hence
+        w_CD = w_DC exactly, at every eps, not merely in the limit): 279841 / 279841 points
+
+STEP 2  leading eps-exponent of each self-play weight, ord(d_i) - ord(Dtot), computed
+        exactly by integer polynomial arithmetic (never fitted):
+        W_CC : eps^0 x 267194  eps^1 x 11701  eps^2 x 946
+        W_CD : eps^0 x 255599  eps^1 x 24242
+        W_DC : eps^0 x 255599  eps^1 x 24242
+        W_DD : eps^0 x 267194  eps^1 x 11701  eps^2 x 946
+        exponent 0 <-> W_i > 0;  exponent > 0 <-> W_i = 0 exactly.
+
+STEP 3  the three efficiency closed forms, zero tolerance, exact Fractions:
+        below the line  W_CC = 1      :  11637 points; closed form Eff_CC   disagrees at 0
+        above the line  W_CD=W_DC=1/2 :    966 points; closed form Eff_alt  disagrees at 0
+        on    the line  W_DD = 0      :  12647 points; closed form Eff_line disagrees at 0
+        Eff_alt is 2-dimensional: every alternator has (p2,p3) in {(0,1),(1,0)}: True
+        and p1 < 1, p4 > 0, (p1,p4) != (0,1): True
+        Eff_CC subset {p1 = 1}: True ;  Eff_CC cap Eff_alt = empty: True
+        Eff_line strictly contains Eff_CC u Eff_alt: 12647 = 11637 + 966 + 44 extra
+        one extra point and its exact self-play limit: (Fraction(1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(1, 8))  W = (Fraction(8, 23), Fraction(15, 46), Fraction(15, 46), Fraction(0, 1))
+
+STEP 4  FRIENDLY RIVALS = efficient and rival, wedge by wedge (Riv+/Riv- as proved input):
+        W  {u+v<1, T>S}  Eff_CC  cap Riv+ :      0 points   EMPTY
+        S  {u+v<1, T<S}  Eff_CC  cap Riv- :   6071 points   non-empty
+        E  {u+v>1, T<S}  Eff_alt cap Riv- :      0 points   EMPTY
+        N  {u+v>1, T>S}  Eff_alt cap Riv+ :      0 points   EMPTY
+        FR_S closed form {p1=1, p2>0, p3>0, p2+p3>=1, (p4>0 or max(p2,p3)=1)} disagrees at 0 points
+        FR_S lies in the facet p1 = 1: True ; its share of Riv- on the grid: 6071 / 6325
+
+STEP 5  the five boundary loci:
+        ray u+v=1, u>1 (T<S) :   6093 grid points 
+        ray u+v=1, u<1 (T>S) :      0 grid points EMPTY
+        line T=S, u+v<1      :  11637 grid points 
+        line T=S, u+v>1      :    966 grid points 
+        point (u,v) = (1,0)  :  12647 grid points 
+        ray u+v=1,u>1 closed form  Riv- cap ({p4>0} u Eff_CC)  disagrees at 0
+        it strictly contains FR_S; the extra points are exactly {(1,0,1,p4), p4>0}: [(Fraction(1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(1, 8)), (Fraction(1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(1, 7)), (Fraction(1, 1), Fraction(0, 1), Fraction(1, 1), Fraction(1, 6))] ... (22 of them)
+
+STEP 6  the vertex census, reproducing ../../PartnersRivalsM1 exactly:
+        efficient below the line: 3 -- 1001 1110 1111   (expect 3: 1110 1001 1111)
+        efficient above the line: 0 -- (none)   (expect 0, the no-alternator theorem)
+        efficient on    the line: 5 -- 1001 1011 1101 1110 1111   (expect 5)
+        friendly rivals W / S / E / N = 0 / 2 / 0 / 0   (expect 0 / 2 / 0 / 0)
+           the two in S: 1110 1111
+        ray u+v=1, u>1 : 3 -- 1011 1110 1111
+        ray u+v=1, u<1 : 0 -- (none)
+        T=S, u+v<1     : 3 -- 1001 1110 1111
+        T=S, u+v>1     : 0 -- (none)
+        point (1,0)    : 5 -- 1001 1011 1101 1110 1111
+        boundary census 3 / 0 / 3 / 0 / 5  (expect 3 / 0 / 3 / 0 / 5): True
+
+STEP 7  the self-play limit points W = (W_CC, W_CD, W_DC, W_DD):
+        at the 16 VERTICES: 6 distinct points --
+            (0, 0, 0, 1)   0000 0110 1000
+            (0, 1/4, 1/4, 1/2)   0010 0100
+            (1/4, 1/4, 1/4, 1/4)   0011 0101 1010 1100
+            (1/2, 0, 0, 1/2)   0001 0111
+            (1/2, 1/4, 1/4, 0)   1011 1101
+            (1, 0, 0, 0)   1001 1110 1111
+        on the CONTINUUM grid: 128001 distinct points
+        every one has W_CD = W_DC exactly: True
+        the 16-vertex set is contained in it: True
+        denominators of the coordinates run from 1 to 316649 (20768 distinct); the vertex
+        set uses only [1, 2, 4]
+        STRUCTURE.  Strong lumping of {CC}|{CD,DC}|{DD} (both CD and DC send
+        beta = (1-p~2)(1-p~3) to DD and gamma = p~2 p~3 to CC) gives the
+        Markov-chain-tree weights, with a = p~1, d = p~4,
+            X = d[(2-d)gamma + d beta],  Y = 2(1-a)d(1+a-d),
+            Z = (1-a)[(1-a)gamma + (1+a)beta],   W = (X, Y/2, Y/2, Z)/(X+Y+Z),
+        so the limit set is the union over the 81 strata (each p_i at 0 / interior / 1)
+        of the images of finitely many RATIONAL maps of p; it is a 2-parameter family
+        inside the plane W_CD = W_DC of the 3-simplex, not a finite list.  The six
+        vertex points are the images of the corners; denominators are unbounded as the
+        grid refines, which is exactly why the vertex census is finite and this is not.
+        the eps^0 lumped formula reproduces the exact limit at 279222 of the 279222 points
+        where it is non-degenerate (the rest need the eps-orders)
+
+==============================================================================
+finite-eps cross-check with m1lib.stationary_exact, eps = 10^-4, -6, -8, -10
+subgrid: denominators 1..6, 13 values -> 28561 strategies, 114244 exact solves
+   (counts are strategies for which the property holds at ALL FOUR eps)
+   Akin residual w.(p~1-1, p~2-1, p~3, p~4) exactly 0 : 28561 / 28561
+   w_CD == w_DC exactly (Fractions, finite eps)       : 28561 / 28561
+   w_i == d_i(eps)/Dtot(eps) exactly, all four i      : 28561 / 28561
+   |w_i - W_i| strictly decreasing in k, all four i   : 28561 / 28561 (threshold-free
+   confirmation that the computed exponent is the true one)
+
+exact rivalry on the FULL grid, recomputed from the 16 vertex co-players (no closed form
+assumed anywhere): 279841 strategies x 16 ordered pairs
+   closed forms in_riv_plus / in_riv_minus disagree with the exact limit verdict at 0 / 0 points
+   friendly rivals from the EXACT rival verdict, W / S / E / N = 0 / 6071 / 0 / 0
+   -> W, E and N are empty with nothing taken on trust.
+
+done.
+python3 exact_efficiency.py  1048.94s user 5.59s system 691% cpu 2:32.49 total

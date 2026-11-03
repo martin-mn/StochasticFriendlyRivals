@@ -1,0 +1,3 @@
+# diag: isl irun ncls ncall nneartie neartie_abund nhw cache_hit_rate meanlive solves_per_gen gcount nexacttie exacttie_abund
+#  ncls = lineages classified, ncall = m1cls calls (non-corner), nhw = class-table high water (maxc 2002); neartie = m1cls flag 1 (0<|margin|<=1e-9 scale), exacttie = flag 2 (margin exactly 0, a structural tie)
+#       3   1    50011515    40138493         0               0  1000  0.97278832    28.382   27.2117    99998330     9674031      4853036143

@@ -1,0 +1,47 @@
+# S witness of SI Table 2: BOUNDARY POINT (proved)
+point   (1, 1/2, 1/2, 1/2, 1, 1/2, 1/2, 1/2, 1, 1/2, 1/2, 1, 0, 1/2, 1/2, 1/2)
+stratum 1***1***1**10*** (dimension 11), efficiency class C, exact self-play (1, 0, 0, 0)
+
+exact margins -(w_DC - w_CD) at c over the 65536 binary co-players: positive 34686, structural zero 24122,
+   exact non-structural zero 6728, negative 0  (so c itself is a friendly rival; minimum 0 [30850])
+of the 6728 non-structural zeros, 0 are identities (N_q = 0 on the whole stratum) and 6728 are NOT:
+   for each of these 6728 co-players N_q(c) = 0 while N_q is not identically 0; N_q is multilinear, hence
+   harmonic, so by the strong minimum principle c is not a local minimum of N_q: every neighbourhood of c in
+   the open stratum contains points with margin < 0.  c is a BOUNDARY point of the friendly-rival set.
+
+explicit exterior points c + dir * delta * e_s, delta = 1/100 (number of the non-identity zero co-players with
+negative exact margin, and the most negative):
+   s= 1 -:   6728   -4.2553e-03 (q=1894)
+   s= 1 +:      0   
+   s= 2 -:   6728   -4.3353e-03 (q=1142)
+   s= 2 +:      0   
+   s= 3 -:      0   
+   s= 3 +:      0   
+   s= 5 -:   1088   -2.8490e-03 (q=1142)
+   s= 5 +:      0   
+   s= 6 -:   1288   -2.8490e-03 (q=1894)
+   s= 6 +:      0   
+   s= 7 -:      0   
+   s= 7 +:      0   
+   s= 9 -:   1928   -2.2173e-03 (q=1638)
+   s= 9 +:      0   
+   s=10 -:   1928   -2.2624e-03 (q=1638)
+   s=10 +:      0   
+   s=13 -:      0   
+   s=13 +:      0   
+   s=14 -:      0   
+   s=14 +:      0   
+   s=15 -:      0   
+   s=15 +:      0   
+most negative: s=2, dir -, q=1142: exact margin -3/692 = -4.3353e-03;
+   the same direction at smaller delta (exact): 2^-7: -3.378e-03, 2^-10: -4.190e-04, 2^-20: -4.087e-07, 2^-40: -3.898e-13
+
+the critic's points c - 0.01 e_s (exact point certificates over all 65536 co-players):
+   s= 1: 6728 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -1/235 = -4.2553e-03
+   s= 2: 6728 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -3/692 = -4.3353e-03
+   s= 5: 1088 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -1/351 = -2.8490e-03
+   s= 6: 1288 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -1/351 = -2.8490e-03
+   s= 9: 1928 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -1/451 = -2.2173e-03
+   s=10: 1928 co-players beat it (all among the 6728 zero co-players: True); exact minimum margin -1/442 = -2.2624e-03
+
+TIMING (s, <= 3 threads/processes, nice 10): exact_at_c 1.1, identity_test 10.9, directions 16.7, critic_points 6.7; total 35.5

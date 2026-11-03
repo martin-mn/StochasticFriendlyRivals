@@ -1,0 +1,5 @@
+pairs 2147516416 (expected 2147516416: True)
+exact zeros 502294197, flagged 0, symmetry violations 0
+pairs (q >= p) with 0 < |m| < 1/37: 13785666 ; with 0 < |m| < 1e-9: 0
+smallest nonzero |w_DC - w_CD| over all binary pairs: 1/4140 = 0.000241546 at p=14002 q=29490
+largest D* (number of minimum-order spanning trees): 36864 at p=13107 q=13107

@@ -1,0 +1,15 @@
+retained strata (not excluded by the 1681 co-players of check/ubound/results/pool_c2_q.txt):
+  W       364  by dim [8, 36, 71, 93, 87, 51, 16, 2, 0]
+  N      5022  by dim [80, 448, 1064, 1416, 1165, 610, 199, 37, 3]
+  E      5022  by dim [80, 448, 1064, 1416, 1165, 610, 199, 37, 3]
+  ray+   7726  by dim [116, 660, 1594, 2166, 1824, 976, 324, 61, 5]
+  W by (p6,p8): (0,0) 126  (1,1) 238  other 0
+  ray+ = W u N u Z-only: 7726 = 364 + 5022 + 2340
+  mirror(N) == E as sets: True
+  W     census FR strata   362, all retained: True, retained not in census: ['1*1100111*1**0*0', '1*1*00111*1**0*0']
+  N     census FR strata  5020, all retained: True, retained not in census: ['010***01*1*1*010', '*10***01*1*1*010']
+  E     census FR strata  5022, all retained: True, retained not in census: []
+  ray+  census FR strata  7721, all retained: True, retained not in census: ['11****01*111*010', '010***01*1*1*010', '*10***01*1*1*010', '1*1100111*1**0*0', '1*1*00111*1**0*0']
+units: 12748 (sign + 7726, sign - 5022); census points attached 50897; class disagreements census vs exact 0
+units with no stored census point: [(6259, '11****01*111*010', 1), (6895, '010***01*1*1*010', 1), (6897, '*10***01*1*1*010', 1), (7712, '1*1100111*1**0*0', 1), (7715, '1*1*00111*1**0*0', 1)]
+census points of these kinds not attached to a unit: 0

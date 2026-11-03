@@ -1,0 +1,2 @@
+C/D mirror (p_s -> 1 - p_{15-s}) maps the non-excluded N set onto the non-excluded E set: True 5022 5022
+mirror maps class A onto class A exactly (it swaps w_CC and w_DD, so C and Z are not preserved): True

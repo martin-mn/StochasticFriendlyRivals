@@ -1,0 +1,18 @@
+=== dimension 9 : 11440 free-sets x 128 pin-patterns = 1464320 strata ===
+  stage 1 6.6 s : class-C (W_CC=1) strata = 212767 ; efficiency INDICATOR disagreed between the two draws on 2 strata
+  p0 digit histogram [0, 0, 212767] (2 = pinned to 1) ; p15 digit histogram [5580, 153146, 54041]
+  DEEP      5580 strata x  512 draws =   2856960 pts ;   8386 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [22.7 s]
+  SHALLOW 207187 strata x   64 draws =  13259968 pts ;      0 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [72.4 s]
+  ==> dimension 9 : 0 wedge-W friendly rivals found.
+=== dimension 10 : 8008 free-sets x 64 pin-patterns = 512512 strata ===
+  stage 1 2.9 s : class-C (W_CC=1) strata = 70542 ; efficiency INDICATOR disagreed between the two draws on 1 strata
+  p0 digit histogram [0, 0, 70542] (2 = pinned to 1) ; p15 digit histogram [787, 55277, 14478]
+  DEEP       787 strata x  512 draws =    402944 pts ;    917 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [3.3 s]
+  SHALLOW  69755 strata x   64 draws =   4464320 pts ;      0 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [24.8 s]
+  ==> dimension 10 : 0 wedge-W friendly rivals found.
+=== dimension 11 : 4368 free-sets x 32 pin-patterns = 139776 strata ===
+  stage 1 1.3 s : class-C (W_CC=1) strata = 17526 ; efficiency INDICATOR disagreed between the two draws on 0 strata
+  p0 digit histogram [0, 0, 17526] (2 = pinned to 1) ; p15 digit histogram [62, 14694, 2770]
+  DEEP        62 strata x  512 draws =     31744 pts ;     51 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [1.1 s]
+  SHALLOW  17464 strata x   64 draws =   1117696 pts ;      0 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) vs all 65536  [6.7 s]
+  ==> dimension 11 : 0 wedge-W friendly rivals found.

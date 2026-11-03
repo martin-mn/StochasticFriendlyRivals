@@ -1,0 +1,34 @@
+=== x = p_<DC,CD> = 1/4
+36228 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+36236 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+40324 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+40332 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+52612 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+52620 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+56708 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+56716 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/4, co-player net 1 over 3 rounds | focal D, outcome DD: prob 3/4, co-player net -5/8 over 25/4 rounds | mean gain per decision -7/32 = (13x-5)/8; renewal margin 7/174 = exact limit 7/174
+=== x = p_<DC,CD> = 5/13
+36228 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 5/13, co-player net 1 over 3 rounds | focal D, outcome DD: prob 8/13, co-player net -5/8 over 25/4 rounds | mean gain per decision 0 = (13x-5)/8; renewal margin 0 = exact limit 0
+=== x = p_<DC,CD> = 1/7
+36228 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 1/7, co-player net 1 over 3 rounds | focal D, outcome DD: prob 6/7, co-player net -5/8 over 25/4 rounds | mean gain per decision -11/28 = (13x-5)/8; renewal margin 11/162 = exact limit 11/162
+=== x = p_<DC,CD> = 9/10
+36228 closed class (focal view): ['<CC,CC>', '<CC,CD>', '<CC,DC>', '<CD,CC>', '<CD,CD>', '<CD,DC>', '<CD,DD>', '<DC,CC>', '<DC,CD>', '<DC,DC>', '<DC,DD>', '<DD,DC>', '<DD,DD>']
+    focal C, outcome CD: prob 9/10, co-player net 1 over 3 rounds | focal D, outcome DD: prob 1/10, co-player net -5/8 over 25/4 rounds | mean gain per decision 67/80 = (13x-5)/8; renewal margin -67/266 = exact limit -67/266
+offer branch paths: [(Fraction(1, 1), ['CD', 'CD', 'DC'])]
+no-offer branch: 5 paths
+    9/16 DD,DD,DC,DC,CD,CD,DC
+    3/16 DD,DD,DC,CC,CD,DC
+    1/8 DD,CD,DC
+    1/16 DD,CD,CC,CC,CD,DC
+    1/16 DD,CD,CC,DC,CD,CD,DC
+free focal coordinates visited: [('<CC,CD>', Fraction(1, 2)), ('<CD,DD>', Fraction(1, 2)), ('<DC,CD>', Fraction(1, 4)), ('<DC,DD>', Fraction(1, 4)), ('<DD,DC>', Fraction(1, 4))]

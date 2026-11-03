@@ -1,0 +1,8 @@
+A. 405769 exact (strategy, game) tests: corrected predicate disagrees 0 times; original sentence 1212 times
+   original fails only at (a,b) in [('0', '1'), ('1', '0')]
+   (a,b)=(0,1): 624 games where the sentence says stable but p is not, e.g. (u,v)=[('-2', '-2'), ('-2', '-23/12'), ('-2', '-11/6')]
+   (a,b)=(1,0): 588 games where the sentence says stable but p is not, e.g. (u,v)=[('-2', '-2'), ('-2', '-23/12'), ('-2', '-11/6')]
+B. 18 near-corner strategies: self-play (1/2,0,0,1/2), ALLD/ALLC gains as on the open square
+C. p=0011 (u,v)=(-1/4,-1/2): best deviator 0001, limit gain 3/16; eps=1e-4: gain-limit = -1.250e-04; eps=1e-6: gain-limit = -1.250e-06; eps=1e-8: gain-limit = -1.250e-08
+C. p=0101 (u,v)=(-1/4,-1/2): best deviator 0000, limit gain 3/16; eps=1e-4: gain-limit = -5.000e-05; eps=1e-6: gain-limit = -5.000e-07; eps=1e-8: gain-limit = -5.000e-09
+C. p=0101 (u,v)=(0,-1): best deviator 0011, limit gain 1/4; eps=1e-4: gain-limit = -9.999e-05; eps=1e-6: gain-limit = -1.000e-06; eps=1e-8: gain-limit = -1.000e-08

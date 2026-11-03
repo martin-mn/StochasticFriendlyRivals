@@ -1,0 +1,330 @@
+{
+ "name": "S_witness_boundary",
+ "point": [
+  "1",
+  "1/2",
+  "1/2",
+  "1/2",
+  "1",
+  "1/2",
+  "1/2",
+  "1/2",
+  "1",
+  "1/2",
+  "1/2",
+  "1",
+  "0",
+  "1/2",
+  "1/2",
+  "1/2"
+ ],
+ "stratum": "1***1***1**10***",
+ "d": 11,
+ "efficiency_class": "C",
+ "selfplay_exact": [
+  "1",
+  "0",
+  "0",
+  "0"
+ ],
+ "at_c": {
+  "n_pos": 34686,
+  "n_struct_zero": 24122,
+  "n_exact_zero_nonstructural": 6728,
+  "n_neg": 0
+ },
+ "zero_coplayers_identities": 0,
+ "zero_coplayers_not_identities": 6728,
+ "non_identity_zero_coplayers_first50": [
+  1142,
+  1150,
+  1270,
+  1278,
+  1302,
+  1310,
+  1334,
+  1342,
+  1366,
+  1374,
+  1398,
+  1406,
+  1430,
+  1438,
+  1462,
+  1470,
+  1494,
+  1502,
+  1526,
+  1534,
+  1638,
+  1646,
+  1654,
+  1662,
+  1766,
+  1774,
+  1782,
+  1790,
+  1814,
+  1822,
+  1846,
+  1854,
+  1878,
+  1886,
+  1894,
+  1902,
+  1910,
+  1918,
+  1942,
+  1950,
+  1974,
+  1982,
+  2006,
+  2014,
+  2022,
+  2030,
+  2038,
+  2046,
+  2326,
+  2334
+ ],
+ "directions_delta_1_100": [
+  {
+   "s": 1,
+   "dir": -1,
+   "n_q_negative": 6728,
+   "most_negative": [
+    "-1/235",
+    1894
+   ]
+  },
+  {
+   "s": 1,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 2,
+   "dir": -1,
+   "n_q_negative": 6728,
+   "most_negative": [
+    "-3/692",
+    1142
+   ]
+  },
+  {
+   "s": 2,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 3,
+   "dir": -1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 3,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 5,
+   "dir": -1,
+   "n_q_negative": 1088,
+   "most_negative": [
+    "-1/351",
+    1142
+   ]
+  },
+  {
+   "s": 5,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 6,
+   "dir": -1,
+   "n_q_negative": 1288,
+   "most_negative": [
+    "-1/351",
+    1894
+   ]
+  },
+  {
+   "s": 6,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 7,
+   "dir": -1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 7,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 9,
+   "dir": -1,
+   "n_q_negative": 1928,
+   "most_negative": [
+    "-1/451",
+    1638
+   ]
+  },
+  {
+   "s": 9,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 10,
+   "dir": -1,
+   "n_q_negative": 1928,
+   "most_negative": [
+    "-1/442",
+    1638
+   ]
+  },
+  {
+   "s": 10,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 13,
+   "dir": -1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 13,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 14,
+   "dir": -1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 14,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 15,
+   "dir": -1,
+   "n_q_negative": 0,
+   "most_negative": null
+  },
+  {
+   "s": 15,
+   "dir": 1,
+   "n_q_negative": 0,
+   "most_negative": null
+  }
+ ],
+ "explicit": {
+  "s": 2,
+  "dir": -1,
+  "q": 1142,
+  "margin_at_1_100": "-3/692",
+  "margin_at_smaller_delta": [
+   [
+    "2^-7",
+    "-1/296"
+   ],
+   [
+    "2^-10",
+    "-3/7160"
+   ],
+   [
+    "2^-20",
+    "-3/7340024"
+   ],
+   [
+    "2^-40",
+    "-3/7696581394424"
+   ]
+  ]
+ },
+ "critic_points": [
+  {
+   "s": 1,
+   "n_neg": 6728,
+   "min_margin": "-1/235",
+   "min_margin_float": -0.00425531914893617,
+   "argmin": 1894,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-1/235"
+  },
+  {
+   "s": 2,
+   "n_neg": 6728,
+   "min_margin": "-3/692",
+   "min_margin_float": -0.004335260115606936,
+   "argmin": 1142,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-3/692"
+  },
+  {
+   "s": 5,
+   "n_neg": 1088,
+   "min_margin": "-1/351",
+   "min_margin_float": -0.002849002849002849,
+   "argmin": 1142,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-1/351"
+  },
+  {
+   "s": 6,
+   "n_neg": 1288,
+   "min_margin": "-1/351",
+   "min_margin_float": -0.002849002849002849,
+   "argmin": 1894,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-1/351"
+  },
+  {
+   "s": 9,
+   "n_neg": 1928,
+   "min_margin": "-1/451",
+   "min_margin_float": -0.0022172949002217295,
+   "argmin": 1638,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-1/451"
+  },
+  {
+   "s": 10,
+   "n_neg": 1928,
+   "min_margin": "-1/442",
+   "min_margin_float": -0.0022624434389140274,
+   "argmin": 1638,
+   "all_negatives_among_the_zero_coplayers": true,
+   "exact_global_min": "-1/442"
+  }
+ ],
+ "boundary_point": true,
+ "timing_seconds": {
+  "exact_at_c": 1.1250708103179932,
+  "identity_test": 10.915695905685425,
+  "directions": 16.7468421459198,
+  "critic_points": 6.675800085067749
+ },
+ "seconds_total": 35.46516132354736
+}

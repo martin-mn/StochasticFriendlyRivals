@@ -1,0 +1,8 @@
+min margin at p9=1/4 (eps=1e-12): -1.4999999999900307e-12
+co-players within 1e-9 of 0: 37996
+  of these, q6=0 (defect against offer): 19180  q6=1: 18816
+family margins at 1/4: [0.04022989 0.04022989 0.04022989 0.04022989 0.04022989 0.04022989
+ 0.04022989 0.04022989]  7/174 = 0.040229885057471264
+number of co-players with margin < 7/174 - 1e-9: 39509
+examples q6=1: [64 65 66 67 68]  q6=0: [0 1 2 3 4]
+minimizers with w_CC>0.999: 14564

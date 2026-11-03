@@ -1,0 +1,103 @@
+{
+ "name": "fig3a_right_centre",
+ "source": "PRFull/Text/ms.tex Figure 3a right: the maximal 7-dimensional stratum of the binary-invisible component, its centre (the paper's witness in this stratum is W_SI2, not the centre)",
+ "strategy": [
+  "1",
+  "1/2",
+  "1",
+  "1/2",
+  "0",
+  "0",
+  "1",
+  "1/2",
+  "1",
+  "1/2",
+  "1",
+  "1/2",
+  "1/2",
+  "0",
+  "1/2",
+  "0"
+ ],
+ "stratum": "1*1*001*1*1**0*0",
+ "dimension": 7,
+ "free_coordinates": [1,3,7,9,11,12,14],
+ "wedge": "W",
+ "sign_T_minus_S": 1,
+ "required_efficiency_class": "C",
+ "conventions": "p_s = Pr(cooperate) at state s = 4x+y, x the last outcome, y the one before, CC=0 CD=1 DC=2 DD=3, focal action first; errors p -> eps+(1-2eps)p on both players, eps -> 0 before any inequality; co-player code g in 0..65535 with bit s = q_s (1 = C); margin = sign*(w_DC - w_CD)",
+ "selfplay": {
+  "W": [
+   "1",
+   "0",
+   "0",
+   "0"
+  ],
+  "efficiency_class_L1": "C",
+  "efficient": true
+ },
+ "competitiveness": {
+  "n_coplayers": 65536,
+  "min_margin": "-3/26",
+  "min_margin_float": -0.11538461538461539,
+  "n_at_min": 144,
+  "counts": {
+   "structural_zero": 33260,
+   "identity": 4736,
+   "pointwise_zero": 1026,
+   "identity_undetermined": 0,
+   "positive": 15248,
+   "negative": 11266
+  },
+  "argmin": {
+   "at_min": [50176,50177,50178,50180,50182,50184,50186,50188,50190,50192,50193,50194,50196,50198,50200,50202,50204,50206,50208,50209,50210,50212,50214,50216,50218,50220,50222,50224,50225,50226,50228,50230,50232,50234,50236,50238,50432,50433,50434,50436,50438,50440,50442,50444,50446,50448,50449,50450,50452,50454,50456,50458,50460,50462,50464,50465,50466,50468,50470,50472,50474,50476,50478,50480,50481,50482,50484,50486,50488,50490,50492,50494,54272,54273,54274,54276,54278,54280,54282,54284,54286,54288,54289,54290,54292,54294,54296,54298,54300,54302,54304,54305,54306,54308,54310,54312,54314,54316,54318,54320,54321,54322,54324,54326,54328,54330,54332,54334,54528,54529,54530,54532,54534,54536,54538,54540,54542,54544,54545,54546,54548,54550,54552,54554,54556,54558,54560,54561,54562,54564,54566,54568,54570,54572,54574,54576,54577,54578,54580,54582,54584,54586,54588,54590]
+  },
+  "min_positive_margin": "3/3385",
+  "min_positive_margin_float": 0.0008862629246676514,
+  "argmin_positive": [37224],
+  "negative_coplayers": "11266 co-players, listed in the margins file"
+ },
+ "identity_grid_check": {
+  "identities_checked": 16,
+  "identities_failing": 0,
+  "pointwise_zeros_checked": 8,
+  "pointwise_zeros_that_vanish_on_grid": 0,
+  "grid_points": 128,
+  "ok": true
+ },
+ "interval_route": {
+  "n_pos": 15248,
+  "n_neg": 11266,
+  "n_struct_zero": 33260,
+  "n_exact_zero": 5762,
+  "n_unresolved_by_interval": 5762,
+  "agrees_with_exact_scan": true
+ },
+ "friendly_rival": false,
+ "paper_claim": {
+  "stratum": "1*1*001*1*1**0*0",
+  "dim": 7
+ },
+ "recomputed": {
+  "stratum": "1*1*001*1*1**0*0",
+  "dim": 7,
+  "selfplay": [
+   "1",
+   "0",
+   "0",
+   "0"
+  ],
+  "min_margin": "-3/26",
+  "n_at_min": 144,
+  "efficient": true,
+  "friendly_rival": false
+ },
+ "matches_paper": true,
+ "mismatches": {},
+ "margins_file": "margins/fig3a_right_centre.tsv.gz",
+ "margins_sha256": "716439c41f72ca7001570a6af6e3ea6246d87a59950393235a5ac61353057141",
+ "regenerate": "cd /Users/martin/Documents/CL1/PRFull/check && nice -n 10 python3 cert/witnesses/make_witnesses.py fig3a_right_centre",
+ "engine": "PRFull/check/cert (exact.py: GTH in leading-order exact rationals, gmpy2.mpq; engine.py/certeng.c: interval engine with outward rounding)",
+ "generated": "2026-09-27",
+ "seconds": 10.3
+}

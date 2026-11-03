@@ -1,0 +1,6 @@
+x = 1/4: mass not yet recovered after 200 rounds 4.32e-06; E[times each exploited, counting the error] ~ 7.9995668592; E[CC rounds not preceded by CC] ~ 1.9999313401; E[rounds after the error round] ~ 17.9999284199
+   exact: 1 + (1 - x/2)/(x/2) = 8 ; offers before recovery = x * 2/x = 2
+x = 1/7: mass not yet recovered after 200 rounds 8.42e-04; E[times each exploited, counting the error] ~ 13.9078696593; E[CC rounds not preceded by CC] ~ 1.9919311981; E[rounds after the error round] ~ 29.9759776387
+   exact: 1 + (1 - x/2)/(x/2) = 14 ; offers before recovery = x * 2/x = 2
+x = 5/13: mass not yet recovered after 200 rounds 6.30e-09; E[times each exploited, counting the error] ~ 5.1999994123; E[CC rounds not preceded by CC] ~ 1.9999998455; E[rounds after the error round] ~ 12.3999999305
+   exact: 1 + (1 - x/2)/(x/2) = 26/5 ; offers before recovery = x * 2/x = 2

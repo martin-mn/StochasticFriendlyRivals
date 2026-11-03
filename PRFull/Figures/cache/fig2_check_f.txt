@@ -1,0 +1,33 @@
+wedge-S game (u, v) = (2.5, -4.0): piece, formula, raw friendly rival (competitive and efficient)
+  interior                           formula True        raw agrees at 25/25
+  face p4 = 0 (open)                 formula False       raw agrees at 25/25
+  face p4 = 1 (open)                 formula True        raw agrees at 25/25
+  face p2 = 1 (open)                 formula True        raw agrees at 25/25
+  face p3 = 1 (open)                 formula True        raw agrees at 25/25
+  face p2 + p3 = 1 (open)            formula True        raw agrees at 25/25
+  edge p4 = 0, p2 = 1                formula True        raw agrees at 25/25
+  edge p4 = 0, p3 = 1                formula True        raw agrees at 25/25
+  edge p4 = 0, p2 + p3 = 1           formula False       raw agrees at 25/25
+  edge p4 = 1, p2 = 1                formula True        raw agrees at 25/25
+  edge p4 = 1, p3 = 1                formula True        raw agrees at 25/25
+  edge p4 = 1, p2 + p3 = 1           formula True        raw agrees at 25/25
+  edge (p2, p3) = (1, 1)             formula True        raw agrees at 25/25
+  edge (p2, p3) = (0, 1), TFT-1011   formula False       raw agrees at 25/25
+  edge (p2, p3) = (1, 0), deleted    formula False       raw agrees at 25/25
+wedge-S game (u, v) = (0.5, -2.0): piece, formula, raw friendly rival (competitive and efficient)
+  interior                           formula True        raw agrees at 25/25
+  face p4 = 0 (open)                 formula False       raw agrees at 25/25
+  face p4 = 1 (open)                 formula True        raw agrees at 25/25
+  face p2 = 1 (open)                 formula True        raw agrees at 25/25
+  face p3 = 1 (open)                 formula True        raw agrees at 25/25
+  face p2 + p3 = 1 (open)            formula True        raw agrees at 25/25
+  edge p4 = 0, p2 = 1                formula True        raw agrees at 25/25
+  edge p4 = 0, p3 = 1                formula True        raw agrees at 25/25
+  edge p4 = 0, p2 + p3 = 1           formula False       raw agrees at 25/25
+  edge p4 = 1, p2 = 1                formula True        raw agrees at 25/25
+  edge p4 = 1, p3 = 1                formula True        raw agrees at 25/25
+  edge p4 = 1, p2 + p3 = 1           formula True        raw agrees at 25/25
+  edge (p2, p3) = (1, 1)             formula True        raw agrees at 25/25
+  edge (p2, p3) = (0, 1), TFT-1011   formula False       raw agrees at 25/25
+  edge (p2, p3) = (1, 0), deleted    formula False       raw agrees at 25/25
+disagreements: 0

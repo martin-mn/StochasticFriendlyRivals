@@ -1,0 +1,27 @@
+uid  6895 010***01*1*1*010 N    dim 6: direct certify_point(wedge=N) AGREES 
+uid  6895 010***01*1*1*010 ray+ dim 6: direct certify_point(wedge=ray+) AGREES 
+uid  6897 *10***01*1*1*010 N    dim 7: direct certify_point(wedge=N) AGREES 
+uid  6897 *10***01*1*1*010 ray+ dim 7: direct certify_point(wedge=ray+) AGREES 
+uid  6259 11****01*111*010 ray+ dim 6: direct certify_point(wedge=ray+) AGREES 
+uid  7712 1*1100111*1**0*0 W    dim 5: direct certify_point(wedge=W) AGREES 
+uid  7712 1*1100111*1**0*0 ray+ dim 5: direct certify_point(wedge=ray+) AGREES 
+uid  7715 1*1*00111*1**0*0 W    dim 6: direct certify_point(wedge=W) AGREES 
+uid  7715 1*1*00111*1**0*0 ray+ dim 6: direct certify_point(wedge=ray+) AGREES 
+uid    32 11*100111*1*0000 W    dim 3: direct certify_point(wedge=W) AGREES 
+uid    32 11*100111*1*0000 ray+ dim 3: direct certify_point(wedge=ray+) AGREES 
+uid  7725 11**001*1*1**0*0 W    dim 7: direct certify_point(wedge=W) AGREES 
+uid  7725 11**001*1*1**0*0 ray+ dim 7: direct certify_point(wedge=ray+) AGREES 
+uid   836 1110000101110010 W    dim 0: direct certify_point(wedge=W) AGREES 
+uid   836 1110000101110010 ray+ dim 0: direct certify_point(wedge=ray+) AGREES 
+uid  6975 *10***0**1*1*010 N    dim 8: direct certify_point(wedge=N) AGREES 
+uid  6975 *10***0**1*1*010 ray+ dim 8: direct certify_point(wedge=ray+) AGREES 
+uid 12743 1010*00*11*1**** E    dim 7: direct certify_point(wedge=E) AGREES 
+uid 11793 101***0*11***10* E    dim 8: direct certify_point(wedge=E) AGREES 
+uid  7606 11****00*1***010 ray+ dim 8: direct certify_point(wedge=ray+) AGREES 
+(1) 20 direct calls, 0 disagreements
+(2) uid 7646: bad point first -> certified 1 via census:1 (tried 2)
+    only the bad point, no random search -> certified 0, reason: census:0: negative margin (8512 co-players; min -328190976/2545104995 at q=9088)
+    only the bad point, random search on -> certified 1 via random:0, 5.83 s
+(2) uid 8229: bad point first -> certified 1 via census:1 (tried 2)
+    only the bad point, no random search -> certified 0, reason: census:0: negative margin (3840 co-players; min -13069/275213 at q=16536)
+    only the bad point, random search on -> certified 1 via random:2, 12.82 s

@@ -1,0 +1,19 @@
+{
+ "c9a": {
+  "rows": 18108,
+  "rows_failing": 0,
+  "max_exact_centre_margin": "-1/49",
+  "exact_resample": 4000,
+  "exact_status_counts": {
+   "alld": 1719,
+   "ineff": 2218,
+   "surv": 63
+  },
+  "exact_resample_mismatches": 0,
+  "interior_points": 6000,
+  "interior_nonnegative": 0,
+  "interior_max_margin": -4.994997509993741e-10,
+  "seconds_rows": 3.2,
+  "seconds_total": 5.3
+ }
+}

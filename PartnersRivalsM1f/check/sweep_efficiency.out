@@ -1,0 +1,118 @@
+==========================================================================================
+SWEEP OF THE EFFICIENT SET AND THE FRIENDLY-RIVAL SET OVER THE FULL CUBE
+eps = (1e-10, 1e-12),  verdict tolerance = 1e-06,  co-players = the 16 vertices
+==========================================================================================
+
+[0] accuracy receipt: the tree route against exact Fractions (self-play)
+    eps=1e-10   max |w_tree - w_exact| over 20 self-play points: 2.220e-16
+    eps=1e-12   max |w_tree - w_exact| over 20 self-play points: 3.331e-16
+
+[1] full grid at resolution 1/20: 194481 strategies
+    eps=1e-10   n=194481   max|w_CD - w_DC| = 2.220e-16   (Step 1: exactly 0 in exact arithmetic)
+           allC: closed form   8819   measured   8819   disagreements 0
+            alt: closed form    798   measured    798   disagreements 0
+         W_DD=0: closed form   9657   measured   9657   disagreements 0
+    eps=1e-12   n=194481   max|w_CD - w_DC| = 2.220e-16   (Step 1: exactly 0 in exact arithmetic)
+           allC: closed form   8819   measured   8819   disagreements 0
+            alt: closed form    798   measured    798   disagreements 0
+         W_DD=0: closed form   9657   measured   9657   disagreements 0
+
+[2] 199989 random points, 2469 from each of the 81 strata (each coordinate 0, 1, or uniform)
+    eps=1e-10   n=199989   max|w_CD - w_DC| = 2.220e-16
+           allC: closed form  41973   measured  41851   disagreements 122
+            order test at eps and eps*1e-4: 122/122 are finite-eps resolution artefacts (the deviation moves the way the closed form says)
+              example p=(1.0, 0.0, 0.0, 0.008061401688432277)  in-set=True  dev(eps)=3.127e-06  dev(eps*1e-4)=3.124e-10
+              example p=(1.0, 0.0, 0.0, 0.009022735475983609)  in-set=True  dev(eps)=2.501e-06  dev(eps*1e-4)=2.499e-10
+              example p=(1.0, 0.0, 0.0, 0.009800870173112115)  in-set=True  dev(eps)=2.123e-06  dev(eps*1e-4)=2.121e-10
+            alt: closed form  14814   measured  14811   disagreements 3
+            order test at eps and eps*1e-4: 3/3 are finite-eps resolution artefacts (the deviation moves the way the closed form says)
+              example p=(0.9999723671056537, 1.0, 0.0, 1.0)  in-set=True  dev(eps)=1.810e-06  dev(eps*1e-4)=1.809e-10
+              example p=(2.5854452752686443e-05, 1.0, 0.0, 1.0)  in-set=True  dev(eps)=3.868e-06  dev(eps*1e-4)=3.866e-10
+              example p=(0.9999728485278925, 1.0, 0.0, 0.29059936487136984)  in-set=True  dev(eps)=1.077e-06  dev(eps*1e-4)=1.077e-10
+         W_DD=0: closed form  66663   measured  66572   disagreements 119
+            order test at eps and eps*1e-4: 119/119 are finite-eps resolution artefacts (the deviation moves the way the closed form says)
+              example p=(1.0, 0.0, 0.0, 0.008061401688432277)  in-set=True  dev(eps)=3.078e-06  dev(eps*1e-4)=3.075e-10
+              example p=(1.0, 0.0, 0.0, 0.009022735475983609)  in-set=True  dev(eps)=2.457e-06  dev(eps*1e-4)=2.455e-10
+              example p=(1.0, 0.0, 0.0, 0.009800870173112115)  in-set=True  dev(eps)=2.082e-06  dev(eps*1e-4)=2.080e-10
+    eps=1e-12   n=199989   max|w_CD - w_DC| = 2.220e-16
+           allC: closed form  41973   measured  41963   disagreements 10
+            order test at eps and eps*1e-4: 10/10 are finite-eps resolution artefacts (the deviation moves the way the closed form says)
+              example p=(1.0, 0.0, 0.0, 0.00039616382274011014)  in-set=True  dev(eps)=1.275e-05  dev(eps*1e-4)=1.416e-09
+              example p=(1.0, 0.0, 0.0, 0.001331358980854926)  in-set=True  dev(eps)=1.131e-06  dev(eps*1e-4)=1.256e-10
+              example p=(1.0, 0.0, 0.0, 0.00042689535210710497)  in-set=True  dev(eps)=1.098e-05  dev(eps*1e-4)=1.219e-09
+            alt: closed form  14814   measured  14814   disagreements 0
+         W_DD=0: closed form  66663   measured  66667   disagreements 24
+            order test at eps and eps*1e-4: 24/24 are finite-eps resolution artefacts (the deviation moves the way the closed form says)
+              example p=(1.0, 0.0, 0.0, 0.00039616382274011014)  in-set=True  dev(eps)=1.274e-05  dev(eps*1e-4)=1.415e-09
+              example p=(1.0, 0.0, 0.0, 0.001331358980854926)  in-set=True  dev(eps)=1.128e-06  dev(eps*1e-4)=1.253e-10
+              example p=(1.0, 0.0, 0.0, 0.00042689535210710497)  in-set=True  dev(eps)=1.097e-05  dev(eps*1e-4)=1.218e-09
+
+[3] friendly-rival closed form vs direct computation at eps=1e-10, on 43211 points (11^4 grid + stratified sample)
+    W  wedge  (u+v<1, T>S)           u=-1.00 v=+1.00  FR = empty
+        closed form     0   direct     0   disagreements 0
+    S  wedge  (u+v<1, T<S)           u=+0.80 v=-0.50  FR = Eff_CC n Riv-
+        closed form  4191   direct  4191   disagreements 0
+    E  wedge  (u+v>1, T<S)           u=+1.50 v=+0.20  FR = empty
+        closed form     0   direct     0   disagreements 0
+    N  wedge  (u+v>1, T>S)           u=+0.20 v=+1.50  FR = empty
+        closed form     0   direct     0   disagreements 0
+    ray u+v=1, u<1  (W|N, T>S)       u=+0.50 v=+0.50  FR = empty
+        closed form     0   direct     0   disagreements 0
+    ray u+v=1, u>1  (S|E, T<S)       u=+1.50 v=-0.50  FR = Eff_line n Riv-
+        closed form  4906   direct  4906   disagreements 0
+    line T=S, u+v<1 (W|S, vacuous)   u=+0.20 v=-0.80  FR = Eff_CC
+        closed form  7206   direct  7192   disagreements 14
+            order test at eps and eps*1e-4: 14/14 are finite-eps resolution artefacts
+              example p=(1.0, 0.0, 0.0, 0.00039616382274011014)  in-set=True  joint deficit -1.274e-03 -> -1.274e-07
+              example p=(1.0, 0.0, 0.0, 0.00734119656559606)  in-set=True  joint deficit -3.754e-06 -> -3.751e-10
+              example p=(1.0, 0.0, 0.0, 0.0068415032765934925)  in-set=True  joint deficit -4.320e-06 -> -4.316e-10
+    line T=S, u+v>1 (N|E, vacuous)   u=+1.50 v=+0.50  FR = Eff_alt
+        closed form  2315   direct  2315   disagreements 0
+    point (u,v)=(1,0)  (vacuous)     u=+1.00 v=+0.00  FR = Eff_line
+        closed form 10951   direct 10939   disagreements 12
+            order test at eps and eps*1e-4: 12/12 are finite-eps resolution artefacts
+              example p=(1.0, 0.0, 0.0, 0.00039616382274011014)  in-set=True  joint deficit -1.273e-03 -> -1.273e-07
+              example p=(1.0, 0.0, 0.0, 0.00734119656559606)  in-set=True  joint deficit -3.711e-06 -> -3.708e-10
+              example p=(1.0, 0.0, 0.0, 0.0068415032765934925)  in-set=True  joint deficit -4.273e-06 -> -4.270e-10
+    rival-predicate cross-check on the same points: Riv+ mismatches 0, Riv- mismatches 0
+
+[4] vertex census (the 16 deterministic strategies), measured, eps=1e-10
+    efficient below the switch line : ['1001 WSLS', '1110', '1111 ALLC']
+    efficient above the switch line : []
+    efficient on   the switch line  : ['1001 WSLS', '1011', '1101', '1110', '1111 ALLC']
+    closed forms agree: True
+    W  wedge  (u+v<1, T>S)           friendly rivals: []   (closed form [])
+    S  wedge  (u+v<1, T<S)           friendly rivals: ['1110', '1111 ALLC']   (closed form ['1110', '1111 ALLC'])
+    E  wedge  (u+v>1, T<S)           friendly rivals: []   (closed form [])
+    N  wedge  (u+v>1, T>S)           friendly rivals: []   (closed form [])
+    ray u+v=1, u<1  (W|N, T>S)       friendly rivals: []   (closed form [])
+    ray u+v=1, u>1  (S|E, T<S)       friendly rivals: ['1011', '1110', '1111 ALLC']   (closed form ['1011', '1110', '1111 ALLC'])
+    line T=S, u+v<1 (W|S, vacuous)   friendly rivals: ['1001 WSLS', '1110', '1111 ALLC']   (closed form ['1001 WSLS', '1110', '1111 ALLC'])
+    line T=S, u+v>1 (N|E, vacuous)   friendly rivals: []   (closed form [])
+    point (u,v)=(1,0)  (vacuous)     friendly rivals: ['1001 WSLS', '1011', '1101', '1110', '1111 ALLC']   (closed form ['1001 WSLS', '1011', '1101', '1110', '1111 ALLC'])
+
+[5] sup over the mesh (hZ)^4 of the joint deficit d = min(efficiency deficit, rival margin)
+    predicted mesh optima:  W -h/2 at (1,h,1,0);  S 0 (attained);  N and E
+    -h/(1+h) at (p1,0,1,h) resp. (1,0,1,h).  A deviation is flagged, not hidden.
+    h = 1/5   (1296 mesh points)
+        W:  sup d = -0.10000000  at p = (1.0, 0.2, 1.0, 0.0)   matches
+        S:  sup d = -0.00000000  at p = (1.0, 1.0, 1.0, 0.2)   matches
+        N:  sup d = -0.16666667  at p = (0.0, 0.0, 1.0, 0.2)   matches
+        E:  sup d = -0.12499999  at p = (1.0, 0.0, 1.0, 0.2)   DEVIATES from the predicted -0.166667
+    h = 1/10   (14641 mesh points)
+        W:  sup d = -0.05000000  at p = (1.0, 0.1, 1.0, 0.0)   matches
+        S:  sup d = -0.00000000  at p = (1.0, 1.0, 1.0, 0.1)   matches
+        N:  sup d = -0.09090909  at p = (0.0, 0.0, 1.0, 0.1)   matches
+        E:  sup d = -0.09090909  at p = (0.9, 0.0, 1.0, 1.0)   matches
+    h = 1/20   (194481 mesh points)
+        W:  sup d = -0.02500000  at p = (1.0, 0.05, 1.0, 0.0)   matches
+        S:  sup d = -0.00000000  at p = (1.0, 1.0, 1.0, 0.1)   matches
+        N:  sup d = -0.04761905  at p = (0.0, 0.0, 1.0, 0.05)   matches
+        E:  sup d = -0.04761905  at p = (0.95, 0.0, 1.0, 1.0)   matches
+    h = 1/40   (2825761 mesh points)
+        W:  sup d = -0.01250000  at p = (1.0, 0.025, 1.0, 0.0)   matches
+        S:  sup d = -0.00000000  at p = (1.0, 1.0, 1.0, 0.325)   matches
+        N:  sup d = -0.02439024  at p = (0.0, 0.0, 1.0, 0.025)   matches
+        E:  sup d = -0.02439024  at p = (0.975, 0.0, 1.0, 1.0)   matches
+
+TOTAL 14 s

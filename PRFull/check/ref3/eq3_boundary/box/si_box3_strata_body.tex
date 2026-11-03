@@ -1,0 +1,29 @@
+% SI Box 3 without its title and legend (they are part of the paper) -- written by mk_strata_table.py from the certificate output prove_strata.json (P1); do not edit by hand.
+\begin{table}[!tp]
+\noindent\rule{\textwidth}{0.4pt}\par\smallskip
+{\footnotesize\renewcommand{\baselinestretch}{1.1}\selectfont
+\noindent\setlength{\tabcolsep}{4pt}%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.2\textwidth}>{\raggedright\arraybackslash}p{0.48\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}@{}}
+\toprule
+stratum; $L$ & gains that differ from the open-facet display & Bernstein factors\\
+\midrule
+$(1,0,0,c)$\newline \mbox{$L=c^2$} & $0100$:~$[2I+I\!I]/(3+2c)$; \TFT{}:~$[I+cI\!I]/(1+3c)$; $1100$:~$[3I+(2+c)I\!I]/[6(1+c)]$; $1101$:~$(2-c)I\!I/3$; $1110$:~$2I\!I/3$; \ALLC{}:~$2I\!I/(3+c)$ & $1+c$, $1+2c$, $1+3c$, $2+c$, $2-c$, $2+3c$, $3+c$, $3+2c$\\
+$(1,0,0,1)$\newline \mbox{$L=1$} & $0100$:~$[2I+I\!I]/5$; $0101$$^\dagger$:~$[I+I\!I]/4$; \TFT{}:~$[I+I\!I]/4$; $1100$:~$[I+I\!I]/4$; $1101$:~$I\!I/3$; $1110$:~$2I\!I/3$; \ALLC{}:~$I\!I/2$ & none\\
+$(1,0,b,c)$\newline \mbox{$L=(1-b)$}\allowbreak\mbox{$(1+b)$}\allowbreak\mbox{$c^2$} & \TFT{}:~$[(1-b)I+cI\!I]/(1-b+3c)$ & $1+b$, $1+2b$, $1-b+2c$, $1-b+3c$, $1+3b-c$, $1+c$, $2+3c$, $1+c-bc$, $2+b+c-bc$\\
+$(1,0,b,1)$\newline \mbox{$L=(1-b)$}\allowbreak\mbox{$(1+b)$} & \TFT{}:~$[(1-b)I+I\!I]/(4-b)$ & $1+b$, $1+2b$, $2-b$, $3-b$, $4-b$\\
+\midrule
+$(1,1,1,c)$\newline \mbox{$L=c$}\allowbreak\mbox{$(2-c)$} & \WSLS{}:~$2v/(3+c)$; $1101$:~$v/3$ & $2-c$, $3+c$\\
+$(1,1,1,1)$\newline \mbox{$L=1$} & \WSLS{}:~$v/2$; $1101$:~$v/3$ & none\\
+$(1,1,b,c)$\newline \mbox{$L=b^2$}\allowbreak\mbox{$c$}\allowbreak\mbox{$(2-c)$} & \WSLS{}:~$(2b+c-bc)v/(3b+3c-2bc)$; $1101$:~$v/3$ & $2-c$, $b+c-bc$, $2b+c-bc$, $3b+3c-2bc$\\
+$(1,1,b,1)$\newline \mbox{$L=b^2$} & \WSLS{}:~$(1+b)v/(3+b)$; $1101$:~$v/3$ & $1+b$, $3+b$\\
+\midrule
+$(1,a,0,c)$\newline \mbox{$L=(1-a)^2$}\allowbreak\mbox{$c^2$} & $0100$:~$[2I+I\!I]/(3-3a+2c)$; $1100$:~$[3(1-a)I+(2-2a+c)I\!I]/[6(1-a)(1-a+c)]$; $1101$:~$(2-c)I\!I/[3(1-a)]$; $1110$:~$(2-a)I\!I/[3(1-a)]$; \ALLC{}:~$(2-a)I\!I/[(1-a)(3-a+c)]$ & $2-a$, $1-a+c$, $1-a+2c$, $2-2a+c$, $2-2a+3c$, $3-a+c$, $3-3a+2c$, $2-c$\\
+$(1,a,0,1)$\newline \mbox{$L=(1-a)^2$} & $0100$:~$[2I+I\!I]/(5-3a)$; $0101$$^\dagger$:~$[I+I\!I]/(4-3a)$; $1100$:~$[3(1-a)I+(3-2a)I\!I]/[6(1-a)(2-a)]$; $1101$:~$I\!I/[3(1-a)]$; $1110$:~$(2-a)I\!I/[3(1-a)]$; \ALLC{}:~$(2-a)I\!I/[(1-a)(4-a)]$ & $2-a$, $3-a$, $3-2a$, $4-a$, $4-3a$, $5-2a$, $5-3a$\\
+$(1,a,1,c)$\newline \mbox{$L=a$}\allowbreak\mbox{$(2-a)$}\allowbreak\mbox{$c$}\allowbreak\mbox{$(2-c)$} & none & $2-a$, $3-a$, $3-2a$, $1-a+c$, $2-2a+3c$, $2-c$, $4-3a-c+ac$\\
+$(1,a,1,1)$\newline \mbox{$L=a$}\allowbreak\mbox{$(2-a)$} & none & $2-a$, $3-a$, $3-2a$, $5-2a$\\
+$(1,a,b,1)$\newline \mbox{$L=(1-a+b)$}\allowbreak\mbox{$(1-a-b+2ab)$} & none & $2-a$, $3-2a$, $5-2a$, $1-a+b$, $1-a+2b$, $1-b+ab$, $1-a-b+2ab$, $2-a-b+ab$, $3-a-b+ab$\\
+\bottomrule
+\end{tabular}
+\par}
+\noindent\rule{\textwidth}{0.4pt}
+\end{table}

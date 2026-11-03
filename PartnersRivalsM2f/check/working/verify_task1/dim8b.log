@@ -1,0 +1,5 @@
+class-C dim-8 strata: 491127 ; p0 digit histogram [0, 0, 491127] ; p15 digit histogram [24968, 317545, 148614]
+  p15 pinned to 0 : 24968  (deep, 512 draws)   others : 466159  (shallow, 64 draws)
+  DEEP     24968 strata x  512 draws =  12783616 points ; 39114 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) against all 65536   [194.2 s]
+  SHALLOW 466159 strata x   64 draws =  29834176 points ; 0 survived the 21-witness screen ; 0 CONFIRMED rivals (T>S) against all 65536   [255.2 s]
+  ==> no wedge-W friendly rival of dimension 8 found.

@@ -1,0 +1,91 @@
+PARTIAL: 4 of 128 chunks complete; restricted to their strategies, inclusion probabilities x 0.0312; shares indicative only
+audit: 852 of 852 sampled strategies audited, 0 errors, 0 missing, 0 changed atoms, 0 not reproduced
+validated 101 (efficient, competitive, not stable: would contradict the theorem): 0
+tolerances: {"C_valid_most_negative_double_margin": -1.1102230246251565e-16, "C_invalid_least_negative_exact_min_margin": -0.00016639792945312852, "S_valid_largest_double_gain": 2.220446049250313e-16, "S_invalid_smallest_exact_max_gain": 5.62915132516646e-06, "n_C_tolerance_engaged": 16, "n_S_tolerance_engaged": 2}
+
+F1 W   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000       4      0      0      0      0      0      0      0      0
+  001       0      7      0      0      0      0      0      0      0
+  010       0      0      3      0      0      0      0      0      0
+  011       0      0      0      4      0      0      0      0      0
+  100       0      0      0      0      2      0      0      0      0
+  110       0      0      0      0      0     87      0      0      0
+  111       0      0      0      0      0      0      1      0      0
+
+F1 S   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000       6      0      0      0      0      0      0      0      0
+  001       0      8      0      0      0      0      0      0      0
+  010       0      0      4      0      0      0      0      0      0
+  100       0      0      0      0      3      0      0      0      0
+  110       0      0      0      0      0     14      0      0      0
+  111       0      0      0      0      0      0     31      0      0
+
+F1 N   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000       6      0      0      0      0      0      0      0      0
+  001       0     10      0      0      0      0      0      0      0
+  011       0      0      0      3      0      0      0      0      0
+  100       0      0      0      0      3      0      0      0      0
+  110       0      0      0      0      0     72      0      0      0
+  111       0      0      0      0      0      0     13      0      0
+
+F1 E   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000       7      0      0      0      0      0      0      0      0
+  001       0      4      0      0      0      0      0      0      0
+  010       0      0      1      0      0      0      0      0      0
+  011       0      0      0     16      0      0      0      0      0
+  100       0      0      0      0      1      0      0      0      0
+  110       0      0      0      0      0     63      0      0      0
+  111       0      0      0      0      0      0      3      0      0
+
+F2 W   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000      20      0      0      0      0      0      0      0      0
+  001       0     11      0      0      0      0      0      0      0
+  010       0      0      8      0      0      0      0      0      0
+  011       0      0      0     10      0      0      0      0      0
+  100       0      0      0      0     11      0      0      0      0
+  110       0      0      0      0      0     64      0      0      0
+  111       0      0      0      0      0      0      5      0      0
+
+F2 S   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000       5      0      0      0      0      0      0      0      0
+  001       0     11      0      0      0      0      0      0      0
+  100       0      0      0      0      5      0      0      0      0
+  110       0      0      0      0      0     14      0      0      0
+  111       0      0      0      0      0      0     21      0      0
+
+F2 N   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000      21      0      0      0      0      0      0      0      0
+  001       0     12      0      0      0      0      0      0      0
+  010       0      0      2      0      0      0      0      0      0
+  011       0      0      0     12      0      0      0      0      0
+  100       0      0      0      0      3      0      0      0      0
+  110       0      0      0      0      0     86      0      0      0
+  111       0      0      0      0      0      0     10      0      0
+
+F2 E   (rows: production atom, columns: validated atom; sampled strategies)
+           000    001    010    011    100    110    111    101  unres
+  000      25      0      0      0      0      0      0      0      0
+  001       0      8      0      0      0      0      0      0      0
+  010       0      0      1      0      0      0      0      0      0
+  011       0      0      0     19      0      0      0      0      0
+  100       0      0      0      0     14      0      0      0      0
+  110       0      0      0      0      0     72      0      0      0
+  111       0      0      0      0      0      0      6      0      0
+
+F1     changed: 0 of 376, share 0 +- 0 (95% upper bound 0.021); unresolved share 0
+F1 W   changed: 0 of 108, share 0 +- 0 (95% upper bound 0.052); unresolved share 0
+F1 S   changed: 0 of 66, share 0 +- 0 (95% upper bound 0.086); unresolved share 0
+F1 N   changed: 0 of 107, share 0 +- 0 (95% upper bound 0.076); unresolved share 0
+F1 E   changed: 0 of 95, share 0 +- 0 (95% upper bound 0.11); unresolved share 0
+F2     changed: 0 of 476, share 0 +- 0 (95% upper bound 0.019); unresolved share 0
+F2 W   changed: 0 of 129, share 0 +- 0 (95% upper bound 0.03); unresolved share 0
+F2 S   changed: 0 of 56, share 0 +- 0 (95% upper bound 0.078); unresolved share 0
+F2 N   changed: 0 of 146, share 0 +- 0 (95% upper bound 0.078); unresolved share 0
+F2 E   changed: 0 of 145, share 0 +- 0 (95% upper bound 0.11); unresolved share 0

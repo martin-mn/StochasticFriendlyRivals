@@ -1,0 +1,74 @@
+{
+ "c0": {
+  "rows": 0,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "c6": {
+  "rows": 123001,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "c68": {
+  "rows": 74581,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "c8": {
+  "rows": 51193,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "c9a": {
+  "rows": 18108,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "c9b": {
+  "rows": 48422,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/f1p11": {
+  "rows": 13580,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/f1p14": {
+  "rows": 966,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/f2p11": {
+  "rows": 25167,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/f2p14": {
+  "rows": 31262,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/x13": {
+  "rows": 185606,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/x15": {
+  "rows": 0,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/x4": {
+  "rows": 248568,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "extra/x5": {
+  "rows": 18627,
+  "rows_failing": 0,
+  "examples": []
+ },
+ "_pairs": 583817,
+ "_seconds": 101.2
+}

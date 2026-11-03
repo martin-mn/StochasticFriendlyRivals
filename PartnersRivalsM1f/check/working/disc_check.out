@@ -1,0 +1,433 @@
+====================================================================================================
+DISCOUNTED friendly rivals over the memory-one continuum -- measured
+candidates: 76607  (16 vertices x5 p0; 5^4 grid x5 p0; 7^4 grid x2 p0; 81 strata x600; 20000 on p1=1)
+co-players: 32 deterministic (16 vertices x q0 in {0,1}) then 3000 random per survivor
+====================================================================================================
+
+[   0.1s] === 0. EXACT (Fraction) SPOT CHECKS =====================================
+   normalisation sum(v) == 1 exactly, and the discounted Akin identity
+     v_CC(1-d p1) + v_CD(1-d p2) - d p3 v_DC - d p4 v_DD = (1-d) p0
+   hold exactly on all spot checks: OK
+   float: max |sum(v) - 1| over all 76607 candidates x 5 delta x 4 eps = 2.96e-11
+
+[   0.7s] === 1. SWEEP: efficient AND unbeaten, by (game, delta, eps) =============
+
+  TABLE 1a.  count of candidates that are efficient AND unbeaten
+             tolerance = 10*eps + 1e-12 on BOTH predicates;  out of 76607
+  game (u,v)       delta       eps=0          eps=1e-07      eps=1e-05      eps=0.001   
+  --------------------------------------------------------------------------------------
+  W  (0.2,0.2)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  S  (0.4,-1.0)    0.5               25876         25876         25877         25953
+                   0.9               16004         14013         14022         14679
+                   0.99              13992         11301         11315         12252
+                   0.999             13793         11025         11076         14129
+                   0.99999           13777         11039         13573         15149
+
+  E  (2.0,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  N  (0.5,1.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  L+ (0.3,0.7)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  L+ (1.5,-0.5)    0.5               25876         25876         25878         26057
+                   0.9               16004         16004         16009         16565
+                   0.99              13992         12882         12921         14704
+                   0.999             13793         12636         12598         16608
+                   0.99999           13777         12555         16131         17742
+
+  L- (0.5,-0.5)    0.5               25876         25876         25877         26008
+                   0.9               25876         23124         23124         23348
+                   0.99              25876         18093         18110         19144
+                   0.999             25876         17691         17789         22552
+                   0.99999           25876         17743         22284         23749
+
+  L- (1.5,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0          1809
+                   0.99999               0             0          1777          2816
+
+  TABLE 1b.  the same count with a TIGHT absolute tolerance 1e-9 on both predicates
+  game (u,v)       delta       eps=0          eps=1e-07      eps=1e-05      eps=0.001   
+  --------------------------------------------------------------------------------------
+  W  (0.2,0.2)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  S  (0.4,-1.0)    0.5               25876             0             0             0
+                   0.9               16004             0             0             0
+                   0.99              13992             0             0             0
+                   0.999             13793             0             0             0
+                   0.99999           13777             0             0             0
+
+  E  (2.0,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  N  (0.5,1.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  L+ (0.3,0.7)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  L+ (1.5,-0.5)    0.5               25876           637           614             0
+                   0.9               16004           623           614             0
+                   0.99              13992           622           400             0
+                   0.999             13793           622           400             0
+                   0.99999           13777           620           400             0
+
+  L- (0.5,-0.5)    0.5               25876             0             0             0
+                   0.9               25876             0             0             0
+                   0.99              25876             0             0             0
+                   0.999             25876             0             0             0
+                   0.99999           25876             0             0             0
+
+  L- (1.5,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  TABLE 1c.  how many of the counted ones were then BROKEN by a random co-player
+             (0 everywhere = the 32 deterministic co-players really are the minimisers)
+             total broken over all 160 cells: 0
+
+  TABLE 1d.  candidates that are efficient at tolerance 1e-9 (before rivalry)
+  game (u,v)       delta       eps=0          eps=1e-07      eps=1e-05      eps=0.001   
+  --------------------------------------------------------------------------------------
+  W  (0.2,0.2)     0.5               25876             0             0             0
+                   0.9               25876             0             0             0
+                   0.99              25876             0             0             0
+                   0.999             25876             0             0             0
+                   0.99999           25876             0             0             0
+
+  S  (0.4,-1.0)    0.5               25876             0             0             0
+                   0.9               25876             0             0             0
+                   0.99              25876             0             0             0
+                   0.999             25876             0             0             0
+                   0.99999           25876             0             0             0
+
+  E  (2.0,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  N  (0.5,1.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  L+ (0.3,0.7)     0.5               25876          3979          3161             0
+                   0.9               25876          3527          1348             0
+                   0.99              25876          3477          1047             0
+                   0.999             25876          3045          1037             0
+                   0.99999           25901          1843          1049             0
+
+  L+ (1.5,-0.5)    0.5               25876          3979          3161             0
+                   0.9               25876          3527          1348             0
+                   0.99              25876          3477          1047             0
+                   0.999             25876          3045          1037             0
+                   0.99999           25901          1843          1049             0
+
+  L- (0.5,-0.5)    0.5               25876             0             0             0
+                   0.9               25876             0             0             0
+                   0.99              25876             0             0             0
+                   0.999             25876             0             0             0
+                   0.99999           25876             0             0             0
+
+  L- (1.5,0.5)     0.5                   0             0             0             0
+                   0.9                   0             0             0             0
+                   0.99                  0             0             0             0
+                   0.999                 0             0             0             0
+                   0.99999               0             0             0             0
+
+  TABLE 1e.  best (largest) efficiency deficit achievable, tolerance-free, eps=0
+             = max_p [ pi_delta(p,p) - Emax ];  0 means exact efficiency is attainable
+  game              delta=0.5        delta=0.9        delta=0.99       delta=0.999      delta=0.99999  
+  W  (0.2,0.2)            0.000e+00        0.000e+00        0.000e+00        0.000e+00        0.000e+00
+  S  (0.4,-1.0)           0.000e+00        0.000e+00        0.000e+00        0.000e+00        0.000e+00
+  E  (2.0,0.5)           -3.691e-01       -1.053e-01       -1.160e-02       -1.172e-03       -1.174e-05
+  N  (0.5,1.5)           -2.690e-01       -7.891e-02       -8.782e-03       -8.871e-04       -8.881e-06
+  L+ (0.3,0.7)            0.000e+00        0.000e+00        0.000e+00        0.000e+00        0.000e+00
+  L+ (1.5,-0.5)           0.000e+00        0.000e+00        0.000e+00        0.000e+00        0.000e+00
+  L- (0.5,-0.5)           0.000e+00        0.000e+00        0.000e+00        0.000e+00        0.000e+00
+  L- (1.5,0.5)           -2.690e-01       -7.891e-02       -8.782e-03       -8.871e-04       -8.881e-06
+
+  TABLE 1f.  closed-form prediction vs measurement, eps = 0, tolerance 1e-9
+             prediction: efficient <=> u+v<=1 & p0=1 & p1=1;
+                         unbeaten  <=> T<S and p2+p3 >= 2-1/delta, or T=S (vacuous)
+  game             delta      predicted   measured   disagree
+  W  (0.2,0.2)     0.5                0          0          0
+  W  (0.2,0.2)     0.9                0          0          0
+  W  (0.2,0.2)     0.99               0          0          0
+  W  (0.2,0.2)     0.999              0          0          0
+  W  (0.2,0.2)     0.99999            0          0          0
+  S  (0.4,-1.0)    0.5            25876      25876          0
+  S  (0.4,-1.0)    0.9            16004      16004          0
+  S  (0.4,-1.0)    0.99           13992      13992          0
+  S  (0.4,-1.0)    0.999          13793      13793          0
+  S  (0.4,-1.0)    0.99999        13777      13777          0
+  E  (2.0,0.5)     0.5                0          0          0
+  E  (2.0,0.5)     0.9                0          0          0
+  E  (2.0,0.5)     0.99               0          0          0
+  E  (2.0,0.5)     0.999              0          0          0
+  E  (2.0,0.5)     0.99999            0          0          0
+  N  (0.5,1.5)     0.5                0          0          0
+  N  (0.5,1.5)     0.9                0          0          0
+  N  (0.5,1.5)     0.99               0          0          0
+  N  (0.5,1.5)     0.999              0          0          0
+  N  (0.5,1.5)     0.99999            0          0          0
+  L+ (0.3,0.7)     0.5                0          0          0
+  L+ (0.3,0.7)     0.9                0          0          0
+  L+ (0.3,0.7)     0.99               0          0          0
+  L+ (0.3,0.7)     0.999              0          0          0
+  L+ (0.3,0.7)     0.99999            0          0          0
+  L+ (1.5,-0.5)    0.5            25876      25876          0
+  L+ (1.5,-0.5)    0.9            16004      16004          0
+  L+ (1.5,-0.5)    0.99           13992      13992          0
+  L+ (1.5,-0.5)    0.999          13793      13793          0
+  L+ (1.5,-0.5)    0.99999        13777      13777          0
+  L- (0.5,-0.5)    0.5            25876      25876          0
+  L- (0.5,-0.5)    0.9            25876      25876          0
+  L- (0.5,-0.5)    0.99           25876      25876          0
+  L- (0.5,-0.5)    0.999          25876      25876          0
+  L- (0.5,-0.5)    0.99999        25876      25876          0
+  L- (1.5,0.5)     0.5                0          0          0
+  L- (1.5,0.5)     0.9                0          0          0
+  L- (1.5,0.5)     0.99               0          0          0
+  L- (1.5,0.5)     0.999              0          0          0
+  L- (1.5,0.5)     0.99999            0          0          0
+  TOTAL DISAGREEMENTS (eps=0): 0
+
+[  13.9s] === 2. DO THE UNDISCOUNTED WEDGE-S FRIENDLY RIVALS SURVIVE delta < 1? ====
+  game S  (0.4,-1.0):  R=1 S=0.4 T=0 P=0,  T-S=-0.4 (<0),  Emax=1
+
+  --- p0 = 1   (columns: efficiency deficit / rivalry margin;  FR = both >= -1e-9) ---
+  strategy              p2+p3      d=0.5              d=0.9              d=0.99             d=0.999            d=0.99999    
+  ALLC   1111            2.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+         1110            2.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+         1101            1.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+         1011            1.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+         1010 TFT        1.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+         1000 Grim       0.00  FR +0.0e+00/+0.0e+00     +0.0e+00/-3.2e-01     +0.0e+00/-3.9e-01     +0.0e+00/-4.0e-01     +0.0e+00/-4.0e-01
+         1001 WSLS       0.00  FR +0.0e+00/+0.0e+00     +0.0e+00/-3.2e-01     +0.0e+00/-3.9e-01     +0.0e+00/-4.0e-01     +0.0e+00/-4.0e-01
+  interior .6/.6/.4      1.20  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+  interior .5/.5/0       1.00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+  interior .8/.3/.5      1.10  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00  FR +0.0e+00/+0.0e+00
+  interior .3/.3/.5      0.60  FR +0.0e+00/+0.0e+00     +0.0e+00/-8.2e-02     +0.0e+00/-1.2e-01     +0.0e+00/-1.2e-01     +0.0e+00/-1.2e-01
+  interior .2/.2/.2      0.40  FR +0.0e+00/+0.0e+00     +0.0e+00/-1.5e-01     +0.0e+00/-1.9e-01     +0.0e+00/-2.0e-01     +0.0e+00/-2.0e-01
+  p1=.99 .6/.6/.4        1.20     -1.2e-02/-2.5e-03     -3.7e-02/-5.5e-03     -4.8e-02/-6.5e-03     -4.9e-02/-6.5e-03     -4.9e-02/-6.6e-03
+
+  --- p0 = 0.5   (columns: efficiency deficit / rivalry margin;  FR = both >= -1e-9) ---
+  strategy              p2+p3      d=0.5              d=0.9              d=0.99             d=0.999            d=0.99999    
+  ALLC   1111            2.00     -3.2e-01/-1.0e-01     -6.5e-02/-2.0e-02     -6.5e-03/-2.0e-03     -6.5e-04/-2.0e-04     -6.5e-06/-2.0e-06
+         1110            2.00     -4.5e-01/-1.0e-01     -2.9e-01/-2.0e-02     -2.5e-01/-2.0e-03     -2.5e-01/-2.0e-04     -2.5e-01/-2.0e-06
+         1101            1.00     -5.3e-01/-2.0e-01     -4.3e-01/-2.0e-01     -4.0e-01/-2.0e-01     -4.0e-01/-2.0e-01     -4.0e-01/-2.0e-01
+         1011            1.00     -5.3e-01/-1.0e-01     -4.3e-01/-2.0e-02     -4.0e-01/-2.0e-03     -4.0e-01/-2.0e-04     -4.0e-01/-2.0e-06
+         1010 TFT        1.00     -6.5e-01/-1.0e-01     -6.5e-01/-2.0e-02     -6.5e-01/-2.0e-03     -6.5e-01/-2.0e-04     -6.5e-01/-2.0e-06
+         1000 Grim       0.00     -7.0e-01/-2.0e-01     -7.4e-01/-3.4e-01     -7.5e-01/-3.9e-01     -7.5e-01/-4.0e-01     -7.5e-01/-4.0e-01
+         1001 WSLS       0.00     -4.5e-01/-2.0e-01     -1.1e-01/-3.4e-01     -1.1e-02/-3.9e-01     -1.1e-03/-4.0e-01     -1.1e-05/-4.0e-01
+  interior .6/.6/.4      1.20     -5.0e-01/-1.2e-01     -1.8e-01/-3.1e-02     -2.1e-02/-3.3e-03     -2.2e-03/-3.3e-04     -2.2e-05/-3.3e-06
+  interior .5/.5/0       1.00     -6.0e-01/-1.3e-01     -5.3e-01/-3.6e-02     -5.0e-01/-4.0e-03     -5.0e-01/-4.0e-04     -5.0e-01/-4.0e-06
+  interior .8/.3/.5      1.10     -5.2e-01/-1.5e-01     -2.0e-01/-5.4e-02     -2.5e-02/-6.5e-03     -2.6e-03/-6.7e-04     -2.6e-05/-6.7e-06
+  interior .3/.3/.5      0.60     -5.7e-01/-1.5e-01     -2.7e-01/-1.2e-01     -4.0e-02/-1.2e-01     -4.1e-03/-1.2e-01     -4.2e-05/-1.2e-01
+  interior .2/.2/.2      0.40     -6.5e-01/-1.7e-01     -5.1e-01/-1.8e-01     -1.4e-01/-2.0e-01     -1.7e-02/-2.0e-01     -1.7e-04/-2.0e-01
+  p1=.99 .6/.6/.4        1.20     -5.1e-01/-1.3e-01     -2.1e-01/-3.6e-02     -6.8e-02/-9.7e-03     -5.1e-02/-6.9e-03     -4.9e-02/-6.6e-03
+
+  --- measured rivalry threshold on the segment p=(1,s,1-s+g,0.5), p0=1, eps=0 ---
+      (bisection in x = p2+p3 on the family p2 = p3 = x/2, p4 = 0.5)
+  delta        measured x*    2 - 1/delta     difference
+  0.5          0.000000000    0.000000000       1.73e-18
+  0.9          0.888888889    0.888888889      -1.11e-16
+  0.99         0.989898990    0.989898990       0.00e+00
+  0.999        0.998998999    0.998998999      -1.11e-16
+  0.99999      0.999990000    0.999990000      -1.11e-16
+  0.6          0.333333333    0.333333333      -5.55e-17
+  0.75         0.666666667    0.666666667      -3.33e-16
+  0.8          0.750000000    0.750000000      -1.11e-16
+
+[  15.4s] === 3. THE PD SIDE: exact losing margin against ALLD =====================
+  game W  (0.2,0.2):  R=1 S=0.2 T=1.2 P=0,  T-S=1,  Emax=1  (a Prisoner's Dilemma)
+
+  margin against ALLD (q0=0), eps=0, p0=1;  predicted -(1-delta)(T-S) for any
+  strategy with p1=1 that never cooperates again after being suckered (p2=p4=0)
+  strategy              delta=0.5            delta=0.9            delta=0.99           delta=0.999          delta=0.99999  
+  1010 TFT          -5.0000000000e-01  -1.0000000000e-01  -1.0000000000e-02  -1.0000000000e-03  -1.0000000000e-05
+  1000 Grim         -5.0000000000e-01  -1.0000000000e-01  -1.0000000000e-02  -1.0000000000e-03  -1.0000000000e-05
+  1001 WSLS         -6.6666666667e-01  -5.2631578947e-01  -5.0251256281e-01  -5.0025012506e-01  -5.0000250001e-01
+  1111 ALLC         -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00
+  1100              -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00  -1.0000000000e+00
+  1011              -6.6666666667e-01  -5.2631578947e-01  -5.0251256281e-01  -5.0025012506e-01  -5.0000250001e-01
+  (1,0,.5,0)        -5.0000000000e-01  -1.0000000000e-01  -1.0000000000e-02  -1.0000000000e-03  -1.0000000000e-05
+  (1,.2,.3,0)       -5.5555555556e-01  -1.2195121951e-01  -1.2468827930e-02  -1.2496875781e-03  -1.2499968750e-05
+  -(1-d)(T-S)       -5.0000000000e-01  -1.0000000000e-01  -1.0000000000e-02  -1.0000000000e-03  -1.0000000000e-05
+
+  exact (Fraction) identity check, TFT/Grim with p0=1 vs ALLD, eps=0:
+    TFT          delta=1/2        margin = -1/2                    -(1-d)(T-S) = -1/2                    EQUAL
+    TFT          delta=9/10       margin = -1/10                   -(1-d)(T-S) = -1/10                   EQUAL
+    TFT          delta=999/1000   margin = -1/1000                 -(1-d)(T-S) = -1/1000                 EQUAL
+    TFT          delta=99999/100000 margin = -1/100000               -(1-d)(T-S) = -1/100000               EQUAL
+    Grim         delta=1/2        margin = -1/2                    -(1-d)(T-S) = -1/2                    EQUAL
+    Grim         delta=9/10       margin = -1/10                   -(1-d)(T-S) = -1/10                   EQUAL
+    Grim         delta=999/1000   margin = -1/1000                 -(1-d)(T-S) = -1/1000                 EQUAL
+    Grim         delta=99999/100000 margin = -1/100000               -(1-d)(T-S) = -1/100000               EQUAL
+    (1,0,1/2,0)  delta=1/2        margin = -1/2                    -(1-d)(T-S) = -1/2                    EQUAL
+    (1,0,1/2,0)  delta=9/10       margin = -1/10                   -(1-d)(T-S) = -1/10                   EQUAL
+    (1,0,1/2,0)  delta=999/1000   margin = -1/1000                 -(1-d)(T-S) = -1/1000                 EQUAL
+    (1,0,1/2,0)  delta=99999/100000 margin = -1/100000               -(1-d)(T-S) = -1/100000               EQUAL
+  (WSLS differs: p4=1 makes it re-cooperate from DD, so it is suckered every other
+   round -- margin -(T-S)/(1+delta), which does NOT vanish as delta -> 1.)
+  WSLS exact: d=9/10 -> -10/19  (-1/(1+d) = -10/19)   d=999/1000 -> -1000/1999  (-1/(1+d) = -1000/1999)   
+
+  the WHOLE facet p1 = 1 (p0 = 1), eps = 0: best margin against the 32 co-players
+  over 20000 uniform points of the facet, vs the predicted ceiling -(1-delta)(T-S)
+  delta            best margin    -(1-delta)(T-S)       argmax p
+  0.5        -5.0289268122e-01  -5.0000000000e-01   [1.    0.005 0.37  0.006]
+  0.9        -1.0318591858e-01  -1.0000000000e-01   [1.    0.023 0.597 0.001]
+  0.99       -1.0873878521e-02  -1.0000000000e-02   [1.    0.067 0.606 0.   ]
+  0.999      -1.1447130609e-03  -1.0000000000e-03   [1.    0.084 0.234 0.   ]
+  0.99999    -6.3584088541e-05  -1.0000000000e-05   [1.    0.084 0.234 0.   ]
+  and the two exact PD-optimal points (1,0,p3,0), p3 free:
+    delta=0.5       margins [-0.5 -0.5 -0.5 -0.5 -0.5]   ceiling -5.000000e-01
+    delta=0.9       margins [-0.1 -0.1 -0.1 -0.1 -0.1]   ceiling -1.000000e-01
+    delta=0.99      margins [-0.01 -0.01 -0.01 -0.01 -0.01]   ceiling -1.000000e-02
+    delta=0.999     margins [-0.001 -0.001 -0.001 -0.001 -0.001]   ceiling -1.000000e-03
+    delta=0.99999   margins [-1.e-05 -1.e-05 -1.e-05 -1.e-05 -1.e-05]   ceiling -1.000000e-05
+
+[  16.5s] === 4. SCALING OF THE BEST ACHIEVABLE RIVALRY MARGIN AS delta -> 1 =======
+  best_riv = max over EXACTLY-efficient candidates of min over the 32 co-players
+  of pi_delta(p,q) - pi_delta(q,p).   eps = 0.   nan = no efficient candidate exists.
+  game              delta=0.5         delta=0.9         delta=0.99        delta=0.999       delta=0.9999      delta=0.99999     delta=0.999999  
+  W  (0.2,0.2)        -5.0000000e-01    -1.0000000e-01    -1.0000000e-02    -1.0000000e-03    -1.0000000e-04    -1.0000000e-05    -1.0000000e-06
+  S  (0.4,-1.0)        0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00
+  E  (2.0,0.5)                   nan               nan               nan               nan               nan               nan               nan
+  N  (0.5,1.5)                   nan               nan               nan               nan               nan               nan               nan
+  L+ (0.3,0.7)        -7.0000000e-01    -1.4000000e-01    -1.4000000e-02    -1.4000000e-03    -1.4000000e-04    -1.4000000e-05    -1.4000000e-06
+  L+ (1.5,-0.5)        0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00
+  L- (0.5,-0.5)        0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00     0.0000000e+00
+  L- (1.5,0.5)                   nan               nan               nan               nan               nan               nan               nan
+
+  ratio best_riv / (1-delta) -- a finite non-zero limit means the failure (or the
+  success) is exactly of order (1-delta):
+  game              delta=0.5         delta=0.9         delta=0.99        delta=0.999       delta=0.9999      delta=0.99999     delta=0.999999  
+  W  (0.2,0.2)            -1.0000000        -1.0000000        -1.0000000        -1.0000000        -1.0000000        -1.0000000        -1.0000000
+  S  (0.4,-1.0)            0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000
+  E  (2.0,0.5)                   nan               nan               nan               nan               nan               nan               nan
+  N  (0.5,1.5)                   nan               nan               nan               nan               nan               nan               nan
+  L+ (0.3,0.7)            -1.4000000        -1.4000000        -1.4000000        -1.4000000        -1.4000000        -1.4000000        -1.4000000
+  L+ (1.5,-0.5)            0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000
+  L- (0.5,-0.5)            0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000         0.0000000
+  L- (1.5,0.5)                   nan               nan               nan               nan               nan               nan               nan
+
+  T-S per game: W  (0.2,0.2): 1, S  (0.4,-1.0): -0.4, E  (2.0,0.5): -0.5, N  (0.5,1.5): 2, L+ (0.3,0.7): 1.4, L+ (1.5,-0.5): -1, L- (0.5,-0.5): 0, L- (1.5,0.5): 0
+
+[  38.7s] === 5. VOLUME of the friendly-rival set inside the facet p1 = 1 =========
+  wedge S, p0 = 1, eps = 0.  Monte Carlo over (p2,p3,p4) uniform in the unit cube,
+  N = 400000.  Predicted volume = 1 - max(0, 2-1/delta)^2 / 2, which is 1 at
+  delta <= 1/2 and decreases monotonically to the undiscounted 1/2 at delta = 1.
+  delta       measured vol  1-(2-1/d)^2/2         diff    undisc. 1/2
+  0.25            1.000000       1.000000     0.00e+00       0.500000
+  0.5             1.000000       1.000000     0.00e+00       0.500000
+  0.6             0.944433       0.944444    -1.19e-05       0.500000
+  0.75            0.778763       0.777778     9.85e-04       0.500000
+  0.9             0.605545       0.604938     6.07e-04       0.500000
+  0.99            0.509890       0.510050    -1.60e-04       0.500000
+  0.999           0.500672       0.501000    -3.28e-04       0.500000
+  0.99999         0.499692       0.500010    -3.18e-04       0.500000
+  1               0.499692       0.500000    -3.08e-04       0.500000
+
+[  82.6s] === 6. ORDER OF LIMITS: eps vs (1-delta) =================================
+  wedge S, p0 = 1.  Efficiency deficit and rivalry margin of three wedge-S friendly
+  rivals at finite eps.  Both are O(eps) at fixed delta: the eps -> 0 friendly
+  rivals are eps-friendly-rivals at finite eps, exactly as undiscounted.
+  ALLC 1111
+    delta         eps=1e-07         eps=1e-05         eps=0.001    
+    0.5        -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00      (values are deficit/eps and margin/eps)
+    0.9        -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00      (values are deficit/eps and margin/eps)
+    0.99       -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00      (values are deficit/eps and margin/eps)
+    0.999      -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00      (values are deficit/eps and margin/eps)
+    0.99999    -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00  -1.6e+00/+0.0e+00      (values are deficit/eps and margin/eps)
+  1110
+    delta         eps=1e-07         eps=1e-05         eps=0.001    
+    0.5        -1.6e+00/-2.0e-08  -1.6e+00/-2.0e-06  -1.6e+00/-2.0e-04      (values are deficit/eps and margin/eps)
+    0.9        -1.6e+00/-3.7e-08  -1.6e+00/-3.6e-06  -1.6e+00/-3.6e-04      (values are deficit/eps and margin/eps)
+    0.99       -1.6e+00/-4.0e-08  -1.6e+00/-4.0e-06  -1.7e+00/-4.0e-04      (values are deficit/eps and margin/eps)
+    0.999      -1.6e+00/-4.0e-08  -1.6e+00/-4.0e-06  -1.9e+00/-4.0e-04      (values are deficit/eps and margin/eps)
+    0.99999    -1.6e+00/-4.0e-08  -1.9e+00/-4.0e-06  -2.1e+00/-4.0e-04      (values are deficit/eps and margin/eps)
+  (1,.6,.6,.4)
+    delta         eps=1e-07         eps=1e-05         eps=0.001    
+    0.5        -2.4e+00/-2.0e-01  -2.4e+00/-2.0e-01  -2.4e+00/-2.0e-01      (values are deficit/eps and margin/eps)
+    0.9        -4.3e+00/-4.5e-01  -4.3e+00/-4.5e-01  -4.2e+00/-4.5e-01      (values are deficit/eps and margin/eps)
+    0.99       -5.1e+00/-5.2e-01  -5.1e+00/-5.2e-01  -5.1e+00/-5.2e-01      (values are deficit/eps and margin/eps)
+    0.999      -5.2e+00/-5.3e-01  -5.2e+00/-5.3e-01  -5.2e+00/-5.3e-01      (values are deficit/eps and margin/eps)
+    0.99999    -5.2e+00/-5.3e-01  -5.2e+00/-5.3e-01  -5.2e+00/-5.3e-01      (values are deficit/eps and margin/eps)
+  TFT 1010
+    delta         eps=1e-07         eps=1e-05         eps=0.001    
+    0.5        -3.2e+00/-2.0e-01  -3.2e+00/-2.0e-01  -3.2e+00/-2.0e-01      (values are deficit/eps and margin/eps)
+    0.9        -1.6e+01/-3.6e-01  -1.6e+01/-3.6e-01  -1.6e+01/-3.6e-01      (values are deficit/eps and margin/eps)
+    0.99       -1.6e+02/-4.0e-01  -1.6e+02/-4.0e-01  -1.3e+02/-4.0e-01      (values are deficit/eps and margin/eps)
+    0.999      -1.6e+03/-4.0e-01  -1.6e+03/-4.0e-01  -4.5e+02/-4.0e-01      (values are deficit/eps and margin/eps)
+    0.99999    -1.6e+05/-4.0e-01  -4.5e+04/-4.0e-01  -6.5e+02/-4.0e-01      (values are deficit/eps and margin/eps)
+
+  wedge E: exact efficiency is unattainable for EVERY p0 and every delta < 1,
+  because round 0 has both players drawing independently from the same p0 and so
+  cannot be perfectly anti-correlated.  deficit / (1-delta), eps = 0:
+  E  (2.0,0.5)         -0.738207     -1.052964     -1.160145     -1.172163     -1.173380     -1.173501
+  N  (0.5,1.5)         -0.538039     -0.789095     -0.878245     -0.887148     -0.888049     -0.888139
+  L- (1.5,0.5)         -0.538039     -0.789095     -0.878245     -0.887148     -0.888049     -0.888139
+                    delta=0.5     delta=0.9     delta=0.99    delta=0.999   delta=0.9999  delta=0.99999
+  max over p0 of the round-0 payoff p0^2 + p0(1-p0)(1+u+v), against Emax:
+    E  (2.0,0.5)     max round-0 = 1.225000   Emax = 1.750000   gap = -0.525000
+    N  (0.5,1.5)     max round-0 = 1.125000   Emax = 1.500000   gap = -0.375000
+    L- (1.5,0.5)     max round-0 = 1.125000   Emax = 1.500000   gap = -0.375000
+
+  DO THE LIMITS COMMUTE?  eps=0 efficiency for delta<1 is just {p0=1, p1=1}, which
+  is STRICTLY BIGGER than the undiscounted Eff_CC: the alternating corners
+  (p2,p3) in {(0,1),(1,0)} are excluded undiscounted (they trap the eps-excursion for
+  Theta(1/eps) rounds) but are harmless at delta < 1 with eps = 0.  Wedge S deficit:
+  strategy         eps=0,d=.99999  eps=1e-7,d->1  eps=1e-5,d->1   undisc. eff?
+  TFT 1010              0.000e+00     -4.533e-01     -6.471e-01   NO (alt corner)
+  0110-like (1,0,1,1)      0.000e+00     -3.200e-01     -3.990e-01   NO (alt corner)
+  (1,1,0,.5)            0.000e+00     -3.692e-01     -4.786e-01   NO (alt corner)
+  ALLC 1111             0.000e+00     -1.602e-07     -1.600e-05   yes
+  1110                  0.000e+00     -1.936e-07     -2.098e-05   yes
+  (1,.6,.6,.4)          0.000e+00     -5.252e-07     -5.250e-05   yes
+
+  round-0 clamping: the script applies eps to p0 as well.  Effect at eps=1e-3,
+  wedge S, ALLC, p0=1:  deficit with / without clamping of p0:
+    delta=0.5       clamped -1.59940000e-03   unclamped -7.99700000e-04
+    delta=0.9       clamped -1.59940000e-03   unclamped -1.43946000e-03
+    delta=0.99      clamped -1.59940000e-03   unclamped -1.58340600e-03
+    delta=0.999     clamped -1.59940000e-03   unclamped -1.59780060e-03
+    delta=0.99999   clamped -1.59940000e-03   unclamped -1.59938400e-03
+
+[  83.2s] DONE.

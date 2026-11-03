@@ -1,0 +1,118 @@
+--- orig/census.c	2026-09-10 07:17:53
++++ census.c	2026-09-27 11:16:37
+@@ -12,8 +12,24 @@
+  *      Emits one line per stratum with any confirmed rival:  g cls nP nM
+  *      and, for strata that are ALSO efficient, one exemplar point per confirmed draw.
+  *
+- *  psweep <n> <seed> <alpha_permille> <out>
+- *      Predicate-free, PURELY STRATIFIED at MUTATIONAL BIAS alpha = alpha_permille/1000: each of
++ *  psweep <n> <seed> <alpha> <out>
++ *      <alpha> is an integer permille ("333": alpha = 333/1000.0, a double threshold on the double
++ *      urnd(), exactly as in every archived run, which it reproduces bit for bit) or an EXACT
++ *      rational "num/den" ("1/3"; PRFull sweep13 patch, 2026-09-27).  In the rational form the pin
++ *      decision uses no floating point: with k the 53-bit integer behind urnd() (urnd = k/2^53) and
++ *      q = floor(2^53/den), k is redrawn while k >= den*q, and then k < num*q pins to 0 and
++ *      k < 2*num*q pins to 1, each with probability num*q/(den*q) = num/den exactly.  The redraw
++ *      has probability (2^53 mod den)/2^53, 2.2e-16 at den = 3, so the stream consumed is, to that
++ *      probability, the permille path's; the interior value is urnd() redrawn while it is 0.0
++ *      (probability 2^-53), so it lies strictly in (0,1) and a 0 is only ever a pin.
++ *      The ALPHA line carries <alpha> as given ("333" or "1/3").
++ *
++ *  pdraw <n> <seed> <alpha>
++ *      The kernel alone, no classification: n draws from the same code path as psweep with the
++ *      same seeding, tallied per coordinate (0 / 1 / interior), for the law check.
++ *
++ *  psweep, continued.
++ *      Predicate-free, PURELY STRATIFIED at MUTATIONAL BIAS alpha: each of
+  *      the sixteen coordinates is set to 0 with probability alpha, to 1 with probability alpha,
+  *      and drawn uniformly on (0,1) with probability 1-2alpha.  n such strategies, fully
+  *      classified.
+@@ -64,6 +80,30 @@
+   return (double)((rs>>11)&0x1FFFFFFFFFFFFFull)/9007199254740992.0; }
+ static void initwit(void){ for(int k=0;k<NWIT;k++) for(int j=0;j<NS;j++) WP[k][j]=(double)((WITG[k]>>j)&1); }
+ 
++/* ---- the mutation kernel (sweep13 patch).  urnd() above is untouched; k53() takes the same xorshift
++ * step and returns the integer urnd() would have divided by 2^53. */
++static inline uint64_t k53(void){ rs^=rs<<13; rs^=rs>>7; rs^=rs<<17; return (rs>>11)&0x1FFFFFFFFFFFFFull; }
++static double AL;                      /* permille form: alpha = am/1000.0, the archived double threshold */
++static uint64_t AN, AD, AQ;            /* rational form: alpha = AN/AD, AQ = floor(2^53/AD); AD = 0 means permille */
++static long NREDRAW;                   /* rational form: redraws of k (k >= AD*AQ) and of an interior 0.0 */
++/* parse "333" (permille, 0..500) or "num/den" (0 <= 2 num <= den <= 2^53); returns 0 on success */
++static int parse_alpha(const char*s,long*am,char*tag,size_t ntag){
++  const char*sl=strchr(s,'/'); char*e;
++  if(!sl){ *am=strtol(s,&e,10); if(e==s||*e||*am<0||*am>500) return 1;
++    AD=0; AL=*am/1000.0; snprintf(tag,ntag,"%ld",*am); return 0; }
++  AN=strtoull(s,&e,10); if(e!=sl) return 1;
++  AD=strtoull(sl+1,&e,10); if(e==sl+1||*e||AD==0||AD>(1ull<<53)||2*AN>AD) return 1;
++  AQ=(1ull<<53)/AD; AL=(double)AN/(double)AD; *am=-1; snprintf(tag,ntag,"%llu/%llu",(unsigned long long)AN,(unsigned long long)AD);
++  return 0; }
++/* one strategy from the kernel: 0 w.p. alpha, 1 w.p. alpha, uniform on (0,1) otherwise */
++static inline void kdraw(double*p,long*npin){
++  for(int j=0;j<NS;j++){
++    if(AD){ uint64_t k; while((k=k53())>=AD*AQ) NREDRAW++;         /* exact rational: integers only */
++      if(k<AN*AQ){ p[j]=0.0; (*npin)++; } else if(k<2*AN*AQ){ p[j]=1.0; (*npin)++; }
++      else { while((p[j]=urnd())==0.0) NREDRAW++; } }
++    else { double u=urnd();                                          /* permille: exactly as archived */
++      if(u<AL){ p[j]=0.0; (*npin)++; } else if(u<2.0*AL){ p[j]=1.0; (*npin)++; } else p[j]=urnd(); } } }
++
+ /* returns 1 if p survives the screen for this sign (i.e. might still be a rival) */
+ static int screen(const double*p,int sign){
+   double W[4];
+@@ -119,9 +159,11 @@
+     fclose(fo); fclose(fp);
+   } else if(argc>1 && !strcmp(argv[1],"psweep")){
+     long n=atol(argv[2]); rs=(uint64_t)atol(argv[3])*2862933555777941757ULL+3037000493ULL; if(!rs)rs=7;
+-    long am=atol(argv[4]);
+-    if(am<0||am>500){ fprintf(stderr,"alpha_permille must be in [0,500]\n"); return 2; }
+-    const double al=am/1000.0;
++    long am; char atag[48], ahead[48];
++    if(argc<6||parse_alpha(argv[4],&am,atag,sizeof atag)){
++      fprintf(stderr,"alpha must be a permille in [0,500] or a rational num/den with 2 num <= den\n"); return 2; }
++    const double al=AL;
++    if(AD) snprintf(ahead,sizeof ahead,"%s",atag); else snprintf(ahead,sizeof ahead,"%.3f",al);
+     FILE*fo=fopen(argv[5],"w");
+     long npin=0;                                        /* total pinned coordinates, for a check */
+     long cnt[4][4]; memset(cnt,0,sizeof cnt);           /* [class C/A/Z/-][sign none/P/M/both] */
+@@ -129,8 +171,7 @@
+     double p[NS];
+     for(long i=0;i<n;i++){
+       /* purely stratified at alpha: 0 w.p. alpha, 1 w.p. alpha, uniform w.p. 1-2alpha */
+-      for(int j=0;j<NS;j++){ double u=urnd();
+-        if(u<al){ p[j]=0.0; npin++; } else if(u<2.0*al){ p[j]=1.0; npin++; } else p[j]=urnd(); }
++      kdraw(p,&npin);
+       char cls=selfclass(p);
+       if(cls=='C')effC++; else if(cls=='A')effA++; else if(cls=='Z')effZ++;
+       int isP=0,isM=0; long a;
+@@ -148,13 +189,27 @@
+       if(frW && isP && cls=='C'){ fprintf(fo,"W"); for(int j=0;j<NS;j++) fprintf(fo," %.17g",p[j]); fprintf(fo,"\n"); }
+     }
+     /* one machine-readable line; alpha first so the collector can group by it */
+-    fprintf(stderr,"psweep alpha=%.3f n=%ld: effCC %ld effALT %ld effZ %ld rivP %ld rivM %ld | "
++    fprintf(stderr,"psweep alpha=%s n=%ld: effCC %ld effALT %ld effZ %ld rivP %ld rivM %ld | "
+                    "FR_W %ld FR_S %ld FR_N %ld FR_E %ld | rayP %ld rayM %ld | meanpin %.6f\n",
+-            al,n,effC,effA,effZ,rivP,rivM,frW,frS,frN,frE,frRayP,frRayM,
++            ahead,n,effC,effA,effZ,rivP,rivM,frW,frS,frN,frE,frRayP,frRayM,
+             (double)npin/((double)n*NS));
+-    printf("ALPHA\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\n",
+-            am,n,effC,effA,effZ,rivP,rivM,frW,frS,frN,frE,frRayP,frRayM);
++    if(AD) fprintf(stderr,"psweep exact alpha=%s: %ld redraws\n",atag,NREDRAW);
++    printf("ALPHA\t%s\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\t%ld\n",
++            atag,n,effC,effA,effZ,rivP,rivM,frW,frS,frN,frE,frRayP,frRayM);
+     fclose(fo);
+-  } else { fprintf(stderr,"usage: census strata|psweep ...\n"); return 1; }
++  } else if(argc>4 && !strcmp(argv[1],"pdraw")){
++    /* the kernel alone (sweep13 patch): same seeding, same kdraw() as psweep, no classification */
++    long n=atol(argv[2]); rs=(uint64_t)atol(argv[3])*2862933555777941757ULL+3037000493ULL; if(!rs)rs=7;
++    long am; char atag[48];
++    if(parse_alpha(argv[4],&am,atag,sizeof atag)){ fprintf(stderr,"bad alpha\n"); return 2; }
++    long c0[NS]={0},c1[NS]={0},cu[NS]={0},npin=0; double p[NS], umin=1.0, umax=0.0, usum=0.0;
++    for(long i=0;i<n;i++){ kdraw(p,&npin);
++      for(int j=0;j<NS;j++){ if(p[j]==0.0) c0[j]++; else if(p[j]==1.0) c1[j]++;
++        else { cu[j]++; usum+=p[j]; if(p[j]<umin)umin=p[j]; if(p[j]>umax)umax=p[j]; } } }
++    long t0=0,t1=0,tu=0; for(int j=0;j<NS;j++){ t0+=c0[j]; t1+=c1[j]; tu+=cu[j]; }
++    printf("PDRAW\t%s\t%ld\t%ld\t%ld\t%ld\t%ld\t%.17g\t%.17g\t%.17g\n",atag,n,t0,t1,tu,NREDRAW,
++           tu?usum/tu:0.0,umin,umax);
++    for(int j=0;j<NS;j++) printf("COORD\t%d\t%ld\t%ld\t%ld\n",j,c0[j],c1[j],cu[j]);
++  } else { fprintf(stderr,"usage: census strata|psweep|pdraw ...\n"); return 1; }
+   return 0;
+ }

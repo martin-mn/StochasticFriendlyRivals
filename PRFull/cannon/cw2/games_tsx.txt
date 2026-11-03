@@ -1,0 +1,9 @@
+# PRFull cw2 OPTIONAL arm TSX: the time series at 4 games whose MEMORY-ONE production replicates split on the
+# leading atom (none of the 24 TS games does: they were chosen from the memory-two splits).  The critic (ref1_critic
+# 1f) notes that the memory-one Snowdrift patchwork needs replicate diagnostics, not more games.  Same build, seeds,
+# layout and analysis as TS.  Not part of the decided campaign: submit only if Martin wants it (~14 core-h).
+# ipt  line  gid   tag          wedge  why
+ 246   247  2246 V_p246_PDW   W      m1 split 010:6/110:4 and m2 split 000:4/010:3/110:3; the one PD where partners do not lead (u+v = 0.991)
+  75    76  2075 V_p075_SDE   E      m1 split 000:3/100:7 and m2 split 000:1/110:9
+ 311   312  2311 V_p311_SDN   N      m1 split 000:6/100:4 (m1 E = 0.624)
+ 185   186  2185 V_p185_SDE   E      m1 split 000:7/100:3 (m1 E = 0.801)

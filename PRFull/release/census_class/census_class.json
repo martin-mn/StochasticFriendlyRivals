@@ -1,0 +1,59 @@
+{
+ "strata": 43046721,
+ "counts_by_support": {
+  "-": 31580692,
+  "C": 6206077,
+  "A": 2788386,
+  "Z": 2471566
+ },
+ "counts_expected_from_the_Methods": {
+  "-": 31580692,
+  "C": 6206077,
+  "A": 2788386,
+  "Z": 2471566
+ },
+ "counts_ok": true,
+ "class_C_has_p0_equal_1": true,
+ "st_eff_lines": 1524791,
+ "st_eff_lines_by_census_class": {
+  "C": 1318785,
+  "A": 9802,
+  "Z": 196204
+ },
+ "st_eff_class_mismatches_with_support": 0,
+ "source_ub": "PRFull/check/ubound/ub.c",
+ "source_census": "PartnersRivalsM2f/check/st_eff.txt",
+ "sha256_st_eff_txt": "6113370474d12d83e164f446b96a800b914a9d5d488c48664ad17216053b28fb",
+ "sha256_census_support_class_u8": "7c8627c6cbb88cac29fde2b1ada6f68ceb7bfca028a8a0900047ffb60d093afe",
+ "sha256_st_eff_support_class_txt": "da0d2bece8e261f6b4f71fedbe781a70c01b7e029b444067bea25925210405cf",
+ "encoding": "census_support_class.u8: byte g = class of the stratum with census code g = sum_j d_j 3^j, d_j = 0: p_j = 0, 1: p_j free, 2: p_j = 1; 0 none, 1 C (w_CC = 1), 2 A (w_CD + w_DC = 1), 3 Z (w_DD = 0 only)",
+ "seconds": 32.9,
+ "full_census_join": {
+  "source": "cannon:~/CL1/PartnersRivalsM2f/ca1/out/st_*.txt (array 45751662), harvested 2026-09-27, md5 checked",
+  "files": 1536,
+  "md5_mismatches": 0,
+  "task_files_0_to_511": true,
+  "err_logs_ok": true,
+  "out_logs_empty": true,
+  "slurm_messages_in_err_logs": {
+   "st_45751662_192.err": 14
+  },
+  "lines": 3254063,
+  "duplicate_strata": 0,
+  "lines_by_census_class": {
+   "-": 1729272,
+   "C": 1318785,
+   "A": 9802,
+   "Z": 196204
+  },
+  "census_class_vs_support_class": {
+   "-/-": 1729272,
+   "A/A": 9802,
+   "C/C": 1318785,
+   "Z/Z": 196204
+  },
+  "mismatches": 0,
+  "sha256_census_all_support_class_txt": "9758fba4d61ddd1d1851a3f5979f64f507140c1f248efa73e3b29e8cb3acf14c",
+  "sha256_tgz": "efb8c9341d4805504855ca804aee1a2ed42da83339e82d040c14949d6ce22fc5"
+ }
+}

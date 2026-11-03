@@ -1,0 +1,7 @@
+W     sign +1 bound  0: targets  6206077  not excluded      364 | not-excluded efficient strata by dim [8, 36, 71, 93, 87, 51, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+N     sign +1 bound  0: targets  2788386  not excluded     5022 | not-excluded efficient strata by dim [80, 448, 1064, 1416, 1165, 610, 199, 37, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+E     sign -1 bound  0: targets  2788386  not excluded     5022 | not-excluded efficient strata by dim [80, 448, 1064, 1416, 1165, 610, 199, 37, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+ray+  sign +1 bound  0: targets 11466029  not excluded     7726 | not-excluded efficient strata by dim [116, 660, 1594, 2166, 1824, 976, 324, 61, 5, 0, 0, 0, 0, 0, 0, 0, 0]
+W68   sign +1 bound  0: targets   565551  not excluded      126 | not-excluded efficient strata by dim [8, 32, 46, 30, 9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+S     sign -1 bound 16: targets        0  not excluded        0 | not-excluded efficient strata by dim [1814, 13838, 51367, 122877, 211222, 275502, 281121, 228148, 147861, 75860, 30183, 9030, 1947, 284, 25, 1, 0]
+ray-  sign -1 bound 16: targets        0  not excluded        0 | not-excluded efficient strata by dim [2362, 17960, 65391, 151917, 252748, 319336, 316527, 250327, 158575, 79761, 31211, 9214, 1967, 285, 25, 1, 0]

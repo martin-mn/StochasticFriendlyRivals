@@ -1,0 +1,212 @@
+==============================================================================
+SWEEP OF THE RIVAL CLOSED FORM OVER THE FULL MEMORY-ONE CUBE
+eps = (1e-10, 1e-12),  verdict tolerance = 1e-06,  co-players = the 16 vertices
+==============================================================================
+
+[0] accuracy receipt: the two float routes against exact Fractions
+    eps=1e-10  max |error| over 40 random (p,q) margins:  tree theorem 2.912e-08   linear solve 7.435e-07
+    eps=1e-12  max |error| over 40 random (p,q) margins:  tree theorem 7.785e-06   linear solve 6.863e-05
+    (the tree route is used everywhere below; the linear solve is shown only to justify
+     not using it -- the pair chain is nearly reducible at these eps)
+
+[1] full grid 21^4 = 194481 strategies
+
+[grid]  eps = 1e-10   n = 194481
+    predicted rivals : Riv+     4830   Riv-     4830
+    computed rivals  : Riv+     4830   Riv-     4830
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : -1.9999999919999977e-09
+    best  margin among predicted non-Riv+ : -0.01724137927232461
+    worst margin among predicted Riv- : -2.000000157480741e-09
+    best  margin among predicted non-Riv- : -0.01724137927232461
+    smallest non-zero |w_DC - w_CD| in FLOAT : 1.2924697071141057e-26   (float noise, not a real value -- see [9])
+
+[grid]  eps = 1e-12   n = 194481
+    predicted rivals : Riv+     4830   Riv-     4830
+    computed rivals  : Riv+     4830   Riv-     4830
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : -1.999999999920001e-11
+    best  margin among predicted non-Riv+ : -0.01724137930996461
+    worst margin among predicted Riv- : -1.99995575647976e-11
+    best  margin among predicted non-Riv- : -0.01724137930996461
+    smallest non-zero |w_DC - w_CD| in FLOAT : 2.0194839173657902e-28   (float noise, not a real value -- see [9])
+    (2 s elapsed)
+
+[2] 200000 uniform random interior points
+
+[random]  eps = 1e-10   n = 200000
+    predicted rivals : Riv+        0   Riv-        0
+    computed rivals  : Riv+        0   Riv-        0
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : None
+    best  margin among predicted non-Riv+ : -1.6873025960453777e-05
+    worst margin among predicted Riv- : None
+    best  margin among predicted non-Riv- : -1.7369342828429614e-06
+    smallest non-zero |w_DC - w_CD| in FLOAT : 4.440892098500626e-16   (float noise, not a real value -- see [9])
+
+[random]  eps = 1e-12   n = 200000
+    predicted rivals : Riv+        0   Riv-        0
+    computed rivals  : Riv+        0   Riv-        0
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : None
+    best  margin among predicted non-Riv+ : -1.6872931033414742e-05
+    worst margin among predicted Riv- : None
+    best  margin among predicted non-Riv- : -1.7368685016867161e-06
+    smallest non-zero |w_DC - w_CD| in FLOAT : 2.7755575615628914e-17   (float noise, not a real value -- see [9])
+    (3 s elapsed)
+
+[3] dense faces / 2-faces / edges : 69152 points
+
+[faces+edges]  eps = 1e-10   n = 69152
+    predicted rivals : Riv+    11626   Riv-    11626
+    computed rivals  : Riv+    11626   Riv-    11626
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : -3.1249979010773635e-07
+    best  margin among predicted non-Riv+ : -0.000446224100722125
+    worst margin among predicted Riv- : -3.124997474364353e-07
+    best  margin among predicted non-Riv- : -0.0007738988523195912
+    smallest non-zero |w_DC - w_CD| in FLOAT : 1.2924697071141057e-26   (float noise, not a real value -- see [9])
+
+[faces+edges]  eps = 1e-12   n = 69152
+    predicted rivals : Riv+    11626   Riv-    11626
+    computed rivals  : Riv+    11626   Riv-    11626
+    DISAGREEMENTS    : 0
+    worst margin among predicted Riv+ : -3.124999979011362e-09
+    best  margin among predicted non-Riv+ : -0.00044622398152194666
+    worst margin among predicted Riv- : -3.1249308417836205e-09
+    best  margin among predicted non-Riv- : -0.0007738987310483611
+    smallest non-zero |w_DC - w_CD| in FLOAT : 2.0194839173657902e-28   (float noise, not a real value -- see [9])
+    (4 s elapsed)
+
+[4] boundary probes: margin as a function of distance to the boundary
+    (these are NOT counted as disagreements; a point at distance delta
+     outside the set has a margin of size Theta(delta), which is below the
+     verdict tolerance once delta << TOL -- that is the resolution limit,
+     not a failure of the closed form.)
+    family                                          eps       min |m|     max |m|  verdictOK  unresolved  note
+    Riv+ : p4 = +0.001  (OUT)                     1e-10    9.9988e-04  4.9558e-03   400/400            0  
+    Riv+ : p4 = +0.001  (OUT)                     1e-12    9.9988e-04  4.9558e-03   400/400            0  
+    Riv+ : p2+p3 = 1+0.001  (OUT)                 1e-10    3.3354e-04  1.6574e-03   400/400            0  
+    Riv+ : p2+p3 = 1+0.001  (OUT)                 1e-12    3.3354e-04  1.6574e-03   400/400            0  
+    Riv+ : p2+p3 = 1-0.001  (IN)                  1e-10    9.9988e-11  4.9755e-10   400/400            0  
+    Riv+ : p2+p3 = 1-0.001  (IN)                  1e-12    9.9988e-13  4.9755e-12   400/400            0  
+    Riv+ : p2 = 1-0.001, p3=p4=0  (IN, near edge E)  1e-10    9.9900e-08  9.9900e-08   400/400            0  
+    Riv+ : p2 = 1-0.001, p3=p4=0  (IN, near edge E)  1e-12    9.9900e-10  9.9900e-10   400/400            0  
+    Riv- : p1 = 1-0.001  (OUT)                    1e-10    9.9923e-04  4.1219e-03   400/400            0  
+    Riv- : p1 = 1-0.001  (OUT)                    1e-12    9.9922e-04  4.1219e-03   400/400            0  
+    Riv- : p2+p3 = 1-0.001  (OUT)                 1e-10    3.3374e-04  1.6592e-03   400/400            0  
+    Riv- : p2+p3 = 1-0.001  (OUT)                 1e-12    3.3374e-04  1.6592e-03   400/400            0  
+    Riv- : p2+p3 = 1+0.001  (IN)                  1e-10    9.9946e-11  4.9317e-10   400/400            0  
+    Riv- : p2+p3 = 1+0.001  (IN)                  1e-12    9.9944e-13  4.9316e-12   400/400            0  
+    Riv- : p2=1, p3 = 0.001  (IN, near edge E)    1e-10    9.9900e-08  9.9900e-08   400/400            0  
+    Riv- : p2=1, p3 = 0.001  (IN, near edge E)    1e-12    9.9898e-10  9.9898e-10   400/400            0  
+    Riv+ : p4 = +1e-06  (OUT)                     1e-10    1.0079e-06  4.9648e-06   400/400            0  
+    Riv+ : p4 = +1e-06  (OUT)                     1e-12    1.0078e-06  4.9644e-06   400/400            0  
+    Riv+ : p2+p3 = 1+1e-06  (OUT)                 1e-10    3.3593e-07  1.6548e-06    60/400          340  
+    Riv+ : p2+p3 = 1+1e-06  (OUT)                 1e-12    3.3593e-07  1.6548e-06    60/400          340  
+    Riv+ : p2+p3 = 1-1e-06  (IN)                  1e-10    1.0078e-10  4.9644e-10   400/400            0  
+    Riv+ : p2+p3 = 1-1e-06  (IN)                  1e-12    1.0078e-12  4.9644e-12   400/400            0  
+    Riv+ : p2 = 1-1e-06, p3=p4=0  (IN, near edge E)  1e-10    9.9970e-05  9.9980e-05     0/400            0  eps not << 1-p2: see [8]
+    Riv+ : p2 = 1-1e-06, p3=p4=0  (IN, near edge E)  1e-12    1.0000e-06  1.0000e-06   400/400            0  
+    Riv- : p1 = 1-1e-06  (OUT)                    1e-10    1.0010e-06  3.8069e-06   400/400            0  
+    Riv- : p1 = 1-1e-06  (OUT)                    1e-12    1.0009e-06  3.8065e-06   400/400            0  
+    Riv- : p2+p3 = 1-1e-06  (OUT)                 1e-10    3.3384e-07  1.6484e-06    54/400          346  
+    Riv- : p2+p3 = 1-1e-06  (OUT)                 1e-12    3.3384e-07  1.6484e-06    54/400          346  
+    Riv- : p2+p3 = 1+1e-06  (IN)                  1e-10    1.0015e-10  4.9451e-10   400/400            0  
+    Riv- : p2+p3 = 1+1e-06  (IN)                  1e-12    1.0015e-12  4.9450e-12   400/400            0  
+    Riv- : p2=1, p3 = 1e-06  (IN, near edge E)    1e-10    9.9970e-05  9.9980e-05     0/400            0  eps not << 1-p2: see [8]
+    Riv- : p2=1, p3 = 1e-06  (IN, near edge E)    1e-12    9.9997e-07  9.9997e-07   400/400            0  
+    Riv+ : p4 = +1e-09  (OUT)                     1e-10    1.0225e-09  5.3278e-09     0/400          400  
+    Riv+ : p4 = +1e-09  (OUT)                     1e-12    1.0008e-09  4.8801e-09     0/400          400  
+    Riv+ : p2+p3 = 1+1e-09  (OUT)                 1e-10    3.0546e-10  1.6716e-09     0/400          400  
+    Riv+ : p2+p3 = 1+1e-09  (OUT)                 1e-12    3.3317e-10  1.6242e-09     0/400          400  
+    Riv+ : p2+p3 = 1-1e-09  (IN)                  1e-10    1.0001e-10  4.8758e-10   400/400            0  
+    Riv+ : p2+p3 = 1-1e-09  (IN)                  1e-12    1.0001e-12  4.8758e-12   400/400            0  
+    Riv+ : p2 = 1-1e-09, p3=p4=0  (IN, near edge E)  1e-10    7.6978e-02  8.3323e-02     0/400            0  eps not << 1-p2: see [8]
+    Riv+ : p2 = 1-1e-09, p3=p4=0  (IN, near edge E)  1e-12    9.9702e-04  9.9800e-04     0/400            0  eps not << 1-p2: see [8]
+    Riv- : p1 = 1-1e-09  (OUT)                    1e-10    1.1004e-09  4.2254e-09     0/400          400  
+    Riv- : p1 = 1-1e-09  (OUT)                    1e-12    1.0015e-09  3.8492e-09     0/400          400  
+    Riv- : p2+p3 = 1-1e-09  (OUT)                 1e-10    3.0832e-10  1.7831e-09     0/400          400  
+    Riv- : p2+p3 = 1-1e-09  (OUT)                 1e-12    3.3396e-10  1.6602e-09     0/400          400  
+    Riv- : p2+p3 = 1+1e-09  (IN)                  1e-10    1.0012e-10  4.9798e-10   400/400            0  
+    Riv- : p2+p3 = 1+1e-09  (IN)                  1e-12    1.0012e-12  4.9797e-12   400/400            0  
+    Riv- : p2=1, p3 = 1e-09  (IN, near edge E)    1e-10    7.6952e-02  8.3298e-02     0/400            0  eps not << 1-p2: see [8]
+    Riv- : p2=1, p3 = 1e-09  (IN, near edge E)    1e-12    9.9699e-04  9.9798e-04     0/400            0  eps not << 1-p2: see [8]
+
+[5] vertex census (eps = 1e-10)
+    0000  m+=+0.000000e+00  m-=-1.000000e+00   Riv+ YES (pred YES)   Riv-  no (pred  no)
+    0001  m+=-5.000000e-01  m-=-1.000000e+00   Riv+  no (pred  no)   Riv-  no (pred  no)
+    0010  m+=-1.000000e-10  m-=-5.000000e-01   Riv+ YES (pred YES)   Riv-  no (pred  no)
+    0011  m+=-5.000000e-01  m-=-5.000000e-01   Riv+  no (pred  no)   Riv-  no (pred  no)
+    0100  m+=-3.333333e-01  m-=-1.000000e+00   Riv+  no (pred  no)   Riv-  no (pred  no)
+    0101  m+=-1.000000e+00  m-=-1.000000e+00   Riv+  no (pred  no)   Riv-  no (pred  no)
+    0110  m+=-1.000000e+00  m-=-5.000000e-01   Riv+  no (pred  no)   Riv-  no (pred  no)
+    0111  m+=-1.000000e+00  m-=-5.000000e-01   Riv+  no (pred  no)   Riv-  no (pred  no)
+    1000  m+=-1.000001e-20  m-=-1.000000e+00   Riv+ YES (pred YES)   Riv-  no (pred  no)
+    1001  m+=-5.000000e-01  m-=-1.000000e+00   Riv+  no (pred  no)   Riv-  no (pred  no)
+    1010  m+=-1.000000e-10  m-=-1.000000e-10   Riv+ YES (pred YES)   Riv- YES (pred YES)
+    1011  m+=-5.000000e-01  m-=-1.000000e-10   Riv+  no (pred  no)   Riv- YES (pred YES)
+    1100  m+=-5.000000e-01  m-=-5.000000e-01   Riv+  no (pred  no)   Riv-  no (pred  no)
+    1101  m+=-1.000000e+00  m-=-3.333333e-01   Riv+  no (pred  no)   Riv-  no (pred  no)
+    1110  m+=-1.000000e+00  m-=-9.999993e-21   Riv+  no (pred  no)   Riv- YES (pred YES)
+    1111  m+=-1.000000e+00  m-=-0.000000e+00   Riv+  no (pred  no)   Riv- YES (pred YES)
+
+[6] the exceptional edge E = {(p1,1,0,0)} : predicted OUT of both sets; witness value -1/(3-p1)
+    eps=1e-10  p1=0.0  m+=-0.333333324  (-1/(3-p1) = -0.333333333)  m-=-1.000000000
+    eps=1e-10  p1=0.2  m+=-0.357142847  (-1/(3-p1) = -0.357142857)  m-=-1.000000000
+    eps=1e-10  p1=0.4  m+=-0.384615372  (-1/(3-p1) = -0.384615385)  m-=-1.000000000
+    eps=1e-10  p1=0.6  m+=-0.416666652  (-1/(3-p1) = -0.416666667)  m-=-1.000000000
+    eps=1e-10  p1=0.8  m+=-0.454545437  (-1/(3-p1) = -0.454545455)  m-=-0.999999999
+    eps=1e-10  p1=1.0  m+=-0.499999979  (-1/(3-p1) = -0.500000000)  m-=-0.500000021
+    eps=1e-12  p1=0.0  m+=-0.333335791  (-1/(3-p1) = -0.333333333)  m-=-1.000000000
+    eps=1e-12  p1=0.2  m+=-0.357145679  (-1/(3-p1) = -0.357142857)  m-=-1.000000000
+    eps=1e-12  p1=0.4  m+=-0.384618657  (-1/(3-p1) = -0.384615385)  m-=-1.000000000
+    eps=1e-12  p1=0.6  m+=-0.416670507  (-1/(3-p1) = -0.416666667)  m-=-1.000000000
+    eps=1e-12  p1=0.8  m+=-0.454550025  (-1/(3-p1) = -0.454545455)  m-=-1.000000000
+    eps=1e-12  p1=1.0  m+=-0.500005530  (-1/(3-p1) = -0.500000000)  m-=-0.499994470
+
+[7] the exact closed-form witness values, checked pointwise (eps = 1e-10, 3000 random points per family)
+    (a) p4>0 vs ALLD      = -p4/(1-p2+p4)                : max err 2.450e-09
+    (b) p2+p3>1 vs 0001   = (1-p2-p3)/(p3+2(1-p2))       : max err 2.054e-09
+    (c) p2=1,p4=0 vs ALLD = -(1+p3)/(3+p3-p1)            : max err 2.069e-08
+    (d) certificate m+ >= -eps/(eps+(1-2eps)(1-p2)), eps=1e-10 : violations 0/3000,  worst slack +3.062e-14
+    (d) certificate m+ >= -eps/(eps+(1-2eps)(1-p2)), eps=1e-12 : violations 0/3000,  worst slack +3.062e-16
+    (d') equality on the face p2+p3=1,               eps=1e-10 : max |m+ - bound| 2.245e-18
+    (d') equality on the face p2+p3=1,               eps=1e-12 : max |m+ - bound| 2.245e-22
+
+[8] approach to the exceptional edge E: p = (1/2, 1-x, 0, 0), which is IN Riv+ for
+    every fixed x > 0.  The finite-eps margin is -eps/(eps + (1-2eps)x); the limit is 0 only
+    once eps << x, which is why a point at distance 1e-9 from E is still 'seen' as a
+    non-rival at eps = 1e-10.  This is clause (9c), not a failure of the closed form.
+      x = 1-p2      eps     m+ computed    -eps/(eps+x)   verdict
+         1e-02    1e-10   -9.900000e-09   -1.000000e-08     rival
+         1e-02    1e-12   -9.900000e-11   -1.000000e-10     rival
+         1e-04    1e-10   -9.998975e-07   -9.999990e-07     rival
+         1e-04    1e-12   -9.999000e-09   -1.000000e-08     rival
+         1e-06    1e-10   -9.997491e-05   -9.999000e-05       NOT
+         1e-06    1e-12   -9.999965e-07   -9.999990e-07     rival
+         1e-08    1e-10   -9.756097e-03   -9.900990e-03       NOT
+         1e-08    1e-12   -9.997500e-05   -9.999000e-05       NOT
+         1e-09    1e-10   -8.000000e-02   -9.090909e-02       NOT
+         1e-09    1e-12   -9.975063e-04   -9.990010e-04       NOT
+         1e-10    1e-10   -2.857143e-01   -5.000000e-01       NOT
+         1e-10    1e-12   -9.756099e-03   -9.900990e-03       NOT
+         1e-12    1e-10   -3.984064e-01   -9.900990e-01       NOT
+         1e-12    1e-12   -2.857179e-01   -5.000000e-01       NOT
+
+[9] smallest non-zero |w_DC - w_CD| over the full grid x 16 co-players.
+    A float difference of two O(1) stationary probabilities carries absolute error ~1e-16,
+    so any float value below that is pure noise: the raw float minimum (~1e-26) is in fact a
+    pair whose exact margin is 0 (p = 0001 against q = 0001, i.e. self-play).  Below, the 400
+    smallest float candidates are recomputed in exact Fractions.  The value reported is therefore
+    a CERTIFIED non-zero margin and an UPPER BOUND on the true minimum -- float cannot rank
+    quantities this small, so it cannot certify that no smaller one exists elsewhere.
+    (Cross-checked with mpmath at dps=200 on the exact double inputs: agrees to 20 digits.)
+    eps=1e-10  of the 400 smallest float candidates, 68 are EXACTLY zero;
+              smallest exactly non-zero |w_DC - w_CD| = 3.426614e-37
+              attained at p = (0.1, 0.0, 1.0, 0.9) vs q = 1010
+    eps=1e-12  of the 400 smallest float candidates, 53 are EXACTLY zero;
+              smallest exactly non-zero |w_DC - w_CD| = 3.426614e-41
+              attained at p = (0.1, 0.0, 1.0, 0.9) vs q = 1010
+
+TOTAL 7 s

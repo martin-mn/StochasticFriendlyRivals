@@ -1,0 +1,804 @@
+#### analyze.py --probe  (2026-09-27T11:49:12)
+PROBE DEF  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_30_1.txt)
+PROBE DEF2 REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_f2/r_1o3_511_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_30_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_38_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_47_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_58_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_165_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_172_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_184_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_262_1.txt)
+PROBE DEF  strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE TSV  strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE DEF2 strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE DEF  NEU line IDENTICAL to the archived one (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/n_1o3_30.txt)
+PROBE A1_f  ipt 466 PDW  itend  10000000  t_sim   394.3  t_class   45.6  ndist   940  eff 0.4529  lead 011
+PROBE A1_s  ipt  29 PDW  itend   1000000  t_sim    38.6  t_class   15.1  ndist   342  eff 0.9809  lead 110
+PROBE A1_s  ipt  46 HAS  itend   1000000  t_sim    38.0  t_class    3.0  ndist   216  eff 0.9969  lead 111
+PROBE A1_s  ipt  57 SDN  itend   1000000  t_sim    36.6  t_class    0.1  ndist   102  eff 0.9829  lead 110
+PROBE A1_s  ipt 164 SDE  itend   1000000  t_sim    40.7  t_class    0.3  ndist   348  eff 0.7457  lead 000
+PROBE A2_f  ipt 466 PDW  itend  10000000  t_sim   378.9  t_class    0.1  ndist   166  eff 0.9843  lead 110
+PROBE A2_s  ipt  29 PDW  itend   1000000  t_sim    38.4  t_class   11.0  ndist   262  eff 0.9842  lead 110
+PROBE A2_s  ipt  46 HAS  itend   1000000  t_sim    39.7  t_class    8.2  ndist   332  eff 0.9968  lead 111
+PROBE A2_s  ipt  57 SDN  itend   1000000  t_sim    37.8  t_class    5.0  ndist   221  eff 0.9866  lead 110
+PROBE A2_s  ipt 164 SDE  itend   1000000  t_sim    37.8  t_class    2.2  ndist   143  eff 0.9871  lead 110
+PROBE A3_f  ipt 466 PDW  itend  10000000  t_sim   465.7  t_class    0.4  ndist   148  eff 0.9852  lead 110
+PROBE A3_s  ipt  29 PDW  itend   1000000  t_sim    46.3  t_class    7.0  ndist   222  eff 0.9851  lead 110
+PROBE A3_s  ipt  46 HAS  itend   1000000  t_sim    40.9  t_class   12.9  ndist   403  eff 0.9967  lead 111
+PROBE A3_s  ipt  57 SDN  itend   1000000  t_sim    39.0  t_class    5.6  ndist   302  eff 0.9879  lead 110
+PROBE A3_s  ipt 164 SDE  itend   1000000  t_sim    38.0  t_class    4.4  ndist   239  eff 0.9877  lead 110
+PROBE B0K0_f ipt  29 PDW  itend  10000000  t_sim   458.0  t_class   28.8  ndist  3656  eff 0.3704  lead 000  MUT nfrscan 58 ex111u 0
+PROBE B0K0_s ipt  29 PDW  itend   1000000  t_sim    45.9  t_class   15.0  ndist  3542  eff 0.3340  lead 000  MUT nfrscan 3 ex111u 0
+PROBE B0K0_s ipt  46 HAS  itend   1000000  t_sim    44.8  t_class   12.5  ndist  3597  eff 0.6721  lead 000  MUT nfrscan 0 ex111u 0
+PROBE B0_f  ipt  29 PDW  itend  10000000  t_sim   760.6  t_class   26.9  ndist  3799  eff 0.3279  lead 000
+PROBE B0_s  ipt  29 PDW  itend   1000000  t_sim    75.6  t_class   28.9  ndist  3791  eff 0.3266  lead 000
+PROBE B0_s  ipt  46 HAS  itend   1000000  t_sim    72.6  t_class   10.8  ndist  3798  eff 0.7033  lead 000
+PROBE DEF   ipt  29 PDW  itend  10000000  t_sim   412.4  t_class   10.8  ndist   333  eff 0.9848  lead 110
+PROBE DEF2  ipt 510 SDN  itend 100000000  t_sim   290.5  t_class    0.4  ndist     8  eff 0.9992  lead 110
+PROBE E3F2_f ipt  29 PDW  itend 100000000  t_sim   326.9  t_class   16.8  ndist   421  eff 0.9229  lead 110
+PROBE E3F2_s ipt  29 PDW  itend  10000000  t_sim    32.7  t_class    3.8  ndist   166  eff 0.9120  lead 110
+PROBE E3F2_s ipt  46 HAS  itend  10000000  t_sim    32.7  t_class    2.8  ndist   103  eff 0.9912  lead 110
+PROBE E3F2_s ipt  57 SDN  itend  10000000  t_sim    32.7  t_class    0.5  ndist    46  eff 0.9714  lead 110
+PROBE E3F2_s ipt 164 SDE  itend  10000000  t_sim    32.6  t_class    0.5  ndist    34  eff 0.9535  lead 110
+PROBE E3_f  ipt 466 PDW  itend  10000000  t_sim   417.3  t_class    0.4  ndist   116  eff 0.9794  lead 110
+PROBE E3_s  ipt  29 PDW  itend   1000000  t_sim    43.3  t_class    3.4  ndist   191  eff 0.9801  lead 110
+PROBE E3_s  ipt  46 HAS  itend   1000000  t_sim    39.6  t_class    8.0  ndist   302  eff 0.9968  lead 111
+PROBE E3_s  ipt  57 SDN  itend   1000000  t_sim    37.9  t_class    1.6  ndist   130  eff 0.9856  lead 110
+PROBE E3_s  ipt 164 SDE  itend   1000000  t_sim    37.8  t_class    0.5  ndist   122  eff 0.9837  lead 110
+PROBE E5F2_f ipt  29 PDW  itend 100000000  t_sim   326.9  t_class   33.6  ndist   797  eff 0.9298  lead 110
+PROBE E5F2_s ipt  29 PDW  itend  10000000  t_sim    32.7  t_class    4.1  ndist   159  eff 0.9569  lead 110
+PROBE E5F2_s ipt  46 HAS  itend  10000000  t_sim    32.7  t_class    3.4  ndist   118  eff 0.9966  lead 111
+PROBE E5F2_s ipt  57 SDN  itend  10000000  t_sim    32.7  t_class    1.0  ndist    63  eff 0.9888  lead 110
+PROBE E5F2_s ipt 164 SDE  itend  10000000  t_sim    32.6  t_class    0.1  ndist     1  eff 0.9998  lead 110
+PROBE E5_f  ipt 466 PDW  itend  10000000  t_sim   424.2  t_class    0.5  ndist   286  eff 0.9848  lead 110
+PROBE E5_s  ipt  29 PDW  itend   1000000  t_sim    43.6  t_class   22.2  ndist   562  eff 0.9858  lead 110
+PROBE E5_s  ipt  46 HAS  itend   1000000  t_sim    41.0  t_class   13.6  ndist   455  eff 0.9967  lead 111
+PROBE E5_s  ipt  57 SDN  itend   1000000  t_sim    39.3  t_class    8.3  ndist   326  eff 0.9892  lead 110
+PROBE E5_s  ipt 164 SDE  itend   1000000  t_sim    39.0  t_class    7.4  ndist   296  eff 0.9895  lead 110
+PROBE K0_f  ipt  46 HAS  itend  10000000  t_sim   503.2  t_class  204.8  ndist  3476  eff 0.9998  lead 111  MUT nfrscan 0 ex111u 0
+PROBE K0_f  ipt 466 PDW  itend  10000000  t_sim   587.8  t_class   89.3  ndist  3178  eff 0.7650  lead 100  MUT nfrscan 1521 ex111u 1252819815
+PROBE K0_s  ipt  29 PDW  itend   1000000  t_sim    51.0  t_class  197.8  ndist  3292  eff 0.9981  lead 110  MUT nfrscan 3 ex111u 0
+PROBE K0_s  ipt  46 HAS  itend   1000000  t_sim    50.6  t_class  197.2  ndist  3341  eff 0.9998  lead 111  MUT nfrscan 0 ex111u 0
+PROBE K0_s  ipt  57 SDN  itend   1000000  t_sim    48.4  t_class  191.8  ndist  3265  eff 0.9938  lead 110  MUT nfrscan 0 ex111u 0
+PROBE K0_s  ipt 164 SDE  itend   1000000  t_sim    49.3  t_class  200.2  ndist  3264  eff 0.9990  lead 110  MUT nfrscan 0 ex111u 0
+PROBE TSV   ipt  29 PDW  itend  10000000  t_sim   449.4  t_class   12.1  ndist   333  eff 0.9848  lead 110
+PROBE TSV   ipt  37 SHW  itend  10000000  t_sim   458.1  t_class   22.2  ndist   465  eff 0.9831  lead 110
+PROBE TSV   ipt  46 HAS  itend  10000000  t_sim   414.7  t_class   19.5  ndist   516  eff 0.9967  lead 111
+PROBE TSV   ipt  57 SDN  itend  10000000  t_sim   393.5  t_class    6.3  ndist   272  eff 0.9891  lead 110
+PROBE TSV   ipt 164 SDE  itend  10000000  t_sim   399.4  t_class    4.1  ndist   224  eff 0.9885  lead 110
+PROBE TSV   ipt 171 SHS  itend  10000000  t_sim   417.5  t_class   26.9  ndist   455  eff 0.9797  lead 111
+PROBE TSV   ipt 183 PDN  itend  10000000  t_sim   397.1  t_class    2.3  ndist   150  eff 0.9909  lead 110
+PROBE TSV   ipt 261 SDE  itend  10000000  t_sim   396.5  t_class    2.2  ndist   155  eff 0.9871  lead 110
+PROBE TS_f  ipt 466 PDW  itend  40000000  t_sim  1862.2  t_class    0.2  ndist   197  eff 0.9843  lead 110
+PROBE TS_s  ipt 184 SHS  itend   4000000  t_sim   165.1  t_class   19.9  ndist   368  eff 0.9778  lead 111
+PROBE TS_s  ipt 466 PDW  itend   4000000  t_sim   188.2  t_class    0.8  ndist   252  eff 0.9815  lead 110
+PROBE bit-identical checks: ALL PASS
+#### analyze.py --probe  (2026-09-27T11:49:28)
+PROBE DEF  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_30_1.txt)
+PROBE DEF2 REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_f2/r_1o3_511_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_30_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_38_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_47_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_58_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_165_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_172_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_184_1.txt)
+PROBE TSV  REP line IDENTICAL to the archived production line (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/r_1o3_262_1.txt)
+PROBE DEF  strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE TSV  strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE DEF2 strategy dump (replicate 1) IDENTICAL to the archived one
+PROBE DEF  NEU line IDENTICAL to the archived one (/Users/martin/Documents/CL1/PartnersRivalsM2f/check/wfc_a333/n_1o3_30.txt)
+PROBE A1_f  ipt 466 PDW  itend  10000000  t_sim   394.3  t_class   45.6  ndist   940  eff 0.4529  lead 011
+PROBE A1_s  ipt  29 PDW  itend   1000000  t_sim    38.6  t_class   15.1  ndist   342  eff 0.9809  lead 110
+PROBE A1_s  ipt  46 HAS  itend   1000000  t_sim    38.0  t_class    3.0  ndist   216  eff 0.9969  lead 111
+PROBE A1_s  ipt  57 SDN  itend   1000000  t_sim    36.6  t_class    0.1  ndist   102  eff 0.9829  lead 110
+PROBE A1_s  ipt 164 SDE  itend   1000000  t_sim    40.7  t_class    0.3  ndist   348  eff 0.7457  lead 000
+PROBE A2_f  ipt 466 PDW  itend  10000000  t_sim   378.9  t_class    0.1  ndist   166  eff 0.9843  lead 110
+PROBE A2_s  ipt  29 PDW  itend   1000000  t_sim    38.4  t_class   11.0  ndist   262  eff 0.9842  lead 110
+PROBE A2_s  ipt  46 HAS  itend   1000000  t_sim    39.7  t_class    8.2  ndist   332  eff 0.9968  lead 111
+PROBE A2_s  ipt  57 SDN  itend   1000000  t_sim    37.8  t_class    5.0  ndist   221  eff 0.9866  lead 110
+PROBE A2_s  ipt 164 SDE  itend   1000000  t_sim    37.8  t_class    2.2  ndist   143  eff 0.9871  lead 110
+PROBE A3_f  ipt 466 PDW  itend  10000000  t_sim   465.7  t_class    0.4  ndist   148  eff 0.9852  lead 110
+PROBE A3_s  ipt  29 PDW  itend   1000000  t_sim    46.3  t_class    7.0  ndist   222  eff 0.9851  lead 110
+PROBE A3_s  ipt  46 HAS  itend   1000000  t_sim    40.9  t_class   12.9  ndist   403  eff 0.9967  lead 111
+PROBE A3_s  ipt  57 SDN  itend   1000000  t_sim    39.0  t_class    5.6  ndist   302  eff 0.9879  lead 110
+PROBE A3_s  ipt 164 SDE  itend   1000000  t_sim    38.0  t_class    4.4  ndist   239  eff 0.9877  lead 110
+PROBE B0K0_f ipt  29 PDW  itend  10000000  t_sim   458.0  t_class   28.8  ndist  3656  eff 0.3704  lead 000  MUT nfrscan 58 ex111u 0
+PROBE B0K0_s ipt  29 PDW  itend   1000000  t_sim    45.9  t_class   15.0  ndist  3542  eff 0.3340  lead 000  MUT nfrscan 3 ex111u 0
+PROBE B0K0_s ipt  46 HAS  itend   1000000  t_sim    44.8  t_class   12.5  ndist  3597  eff 0.6721  lead 000  MUT nfrscan 0 ex111u 0
+PROBE B0_f  ipt  29 PDW  itend  10000000  t_sim   760.6  t_class   26.9  ndist  3799  eff 0.3279  lead 000
+PROBE B0_s  ipt  29 PDW  itend   1000000  t_sim    75.6  t_class   28.9  ndist  3791  eff 0.3266  lead 000
+PROBE B0_s  ipt  46 HAS  itend   1000000  t_sim    72.6  t_class   10.8  ndist  3798  eff 0.7033  lead 000
+PROBE DEF   ipt  29 PDW  itend  10000000  t_sim   412.4  t_class   10.8  ndist   333  eff 0.9848  lead 110
+PROBE DEF2  ipt 510 SDN  itend 100000000  t_sim   290.5  t_class    0.4  ndist     8  eff 0.9992  lead 110
+PROBE E3F2_f ipt  29 PDW  itend 100000000  t_sim   326.9  t_class   16.8  ndist   421  eff 0.9229  lead 110
+PROBE E3F2_s ipt  29 PDW  itend  10000000  t_sim    32.7  t_class    3.8  ndist   166  eff 0.9120  lead 110
+PROBE E3F2_s ipt  46 HAS  itend  10000000  t_sim    32.7  t_class    2.8  ndist   103  eff 0.9912  lead 110
+PROBE E3F2_s ipt  57 SDN  itend  10000000  t_sim    32.7  t_class    0.5  ndist    46  eff 0.9714  lead 110
+PROBE E3F2_s ipt 164 SDE  itend  10000000  t_sim    32.6  t_class    0.5  ndist    34  eff 0.9535  lead 110
+PROBE E3_f  ipt 466 PDW  itend  10000000  t_sim   417.3  t_class    0.4  ndist   116  eff 0.9794  lead 110
+PROBE E3_s  ipt  29 PDW  itend   1000000  t_sim    43.3  t_class    3.4  ndist   191  eff 0.9801  lead 110
+PROBE E3_s  ipt  46 HAS  itend   1000000  t_sim    39.6  t_class    8.0  ndist   302  eff 0.9968  lead 111
+PROBE E3_s  ipt  57 SDN  itend   1000000  t_sim    37.9  t_class    1.6  ndist   130  eff 0.9856  lead 110
+PROBE E3_s  ipt 164 SDE  itend   1000000  t_sim    37.8  t_class    0.5  ndist   122  eff 0.9837  lead 110
+PROBE E5F2_f ipt  29 PDW  itend 100000000  t_sim   326.9  t_class   33.6  ndist   797  eff 0.9298  lead 110
+PROBE E5F2_s ipt  29 PDW  itend  10000000  t_sim    32.7  t_class    4.1  ndist   159  eff 0.9569  lead 110
+PROBE E5F2_s ipt  46 HAS  itend  10000000  t_sim    32.7  t_class    3.4  ndist   118  eff 0.9966  lead 111
+PROBE E5F2_s ipt  57 SDN  itend  10000000  t_sim    32.7  t_class    1.0  ndist    63  eff 0.9888  lead 110
+PROBE E5F2_s ipt 164 SDE  itend  10000000  t_sim    32.6  t_class    0.1  ndist     1  eff 0.9998  lead 110
+PROBE E5_f  ipt 466 PDW  itend  10000000  t_sim   424.2  t_class    0.5  ndist   286  eff 0.9848  lead 110
+PROBE E5_s  ipt  29 PDW  itend   1000000  t_sim    43.6  t_class   22.2  ndist   562  eff 0.9858  lead 110
+PROBE E5_s  ipt  46 HAS  itend   1000000  t_sim    41.0  t_class   13.6  ndist   455  eff 0.9967  lead 111
+PROBE E5_s  ipt  57 SDN  itend   1000000  t_sim    39.3  t_class    8.3  ndist   326  eff 0.9892  lead 110
+PROBE E5_s  ipt 164 SDE  itend   1000000  t_sim    39.0  t_class    7.4  ndist   296  eff 0.9895  lead 110
+PROBE K0_f  ipt  46 HAS  itend  10000000  t_sim   503.2  t_class  204.8  ndist  3476  eff 0.9998  lead 111  MUT nfrscan 0 ex111u 0
+PROBE K0_f  ipt 466 PDW  itend  10000000  t_sim   587.8  t_class   89.3  ndist  3178  eff 0.7650  lead 100  MUT nfrscan 1521 ex111u 1252819815
+PROBE K0_s  ipt  29 PDW  itend   1000000  t_sim    51.0  t_class  197.8  ndist  3292  eff 0.9981  lead 110  MUT nfrscan 3 ex111u 0
+PROBE K0_s  ipt  46 HAS  itend   1000000  t_sim    50.6  t_class  197.2  ndist  3341  eff 0.9998  lead 111  MUT nfrscan 0 ex111u 0
+PROBE K0_s  ipt  57 SDN  itend   1000000  t_sim    48.4  t_class  191.8  ndist  3265  eff 0.9938  lead 110  MUT nfrscan 0 ex111u 0
+PROBE K0_s  ipt 164 SDE  itend   1000000  t_sim    49.3  t_class  200.2  ndist  3264  eff 0.9990  lead 110  MUT nfrscan 0 ex111u 0
+PROBE TSV   ipt  29 PDW  itend  10000000  t_sim   449.4  t_class   12.1  ndist   333  eff 0.9848  lead 110
+PROBE TSV   ipt  37 SHW  itend  10000000  t_sim   458.1  t_class   22.2  ndist   465  eff 0.9831  lead 110
+PROBE TSV   ipt  46 HAS  itend  10000000  t_sim   414.7  t_class   19.5  ndist   516  eff 0.9967  lead 111
+PROBE TSV   ipt  57 SDN  itend  10000000  t_sim   393.5  t_class    6.3  ndist   272  eff 0.9891  lead 110
+PROBE TSV   ipt 164 SDE  itend  10000000  t_sim   399.4  t_class    4.1  ndist   224  eff 0.9885  lead 110
+PROBE TSV   ipt 171 SHS  itend  10000000  t_sim   417.5  t_class   26.9  ndist   455  eff 0.9797  lead 111
+PROBE TSV   ipt 183 PDN  itend  10000000  t_sim   397.1  t_class    2.3  ndist   150  eff 0.9909  lead 110
+PROBE TSV   ipt 261 SDE  itend  10000000  t_sim   396.5  t_class    2.2  ndist   155  eff 0.9871  lead 110
+PROBE TS_f  ipt 466 PDW  itend  40000000  t_sim  1862.2  t_class    0.2  ndist   197  eff 0.9843  lead 110
+PROBE TS_s  ipt 184 SHS  itend   4000000  t_sim   165.1  t_class   19.9  ndist   368  eff 0.9778  lead 111
+PROBE TS_s  ipt 466 PDW  itend   4000000  t_sim   188.2  t_class    0.8  ndist   252  eff 0.9815  lead 110
+PROBE bit-identical checks: ALL PASS
+#### analyze.py A1  (2026-09-27T14:12:05)
+
+======================================================================================================================
+A1: 71 games, replicates per game [10], alpha 1/10
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.1000000000 itend=10000000 NT=1000 NI=4 task=223 reps=1..10
+  --- A1
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9748      0     18 010:1                   0   0.000125         0       13 110:13                     14
+  S      16   0.9811     16      0 -                   0.902      0.915       283       14 111:14                     13
+  N      18   0.9842      0     17 100:1                   0     0.0007         0       16 100:1,110:15               12
+  E      18   0.9669      0     16 011:2                   0    0.00377         0       13 110:13                      6
+  all    71   0.9779     16     51 010:1,011:2,100:1          0      0.004         0       56 100:1,110:41,111:14        45
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 67 of 71 games; changed: ipt237 HAE 111->011 (agree 8/10, prod 6/10), ipt326 HAE 111->011 (agree 6/10, prod 9/10), ipt415 HAE 111->110 (agree 7/10, prod 7/10), ipt500 PDN 111->110 (agree 8/10, prod 6/10)
+  vs production: efficiency, median change -3.80e-03, |Welch t| > 2 at 48 of 71 games (max 76.7)
+  wedge W medians: 111 0 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000125 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.0007 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.00377 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              14             FAIL
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0              PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               0              PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               41 of 42       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9779         FAIL
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A1_games.tsv
+  cost: t_sim median 358 s (max 415), t_class median 2.5 s (max 56); 72.2 core-h in REP lines
+#### analyze.py A2  (2026-09-27T14:12:26)
+
+======================================================================================================================
+A2: 71 games, replicates per game [10], alpha 1/5
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.2000000000 itend=10000000 NT=1000 NI=4 task=448 reps=1..10
+  --- A2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9749      0     19 -                3.62e-09     0.0004    0.0809       13 110:13                     18
+  S      16   0.9814     16      0 -                   0.885      0.886       121       16 111:16                     15
+  N      18   0.9865      0     17 100:1                   0    0.00045         0       14 110:14                     14
+  E      18   0.9871      1     17 -                1.25e-05   0.000975      4.95       13 110:13                     14
+  all    71   0.9859     17     53 100:1            1.66e-08     0.0011     0.371       56 110:40,111:16              61
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 67 of 71 games; changed: ipt246 PDW 010->110 (agree 5/10, prod 3/10), ipt326 HAE 111->110 (agree 8/10, prod 9/10), ipt415 HAE 111->110 (agree 7/10, prod 7/10), ipt500 PDN 111->110 (agree 9/10, prod 6/10)
+  vs production: efficiency, median change -1.42e-03, |Welch t| > 2 at 51 of 71 games (max 44.9)
+  wedge W medians: 111 3.62e-09 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.0004 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00045 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 1.25e-05 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.000975 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              16             PASS
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0              PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               4.95           PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               40 of 40       PASS
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9859         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A2_games.tsv
+  cost: t_sim median 380 s (max 433), t_class median 3.8 s (max 72); 76.9 core-h in REP lines
+#### analyze.py A3  (2026-09-27T14:12:50)
+
+======================================================================================================================
+A3: 71 games, replicates per game [10], alpha 2/5
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.4000000000 itend=10000000 NT=1000 NI=4 task=223 reps=1..10
+  --- A3
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9822      0     19 -                5.51e-06   0.000979     0.286       13 110:13                     15
+  S      16   0.9808     16      0 -                   0.899      0.902      53.6       16 111:16                     16
+  N      18   0.9888      1     17 -                  0.0003    0.00243     0.897       14 110:14                     17
+  E      18   0.9894      4     14 -                 0.00316    0.00561      9.48       12 110:11,111:1               14
+  all    71   0.9874     21     50 -                 0.00257    0.00527      15.2       55 110:38,111:17              62
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 68 of 71 games; changed: ipt246 PDW 010->110 (agree 7/10, prod 3/10), ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt381 HAE 110->111 (agree 7/10, prod 9/10)
+  vs production: efficiency, median change -6.25e-05, |Welch t| > 2 at 24 of 71 games (max 33.7)
+  wedge W medians: 111 5.51e-06 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000979 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.0003 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00243 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.00316 (production 0.00368, 95% [0.000175, 0.00516]) inside; competitive 0.00561 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              16             PASS
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0.897          PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               9.48           PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               38 of 39       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9874         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A3_games.tsv
+  cost: t_sim median 376 s (max 508), t_class median 3.5 s (max 38); 79.4 core-h in REP lines
+#### analyze.py K0  (2026-09-27T14:15:03)
+
+======================================================================================================================
+K0: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  # wfc2 LOCALMUT (kernel K0) sigma=0.1 predraw=0.5 nuglob=0 frworkmax=100000000 frabig=1000000
+  --- K0
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9900      0     12 000:1,100:6       2.6e-05    0.00228       6.6       14 110:11,111:3               19
+  S      16   0.9989     15      1 -                   0.633      0.635      47.1       15 111:15                     15
+  N      18   0.9968      0     18 -                  0.0173     0.0188       173       13 110:3,111:10               16
+  E      18   0.9968      0     14 100:4              0.0261     0.0313       262       14 111:14                     18
+  all    71   0.9974     15     45 000:1,100:10       0.0217      0.033       111       56 110:14,111:42              68
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  W-111 exact counter: unresolved (K0 scan budget) at 9 games: ipt81(8 reps) ipt186(4 reps) ipt246(10 reps) ipt262(4 reps) ipt301(10 reps) ipt377(10 reps) ipt411(10 reps) ipt419(10 reps) ipt466(10 reps)
+  vs production: most abundant atom unchanged at 57 of 71 games; changed: ipt17 HAS 111->110 (agree 5/10, prod 10/10), ipt81 PDW 110->100 (agree 10/10, prod 10/10), ipt237 HAE 111->100 (agree 10/10, prod 6/10), ipt246 PDW 010->000 (agree 10/10, prod 3/10), ipt301 PDW 110->100 (agree 10/10, prod 10/10), ipt326 HAE 111->100 (agree 10/10, prod 9/10), ipt337 SDN 100->110 (agree 10/10, prod 5/10), ipt377 PDW 110->100 (agree 10/10, prod 10/10), ipt381 HAE 110->100 (agree 10/10, prod 9/10), ipt411 PDW 110->100 (agree 10/10, prod 8/10), ipt415 HAE 111->100 (agree 10/10, prod 7/10), ipt419 PDW 110->100 (agree 10/10, prod 10/10), ipt466 PDW 110->100 (agree 10/10, prod 7/10), ipt500 PDN 111->110 (agree 8/10, prod 6/10)
+  vs production: efficiency, median change +9.02e-03, |Welch t| > 2 at 68 of 71 games (max 2254.5)
+  wedge W medians: 111 2.6e-05 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.00228 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.0173 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.0188 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.0261 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.0313 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              14             FAIL
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                173            FAIL
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               262            FAIL
+  CRITERION 110 is the most enriched atom outside S where determined                               14 of 41       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9974         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/K0_games.tsv
+  cost: t_sim median 491 s (max 628), t_class median 199.2 s (max 237); 134.3 core-h in REP lines
+#### analyze.py B0 B0K0  (2026-09-27T14:15:37)
+
+======================================================================================================================
+B0: 8 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=58 reps=1..10
+  neutral check: z = (mean share - kernel mass) / combined s.e., flagged beyond the t quantile (n-1 d.f.)
+  ipt   tag   000 share/mass z          100 share/mass z          010 share/mass z          001 share/mass z          110 share/mass z          011 share/mass z          111 share/mass z        
+  29    PDW   0.832/0.838 -1.9          0.063/0.0602 +1.4         0.0058/0.00625 -0.7       0.0172/0.0146 +2.4*       0.0794/0.0789 +0.2        0.003/0.00235 +1.5        4.15e-06/3.95e-06 +0.0  
+  37    SHW   0.81/0.821 -3.0*          absent                    0.0225/0.0208 +1.5        0.0147/0.0143 +0.4        0.148/0.139 +2.8*         0.00447/0.00415 +0.6      3.79e-06/3.95e-06 -0.0  
+  46    HAS   0.848/0.846 +0.6          0.106/0.108 -0.7          absent                    0.0058/0.00445 +2.3*      0.0267/0.0272 -0.4        absent                    0.0133/0.0134 -0.3      
+  57    SDN   0.919/0.913 +2.4*         0.0403/0.0458 -3.1*       0.0016/0.00215 -1.4       0.0179/0.0177 +0.1        0.0215/0.0217 -0.2        absent                    0.0001/0.0001 -0.0      
+  164   SDE   0.919/0.917 +1.2          0.0415/0.0436 -2.1        5e-05/0.000164 -1.7       0.0182/0.0182 +0.0        0.0215/0.0209 +0.8        absent                    2.5e-05/9.98e-05 -1.5   
+  171   SHS   0.747/0.747 +0.1          absent                    0.102/0.0998 +0.7         0.00487/0.0054 -0.8       0.133/0.135 -0.6          absent                    0.0129/0.0134 -0.9      
+  183   PDN   0.919/0.917 +0.6          0.0564/0.0584 -1.0        0.00055/0.0004 +0.9       0.0167/0.0163 +0.3        0.00568/0.00545 +0.3      0.00168/0.0018 -0.3       0.000125/0.0001 +0.4    
+  261   SDE   0.917/0.915 +0.9          0.0384/0.0394 -0.5        absent                    0.0173/0.0176 -0.3        0.0268/0.0279 -0.7        absent                    5e-05/9.98e-05 -1.0     
+  CRITERION (triage, literal) every atom's interval contains its kernel mass at every game: 6 of 47 pairs outside  FAIL
+  CRITERION (multiplicity-aware) outside <= 5 (95% of Binomial(47, 0.05)) and max |z| <= 4: 6, max |z| 3.1  FAIL
+  neutral replicate variance / binomial (atoms with mass in (1%, 99%)): median 1.0, p90 1.6 (production F1 at beta = 100: 4.4)
+  cost: t_sim median 760 s (max 815), t_class median 11.8 s (max 67); 17.5 core-h in REP lines
+
+======================================================================================================================
+B0K0: 8 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=58 reps=1..10
+  # wfc2 LOCALMUT (kernel K0) sigma=0.1 predraw=0.5 nuglob=0 frworkmax=100000000 frabig=1000000
+  neutral check: z = (mean share - kernel mass) / combined s.e., flagged beyond the t quantile (n-1 d.f.)
+  ipt   tag   000 share/mass z          100 share/mass z          010 share/mass z          001 share/mass z          110 share/mass z          011 share/mass z          111 share/mass z        
+  29    PDW   0.84/0.838 +0.5           0.0588/0.0602 -0.5        0.00628/0.00625 +0.0      0.015/0.0146 +0.4         0.0774/0.0789 -0.6        0.00255/0.00235 +0.4      5.51e-06/3.95e-06 +0.2  
+  37    SHW   0.814/0.821 -1.4          absent                    0.0196/0.0208 -0.7        0.0145/0.0143 +0.2        0.148/0.139 +2.1          0.0044/0.00415 +0.3       2.31e-06/3.95e-06 -0.2  
+  46    HAS   0.851/0.846 +1.2          0.105/0.108 -0.9          absent                    0.00517/0.00445 +1.1      0.0266/0.0272 -0.4        absent                    0.0128/0.0134 -0.8      
+  57    SDN   0.917/0.913 +1.8          0.0428/0.0458 -1.3        0.00167/0.00215 -1.2      0.0169/0.0177 -0.7        0.0209/0.0217 -0.6        absent                    0.00015/0.0001 +0.6     
+  164   SDE   0.919/0.917 +1.5          0.0413/0.0436 -2.2        0.00015/0.000164 -0.2     0.0187/0.0182 +0.5        0.0206/0.0209 -0.3        absent                    2.5e-05/9.98e-05 -1.5   
+  171   SHS   0.753/0.747 +1.4          absent                    0.0952/0.0998 -1.6        0.00502/0.0054 -0.5       0.133/0.135 -0.7          absent                    0.014/0.0134 +0.6       
+  183   PDN   0.916/0.917 -0.7          0.0607/0.0584 +1.1        0.0006/0.0004 +1.0        0.0167/0.0163 +0.3        0.00515/0.00545 -0.4      0.0011/0.0018 -1.9        0.0001/0.0001 -0.0      
+  261   SDE   0.92/0.915 +2.0           0.0376/0.0394 -0.9        absent                    0.0179/0.0176 +0.2        0.0244/0.0279 -2.4*       absent                    2.5e-05/9.98e-05 -1.5   
+  CRITERION (triage, literal) every atom's interval contains its kernel mass at every game: 1 of 47 pairs outside  FAIL
+  CRITERION (multiplicity-aware) outside <= 5 (95% of Binomial(47, 0.05)) and max |z| <= 4: 1, max |z| 2.4  PASS
+  neutral replicate variance / binomial (atoms with mass in (1%, 99%)): median 1.8, p90 3.3 (production F1 at beta = 100: 4.4)
+  cost: t_sim median 452 s (max 470), t_class median 10.7 s (max 61); 10.6 core-h in REP lines
+#### analyze.py E3  (2026-09-27T14:15:55)
+
+======================================================================================================================
+E3: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  --- E3
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9688      0     18 000:1             3.2e-07   0.000801    0.0811       15 010:1,110:14               15
+  S      16   0.9777     16      0 -                   0.941      0.942        70       16 111:16                     16
+  N      18   0.9842      0     17 100:1               5e-05   0.000825     0.499       17 100:1,110:16               16
+  E      18   0.9855      3     15 -                6.25e-05    0.00123     0.626       15 110:13,111:2               12
+  all    71   0.9838     19     50 000:1,100:1       7.5e-05    0.00125     0.751       63 010:1,100:1,110:43,111:18     59
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 69 of 71 games; changed: ipt246 PDW 010->000 (agree 6/10, prod 3/10), ipt500 PDN 111->110 (agree 9/10, prod 6/10)
+  vs production: efficiency, median change -4.01e-03, |Welch t| > 2 at 64 of 71 games (max 235.5)
+  wedge W medians: 111 3.2e-07 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000801 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 5e-05 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.000825 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 6.25e-05 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.00123 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION most abundant atom unchanged at >= 95% of games                                        69 of 71       PASS
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              64 exceed      FAIL
+  CRITERION friendly rivals lead every S game (N = 1000)                                           16 of 16       PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E3_games.tsv
+  cost: t_sim median 365 s (max 438), t_class median 1.5 s (max 30); 74.5 core-h in REP lines
+#### analyze.py E5  (2026-09-27T14:16:24)
+
+======================================================================================================================
+E5: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=1e-05 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  --- E5
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9795      0     19 -                1.28e-06   0.000777     0.323       15 110:15                     18
+  S      16   0.9813     15      1 -                   0.836      0.839      62.2       16 111:16                     16
+  N      18   0.9888      0     18 -                0.000263    0.00172      2.62       14 110:14                     15
+  E      18   0.9900      2     16 -                0.000388    0.00361      3.88       12 110:11,111:1               12
+  all    71   0.9876     17     54 -                0.000375     0.0031         4       57 110:40,111:17              61
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576     0.232       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.25       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.24       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 66 of 71 games; changed: ipt17 HAS 111->110 (agree 10/10, prod 10/10), ipt246 PDW 010->110 (agree 9/10, prod 3/10), ipt326 HAE 111->110 (agree 8/10, prod 9/10), ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt500 PDN 111->110 (agree 7/10, prod 6/10)
+  vs production: efficiency, median change +4.28e-04, |Welch t| > 2 at 37 of 71 games (max 44.8)
+  wedge W medians: 111 1.28e-06 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000777 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.000263 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00172 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.000388 (production 0.00368, 95% [0.000175, 0.00516]) inside; competitive 0.00361 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        66 of 71       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              35 exceed      FAIL
+  CRITERION friendly rivals lead every S game (N = 1000)                                           15 of 16       FAIL
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E5_games.tsv
+  cost: t_sim median 397 s (max 483), t_class median 8.8 s (max 86); 82.8 core-h in REP lines
+#### analyze.py E3F2  (2026-09-27T14:16:38)
+
+======================================================================================================================
+E3F2: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=100 beta=3 mu=0.0001 eps=0.001 alpha=0.3333333333 itend=100000000 NT=4000 NI=1 task=302 reps=1..10
+  --- E3F2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9450      0      5 000:1            4.05e-09     0.0019   0.00103        2 110:2                       6
+  S       6   0.9881      2      4 -                   0.321      0.331      23.9        6 111:6                       3
+  N       6   0.9311      0      5 000:1              0.0167     0.0399       167        0 -                           4
+  E       6   0.9761      0      6 -                 0.00385    0.00856      38.6        2 110:2                       3
+  all    24   0.9696      2     20 000:2              0.0053     0.0196      23.9       10 110:4,111:6                16
+  --- production (F2, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9446      0      5 000:1            2.15e-08    0.00245   0.00545        2 110:2                       6
+  S       6   0.9957      0      6 -                   0.181      0.186      13.5        6 111:6                       5
+  N       6   0.9286      0      4 000:2              0.0109     0.0359       109        0 -                           4
+  E       6   0.9745      0      6 -                 0.00204     0.0111      20.4        0 -                           3
+  all    24   0.9745      0     21 000:3             0.00601     0.0156      17.4        8 110:2,111:6                18
+  --- binary (alpha = 1/2, PR2026 F2) at the same games: median efficiency by wedge W 0.9482, S 0.9982, N 0.9618, E 0.9876
+  vs production: most abundant atom unchanged at 21 of 24 games; changed: ipt344 HAS 110->111 (agree 9/10, prod 10/10), ipt479 PDN 000->110 (agree 6/10, prod 8/10), ipt480 SHS 110->111 (agree 7/10, prod 10/10)
+  vs production: efficiency, median change -5.88e-03, |Welch t| > 2 at 13 of 24 games (max 62.0)
+  wedge W medians: 111 4.05e-09 (production 2.15e-08, 95% [3.9e-09, 4.03e-08]) inside; competitive 0.0019 (production 0.00245, [0.00195, 0.00309]) OUTSIDE
+  wedge N medians: 111 0.0167 (production 0.0109, 95% [0.00674, 0.016]) OUTSIDE; competitive 0.0399 (production 0.0359, [0.0299, 0.0436]) inside
+  wedge E medians: 111 0.00385 (production 0.00204, 95% [0.00035, 0.00413]) inside; competitive 0.00856 (production 0.0111, [0.00344, 0.0171]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        21 of 24       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              12 exceed      FAIL
+  CRITERION S games whose leading atom moved (reported, as Revised2 did at N = 100)                ipt344 110->111 ipt480 110->111 
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E3F2_games.tsv
+  cost: t_sim median 328 s (max 353), t_class median 12.1 s (max 61); 23.1 core-h in REP lines
+#### analyze.py E5F2  (2026-09-27T14:16:53)
+
+======================================================================================================================
+E5F2: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=100 beta=3 mu=0.0001 eps=1e-05 alpha=0.3333333333 itend=100000000 NT=4000 NI=1 task=302 reps=1..10
+  --- E5F2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9462      0      5 000:1            6.35e-09    0.00271   0.00161        2 110:2                       6
+  S       6   0.9981      0      5 100:1                0.12      0.123       8.9        4 111:4                       5
+  N       6   0.9179      0      5 000:1             0.00817     0.0273      81.7        0 -                           5
+  E       6   0.9784      0      6 -                0.000213    0.00423      2.13        3 110:3                       4
+  all    24   0.9739      0     21 000:2,100:1       0.00395     0.0142       8.9        9 110:5,111:4                20
+  --- production (F2, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9446      0      5 000:1            2.15e-08    0.00245   0.00545        2 110:2                       6
+  S       6   0.9957      0      6 -                   0.181      0.186      13.5        6 111:6                       5
+  N       6   0.9286      0      4 000:2              0.0109     0.0359       109        0 -                           4
+  E       6   0.9745      0      6 -                 0.00204     0.0111      20.4        0 -                           3
+  all    24   0.9745      0     21 000:3             0.00601     0.0156      17.4        8 110:2,111:6                18
+  --- binary (alpha = 1/2, PR2026 F2) at the same games: median efficiency by wedge W 0.9482, S 0.9982, N 0.9618, E 0.9876
+  vs production: most abundant atom unchanged at 22 of 24 games; changed: ipt46 HAS 110->100 (agree 5/10, prod 9/10), ipt479 PDN 000->110 (agree 6/10, prod 8/10)
+  vs production: efficiency, median change +1.51e-03, |Welch t| > 2 at 8 of 24 games (max 39.4)
+  wedge W medians: 111 6.35e-09 (production 2.15e-08, 95% [3.9e-09, 4.03e-08]) inside; competitive 0.00271 (production 0.00245, [0.00195, 0.00309]) inside
+  wedge N medians: 111 0.00817 (production 0.0109, 95% [0.00674, 0.016]) inside; competitive 0.0273 (production 0.0359, [0.0299, 0.0436]) OUTSIDE
+  wedge E medians: 111 0.000213 (production 0.00204, 95% [0.00035, 0.00413]) OUTSIDE; competitive 0.00423 (production 0.0111, [0.00344, 0.0171]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        22 of 24       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              7 exceed       FAIL
+  CRITERION S games whose leading atom moved (reported, as Revised2 did at N = 100)                ipt46 110->100 
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E5F2_games.tsv
+  cost: t_sim median 332 s (max 353), t_class median 27.1 s (max 58); 23.9 core-h in REP lines
+#### analyze.py TS  (2026-09-27T14:17:39)
+
+======================================================================================================================
+TS: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=40000000 NT=1000 NI=4 task=302 reps=1..1
+  # wfc2 TSERIES TS_NT=2000 TS_NI=10 TS_NB=400 (every 20000 generations; blocks of 100000) second stream seed^0x5453455249455332
+  --- time-series diagnostics: P = production window at 4x length, L = the second half; Q3/Q4 = halves of P
+  ipt   tag  split lead    eff P    eff L  eff prd  z Q34  lead P  lead L lead pr  z Q34 ESSmin ESSmed 111 takeovers/escapes per 1e7 (exposure)
+  17    HAS  no    111    0.9875   0.9875   0.9875    2.0   0.561   0.579   0.570    1.7     52     89 up 84 [80, 89] (1.4e+08) down 46 [43, 48] (2.5e+08)
+  29    PDW  no    110    0.9847   0.9849   0.9846   -5.3   0.970   0.969   0.970    1.2    172    226 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  109   SDE  yes   110    0.9897   0.9876   0.9834   -3.1   0.952   0.934   0.858    0.3     78    234 up 0.077 [0.016, 0.23] (3.9e+08) down 33 [6.9, 97] (9.0e+05)
+  117   SDE  yes   110    0.9881   0.9880   0.9880    7.8   0.340   0.521   0.601   -9.4      3     11 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+        ipt 117: window P leads 100, L leads 110 (production 110); efficiency L vs P Welch t -0.59
+  164   SDE  yes   110    0.9884   0.9892   0.9806    6.0   0.958   0.957   0.894   -0.2     44    236 up 0.026 [0.00065, 0.14] (3.9e+08) down 1.2e+02 [3.2, 7e+02] (8.0e+04)
+  171   SHS  no    111    0.9798   0.9798   0.9799    0.3   0.680   0.705   0.714    1.5     20     30 up 56 [51, 61] (9.2e+07) down 17 [16, 19] (3.0e+08)
+  184   SHS  yes   111    0.9780   0.9780   0.9780    0.5   0.656   0.634   0.624   -0.5     14     33 up 48 [44, 52] (1.2e+08) down 22 [21, 24] (2.7e+08)
+  186   PDW  no    110    0.9760   0.9788   0.9788    2.6   0.961   0.968   0.967    0.7     15    195 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  208   HAS  no    111    0.9878   0.9877   0.9877    0.2   0.876   0.897   0.893    0.1     16     65 up 75 [63, 90] (1.7e+07) down 3.5 [2.9, 4.1] (3.7e+08)
+  237   HAE  yes   111    0.9959   0.9965   0.9963    2.7   0.675   0.879   0.613   -0.6      6    238 up 1.8 [0.89, 3.2] (6.2e+07) down 0.34 [0.17, 0.6] (3.3e+08)
+        ipt 237: window P leads 111, L leads 111 (production 111); efficiency L vs P Welch t 3.06
+  256   SDN  no    110    0.9880   0.9881   0.9883   -7.0   0.964   0.963   0.967   -1.1    188    244 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  301   PDW  no    110    0.9790   0.9786   0.9703    1.5   0.828   0.816   0.757    1.5      7     40 up 0.34 [0.18, 0.59] (3.8e+08) down 13 [6.9, 22] (1.0e+07)
+  326   HAE  yes   111    0.9951   0.9952   0.9945   10.3   0.832   0.787   0.846    3.1      4    201 up 3.6 [2.3, 5.3] (6.9e+07) down 0.81 [0.53, 1.2] (3.2e+08)
+  337   SDN  yes   100    0.9870   0.9869   0.9879    7.4   0.382   0.190   0.491    0.8      4     33 up 0.026 [0.00065, 0.14] (3.9e+08) down 1.7e+02 [4.2, 9.3e+02] (6.0e+04)
+        ipt 337: window P leads 110, L leads 110 (production 100); efficiency L vs P Welch t -0.37
+  377   PDW  no    110    0.9699   0.9787   0.9789    0.9   0.890   0.893   0.902   -2.3      6     92 up 0.1 [0.029, 0.27] (3.8e+08) down 6 [2, 14] (8.3e+06)
+  390   PDN  yes   110    0.9896   0.9901   0.9883   -1.1   0.856   0.890   0.762   -2.9      4     44 up 1.8 [1.4, 2.3] (3.6e+08) down 19 [15, 24] (3.5e+07)
+  411   PDW  yes   110    0.9826   0.9839   0.9830   -0.2   0.865   0.868   0.760    1.3      5    170 up 0.16 [0.06, 0.36] (3.7e+08) down 2.9 [1.2, 6] (2.4e+07)
+  415   HAE  yes   111    0.9930   0.9932   0.9931   -3.5   0.314   0.521   0.573    5.2      3     10 up 3.1 [2.4, 4] (2.0e+08) down 2.9 [2.2, 3.8] (1.9e+08)
+        ipt 415: window P leads 110, L leads 111 (production 111); efficiency L vs P Welch t 0.93
+  417   SHS  yes   111    0.9527   0.9527   0.9527    1.9   0.712   0.704   0.710    1.4     13     26 up 48 [44, 53] (1.0e+08) down 17 [15, 18] (2.9e+08)
+  445   PDN  yes   110    0.9904   0.9896   0.9891    3.1   0.695   0.769   0.798    0.1      7     34 up 2.8 [2.2, 3.5] (3.1e+08) down 11 [8.9, 14] (7.9e+07)
+  451   SHS  yes   111    0.9409   0.9404   0.9404    1.1   0.643   0.622   0.627    2.3      7     20 up 35 [32, 38] (1.3e+08) down 18 [16, 20] (2.6e+08)
+  466   PDW  yes   110    0.9800   0.9674   0.9708    1.5   0.825   0.856   0.622    1.0     16    222 up 0.27 [0.13, 0.5] (3.7e+08) down 5 [2.4, 9.1] (2.0e+07)
+  479   PDN  yes   110    0.9891   0.9898   0.9882    4.0   0.912   0.901   0.865    1.8      9    133 up 1.2 [0.84, 1.6] (3.7e+08) down 20 [15, 27] (2.2e+07)
+  500   PDN  yes   111    0.9898   0.9899   0.9896    4.6   0.493   0.351   0.634   -4.4      3     13 up 2.4 [1.8, 3.1] (2.2e+08) down 3.5 [2.7, 4.5] (1.7e+08)
+        ipt 500: window P leads 111, L leads 110 (production 111); efficiency L vs P Welch t 0.15
+  CRITERION at every unsplit game the quarters agree within 2 SE and ESS >= 50 per replicate  FAIL at ipt 29 171 186 208 256 301 377
+  CRITERION at every unsplit game the leading atom and the efficiency agree between P and L (|Welch t| <= 2.26)  PASS
+  --- TS
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9788      0      6 -                  0.0353     0.0372  8.93e+03        2 110:2                       6
+  S       6   0.9789      6      0 -                   0.667      0.669      49.6        6 111:6                       5
+  N       6   0.9897      0      6 -                  0.0595     0.0612       594        2 110:2                       4
+  E       6   0.9912      3      3 -                   0.261      0.262  2.61e+03        3 110:2,111:1                 3
+  all    24   0.9875      9     15 -                  0.0595     0.0612      59.6       13 110:6,111:7                18
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9789      0      6 -                  0.0113     0.0207  2.87e+03        2 110:2                       4
+  S       6   0.9790      6      0 -                   0.668       0.67      49.7        6 111:6                       3
+  N       6   0.9883      1      4 100:1               0.122      0.124  1.22e+03        1 110:1                       1
+  E       6   0.9905      3      3 -                   0.299      0.305     3e+03        1 110:1                       0
+  all    24   0.9860     10     13 100:1               0.162      0.164       162       10 110:4,111:6                 8
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9850, S 0.9757, N 0.9886, E 0.9891
+  vs production: most abundant atom unchanged at 22 of 24 games; changed: ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt500 PDN 111->110 (agree 6/10, prod 6/10)
+  vs production: efficiency, median change +9.28e-05, |Welch t| > 2 at 5 of 24 games (max 3.4)
+  wedge W medians: 111 0.0353 (production 0.0113, 95% [0.000583, 0.0194]) OUTSIDE; competitive 0.0372 (production 0.0207, [0.00298, 0.0309]) OUTSIDE
+  wedge N medians: 111 0.0595 (production 0.122, 95% [0.0298, 0.196]) inside; competitive 0.0612 (production 0.124, [0.0317, 0.197]) inside
+  wedge E medians: 111 0.261 (production 0.299, 95% [0.163, 0.376]) inside; competitive 0.262 (production 0.305, [0.178, 0.382]) inside
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/TS_games.tsv
+  cost: t_sim median 1611 s (max 1962), t_class median 4.2 s (max 78); 111.5 core-h in REP lines
+#### analyze.py A1 A2 A3 K0 E3 E5 E3F2 E5F2 TS  (2026-09-27T15:24:27)
+
+======================================================================================================================
+A1: 71 games, replicates per game [10], alpha 1/10
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.1000000000 itend=10000000 NT=1000 NI=4 task=223 reps=1..10
+  --- A1
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9748      0     18 010:1                   0   0.000125         0       13 110:13                     14
+  S      16   0.9811     16      0 -                   0.902      0.915       283       14 111:14                     13
+  N      18   0.9842      0     17 100:1                   0     0.0007         0       16 100:1,110:15               12
+  E      18   0.9669      0     16 011:2                   0    0.00377         0       13 110:13                      6
+  all    71   0.9779     16     51 010:1,011:2,100:1          0      0.004         0       56 100:1,110:41,111:14        45
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 67 of 71 games; changed: ipt237 HAE 111->011 (agree 8/10, prod 6/10), ipt326 HAE 111->011 (agree 6/10, prod 9/10), ipt415 HAE 111->110 (agree 7/10, prod 7/10), ipt500 PDN 111->110 (agree 8/10, prod 6/10)
+  vs production: efficiency, median change -3.80e-03, |Welch t| > 2 at 48 of 71 games (max 76.7)
+  wedge W medians: 111 0 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000125 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.0007 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.00377 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              14             FAIL
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0              PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               0              PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               41 of 42       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9779         FAIL
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A1_games.tsv
+  cost: t_sim median 358 s (max 415), t_class median 2.5 s (max 56); 72.2 core-h in REP lines
+
+======================================================================================================================
+A2: 71 games, replicates per game [10], alpha 1/5
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.2000000000 itend=10000000 NT=1000 NI=4 task=448 reps=1..10
+  --- A2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9749      0     19 -                3.62e-09     0.0004    0.0801       13 110:13                     18
+  S      16   0.9814     16      0 -                   0.885      0.886       121       16 111:16                     15
+  N      18   0.9865      0     17 100:1                   0    0.00045         0       14 110:14                     14
+  E      18   0.9871      1     17 -                1.25e-05   0.000975      4.94       13 110:13                     14
+  all    71   0.9859     17     53 100:1            1.66e-08     0.0011     0.368       56 110:40,111:16              61
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 67 of 71 games; changed: ipt246 PDW 010->110 (agree 5/10, prod 3/10), ipt326 HAE 111->110 (agree 8/10, prod 9/10), ipt415 HAE 111->110 (agree 7/10, prod 7/10), ipt500 PDN 111->110 (agree 9/10, prod 6/10)
+  vs production: efficiency, median change -1.42e-03, |Welch t| > 2 at 51 of 71 games (max 44.9)
+  wedge W medians: 111 3.62e-09 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.0004 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00045 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 1.25e-05 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.000975 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              16             PASS
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0              PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               4.94           PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               40 of 40       PASS
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9859         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A2_games.tsv
+  cost: t_sim median 380 s (max 433), t_class median 3.8 s (max 72); 76.9 core-h in REP lines
+
+======================================================================================================================
+A3: 71 games, replicates per game [10], alpha 2/5
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.4000000000 itend=10000000 NT=1000 NI=4 task=223 reps=1..10
+  --- A3
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9822      0     19 -                5.51e-06   0.000979     0.283       13 110:13                     15
+  S      16   0.9808     16      0 -                   0.899      0.902      53.6       16 111:16                     16
+  N      18   0.9888      1     17 -                  0.0003    0.00243     0.891       14 110:14                     17
+  E      18   0.9894      4     14 -                 0.00316    0.00561      9.47       12 110:11,111:1               14
+  all    71   0.9874     21     50 -                 0.00257    0.00527      15.2       55 110:38,111:17              62
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 68 of 71 games; changed: ipt246 PDW 010->110 (agree 7/10, prod 3/10), ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt381 HAE 110->111 (agree 7/10, prod 9/10)
+  vs production: efficiency, median change -6.25e-05, |Welch t| > 2 at 24 of 71 games (max 33.7)
+  wedge W medians: 111 5.51e-06 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000979 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.0003 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00243 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.00316 (production 0.00368, 95% [0.000175, 0.00516]) inside; competitive 0.00561 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              16             PASS
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                0.891          PASS
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               9.47           PASS
+  CRITERION 110 is the most enriched atom outside S where determined                               38 of 39       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9874         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/A3_games.tsv
+  cost: t_sim median 376 s (max 508), t_class median 3.5 s (max 38); 79.4 core-h in REP lines
+
+======================================================================================================================
+K0: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  # wfc2 LOCALMUT (kernel K0) sigma=0.1 predraw=0.5 nuglob=0 frworkmax=100000000 frabig=1000000
+  --- K0
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9900      0     12 000:1,100:6       2.6e-05    0.00228      6.54       14 110:11,111:3               19
+  S      16   0.9989     15      1 -                   0.633      0.635      47.1       15 111:15                     15
+  N      18   0.9968      0     18 -                  0.0173     0.0188       172       13 110:3,111:10               16
+  E      18   0.9968      0     14 100:4              0.0261     0.0313       262       14 111:14                     18
+  all    71   0.9974     15     45 000:1,100:10       0.0217      0.033       110       56 110:14,111:42              68
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  W-111 exact counter: unresolved (K0 scan budget) at 9 games: ipt81(8 reps) ipt186(4 reps) ipt246(10 reps) ipt262(4 reps) ipt301(10 reps) ipt377(10 reps) ipt411(10 reps) ipt419(10 reps) ipt466(10 reps)
+  vs production: most abundant atom unchanged at 57 of 71 games; changed: ipt17 HAS 111->110 (agree 5/10, prod 10/10), ipt81 PDW 110->100 (agree 10/10, prod 10/10), ipt237 HAE 111->100 (agree 10/10, prod 6/10), ipt246 PDW 010->000 (agree 10/10, prod 3/10), ipt301 PDW 110->100 (agree 10/10, prod 10/10), ipt326 HAE 111->100 (agree 10/10, prod 9/10), ipt337 SDN 100->110 (agree 10/10, prod 5/10), ipt377 PDW 110->100 (agree 10/10, prod 10/10), ipt381 HAE 110->100 (agree 10/10, prod 9/10), ipt411 PDW 110->100 (agree 10/10, prod 8/10), ipt415 HAE 111->100 (agree 10/10, prod 7/10), ipt419 PDW 110->100 (agree 10/10, prod 10/10), ipt466 PDW 110->100 (agree 10/10, prod 7/10), ipt500 PDN 111->110 (agree 8/10, prod 6/10)
+  vs production: efficiency, median change +9.02e-03, |Welch t| > 2 at 68 of 71 games (max 2254.5)
+  wedge W medians: 111 2.6e-05 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.00228 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.0173 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.0188 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.0261 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.0313 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION 111 leads and is the determined most enriched atom at >= 15 of 16 S games              14             FAIL
+  CRITERION median 111 enrichment in N at least 10x below binary 30                                172            FAIL
+  CRITERION median 111 enrichment in E at least 10x below binary 170                               262            FAIL
+  CRITERION 110 is the most enriched atom outside S where determined                               14 of 41       FAIL
+  CRITERION median efficiency at least binary's at the same games (0.9842)                         0.9974         PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/K0_games.tsv
+  cost: t_sim median 491 s (max 628), t_class median 199.2 s (max 237); 134.3 core-h in REP lines
+
+======================================================================================================================
+E3: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.001 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  --- E3
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9688      0     18 000:1             3.2e-07   0.000801    0.0803       15 010:1,110:14               15
+  S      16   0.9777     16      0 -                   0.941      0.942        70       16 111:16                     16
+  N      18   0.9842      0     17 100:1               5e-05   0.000825     0.497       17 100:1,110:16               16
+  E      18   0.9855      3     15 -                6.25e-05    0.00123     0.625       15 110:13,111:2               12
+  all    71   0.9838     19     50 000:1,100:1       7.5e-05    0.00125      0.75       63 010:1,100:1,110:43,111:18     59
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 69 of 71 games; changed: ipt246 PDW 010->000 (agree 6/10, prod 3/10), ipt500 PDN 111->110 (agree 9/10, prod 6/10)
+  vs production: efficiency, median change -4.01e-03, |Welch t| > 2 at 64 of 71 games (max 235.5)
+  wedge W medians: 111 3.2e-07 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000801 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 5e-05 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.000825 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 6.25e-05 (production 0.00368, 95% [0.000175, 0.00516]) OUTSIDE; competitive 0.00123 (production 0.00574, [0.00183, 0.00696]) OUTSIDE
+  CRITERION most abundant atom unchanged at >= 95% of games                                        69 of 71       PASS
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              64 exceed      FAIL
+  CRITERION friendly rivals lead every S game (N = 1000)                                           16 of 16       PASS
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E3_games.tsv
+  cost: t_sim median 365 s (max 438), t_class median 1.5 s (max 30); 74.5 core-h in REP lines
+
+======================================================================================================================
+E5: 71 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=1e-05 alpha=0.3333333333 itend=10000000 NT=1000 NI=4 task=302 reps=1..10
+  --- E5
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9795      0     19 -                1.28e-06   0.000777      0.32       15 110:15                     18
+  S      16   0.9813     15      1 -                   0.836      0.839      62.2       16 111:16                     16
+  N      18   0.9888      0     18 -                0.000263    0.00172      2.61       14 110:14                     15
+  E      18   0.9900      2     16 -                0.000388    0.00361      3.88       12 110:11,111:1               12
+  all    71   0.9876     17     54 -                0.000375     0.0031      3.97       57 110:40,111:17              61
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W      19   0.9788      0     18 010:1            9.16e-07   0.000576      0.23       14 110:14                     16
+  S      16   0.9812     16      0 -                   0.884      0.886      65.8       16 111:16                     16
+  N      18   0.9883      1     16 100:1            0.000125    0.00124      1.24       15 110:15                     15
+  E      18   0.9888      3     15 -                 0.00368    0.00574      36.8        8 110:8                      12
+  all    71   0.9875     20     49 010:1,100:1      0.000625     0.0022      6.21       53 110:37,111:16              59
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9812, S 0.9799, N 0.9848, E 0.9860
+  vs production: most abundant atom unchanged at 66 of 71 games; changed: ipt17 HAS 111->110 (agree 10/10, prod 10/10), ipt246 PDW 010->110 (agree 9/10, prod 3/10), ipt326 HAE 111->110 (agree 8/10, prod 9/10), ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt500 PDN 111->110 (agree 7/10, prod 6/10)
+  vs production: efficiency, median change +4.28e-04, |Welch t| > 2 at 37 of 71 games (max 44.8)
+  wedge W medians: 111 1.28e-06 (production 9.16e-07, 95% [7.67e-07, 1.2e-06]) OUTSIDE; competitive 0.000777 (production 0.000576, [0.000501, 0.000701]) OUTSIDE
+  wedge N medians: 111 0.000263 (production 0.000125, 95% [7.5e-05, 0.000175]) OUTSIDE; competitive 0.00172 (production 0.00124, [0.00113, 0.00139]) OUTSIDE
+  wedge E medians: 111 0.000388 (production 0.00368, 95% [0.000175, 0.00516]) inside; competitive 0.00361 (production 0.00574, [0.00183, 0.00696]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        66 of 71       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              35 exceed      FAIL
+  CRITERION friendly rivals lead every S game (N = 1000)                                           15 of 16       FAIL
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E5_games.tsv
+  cost: t_sim median 397 s (max 483), t_class median 8.8 s (max 86); 82.8 core-h in REP lines
+
+======================================================================================================================
+E3F2: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=100 beta=3 mu=0.0001 eps=0.001 alpha=0.3333333333 itend=100000000 NT=4000 NI=1 task=302 reps=1..10
+  --- E3F2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9450      0      5 000:1            4.05e-09     0.0019   0.00102        2 110:2                       6
+  S       6   0.9881      2      4 -                   0.321      0.331      23.9        6 111:6                       3
+  N       6   0.9311      0      5 000:1              0.0167     0.0399       166        0 -                           4
+  E       6   0.9761      0      6 -                 0.00385    0.00856      38.5        2 110:2                       3
+  all    24   0.9696      2     20 000:2              0.0053     0.0196      23.9       10 110:4,111:6                16
+  --- production (F2, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9446      0      5 000:1            2.15e-08    0.00245    0.0054        2 110:2                       6
+  S       6   0.9957      0      6 -                   0.181      0.186      13.5        6 111:6                       5
+  N       6   0.9286      0      4 000:2              0.0109     0.0359       108        0 -                           4
+  E       6   0.9745      0      6 -                 0.00204     0.0111      20.4        0 -                           3
+  all    24   0.9745      0     21 000:3             0.00601     0.0156      17.4        8 110:2,111:6                18
+  --- binary (alpha = 1/2, PR2026 F2) at the same games: median efficiency by wedge W 0.9482, S 0.9982, N 0.9618, E 0.9876
+  vs production: most abundant atom unchanged at 21 of 24 games; changed: ipt344 HAS 110->111 (agree 9/10, prod 10/10), ipt479 PDN 000->110 (agree 6/10, prod 8/10), ipt480 SHS 110->111 (agree 7/10, prod 10/10)
+  vs production: efficiency, median change -5.88e-03, |Welch t| > 2 at 13 of 24 games (max 62.0)
+  wedge W medians: 111 4.05e-09 (production 2.15e-08, 95% [3.9e-09, 4.03e-08]) inside; competitive 0.0019 (production 0.00245, [0.00195, 0.00309]) OUTSIDE
+  wedge N medians: 111 0.0167 (production 0.0109, 95% [0.00674, 0.016]) OUTSIDE; competitive 0.0399 (production 0.0359, [0.0299, 0.0436]) inside
+  wedge E medians: 111 0.00385 (production 0.00204, 95% [0.00035, 0.00413]) inside; competitive 0.00856 (production 0.0111, [0.00344, 0.0171]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        21 of 24       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              12 exceed      FAIL
+  CRITERION S games whose leading atom moved (reported, as Revised2 did at N = 100)                ipt344 110->111 ipt480 110->111 
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E3F2_games.tsv
+  cost: t_sim median 328 s (max 353), t_class median 12.1 s (max 61); 23.1 core-h in REP lines
+
+======================================================================================================================
+E5F2: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=100 beta=3 mu=0.0001 eps=1e-05 alpha=0.3333333333 itend=100000000 NT=4000 NI=1 task=302 reps=1..10
+  --- E5F2
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9462      0      5 000:1            6.35e-09    0.00271   0.00159        2 110:2                       6
+  S       6   0.9981      0      5 100:1                0.12      0.123       8.9        4 111:4                       5
+  N       6   0.9179      0      5 000:1             0.00817     0.0273      81.2        0 -                           5
+  E       6   0.9784      0      6 -                0.000213    0.00423      2.13        3 110:3                       4
+  all    24   0.9739      0     21 000:2,100:1       0.00395     0.0142       8.9        9 110:5,111:4                20
+  --- production (F2, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9446      0      5 000:1            2.15e-08    0.00245    0.0054        2 110:2                       6
+  S       6   0.9957      0      6 -                   0.181      0.186      13.5        6 111:6                       5
+  N       6   0.9286      0      4 000:2              0.0109     0.0359       108        0 -                           4
+  E       6   0.9745      0      6 -                 0.00204     0.0111      20.4        0 -                           3
+  all    24   0.9745      0     21 000:3             0.00601     0.0156      17.4        8 110:2,111:6                18
+  --- binary (alpha = 1/2, PR2026 F2) at the same games: median efficiency by wedge W 0.9482, S 0.9982, N 0.9618, E 0.9876
+  vs production: most abundant atom unchanged at 22 of 24 games; changed: ipt46 HAS 110->100 (agree 5/10, prod 9/10), ipt479 PDN 000->110 (agree 6/10, prod 8/10)
+  vs production: efficiency, median change +1.51e-03, |Welch t| > 2 at 8 of 24 games (max 39.4)
+  wedge W medians: 111 6.35e-09 (production 2.15e-08, 95% [3.9e-09, 4.03e-08]) inside; competitive 0.00271 (production 0.00245, [0.00195, 0.00309]) inside
+  wedge N medians: 111 0.00817 (production 0.0109, 95% [0.00674, 0.016]) inside; competitive 0.0273 (production 0.0359, [0.0299, 0.0436]) OUTSIDE
+  wedge E medians: 111 0.000213 (production 0.00204, 95% [0.00035, 0.00413]) OUTSIDE; competitive 0.00423 (production 0.0111, [0.00344, 0.0171]) inside
+  CRITERION most abundant atom unchanged at >= 95% of games                                        22 of 24       FAIL
+  CRITERION efficiency within replicate spread (|Welch t| <= 2.26) at >= 95% of games              7 exceed       FAIL
+  CRITERION S games whose leading atom moved (reported, as Revised2 did at N = 100)                ipt46 110->100 
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/E5F2_games.tsv
+  cost: t_sim median 332 s (max 353), t_class median 27.1 s (max 58); 23.9 core-h in REP lines
+
+======================================================================================================================
+TS: 24 games, replicates per game [10], alpha 1/3
+  # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=40000000 NT=1000 NI=4 task=302 reps=1..1
+  # wfc2 TSERIES TS_NT=2000 TS_NI=10 TS_NB=400 (every 20000 generations; blocks of 100000) second stream seed^0x5453455249455332
+  --- time-series diagnostics: P = production window at 4x length, L = the second half; Q3/Q4 = halves of P
+  ipt   tag  split lead    eff P    eff L  eff prd  z Q34  lead P  lead L lead pr  z Q34 ESSmin ESSmed 111 takeovers/escapes per 1e7 (exposure)
+  17    HAS  no    111    0.9875   0.9875   0.9875    2.0   0.561   0.579   0.570    1.7     52     89 up 84 [80, 89] (1.4e+08) down 46 [43, 48] (2.5e+08)
+  29    PDW  no    110    0.9847   0.9849   0.9846   -5.3   0.970   0.969   0.970    1.2    172    226 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  109   SDE  yes   110    0.9897   0.9876   0.9834   -3.1   0.952   0.934   0.858    0.3     78    234 up 0.077 [0.016, 0.23] (3.9e+08) down 33 [6.9, 97] (9.0e+05)
+  117   SDE  yes   110    0.9881   0.9880   0.9880    7.8   0.340   0.521   0.601   -9.4      3     11 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+        ipt 117: window P leads 100, L leads 110 (production 110); efficiency L vs P Welch t -0.59
+  164   SDE  yes   110    0.9884   0.9892   0.9806    6.0   0.958   0.957   0.894   -0.2     44    236 up 0.026 [0.00065, 0.14] (3.9e+08) down 1.2e+02 [3.2, 7e+02] (8.0e+04)
+  171   SHS  no    111    0.9798   0.9798   0.9799    0.3   0.680   0.705   0.714    1.5     20     30 up 56 [51, 61] (9.2e+07) down 17 [16, 19] (3.0e+08)
+  184   SHS  yes   111    0.9780   0.9780   0.9780    0.5   0.656   0.634   0.624   -0.5     14     33 up 48 [44, 52] (1.2e+08) down 22 [21, 24] (2.7e+08)
+  186   PDW  no    110    0.9760   0.9788   0.9788    2.6   0.961   0.968   0.967    0.7     15    195 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  208   HAS  no    111    0.9878   0.9877   0.9877    0.2   0.876   0.897   0.893    0.1     16     65 up 75 [63, 90] (1.7e+07) down 3.5 [2.9, 4.1] (3.7e+08)
+  237   HAE  yes   111    0.9959   0.9965   0.9963    2.7   0.675   0.879   0.613   -0.6      6    238 up 1.8 [0.89, 3.2] (6.2e+07) down 0.34 [0.17, 0.6] (3.3e+08)
+        ipt 237: window P leads 111, L leads 111 (production 111); efficiency L vs P Welch t 3.06
+  256   SDN  no    110    0.9880   0.9881   0.9883   -7.0   0.964   0.963   0.967   -1.1    188    244 up 0 [0, 0.095] (3.9e+08) down - (0.0e+00)
+  301   PDW  no    110    0.9790   0.9786   0.9703    1.5   0.828   0.816   0.757    1.5      7     40 up 0.34 [0.18, 0.59] (3.8e+08) down 13 [6.9, 22] (1.0e+07)
+  326   HAE  yes   111    0.9951   0.9952   0.9945   10.3   0.832   0.787   0.846    3.1      4    201 up 3.6 [2.3, 5.3] (6.9e+07) down 0.81 [0.53, 1.2] (3.2e+08)
+  337   SDN  yes   100    0.9870   0.9869   0.9879    7.4   0.382   0.190   0.491    0.8      4     33 up 0.026 [0.00065, 0.14] (3.9e+08) down 1.7e+02 [4.2, 9.3e+02] (6.0e+04)
+        ipt 337: window P leads 110, L leads 110 (production 100); efficiency L vs P Welch t -0.37
+  377   PDW  no    110    0.9699   0.9787   0.9789    0.9   0.890   0.893   0.902   -2.3      6     92 up 0.1 [0.029, 0.27] (3.8e+08) down 6 [2, 14] (8.3e+06)
+  390   PDN  yes   110    0.9896   0.9901   0.9883   -1.1   0.856   0.890   0.762   -2.9      4     44 up 1.8 [1.4, 2.3] (3.6e+08) down 19 [15, 24] (3.5e+07)
+  411   PDW  yes   110    0.9826   0.9839   0.9830   -0.2   0.865   0.868   0.760    1.3      5    170 up 0.16 [0.06, 0.36] (3.7e+08) down 2.9 [1.2, 6] (2.4e+07)
+  415   HAE  yes   111    0.9930   0.9932   0.9931   -3.5   0.314   0.521   0.573    5.2      3     10 up 3.1 [2.4, 4] (2.0e+08) down 2.9 [2.2, 3.8] (1.9e+08)
+        ipt 415: window P leads 110, L leads 111 (production 111); efficiency L vs P Welch t 0.93
+  417   SHS  yes   111    0.9527   0.9527   0.9527    1.9   0.712   0.704   0.710    1.4     13     26 up 48 [44, 53] (1.0e+08) down 17 [15, 18] (2.9e+08)
+  445   PDN  yes   110    0.9904   0.9896   0.9891    3.1   0.695   0.769   0.798    0.1      7     34 up 2.8 [2.2, 3.5] (3.1e+08) down 11 [8.9, 14] (7.9e+07)
+  451   SHS  yes   111    0.9409   0.9404   0.9404    1.1   0.643   0.622   0.627    2.3      7     20 up 35 [32, 38] (1.3e+08) down 18 [16, 20] (2.6e+08)
+  466   PDW  yes   110    0.9800   0.9674   0.9708    1.5   0.825   0.856   0.622    1.0     16    222 up 0.27 [0.13, 0.5] (3.7e+08) down 5 [2.4, 9.1] (2.0e+07)
+  479   PDN  yes   110    0.9891   0.9898   0.9882    4.0   0.912   0.901   0.865    1.8      9    133 up 1.2 [0.84, 1.6] (3.7e+08) down 20 [15, 27] (2.2e+07)
+  500   PDN  yes   111    0.9898   0.9899   0.9896    4.6   0.493   0.351   0.634   -4.4      3     13 up 2.4 [1.8, 3.1] (2.2e+08) down 3.5 [2.7, 4.5] (1.7e+08)
+        ipt 500: window P leads 111, L leads 110 (production 111); efficiency L vs P Welch t 0.15
+  CRITERION at every unsplit game the quarters agree within 2 SE and ESS >= 50 per replicate  FAIL at ipt 29 171 186 208 256 301 377
+  CRITERION at every unsplit game the leading atom and the efficiency agree between P and L (|Welch t| <= 2.26)  PASS
+  --- TS
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9788      0      6 -                  0.0353     0.0372  8.85e+03        2 110:2                       6
+  S       6   0.9789      6      0 -                   0.667      0.669      49.6        6 111:6                       5
+  N       6   0.9897      0      6 -                  0.0595     0.0612       591        2 110:2                       4
+  E       6   0.9912      3      3 -                   0.261      0.262  2.61e+03        3 110:2,111:1                 3
+  all    24   0.9875      9     15 -                  0.0595     0.0612      59.7       13 110:6,111:7                18
+  --- production (F1, alpha = 1/3, global kernel, eps = 1e-4) at the same games
+  wedge    n  eff med 111 ld 110 ld other leads       111 med   comp med   111 enr      det most enriched (det)     agree
+  W       6   0.9789      0      6 -                  0.0113     0.0207  2.84e+03        2 110:2                       4
+  S       6   0.9790      6      0 -                   0.668       0.67      49.7        6 111:6                       3
+  N       6   0.9883      1      4 100:1               0.122      0.124  1.21e+03        1 110:1                       1
+  E       6   0.9905      3      3 -                   0.299      0.305     3e+03        1 110:1                       0
+  all    24   0.9860     10     13 100:1               0.162      0.164       162       10 110:4,111:6                 8
+  --- binary (alpha = 1/2, PR2026 F1) at the same games: median efficiency by wedge W 0.9850, S 0.9757, N 0.9886, E 0.9891
+  vs production: most abundant atom unchanged at 22 of 24 games; changed: ipt337 SDN 100->110 (agree 8/10, prod 5/10), ipt500 PDN 111->110 (agree 6/10, prod 6/10)
+  vs production: efficiency, median change +9.28e-05, |Welch t| > 2 at 5 of 24 games (max 3.4)
+  wedge W medians: 111 0.0353 (production 0.0113, 95% [0.000583, 0.0194]) OUTSIDE; competitive 0.0372 (production 0.0207, [0.00298, 0.0309]) OUTSIDE
+  wedge N medians: 111 0.0595 (production 0.122, 95% [0.0298, 0.196]) inside; competitive 0.0612 (production 0.124, [0.0317, 0.197]) inside
+  wedge E medians: 111 0.261 (production 0.299, 95% [0.163, 0.376]) inside; competitive 0.262 (production 0.305, [0.178, 0.382]) inside
+  per-game table: /Users/martin/Documents/CL1/PRFull/cannon/wfc2/analysis/TS_games.tsv
+  cost: t_sim median 1611 s (max 1962), t_class median 4.2 s (max 78); 111.5 core-h in REP lines

@@ -1,0 +1,54 @@
+# E_box: CERTIFIED
+STATEMENT.  Every p in the closed 8-dimensional box below is a friendly rival of wedge E in the
+eps -> 0 limit: self-play (0,1/2,1/2,0) and w_CD >= w_DC against every co-player.  The box is the
+C<->D mirror image of the N box (N_box.txt), i.e. the SI Table 2 E witness +- 1/12, and is proved
+twice: (i) by the mirror symmetry from the N certificate, (ii) directly, below.
+
+wedge E (margin = -(w_DC - w_CD)), required efficiency class A
+stratum 101***0*11***10*  (dimension 8; free coordinates p_s, s = [3, 4, 5, 7, 10, 11, 12, 15])
+centre  (1, 0, 1, 2/3, 2/3, 1/3, 0, 1/3, 1, 1, 2/3, 2/3, 2/3, 1, 0, 1/3)
+box (closed, rational bounds, pinned coordinates as in the stratum):
+     p3 in [7/12, 3/4]
+     p4 in [7/12, 3/4]
+     p5 in [1/4, 5/12]
+     p7 in [1/4, 5/12]
+    p10 in [7/12, 3/4]
+    p11 in [7/12, 3/4]
+    p12 in [7/12, 3/4]
+    p15 in [1/4, 5/12]
+volume 1/1679616 = 5.954e-07;  256 vertices
+
+EFFICIENCY (exact).  L1: the eps-exponent of every spanning tree of the self-play chain depends only
+on the pattern, and the leading coefficients are positive on the open stratum, so the limit support
+is the same at every point of the open stratum: class A (required A).
+   exact self-play at the centre (w_CC,w_CD,w_DC,w_DD) = (0, 1/2, 1/2, 0)
+   exact self-play efficient at all 256 vertices: True
+
+COMPETITIVENESS, vertex route (L2), all 65536 binary co-players x all vertices:
+   structurally zero (w_CD = w_DC = 0 by exponents, on the whole open stratum): 13436
+   positive by interval at every vertex (outward-rounded enclosure > 0):        34512
+   resolved exactly (some vertex enclosure contains 0; those vertices in mpq):   0
+        of which exactly 0 at every such vertex: 0; positive somewhere: 0
+   identities by the L3/L4 corner test (N_q = 0 identically; not evaluated): 17588
+   exact (vertex, co-player) evaluations: 0 (zero 0, positive 0, negative 0)
+   total 65536 (must be 65536)
+   certified-negative vertex margins: 0
+   tree exponent E(q) constant over centre, vertices and corners: True; support constant: True
+
+MINIMUM EXACT VERTEX MARGIN: 0 (attained by the structural zeros and exact identities (margin identically 0 on the stratum));
+   smallest strictly positive vertex margin = 43/10760 = 0.00399628
+   at co-player 14154 and vertex (1, 0, 1, 7/12, 7/12, 1/4, 0, 1/4, 1, 1, 7/12, 7/12, 7/12, 1, 0, 1/4)
+
+CORNER ROUTE (L3/L4, independent): N_q >= 0 on the whole closed stratum cube for 53796 co-players;
+   N_q identically 0 for 31024 (17588 non-structural identities).
+
+CENTRE (exact point certificate; SI Table 2 entry): min margin 0 attained by 31024 co-players
+   = 13436 structural + 17588 exact non-structural zeros; positive 34512; negative 0
+
+LEMMA CHECK (exact): N_q = D* x margin equals its multilinear interpolation from the vertices at
+   48/48 random rational interior points (24 co-players); E constant: True; interior margins >= 0: True
+FLOAT SANITY (not part of the proof): min float margin over 200 random interior points x 65536 = -1.11e-16
+
+MIRROR CHECKS: exact margins N(c,q) = E(cbar,qbar) for 300 random q at the centres: True; at a random vertex for 100 q: True; interval class at the centres equal for all 65536 q under q -> qbar: True
+
+TIMING (s, Martin's Mac, <= 3 threads/processes, nice 10): efficiency 0.1, centre_point 5.4, corner_scan 13.4, vertex_interval_scan 14.7, exact_resolution 0.1, min_margin 0.2, lemma_check 1.1, float_sanity 5.8, mirror_checks 0.6; total 40.9

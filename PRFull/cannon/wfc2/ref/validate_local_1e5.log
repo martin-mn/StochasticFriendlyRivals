@@ -1,0 +1,55 @@
+PASS D3 neutral game 30
+PASS D3 neutral game 47
+PASS D1 REP game 30
+PASS D1 dump game 30
+PASS T1 REP game 30 (TSERIES on)
+PASS T1 dump game 30 (TSERIES on)
+PASS T1 TS/TB lines game 30 (400, 80)
+PASS T1 TB second-half payoff = REP pay, TS counts = TS_NI, W-111 blocks = REP ex111, game 30
+PASS D1 REP game 47
+PASS D1 dump game 47
+PASS T1 REP game 47 (TSERIES on)
+PASS T1 dump game 47 (TSERIES on)
+PASS T1 TS/TB lines game 47 (400, 80)
+PASS T1 TB second-half payoff = REP pay, TS counts = TS_NI, W-111 blocks = REP ex111, game 47
+PASS D1 REP game 58
+PASS D1 dump game 58
+PASS T1 REP game 58 (TSERIES on)
+PASS T1 dump game 58 (TSERIES on)
+PASS T1 TS/TB lines game 58 (400, 80)
+PASS T1 TB second-half payoff = REP pay, TS counts = TS_NI, W-111 blocks = REP ex111, game 58
+PASS D1 REP game 165
+PASS D1 dump game 165
+PASS T1 REP game 165 (TSERIES on)
+PASS T1 dump game 165 (TSERIES on)
+PASS T1 TS/TB lines game 165 (400, 80)
+PASS T1 TB second-half payoff = REP pay, TS counts = TS_NI, W-111 blocks = REP ex111, game 165
+PASS D2 F2 REP game 30
+PASS D2 F2 dump game 30
+PASS D2 F2 REP game 172
+PASS D2 F2 dump game 172
+PASS A arm a1_30 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.2500000000 itend=100000 NT=1000 NI=4 task
+PASS A arm a1_47 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.2500000000 itend=100000 NT=1000 NI=4 task
+PASS A arm a2_30 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.4000000000 itend=100000 NT=1000 NI=4 task
+PASS A arm a2_47 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.4000000000 itend=100000 NT=1000 NI=4 task
+PASS A arm k0_30 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task
+PASS A arm k0_47 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task
+PASS A arm b0_30 runs: # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=3
+PASS A arm b0_47 runs: # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=4
+PASS A arm b0k0_30 runs: # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=3
+PASS A arm b0k0_47 runs: # wfc N=1000 beta=0 mu=0.01 eps=0.0001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=4
+PASS A arm e3_30 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=
+PASS A arm e3_47 runs: # wfc N=1000 beta=100 mu=0.01 eps=0.001 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=
+PASS A arm e5_30 runs: # wfc N=1000 beta=100 mu=0.01 eps=1e-05 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=
+PASS A arm e5_47 runs: # wfc N=1000 beta=100 mu=0.01 eps=1e-05 alpha=0.3333333333 itend=100000 NT=1000 NI=4 task=
+PASS A arm e3f2_30 runs: # wfc N=100 beta=3 mu=0.0001 eps=0.001 alpha=0.3333333333 itend=1000000 NT=4000 NI=1 task=
+PASS A arm e3f2_172 runs: # wfc N=100 beta=3 mu=0.0001 eps=0.001 alpha=0.3333333333 itend=1000000 NT=4000 NI=1 task=
+PASS A arm e5f2_30 runs: # wfc N=100 beta=3 mu=0.0001 eps=1e-05 alpha=0.3333333333 itend=1000000 NT=4000 NI=1 task=
+PASS A arm e5f2_172 runs: # wfc N=100 beta=3 mu=0.0001 eps=1e-05 alpha=0.3333333333 itend=1000000 NT=4000 NI=1 task=
+PASS A k0_30 MUT: MUT 1 376552 131789 492193 0 0 91 0
+PASS A k0_47 MUT: MUT 1 380605 139837 479962 0 0 0 0
+PASS A b0k0_30 MUT: MUT 1 386051 159865 453820 0 0 5640 0
+PASS A b0k0_47 MUT: MUT 1 389194 167343 444684 0 0 0 0
+PASS K0 W-111 test = production's, 65319 W-111 verdicts at game 467
+ALL CHECKS PASSED (itend 100000)
+exit=0

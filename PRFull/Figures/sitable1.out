@@ -1,0 +1,120 @@
+sitable1.py -- SI Table 1 of PRFull (the friendly-rival strata of the memory-two cube), computed from the census output.
+Written: Figures/sitable1.out.
+
+a  by locus: the census completed by the dimension probe
+  locus        strata               dimensions   of dimension 0   binary-invisible   share invisible
+  W            364                  0 to 7       8                238                65%
+  S            1 367 725 dagger     0 to 15      1519             32 868 dagger      2.5%
+  N            5022                 0 to 8       80               216                4.3%
+  E            5022                 0 to 8       80               216                4.3%
+  ray T>S      7726                 0 to 8       116              --                 --
+  ray T<S      1 571 014 dagger     0 to 15      2067             --                 --
+  T=S, below   6 206 077            0 to 15      7639             --                 --
+  T=S, above   2 788 386            0 to 14      3072             --                 --
+  (1,0)        11 466 029           0 to 15      14 757           --                 --
+  dagger: a numerical census count.  The binary-invisible count of S is taken over the census's 1 318 471 strata alone: 2.5% of them.
+
+b  the census against the dimension probe: strata with a friendly rival, of dimension at least 5
+  locus                            census, dim >= 5   probe, dim >= 5   deficit   census total   share
+  wedge W                          67                 69                2         362            0.55%
+  wedge S                          958 082            1 007 336         49 254    1 318 471      3.74%
+  wedge N                          847                849               2         5020           0.04%
+  wedge E                          849                849               0         5022           0
+  ray T>S, efficient only there    447                448               1         2339           0.04%
+  ray T<S, efficient only there    110 449            114 093           3644      194 623        1.87%
+  the deficit as a share of the probe's count: W 2.9%, S 4.9%, N 0.24%, E 0
+
+##############################################################################################################
+HOW EACH CELL IS COMPUTED
+  a, strata             the strata of the locus in the census (st_eff.txt: the class, and nP > 0 for T>S or nM > 0 for T<S),
+                        together with those of the probe's blocks of the locus; the rays take the classes C, A and Z
+  a, dimensions         the smallest and the largest number of free coordinates among these strata
+  a, of dimension 0     the strata with no free coordinate, each a binary strategy
+  a, binary-invisible   the strata whose closed cell holds no binary friendly rival of the wedge (m2_masks.npz;
+                        census.py's visible_flags), in S over the census's strata only; share = binary-invisible / those strata
+  a, T=S and (1,0)      the efficient strata by the support (census_support_class.u8.gz): class C below the switch line,
+                        class A above it, and C, A and Z at (1,0)
+  b                     per (class, sign) block of the probe: the census's strata of dimension >= 5, the probe's strata,
+                        the probe's strata not in the census (the deficit), and all the census's strata of the block;
+                        share = deficit / census total
+
+##############################################################################################################
+INPUTS
+  PartnersRivalsM2f/check/st_eff.txt: 1 524 791 lines (C 1 318 785, A 9802, Z 196 204), K = 64 draws at every stratum
+  PartnersRivalsM2f/cannon/ca1_out: the dimension probe (array 45752239), 768 files dim_<class>_<sign>_<stripe>.txt and dim_45752239_<task>.err, 1 123 644 lines
+  PRFull/release/census_class/census_support_class.u8.gz: 43 046 721 strata; by the support none 31 580 692, C 6 206 077, A 2 788 386, Z 2 471 566
+  PartnersRivals/Figures/m2_masks.npz: binary friendly rivals W 8, S 1519, N 80, E 80; effCC 7639, effALT 3072
+  PartnersRivalsM2f/check/binary_eff.npz: effLINE 14757
+
+##############################################################################################################
+PER LOCUS: the census alone, the probe, what the probe added, and the dimension histogram of panel a
+  W            census 362, probe 69, added by the probe 2, together 364; dimensions 0:8 1:36 2:71 3:93 4:87 5:51 6:16 7:2
+                 added: 1*1*00111*1**0*0  1*1100111*1**0*0
+  S            census 1 318 471, probe 1 007 336, added by the probe 49 254, together 1 367 725; dimensions 0:1519 1:11755 2:44453 3:109323 4:193339 5:260578 6:270604 7:220961 8:142832 9:72788 10:28770 11:8633 12:1867 13:277 14:25 15:1
+  N            census 5020, probe 849, added by the probe 2, together 5022; dimensions 0:80 1:448 2:1064 3:1416 4:1165 5:610 6:199 7:37 8:3
+                 added: 010***01*1*1*010  *10***01*1*1*010
+  E            census 5022, probe 849, added by the probe 0, together 5022; dimensions 0:80 1:448 2:1064 3:1416 4:1165 5:610 6:199 7:37 8:3
+  ray T>S      census 7721, probe 1366, added by the probe 5, together 7726; dimensions 0:116 1:660 2:1594 3:2166 4:1824 5:976 6:324 7:61 8:5
+                 added: 1*1*00111*1**0*0  1*1100111*1**0*0  010***01*1*1*010  *10***01*1*1*010  11****01*111*010
+  ray T<S      census 1 518 116, probe 1 122 278, added by the probe 52 898, together 1 571 014; dimensions 0:2067 1:15869 2:58413 3:138134 4:234253 5:303812 6:305316 7:242566 8:153242 9:76567 10:29770 11:8814 12:1887 13:278 14:25 15:1
+  T=S, below   6 206 077 strata; dimensions 0:7639 1:65477 2:258260 3:627720 4:1055323 5:1301646 6:1216963 7:877518 8:491127 9:212767 10:70542 11:17526 12:3152 13:387 14:29 15:1
+  T=S, above   2 788 386 strata; dimensions 0:3072 1:24832 2:101600 3:266640 4:480632 5:617108 6:578128 7:401148 8:207532 9:79876 10:22580 11:4560 12:624 13:52 14:2
+  (1,0)        11 466 029 strata; dimensions 0:14757 1:129419 2:517584 3:1258914 4:2084317 5:2490648 6:2222769 7:1511638 8:791261 9:319177 10:98446 11:22794 12:3832 13:441 14:31 15:1
+
+  binary-invisible strata, both counts (the table takes census and probe, in S the census alone):
+    W  census                 236 of        362  65%
+    W  census + probe         238 of        364  65%
+    S  census              32 868 of  1 318 471  2.5%
+    S  census + probe      41 527 of  1 367 725  3.0%
+    N  census                 216 of       5020  4.3%
+    N  census + probe         216 of       5022  4.3%
+    E  census                 216 of       5022  4.3%
+    E  census + probe         216 of       5022  4.3%
+
+##############################################################################################################
+PANEL b IN FULL
+  wedge W                          block C_1: census 362 strata, 67 of dimension >= 5; probe 69; probe not in census 2 (the deficit); census not in probe 0; deficit / census total 0.5525%, / probe 2.8986%
+  wedge S                          block C_-1: census 1 318 471 strata, 958 082 of dimension >= 5; probe 1 007 336; probe not in census 49 254 (the deficit); census not in probe 0; deficit / census total 3.7357%, / probe 4.8895%
+  wedge N                          block A_1: census 5020 strata, 847 of dimension >= 5; probe 849; probe not in census 2 (the deficit); census not in probe 0; deficit / census total 0.0398%, / probe 0.2356%
+  wedge E                          block A_-1: census 5022 strata, 849 of dimension >= 5; probe 849; probe not in census 0 (the deficit); census not in probe 0; deficit / census total 0.0000%, / probe 0.0000%
+  ray T>S, efficient only there    block Z_1: census 2339 strata, 447 of dimension >= 5; probe 448; probe not in census 1 (the deficit); census not in probe 0; deficit / census total 0.0428%, / probe 0.2232%
+  ray T<S, efficient only there    block Z_-1: census 194 623 strata, 110 449 of dimension >= 5; probe 114 093; probe not in census 3644 (the deficit); census not in probe 0; deficit / census total 1.8723%, / probe 3.1939%
+  probe C_1: 69 strata of dimension >= 5, largest 7; 5:51 6:16 7:2
+  probe C_-1: 1 007 336 strata of dimension >= 5, largest 15; 5:260578 6:270604 7:220961 8:142832 9:72788 10:28770 11:8633 12:1867 13:277 14:25 15:1
+  probe A_1: 849 strata of dimension >= 5, largest 8; 5:610 6:199 7:37 8:3
+  probe A_-1: 849 strata of dimension >= 5, largest 8; 5:610 6:199 7:37 8:3
+  probe Z_1: 448 strata of dimension >= 5, largest 8; 5:315 6:109 7:22 8:2
+  probe Z_-1: 114 093 strata of dimension >= 5, largest 13; 5:42624 6:34513 7:21568 8:10407 9:3779 10:1000 11:181 12:20 13:1
+
+##############################################################################################################
+CHECKS
+  ok     st_eff.txt: every line has the five fields g class nP nM K
+  ok     st_eff.txt: no stratum twice
+  ok     st_eff.txt: every line has a confirmed friendly rival for T>S or T<S
+  ok     probe: the task log of each of the 384 stripes names its block and stripe
+  ok     probe: each stripe holds lines 'g dimension class' of its block and stripe, as many as its task log says, with the largest dimension it says
+  ok     probe: every task ran with DMIN = 5
+  ok     probe C_1: no stratum twice, and every one of dimension >= 5
+  ok     probe C_-1: no stratum twice, and every one of dimension >= 5
+  ok     probe A_1: no stratum twice, and every one of dimension >= 5
+  ok     probe A_-1: no stratum twice, and every one of dimension >= 5
+  ok     probe Z_1: no stratum twice, and every one of dimension >= 5
+  ok     probe Z_-1: no stratum twice, and every one of dimension >= 5
+  ok     census_support_class: one byte for each of the 3^16 strata
+  ok     the class the census read from the weights is the class by the support, at all 1 524 791 census lines
+  ok     probe C_1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     probe C_-1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     probe A_1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     probe A_-1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     probe Z_1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     probe Z_-1: the class the probe read from the weights is the class by the support, at all its strata
+  ok     W: the strata of dimension 0 are the 8 binary friendly rivals (m2_masks.npz), as sets
+  ok     S: the strata of dimension 0 are the 1519 binary friendly rivals (m2_masks.npz), as sets
+  ok     N: the strata of dimension 0 are the 80 binary friendly rivals (m2_masks.npz), as sets
+  ok     E: the strata of dimension 0 are the 80 binary friendly rivals (m2_masks.npz), as sets
+  ok     T=S, below: the strata of dimension 0 are the 7639 binary strategies efficient there, as sets
+  ok     T=S, above: the strata of dimension 0 are the 3072 binary strategies efficient there, as sets
+  ok     (1,0): the strata of dimension 0 are the 14757 binary strategies efficient there, as sets
+  ok     the C/D mirror maps N (census and probe) onto E (census and probe), as sets
+  ok     the C/D mirror maps the binary friendly rivals of N onto those of E
+checks failed: 0 of 29

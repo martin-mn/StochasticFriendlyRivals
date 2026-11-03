@@ -1,0 +1,202 @@
+==============================================================================
+(c)  EXACT-RATIONAL CHECK OF THE DISCOUNTED AKIN IDENTITY
+==============================================================================
+  A1 : v.ptilde - ((1-d)/d)(v.c - x.c)
+  A2 : v.(c - d p) - (1-d) x.c
+  A3 : v.[d p - c + (1-d)(x.c) 1]      (LaPorte column 2)
+  A4 : v.[d q@SWAP - c' + (1-d)(x.c') 1] (LaPorte column 3)
+
+  #   delta    eps    sum v-1        A1        A2        A3        A4
+  0    0.90   0.00          0         0         0         0         0
+  1    0.85   0.01          0         0         0         0         0
+  2    0.35   0.00          0         0         0         0         0
+  3    0.50   0.07          0         0         0         0         0
+  4    0.10   0.00          0         0         0         0         0
+  5    0.80   0.07          0         0         0         0         0
+  6    0.70   0.00          0         0         0         0         0
+  7    0.70   0.07          0         0         0         0         0
+  8    0.30   0.00          0         0         0         0         0
+  9    0.60   0.01          0         0         0         0         0
+ 10    0.75   0.00          0         0         0         0         0
+ 11    0.15   0.06          0         0         0         0         0
+ 12    0.45   0.00          0         0         0         0         0
+ 13    0.95   0.04          0         0         0         0         0
+ 14    0.30   0.00          0         0         0         0         0
+ 15    0.90   0.06          0         0         0         0         0
+ 16    0.20   0.00          0         0         0         0         0
+ 17    0.60   0.07          0         0         0         0         0
+ 18    0.25   0.00          0         0         0         0         0
+ 19    0.10   0.09          0         0         0         0         0
+ 20    0.50   0.00          0         0         0         0         0
+ 21    0.25   0.02          0         0         0         0         0
+ 22    0.25   0.00          0         0         0         0         0
+ 23    0.40   0.02          0         0         0         0         0
+ 24    0.60   0.00          0         0         0         0         0
+ 25    0.05   0.01          0         0         0         0         0
+ 26    0.60   0.00          0         0         0         0         0
+ 27    0.90   0.09          0         0         0         0         0
+ 28    0.50   0.00          0         0         0         0         0
+ 29    0.15   0.08          0         0         0         0         0
+ 30    0.80   0.00          0         0         0         0         0
+ 31    0.30   0.02          0         0         0         0         0
+ 32    0.40   0.00          0         0         0         0         0
+ 33    0.10   0.09          0         0         0         0         0
+ 34    0.10   0.00          0         0         0         0         0
+ 35    0.70   0.04          0         0         0         0         0
+ 36    0.30   0.00          0         0         0         0         0
+ 37    0.80   0.06          0         0         0         0         0
+ 38    0.10   0.00          0         0         0         0         0
+ 39    0.30   0.06          0         0         0         0         0
+
+  40 cases, 0 with a non-zero residual.
+  (eps = 0 on even rows, eps > 0 on odd rows; half the x are correlated,
+   i.e. NOT of the product form -- the identity does not care.)
+
+  Sanity on the CONSTANT and the SIGN of A1, on one worked case:
+    p=[Fraction(1, 1), Fraction(1, 2), Fraction(3, 4), Fraction(0, 1)] q=ALLD delta=4/5 x=CD
+    v            = [Fraction(0, 1), Fraction(1, 3), Fraction(0, 1), Fraction(2, 3)]
+    v.ptilde     = -1/6
+    v.c          = 1/3   x.c = 1
+    (1-d)/d (v.c - x.c) = -1/6
+    => A1 residual 0  (a MINUS sign or a d/(1-d) would give a non-zero here)
+
+  Controls (deliberately wrong constants) on 10 random cases -- these MUST fail:
+    sign flipped      : 10/10 non-zero  (10/10 expected)
+    constant inverted : 10/10 non-zero  (10/10 expected)
+
+  A5 (p1 = 1, focal opens C):  d(1-p2) v_CD - (1-d+d p3) v_DC - (1-d+d p4) v_DD
+    30 random cases, 0 non-zero residuals.
+
+==============================================================================
+(d)  LaPorte discounted Press-Dyson determinant vs v.(R,S,T,P)
+==============================================================================
+    20 random cases, 0 mismatches between the determinant formula
+    of Press_Dyson_Discounting_2.pdf and the direct occupancy payoff.
+
+==============================================================================
+(b)  UNBEATABILITY UNDER DISCOUNTING
+==============================================================================
+Claim R1.  For T < S (wedge S / wedge E side, u - v > 1) the focal p is a
+           discounted rival for EVERY q and every q-opening iff
+               p0 = 1,  p1 = 1,  and  delta (1 - p2 - p3) <= 1 - delta.
+           delta = 1 recovers the project's p2 + p3 >= 1 (and the excluded
+           edge p2=1,p3=0 stops being excluded once delta < 1).
+
+   delta                       p   p0   pred      min(v_CD - v_DC)  ok
+    0.25    ['1', '0', '0', '0']    1   True                     0  OK
+    0.25  ['1', '0', '1/3', '1']    1   True                     0  OK
+    0.50    ['1', '0', '0', '0']    1   True                     0  OK
+    0.50  ['1', '0', '1/3', '1']    1   True                     0  OK
+    0.75    ['1', '0', '0', '0']    1  False                  -1/2  OK
+    0.75  ['1', '0', '1/3', '1']    1  False                 -4/23  OK
+    0.90    ['1', '0', '0', '0']    1  False                  -4/5  OK
+    0.90  ['1', '0', '1/3', '1']    1  False               -50/157  OK
+    0.95    ['1', '0', '0', '0']    1  False                 -9/10  OK
+    0.95  ['1', '0', '1/3', '1']    1  False             -700/1941  OK
+
+  80 (delta, p) pairs with p1 = 1 and p0 = 1: 0 disagreements
+  between the predicate  delta(1-p2-p3) <= 1-delta  and the brute-force minimum
+  of v_CD - v_DC over all 16 deterministic q and both q-openings.
+
+Claim R2.  p0 = 1 and p1 = 1 are NECESSARY: against q = ALLC the focal is in
+           CD never and in DC with positive discounted weight as soon as
+           p0 < 1 or p1 < 1.
+    p0=1/2 p=['1', '1', '1', '1'] vs ALLC(C): v_CD=0  v_DC=1/20  margin=-1/20
+    p0=1 p=['9/10', '1', '1', '1'] vs ALLC(C): v_CD=0  v_DC=9/109  margin=-9/109
+
+Claim R3.  T > S (every Prisoner's Dilemma): efficiency forces the focal to open
+           C, rivalry forces it to open D.  Shown here for the rivalry half:
+           against q = ALLD the focal is never in DC, so it must never be in CD.
+    p0=1 p=ALLC vs ALLD(D): v_CD=1 v_DC=0 -> v_DC - v_CD = -1
+    p0=1/2 p=ALLC vs ALLD(D): v_CD=19/20 v_DC=0 -> v_DC - v_CD = -19/20
+    p0=0 p=ALLC vs ALLD(D): v_CD=9/10 v_DC=0 -> v_DC - v_CD = -9/10
+
+Claim R4.  No memory-one strategy can ENFORCE pi_x - pi_y = const when delta < 1.
+           delta p = c + (S_x - S_y) + gamma 1 needs delta p1 = 1 + gamma <= delta
+           (so gamma <= delta - 1 < 0) and delta p4 = gamma >= 0.  Contradiction.
+           At delta = 1 both hold with gamma = 0: the generalised-TFT line
+           p = (1, 1-(T-S), T-S, 0).  Numerical illustration -- the undiscounted
+           equaliser stops equalising the moment delta < 1:
+    (u,v)=(6/5,0) -> T-S=-1/5; equaliser p=['1', '6/5', '-1/5', '0'] is outside the cube (p3<0), as T<S forces.  Use T>S instead:
+    delta=0.99  v_DC - v_CD over 6 q's: ['-99/5050', '-19701/1495000', '-9999/529850', '-198/20099', '-99/5050', '-198/19901']
+    delta=0.90  v_DC - v_CD over 6 q's: ['-9/55', '-171/1450', '-99/785', '-18/209', '-9/55', '-18/191']
+    delta=0.50  v_DC - v_CD over 6 q's: ['-1/3', '-3/10', '-3/13', '-2/9', '-1/3', '-2/7']
+    (at delta = 1 all of these are exactly 0 -- the equaliser; at delta < 1 they
+     spread out, so no single constant is enforced.)
+
+==============================================================================
+(b')  WHERE DO DISCOUNTED FRIENDLY RIVALS EXIST?   brute force over (p0, p)
+==============================================================================
+  Efficient (discounted, eps -> 0): pi_delta(p,p) = Emax = max{1, (1+u+v)/2},
+  with the round-0 state law of SELF-play x = (p0^2, p0(1-p0), (1-p0)p0, (1-p0)^2).
+  Rival: min over (q, q0) of sign*(v_DC - v_CD) >= 0, sign = +1 if T > S else -1.
+
+  delta = 9/10;  '.' = none, 'F' = a friendly rival exists
+  wedge S = {u+v <= 1, u-v >= 1};  E = {u+v>1,u-v>1};  T>S <=> u-v<1
+
+        u:  0.00 0.25 0.50 0.75 1.00 1.25 1.50 1.75 2.00 2.25 2.50 2.75 3.00
+  v= 1.50:   .   .   .   .   .   .   .   .   .   .   =   .   . 
+  v= 1.25:   .   .   .   .   .   .   .   .   .   =   .   .   . 
+  v= 1.00:   .   .   .   .   .   .   .   .   =   .   .   .   . 
+  v= 0.75:   .   .   .   .   .   .   .   =   .   .   .   .   . 
+  v= 0.50:   .   .   .   .   .   .   =   .   .   .   .   .   . 
+  v= 0.25:   .   .   .   .   .   =   .   .   .   .   .   .   . 
+  v= 0.00:   .   .   .   .   =   .   .   .   .   .   .   .   . 
+  v=-0.25:   .   .   .   =   F   F   .   .   .   .   .   .   . 
+  v=-0.50:   .   .   =   F   F   F   F   .   .   .   .   .   . 
+  v=-0.75:   .   =   F   F   F   F   F   F   .   .   .   .   . 
+  v=-1.00:   =   F   F   F   F   F   F   F   F   .   .   .   . 
+  v=-1.25:   F   F   F   F   F   F   F   F   F   F   .   .   . 
+  v=-1.50:   F   F   F   F   F   F   F   F   F   F   F   .   . 
+
+  Compare the UNDISCOUNTED result: friendly rivals exist exactly on the closed
+  wedge S = {u-v >= 1, u+v <= 1} (plus the T=S line, where rivalry is vacuous).
+  The '=' column is T = S (u - v = 1); on it every efficient strategy counts.
+
+  Witness in wedge S: p = ALLC with p0 = 1.
+    (u,v)=(3/2,0)  T-S=-1/2  efficient=False  rival=True
+    (u,v)=(5/4,-1/2)  T-S=-3/4  efficient=True  rival=True
+    (u,v)=(1,0)  T-S=0  efficient=True  rival=False
+
+  Above the switch line (u+v > 1) discounted efficiency is EMPTY: Emax needs
+  perfect alternation from round 0, but self-play round 0 has
+  x_CC = p0^2 and x_DD = (1-p0)^2, which cannot both vanish.
+    (u,v)=(3/2,1): Emax = 7/4, best self-play over 81 candidates = 335/294 = 1.1395
+
+==============================================================================
+(b'')  SIZE OF THE DISCOUNTED FRIENDLY-RIVAL SET INSIDE THE FACET p1 = 1
+==============================================================================
+  Friendly rival (wedge S interior, delta < 1, eps -> 0):
+      p0 = 1,  p1 = 1,  p2 + p3 >= (2 delta - 1)/delta,  p4 FREE.
+  Volume in the (p2,p3,p4) unit cube:  1                      delta <= 1/2
+                                       1 - (2delta-1)^2/(2 delta^2)  delta > 1/2
+
+    delta    threshold (2d-1)/d      volume    MC check
+    0.250               -2.0000     1.00000     1.00000
+    0.500                0.0000     1.00000     1.00000
+    0.600                0.3333     0.94444     0.94647
+    0.750                0.6667     0.77778     0.77900
+    0.900                0.8889     0.60494     0.60755
+    0.990                0.9899     0.51005     0.50935
+    1.000                1.0000     0.50000     0.50557
+  delta -> 1 gives 1/2, the project's undiscounted volume.  The set SHRINKS
+  monotonically to the undiscounted one; it never disappears.
+
+  Boundary case p = (1,1,0,0) with p0 = 1 -- EXCLUDED undiscounted by the
+  'not (p2=1 and p3=0)' clause, but a rival for every delta < 1:
+    delta= 0.500  min_q (v_CD - v_DC) =   0.00000000   rival=True
+    delta= 0.900  min_q (v_CD - v_DC) =   0.00000000   rival=True
+    delta= 0.990  min_q (v_CD - v_DC) =   0.00000000   rival=True
+    delta= 0.999  min_q (v_CD - v_DC) =   0.00000000   rival=True
+    delta=1, eps=0.01     min_q (W_CD - W_DC) =  -0.49000000   rival=False
+    delta=1, eps=0.001    min_q (W_CD - W_DC) =  -0.49900000   rival=False
+    delta=1, eps=0.0001   min_q (W_CD - W_DC) =  -0.49990000   rival=False
+  with eps > 0 AND delta < 1 (p1 clamps to 1-eps < 1, so p1 = 1 fails):
+    delta=0.9, eps=0.01     min_q (v_CD - v_DC) =  -0.06727119   rival=False
+    delta=0.9, eps=0.001    min_q (v_CD - v_DC) =  -0.00794086   rival=False
+  So the undiscounted exclusion of (p2,p3)=(1,0) is an ORDER-OF-LIMITS artefact:
+    lim_{eps->0} at fixed delta < 1   -> rival (margin exactly 0)
+    lim_{delta->1} at fixed eps > 0   -> not a rival (margin -> -1/2)
+  The project's undiscounted theory is lim_{eps->0} lim_{delta->1}; the
+  discounted theory here is lim_{eps->0} at delta < 1.  They do not commute on
+  this measure-zero face, and only there.

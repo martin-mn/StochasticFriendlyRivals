@@ -1,0 +1,50 @@
+== 1. quadrant games: strata with stable sample points (stratum: games -> count)
+  001o {'(Fraction(1, 1), Fraction(1, 1))': 13, '(Fraction(1, 1), Fraction(3, 1))': 13, '(Fraction(2, 1), Fraction(0, 1))': 13, '(Fraction(5, 1), Fraction(0, 1))': 13, '(Fraction(2, 1), Fraction(1, 1))': 13, '(Fraction(3, 1), Fraction(2, 1))': 13, '(Fraction(2, 1), Fraction(1, 2))': 13, '(Fraction(3, 1), Fraction(1, 1))': 13, '(Fraction(3, 2), Fraction(1, 4))': 13, '(Fraction(5, 1), Fraction(7, 1))': 13, '(Fraction(1, 1), Fraction(1, 1000))': 13, '(Fraction(1001, 1000), Fraction(0, 1))': 13, '(Fraction(1001, 1000), Fraction(1, 1000))': 13, '(Fraction(3, 2), Fraction(1, 2))': 13}
+  010o {'(Fraction(2, 1), Fraction(1, 1))': 13, '(Fraction(3, 1), Fraction(2, 1))': 13, '(Fraction(1001, 1000), Fraction(1, 1000))': 13, '(Fraction(3, 2), Fraction(1, 2))': 13}
+  o01o {'(Fraction(1, 1), Fraction(1, 1))': 21, '(Fraction(1, 1), Fraction(3, 1))': 21, '(Fraction(2, 1), Fraction(0, 1))': 21, '(Fraction(5, 1), Fraction(0, 1))': 21, '(Fraction(2, 1), Fraction(1, 1))': 21, '(Fraction(3, 1), Fraction(2, 1))': 21, '(Fraction(2, 1), Fraction(1, 2))': 21, '(Fraction(3, 1), Fraction(1, 1))': 21, '(Fraction(3, 2), Fraction(1, 4))': 21, '(Fraction(5, 1), Fraction(7, 1))': 21, '(Fraction(1, 1), Fraction(1, 1000))': 21, '(Fraction(1001, 1000), Fraction(0, 1))': 21, '(Fraction(1001, 1000), Fraction(1, 1000))': 21, '(Fraction(3, 2), Fraction(1, 2))': 21}
+  o011 {'(Fraction(1, 1), Fraction(1, 1))': 13, '(Fraction(1, 1), Fraction(3, 1))': 13, '(Fraction(2, 1), Fraction(0, 1))': 13, '(Fraction(5, 1), Fraction(0, 1))': 13, '(Fraction(2, 1), Fraction(1, 1))': 13, '(Fraction(3, 1), Fraction(2, 1))': 13, '(Fraction(2, 1), Fraction(1, 2))': 13, '(Fraction(3, 1), Fraction(1, 1))': 13, '(Fraction(3, 2), Fraction(1, 4))': 13, '(Fraction(5, 1), Fraction(7, 1))': 13, '(Fraction(1, 1), Fraction(1, 1000))': 13, '(Fraction(1001, 1000), Fraction(0, 1))': 13, '(Fraction(1001, 1000), Fraction(1, 1000))': 13, '(Fraction(3, 2), Fraction(1, 2))': 13}
+  oooo {'(Fraction(1, 1), Fraction(1, 1))': 1, '(Fraction(3, 1), Fraction(1, 1))': 1, '(Fraction(3, 2), Fraction(1, 2))': 1}
+  o10o {'(Fraction(2, 1), Fraction(1, 1))': 21, '(Fraction(3, 1), Fraction(2, 1))': 21, '(Fraction(1001, 1000), Fraction(1, 1000))': 21, '(Fraction(3, 2), Fraction(1, 2))': 21}
+  o101 {'(Fraction(2, 1), Fraction(1, 1))': 13, '(Fraction(3, 1), Fraction(2, 1))': 13, '(Fraction(1001, 1000), Fraction(1, 1000))': 13, '(Fraction(3, 2), Fraction(1, 2))': 13}
+  100o {'(Fraction(1, 1), Fraction(1, 1))': 13, '(Fraction(1, 1), Fraction(3, 1))': 6, '(Fraction(1, 1), Fraction(1, 1000))': 13}
+  1001 {'(Fraction(1, 1), Fraction(1, 1))': 1, '(Fraction(1, 1), Fraction(1, 1000))': 1}
+  1o0o {'(Fraction(1, 1), Fraction(1, 1))': 13, '(Fraction(1, 1), Fraction(3, 1))': 5, '(Fraction(1, 1), Fraction(1, 1000))': 21}
+  1o01 {'(Fraction(1, 1), Fraction(1, 1000))': 13}
+  11o0 {'(Fraction(2, 1), Fraction(0, 1))': 13, '(Fraction(5, 1), Fraction(0, 1))': 13, '(Fraction(1001, 1000), Fraction(0, 1))': 13}
+  11oo {'(Fraction(2, 1), Fraction(0, 1))': 21, '(Fraction(5, 1), Fraction(0, 1))': 21, '(Fraction(1001, 1000), Fraction(0, 1))': 21}
+  11o1 {'(Fraction(2, 1), Fraction(0, 1))': 13, '(Fraction(5, 1), Fraction(0, 1))': 13, '(Fraction(1001, 1000), Fraction(0, 1))': 13}
+  1110 {'(Fraction(2, 1), Fraction(0, 1))': 1, '(Fraction(5, 1), Fraction(0, 1))': 1, '(Fraction(1001, 1000), Fraction(0, 1))': 1}
+  111o {'(Fraction(2, 1), Fraction(0, 1))': 13, '(Fraction(5, 1), Fraction(0, 1))': 13, '(Fraction(1001, 1000), Fraction(0, 1))': 13}
+  1111 {'(Fraction(2, 1), Fraction(0, 1))': 1, '(Fraction(5, 1), Fraction(0, 1))': 1, '(Fraction(1001, 1000), Fraction(0, 1))': 1}
+== 3. efficiency closed form mismatches: 0
+== 2. efficient p_DD = 0 edges vs Eq. (3) at p_DD = 0
+   1o10 p ['1', '1/1000', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '999999/1000'], ['1000', '-1000'], ['1000', '-998001/1000']] []
+   1o10 p ['1', '5/113', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '108108/113'], ['1000', '-1000'], ['1000', '-107892/113']] []
+   1o10 p ['1', '5/56', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '7293/8'], ['1000', '-1000'], ['1000', '-50949/56']] []
+   1o10 p ['1', '20/201', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '181181/201'], ['1000', '-1000'], ['1000', '-60273/67']] []
+   1o10 p ['1', '3/13', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '770'], ['1000', '-1000'], ['1000', '-9990/13']] []
+   1o10 p ['1', '1/3', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '2002/3'], ['1000', '-1000'], ['1000', '-666']] []
+   1o10 p ['1', '47/103', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '56056/103'], ['1000', '-1000'], ['1000', '-55944/103']] []
+   1o10 p ['1', '1/2', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '1001/2'], ['1000', '-1000'], ['1000', '-999/2']] []
+   1o10 p ['1', '260/469', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '29887/67'], ['1000', '-1000'], ['1000', '-208791/469']] []
+   1o10 p ['1', '549/847', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '3874/11'], ['1000', '-1000'], ['1000', '-297702/847']] []
+   1o10 p ['1', '3/4', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '1001/4'], ['1000', '-1000'], ['1000', '-999/4']] []
+   1o10 p ['1', '334/411', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '77077/411'], ['1000', '-1000'], ['1000', '-25641/137']] []
+   1o10 p ['1', '999/1000', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '1001/1000'], ['1000', '-1000'], ['1000', '-999/1000']] []
+   11o0 p ['1', '1', '1/1000', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '5/113', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '5/56', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '20/201', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '3/13', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '1/3', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '47/103', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '1/2', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '260/469', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '549/847', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '3/4', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '334/411', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   11o0 p ['1', '1', '999/1000', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+   1110 p ['1', '1', '1', '0'] Eq3-equal T-vertices [['-1000', '-1000'], ['-1000', '0'], ['1000', '-1000'], ['1000', '0']] []
+== 4. games without a partner among 457 candidates: 0 of 1385 []
+== 5. (1,1,0,1) at (3/2,-1/2): self-play 1 ALLC earns 7/6 efficient True Eq3 I,II = -1/2 0
+== 6. Snowdrift grid games (0<u<1, v>0) with no stable binary strategy: 438 of 531 e.g. [(Fraction(1, 10), Fraction(11, 10)), (Fraction(1, 10), Fraction(6, 5)), (Fraction(1, 10), Fraction(13, 10)), (Fraction(1, 10), Fraction(7, 5)), (Fraction(1, 10), Fraction(3, 2))]
